@@ -1,0 +1,11 @@
+﻿applicationId,status,errorCode,runIds,reportEvidencePresent,finalEligible,systemRisk,referenceRisk,candidateRiskExact,finalRiskExact,systemCredit,referenceCredit,creditNumericRangeWithin,creditReview
+LA001,succeeded,,run_ffb6b8838331,True,True,低风险,低风险,True,True,0,2500-3000,False,
+LA002,succeeded,,run_f84a3bdd95c0,True,True,低风险,中风险,False,False,0,1200-1500,False,
+LA003,needs_confirmation,,run_1ae6974a4d12,True,False,高风险,高风险,True,False,0,拒贷/极小额度,,语义需复核：拒贷/极小额度未定义数值阈值
+LA004,succeeded,,run_3edc480f2fea,True,True,低风险,中风险,False,False,0,1500-2000,False,
+LA005,succeeded,,run_5154dbd3a5a4,True,True,低风险,低-中风险,False,False,0,600-800,False,
+LA006,failed,token_limit_exceeded,run_702df086d3a6,True,False,高风险,高风险,True,False,0,拒贷/极小额度,,语义需复核：拒贷/极小额度未定义数值阈值
+LA007,succeeded,,run_c6354f836ae5,True,True,低风险,低风险,True,True,0,400-500,False,
+LA008,succeeded,,run_65eb528bbb37,True,True,低风险,中风险,False,False,0,1000-1200,False,
+LA009,failed,token_limit_exceeded,run_45213d493bdb,True,False,低风险,低风险,True,False,0,2000-2500,False,
+LA010,needs_confirmation,,run_37f74f239788,True,False,高风险,中风险,False,False,0,1500-2000,False,

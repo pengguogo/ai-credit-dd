@@ -1,0 +1,27 @@
+diff --git a/ocft-backend/app/tools/dd_calc.py b/ocft-backend/app/tools/dd_calc.py
+index b3eb3d2..7ecc566 100644
+--- a/ocft-backend/app/tools/dd_calc.py
++++ b/ocft-backend/app/tools/dd_calc.py
+@@ -127,7 +127,7 @@ def _yoy(newer, older) -> float | None:
+ 
+ def _cagr(end, start, years: int) -> float | None:
+     left, right = _num(end), _num(start)
+-    if left is None or right is None or right <= 0 or years <= 0:
++    if left is None or right is None or right <= 0 or left < 0 or years <= 0:
+         return None
+     return (left / right) ** (1 / years) - 1
+ 
+diff --git a/ocft-backend/tests/test_dd_regressions.py b/ocft-backend/tests/test_dd_regressions.py
+index 787b669..e96e563 100644
+--- a/ocft-backend/tests/test_dd_regressions.py
++++ b/ocft-backend/tests/test_dd_regressions.py
+@@ -56,3 +56,9 @@ def test_report_instruction_bounds_repetition_without_dropping_sections():
+     assert "五个二级标题" in report
+     for section in ("企业概况", "财务分析", "风险提示", "额度建议", "风控条件"):
+         assert f"## {section}" in report
++
++
++@pytest.mark.parametrize("end", [-1200, -0.5])
++def test_cagr_undefined_when_end_value_negative(end):
++    # 末期净利润为负时分数次幂会得到复数，导致财报角色崩溃；增长率此时无定义
++    assert dd_calc._cagr(end, 3800, 2) is None

@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-10-24T04:50:04+00:00",
+  "total": 1,
+  "answers": [
+    {
+      "id": "LA001",
+      "status": "failed",
+      "answer": "run 累计 token 超出上限 20000",
+      "evidence": [
+        {
+          "id": "ev_14c73302b2f9",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA001"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_1f217270ff5b",
+          "source": {
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_5dceaf91126e",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA001"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_62a92a950dce",
+          "source": {
+            "keys": {
+              "applicationId": "LA001"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_6931aec59e76",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_6df723406ea8",
+          "source": {
+            "table": "enterprise_guarantee",
+            "filters": {
+              "sql": "SELECT * FROM enterprise_guarantee WHERE enterprise_id = 'E001' LIMIT 20"
+            }
+          }
+        },
+        {
+          "id": "ev_76712137f3c9",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_798c1f84d6df",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_7fee5525a2ad",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_bf0773067881",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_e5d9016d663a",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_ffd120ab70cf",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_basic"
+          }
+        }
+      ],
+      "runIds": [
+        "run_3d044138f23e"
+      ]
+    }
+  ]
+}

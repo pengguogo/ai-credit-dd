@@ -1,0 +1,4 @@
+﻿id,问题,场景,终态,答案,错误码,调用工具,证据数,证据来源,runId,耗时ms,评分通过
+LA006,企业编号：E006。请对贷款申请 LA006 完成企业信贷尽调，并提供结论与证据。,enterprise_dd,failed,"报告未通过事实校验：- 32.4% 在本次工具结果中找不到对应数值
+- 32.4% 在本次工具结果中找不到对应数值
+- 9.6% 在本次工具结果中找不到对应数值",narrative_check_failed,"get_loan_application, find_enterprise, run_dd_agents",9,enterprise_basic(enterpriseId=E006); enterprise_public_opinion(enterpriseId=E006); enterprise_risk(enterpriseId=E006); loan_application(applicationId=LA006); loan_application(applicationId=LA006); loan_application(applicationId=LA006); enterprise_finance(enterpriseId=E006); enterprise_finance(enterpriseId=E006); enterprise_basic(enterpriseId=E006),run_51992ff4326a,35118,

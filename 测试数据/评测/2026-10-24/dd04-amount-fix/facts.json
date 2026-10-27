@@ -1,0 +1,655 @@
+[
+  {
+    "applicationId": "LA001",
+    "enterpriseId": "E001",
+    "applyAmount": 3000.0,
+    "status": "calculated",
+    "systemRisk": "低风险",
+    "systemCredit": "2500-3000",
+    "financialYear": 2023,
+    "asOf": "2024-03-15",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 3432.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 5880.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 3432.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 低风险系数1.0",
+        "value": 3432.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数1",
+        "value": 3432.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 3000.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "2500-3000"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 4500.0,
+      "externalGuaranteeAmount": 500.0
+    },
+    "conditions": [
+      "担保方式按申请的抵押担保落实",
+      "核验存量贷款4500万元及履约安排，不作为本次额度全额扣减",
+      "核验对外担保500万元及履约安排，不作为本次额度全额扣减"
+    ],
+    "vetoes": [],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  },
+  {
+    "applicationId": "LA002",
+    "enterpriseId": "E002",
+    "applyAmount": 1500.0,
+    "status": "calculated",
+    "systemRisk": "低风险",
+    "systemCredit": "1200-1500",
+    "financialYear": 2023,
+    "asOf": "2024-03-20",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 2220.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 2960.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 2220.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 低风险系数1.0",
+        "value": 2220.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数1",
+        "value": 2220.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 1500.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "1200-1500"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 2000.0,
+      "externalGuaranteeAmount": 800.0
+    },
+    "conditions": [
+      "担保方式按申请的信用担保落实",
+      "核验存量贷款2000万元及履约安排，不作为本次额度全额扣减",
+      "核验对外担保800万元及履约安排，不作为本次额度全额扣减"
+    ],
+    "vetoes": [],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  },
+  {
+    "applicationId": "LA003",
+    "enterpriseId": "E003",
+    "applyAmount": 8000.0,
+    "status": "calculated",
+    "systemRisk": "高风险",
+    "systemCredit": "0",
+    "financialYear": 2023,
+    "asOf": "2024-02-28",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 6720.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 8800.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 6720.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 高风险系数0",
+        "value": 0.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数1",
+        "value": 0.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 0.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "0"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 28000.0,
+      "externalGuaranteeAmount": 12000.0
+    },
+    "conditions": [
+      "担保方式按申请的抵押担保落实",
+      "核验存量贷款28000万元及履约安排，不作为本次额度全额扣减",
+      "核验对外担保12000万元及履约安排，不作为本次额度全额扣减",
+      "一票否决项未解除前不新增授信：法定代表人限高、存在未结逾期",
+      "存量逾期结清前不投放",
+      "高风险档建议额度为 0"
+    ],
+    "vetoes": [
+      "法定代表人限高",
+      "存在未结逾期"
+    ],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  },
+  {
+    "applicationId": "LA004",
+    "enterpriseId": "E004",
+    "applyAmount": 2000.0,
+    "status": "calculated",
+    "systemRisk": "低风险",
+    "systemCredit": "1700-2000",
+    "financialYear": 2023,
+    "asOf": "2024-03-10",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 11400.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 2200.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 2200.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 低风险系数1.0",
+        "value": 2200.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数1",
+        "value": 2200.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 2000.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "1700-2000"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 3500.0,
+      "externalGuaranteeAmount": 0.0
+    },
+    "conditions": [
+      "担保方式按申请的信用担保落实",
+      "核验存量贷款3500万元及履约安排，不作为本次额度全额扣减"
+    ],
+    "vetoes": [],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  },
+  {
+    "applicationId": "LA005",
+    "enterpriseId": "E005",
+    "applyAmount": 800.0,
+    "status": "calculated",
+    "systemRisk": "低风险",
+    "systemCredit": "600-800",
+    "financialYear": 2023,
+    "asOf": "2024-03-18",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 816.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 960.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 816.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 低风险系数1.0",
+        "value": 816.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数1",
+        "value": 816.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 800.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "600-800"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 1200.0,
+      "externalGuaranteeAmount": 200.0
+    },
+    "conditions": [
+      "担保方式按申请的抵押担保落实",
+      "核验存量贷款1200万元及履约安排，不作为本次额度全额扣减",
+      "核验对外担保200万元及履约安排，不作为本次额度全额扣减"
+    ],
+    "vetoes": [],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  },
+  {
+    "applicationId": "LA006",
+    "enterpriseId": "E006",
+    "applyAmount": 2500.0,
+    "status": "calculated",
+    "systemRisk": "高风险",
+    "systemCredit": "0",
+    "financialYear": 2023,
+    "asOf": "2024-03-05",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 5040.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 2800.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 2800.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 高风险系数0",
+        "value": 0.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数1",
+        "value": 0.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 0.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "0"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 5500.0,
+      "externalGuaranteeAmount": 3000.0
+    },
+    "conditions": [
+      "担保方式按申请的保证担保落实",
+      "核验存量贷款5500万元及履约安排，不作为本次额度全额扣减",
+      "核验对外担保3000万元及履约安排，不作为本次额度全额扣减",
+      "一票否决项未解除前不新增授信：存在未结逾期",
+      "存量逾期结清前不投放",
+      "高风险档建议额度为 0"
+    ],
+    "vetoes": [
+      "存在未结逾期"
+    ],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  },
+  {
+    "applicationId": "LA007",
+    "enterpriseId": "E007",
+    "applyAmount": 500.0,
+    "status": "calculated",
+    "systemRisk": "低风险",
+    "systemCredit": "400-500",
+    "financialYear": 2023,
+    "asOf": "2024-03-22",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 1176.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 960.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 960.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 低风险系数1.0",
+        "value": 960.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数1",
+        "value": 960.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 500.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "400-500"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 600.0,
+      "externalGuaranteeAmount": 0.0
+    },
+    "conditions": [
+      "担保方式按申请的信用担保落实",
+      "核验存量贷款600万元及履约安排，不作为本次额度全额扣减"
+    ],
+    "vetoes": [],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  },
+  {
+    "applicationId": "LA008",
+    "enterpriseId": "E008",
+    "applyAmount": 1200.0,
+    "status": "calculated",
+    "systemRisk": "低风险",
+    "systemCredit": "1000-1200",
+    "financialYear": 2023,
+    "asOf": "2024-03-12",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 1500.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 1720.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 1500.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 低风险系数1.0",
+        "value": 1500.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数1",
+        "value": 1500.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 1200.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "1000-1200"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 1800.0,
+      "externalGuaranteeAmount": 300.0
+    },
+    "conditions": [
+      "担保方式按申请的抵押担保落实",
+      "核验存量贷款1800万元及履约安排，不作为本次额度全额扣减",
+      "核验对外担保300万元及履约安排，不作为本次额度全额扣减"
+    ],
+    "vetoes": [],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  },
+  {
+    "applicationId": "LA009",
+    "enterpriseId": "E009",
+    "applyAmount": 2500.0,
+    "status": "calculated",
+    "systemRisk": "低风险",
+    "systemCredit": "2100-2500",
+    "financialYear": 2023,
+    "asOf": "2024-03-25",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 4620.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 7680.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 4620.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 低风险系数1.0",
+        "value": 4620.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数1",
+        "value": 4620.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 2500.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "2100-2500"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 3000.0,
+      "externalGuaranteeAmount": 0.0
+    },
+    "conditions": [
+      "担保方式按申请的抵押担保落实",
+      "核验存量贷款3000万元及履约安排，不作为本次额度全额扣减"
+    ],
+    "vetoes": [],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  },
+  {
+    "applicationId": "LA010",
+    "enterpriseId": "E010",
+    "applyAmount": 3000.0,
+    "status": "calculated",
+    "systemRisk": "高风险",
+    "systemCredit": "0",
+    "financialYear": 2023,
+    "asOf": "2024-03-08",
+    "policyVersion": "incremental-v1",
+    "steps": [
+      {
+        "step": "营收口径上限",
+        "formula": "营业收入 × 0.12",
+        "value": 2640.0
+      },
+      {
+        "step": "净资产口径上限",
+        "formula": "max(所有者权益, 0) × 0.4",
+        "value": 2800.0
+      },
+      {
+        "step": "财务能力取小",
+        "formula": "min(营收口径, 净资产口径)，保留零值",
+        "value": 2640.0
+      },
+      {
+        "step": "评级调整",
+        "formula": "财务能力 × 高风险系数0",
+        "value": 0.0
+      },
+      {
+        "step": "现金流调整",
+        "formula": "评级后能力 × 现金流系数0.45",
+        "value": 0.0
+      },
+      {
+        "step": "申请额封顶",
+        "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+        "value": 0.0
+      },
+      {
+        "step": "输出区间",
+        "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+        "value": "0"
+      }
+    ],
+    "exposures": {
+      "existingLoanBalance": 4500.0,
+      "externalGuaranteeAmount": 2500.0
+    },
+    "conditions": [
+      "担保方式按申请的抵押担保落实",
+      "核验存量贷款4500万元及履约安排，不作为本次额度全额扣减",
+      "核验对外担保2500万元及履约安排，不作为本次额度全额扣减",
+      "经营现金流非正，按中风险系数0.45保守折减；需核验还本付息来源及资金用途，不等同于精确偿债覆盖率",
+      "一票否决项未解除前不新增授信：严重反欺诈信号",
+      "高风险档建议额度为 0"
+    ],
+    "vetoes": [
+      "严重反欺诈信号"
+    ],
+    "assumptions": [
+      "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+      "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+      "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+      "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+    ]
+  }
+]

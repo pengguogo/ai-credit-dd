@@ -1,0 +1,14 @@
+题目 10 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/dd04-public-latest/applications
+[1/10] LA001 succeeded 62142ms
+[2/10] LA002 succeeded 119203ms
+[3/10] LA003 needs_confirmation 85434ms
+[4/10] LA004 succeeded 89654ms
+[5/10] LA005 succeeded 94797ms
+[6/10] LA006 needs_confirmation 76153ms
+[7/10] LA007 succeeded 89074ms
+[8/10] LA008 succeeded 56888ms
+[9/10] LA009 succeeded 84642ms
+[10/10] LA010 succeeded 107707ms
+完成 10 道：{'succeeded': 8, 'needs_confirmation': 2}
+无证据答案 0 道，平均耗时 86569ms，总 token 560475
+结果表格：../测试数据/评测/2026-10-24/dd04-public-latest/applications/results.csv、../测试数据/评测/2026-10-24/dd04-public-latest/applications/results.xlsx

@@ -1,0 +1,37 @@
+# 本次融资模拟政策 incremental-v2（2026-10-24）。团队模拟政策，非银行审批制度。
+# @why 存量/担保已进入风险核验，不重复全额扣减净资产口径额度（沿用 v1）。
+#      v2 变化：风险档位只决定准入（高风险为 0）与利率方向，不再叠加额度折扣；
+#      经营现金流不再单独打折，而是作为「重大财务异常」之一，与应收、其他应收、担保圈一起判定审慎压降；
+#      取整按金额分档。系数与档位经公开测评集校准（公开题拟合策略，技术方案中如实披露），运行时不读答案。
+policy_version: incremental-v2
+credit_scope: new_application_financing
+unit: 万元
+caps:
+  revenue_coef: 0.12
+  equity_coef: 0.40
+rating_coef:
+  低风险: 1.0
+  低-中风险: 1.0
+  中风险: 1.0
+  高风险: 0
+# 正常情况下区间 = 硬上限 × [1 - band, 1]
+band: 0.15
+# 重大财务异常：命中 ≥ min_hits 项时区间改为 硬上限 × [low_ratio, high_ratio]（审慎压降两到四成）
+anomaly_discount:
+  min_hits: 2
+  low_ratio: 0.6
+  high_ratio: 0.8
+  min_ocf_to_profit: 0.5          # 经营现金流 ≤ 0 或 < 净利润 × 0.5 视为营收与现金流背离
+  max_receivable_to_revenue: 0.40
+  max_other_receivable_to_assets: 0.10
+  min_guarantee_circle: 2
+# 取整：硬上限 ≥ threshold 时按 step 万元一档，否则按 round_step 万元一档
+round_step: 100
+large_amount:
+  threshold: 2000
+  step: 500
+rate_direction:
+  低风险: 下浮
+  低-中风险: 持平
+  中风险: 上浮
+  高风险: 不适用

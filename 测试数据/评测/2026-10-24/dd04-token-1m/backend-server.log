@@ -1,0 +1,538 @@
+INFO:     Will watch for changes in these directories: ['/Users/dawn/ai马拉松/ocft-backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [27277] using WatchFiles
+INFO:     Started server process [27289]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51544 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:02:15.730Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a5d9e7996d3a4734", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 309}
+INFO:     127.0.0.1:51550 - "GET /api/health/live HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:02:19.689Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_8a8d3339d663429f", "method": "GET", "path": "/api/health/live", "status": 200, "durationMs": 0}
+INFO:     127.0.0.1:51561 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:02:39.538Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_eab569951a294933", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 153}
+INFO:     127.0.0.1:51564 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:02:45.700Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_e6c62446385345a3", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 283}
+INFO:     127.0.0.1:51581 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:03:15.549Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_ac6d9425e022418d", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 130}
+INFO:     127.0.0.1:51594 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:03:39.556Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f487fbd64d8b4629", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 169}
+INFO:     127.0.0.1:51599 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:03:45.573Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_aa67236256b946b7", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 155}
+INFO:     127.0.0.1:51630 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:04:15.695Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_2585fbe19da34b63", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 277}
+INFO:     127.0.0.1:51643 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:04:39.525Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_133ff8b6d5e9421d", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 142}
+INFO:     127.0.0.1:51646 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:04:45.598Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f4cbfa85dc0c4f3a", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 180}
+INFO:     127.0.0.1:51671 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:05:15.576Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_4e764a6eb3004988", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 157}
+INFO:     127.0.0.1:51684 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:05:39.594Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_2face55afb044da3", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 211}
+INFO:     127.0.0.1:51687 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:05:45.555Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_fdf5420ce77144fa", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 137}
+INFO:     127.0.0.1:51746 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:06:15.554Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b2b23108108a49a5", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 130}
+INFO:     127.0.0.1:51765 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:06:39.612Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_9379f55bd3b7471a", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 225}
+INFO:     127.0.0.1:51773 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:06:45.662Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b9856349ad044f09", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 241}
+INFO:     127.0.0.1:51835 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:07:15.552Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f4d38e2425f34ea0", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 130}
+INFO:     127.0.0.1:51860 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:07:39.548Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a61a1b4350fe4267", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 164}
+INFO:     127.0.0.1:51869 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:07:45.603Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_42f2df8a8dc246f3", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 182}
+WARNING:  WatchFiles detected changes in 'tests/test_dd_regressions.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27289]
+WARNING:  WatchFiles detected changes in 'tests/test_dd_regressions.py'. Reloading...
+INFO:     Started server process [28156]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28156]
+INFO:     Started server process [28280]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/tools/dd_calc.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28280]
+INFO:     Started server process [28342]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/agent/llm_audit.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28342]
+INFO:     Started server process [28356]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/agent/engine.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28356]
+INFO:     Started server process [28377]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/agent/graph.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28377]
+INFO:     Started server process [28392]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'tests/test_dd_regressions.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28392]
+INFO:     Started server process [28422]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/agent/scenarios.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28422]
+INFO:     Started server process [28460]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/agent/scenarios.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28460]
+INFO:     Started server process [28484]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52547 - "GET /api/health/live HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:12:31.235Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_8d90bed0738a42c6", "method": "GET", "path": "/api/health/live", "status": 200, "durationMs": 25}
+INFO:     127.0.0.1:52558 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:12:39.728Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_5cf8b34284ec44df", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 307}
+INFO:     127.0.0.1:52582 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:12:41.589Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_40aca68e084e4b3e", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 136}
+INFO:     127.0.0.1:52581 - "GET /api/agent/catalog/enterprise_dd HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:12:41.698Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_4ef0c1cb8acf451f", "method": "GET", "path": "/api/agent/catalog/enterprise_dd", "status": 200, "durationMs": 251}
+INFO:     127.0.0.1:52585 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:12:41.740Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_e35271f7bffe43e4", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 148}
+INFO:     127.0.0.1:52586 - "GET /api/agent/catalog/enterprise_dd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52589 - "GET /api/agent/stats HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:12:42.166Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_ea1d230bd8e94f07", "method": "GET", "path": "/api/agent/catalog/enterprise_dd", "status": 200, "durationMs": 527}
+{"ts": "2026-10-24T05:12:42.196Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_5726af5e6e664ebc", "method": "GET", "path": "/api/agent/stats", "status": 200, "durationMs": 456}
+INFO:     127.0.0.1:52590 - "GET /api/agent/stats HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:12:42.620Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_6dd2b20d36404358", "method": "GET", "path": "/api/agent/stats", "status": 200, "durationMs": 491}
+INFO:     127.0.0.1:52627 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:12:57.957Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a0dc879340094931", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 195}
+INFO:     127.0.0.1:52630 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:13:11.604Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_7f6303d87f3345eb", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 168}
+INFO:     127.0.0.1:52667 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:13:39.517Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_e8c204b687604c4a", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 127}
+INFO:     127.0.0.1:52670 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:13:41.561Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_4ff082880544490e", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 126}
+INFO:     127.0.0.1:52750 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:14:11.569Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_acef8e1edd244277", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 131}
+INFO:     127.0.0.1:52770 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:14:39.529Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_6681cfa966284782", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 137}
+INFO:     127.0.0.1:52773 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:14:41.572Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_9d075182aff34304", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 136}
+INFO:     127.0.0.1:52828 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:15:11.568Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_c1a9711cdf874670", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 131}
+WARNING:  WatchFiles detected changes in 'tests/test_dd_regressions.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28484]
+INFO:     Started server process [28862]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/agent/scenarios.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28862]
+INFO:     Started server process [28894]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52875 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:15:39.738Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_56b9e1cc0bf54fd6", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 346}
+INFO:     127.0.0.1:52884 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:15:41.570Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_6dc751f487cc4204", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 133}
+INFO:     127.0.0.1:52944 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:16:11.554Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_9f36b3df274d4ca8", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 126}
+INFO:     127.0.0.1:52977 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:16:39.519Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_79c65b2e7fa14c35", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 136}
+INFO:     127.0.0.1:52995 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:16:41.575Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_14bd10a390804869", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 148}
+INFO:     127.0.0.1:53042 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:17:11.560Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_3e8c9537bffc4534", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 132}
+INFO:     127.0.0.1:53083 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:17:39.506Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_33d7f1dbd4ea4c16", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 123}
+INFO:     127.0.0.1:53086 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:17:41.557Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_fe1b3a175b8a485b", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 129}
+INFO:     127.0.0.1:53168 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:18:11.599Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_486dae5c1280491d", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 167}
+INFO:     127.0.0.1:53191 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:18:39.554Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_41b5e2a04f174c86", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 168}
+INFO:     127.0.0.1:53194 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:18:41.546Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_cf258d41e975474e", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 116}
+INFO:     127.0.0.1:53205 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:19:04.784Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_3311ebf705b448a4", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 111}
+INFO:     127.0.0.1:53210 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:19:11.546Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_7c395895642f40f9", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 117}
+INFO:     127.0.0.1:53233 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:19:39.588Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f161677ff2454790", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 205}
+INFO:     127.0.0.1:53238 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:19:41.632Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_21ae3324b20b4048", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 203}
+INFO:     127.0.0.1:53275 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:20:11.541Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f2f7d598d5bd42c4", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 110}
+INFO:     127.0.0.1:53294 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:20:24.118Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_38cc5de3c7984cf1", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 153}
+INFO:     127.0.0.1:53304 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:20:39.542Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b99e0e060ae44c3d", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 156}
+INFO:     127.0.0.1:53307 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:20:41.610Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_5b0c6644c2b2484f", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 180}
+INFO:     127.0.0.1:53347 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:21:11.543Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_fb898508e22e4a72", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 112}
+INFO:     127.0.0.1:53365 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:21:39.603Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_aefcbcc7ba404f3b", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 217}
+INFO:     127.0.0.1:53368 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:21:41.574Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_83a6e56ecad045af", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 143}
+INFO:     127.0.0.1:53410 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:22:11.671Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a219b7cab8f04167", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 240}
+INFO:     127.0.0.1:53421 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:22:39.529Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_64a19abc29684c8a", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 143}
+INFO:     127.0.0.1:53424 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:22:41.536Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_8bcb7251541543cf", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 104}
+INFO:     127.0.0.1:53439 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:23:11.626Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_836624df010d490c", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 193}
+INFO:     127.0.0.1:53467 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:23:39.497Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_4ebf349838924a61", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 110}
+INFO:     127.0.0.1:53470 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:23:41.562Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_2f921eef97634cca", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 126}
+INFO:     127.0.0.1:53485 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:24:11.552Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_944071cb00de41f8", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 119}
+INFO:     127.0.0.1:53504 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:24:39.501Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_29fec49bf6c14280", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 113}
+INFO:     127.0.0.1:53507 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:24:41.613Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_616381d1e0144732", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 178}
+INFO:     127.0.0.1:53524 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:25:11.564Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d630b711c7c54fcc", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 129}
+INFO:     127.0.0.1:53584 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:25:39.596Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_7b36814654834167", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 207}
+INFO:     127.0.0.1:53591 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:25:41.669Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d98af2a18fe24fc6", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 234}
+INFO:     127.0.0.1:53643 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:26:11.551Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d06447c5d9af4940", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 116}
+INFO:     127.0.0.1:53699 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:26:39.525Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_fd6fb2a5a74e4f5f", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 133}
+INFO:     127.0.0.1:53706 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:26:41.566Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_4eb9067c1b844159", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 130}
+INFO:     127.0.0.1:53785 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:27:11.548Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_e97a70e9554d437a", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 111}
+INFO:     127.0.0.1:53829 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:27:39.517Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_91065622fe174f94", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 125}
+INFO:     127.0.0.1:53832 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:27:41.585Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_62f76c0642d5463e", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 147}
+INFO:     127.0.0.1:53925 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:28:11.704Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_4a06ba3c802a497c", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 264}
+INFO:     127.0.0.1:54015 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:28:39.534Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d1d65ffd9b474407", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 143}
+INFO:     127.0.0.1:54018 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:28:41.577Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_1faba968fe964c29", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 140}
+INFO:     127.0.0.1:54067 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:29:11.563Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_82be749383aa4f7f", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 126}
+INFO:     127.0.0.1:54072 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:29:39.539Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_922ec0f8bb814824", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 148}
+INFO:     127.0.0.1:54075 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:29:41.568Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_58dbf26addd24532", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 130}
+INFO:     127.0.0.1:54103 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:30:11.660Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_3c43ca5c5cfd4946", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 222}
+INFO:     127.0.0.1:54238 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:30:39.559Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_6d0e37325b974c76", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 163}
+INFO:     127.0.0.1:54243 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:30:41.553Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_aa495f8a82354e33", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 113}
+INFO:     127.0.0.1:54255 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:31:11.559Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_12c28705fcf14893", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 120}
+INFO:     127.0.0.1:54289 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:31:39.519Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f7a96541a0344721", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 126}
+INFO:     127.0.0.1:54294 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:31:41.573Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_3f4372b7ea0f4f64", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 134}
+INFO:     127.0.0.1:54327 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:32:11.556Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a429ba8b775e4555", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 118}
+INFO:     127.0.0.1:54369 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:32:39.580Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_fea19b70df614548", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 188}
+INFO:     127.0.0.1:54387 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:32:41.567Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_3f4024d6c3a74ddb", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 128}
+INFO:     127.0.0.1:54399 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:33:11.559Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_7739d92e035348ad", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 120}
+INFO:     127.0.0.1:54418 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:33:39.519Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f8c21a18c496405d", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 127}
+INFO:     127.0.0.1:54423 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:33:41.559Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_ff2ea3bdd53441e5", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 120}
+INFO:     127.0.0.1:54443 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:34:11.569Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_35598ae6afa648f3", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 127}
+INFO:     127.0.0.1:54484 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:34:39.541Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_87d672e6667d43b0", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 143}
+INFO:     127.0.0.1:54487 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:34:41.575Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b64ab45078814d47", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 136}
+INFO:     127.0.0.1:54526 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:35:11.565Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_877ce53fe73a4911", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 126}
+INFO:     127.0.0.1:54539 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:35:39.523Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_3d3b977ddcab4204", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 129}
+INFO:     127.0.0.1:54542 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:35:41.601Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a11e4541a51f4ab3", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 161}
+WARNING:  WatchFiles detected changes in 'tests/test_dd_credit_amount.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28894]
+WARNING:  WatchFiles detected changes in 'tests/test_dd_credit_amount.py'. Reloading...
+INFO:     Started server process [30995]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30995]
+INFO:     Started server process [31155]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54612 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:36:11.746Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b72e43dc18f247a5", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 303}
+WARNING:  WatchFiles detected changes in 'tests/test_dd_credit_amount.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31155]
+INFO:     Started server process [31168]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54653 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:36:39.902Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_be5f3e005a8647c7", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 506}
+INFO:     127.0.0.1:54658 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:36:41.549Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_413c0fe311db48dc", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 109}
+INFO:     127.0.0.1:54714 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:37:11.552Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a27d4cf8cfbc4ba8", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 112}
+WARNING:  WatchFiles detected changes in 'app/tools/dd_calc.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31168]
+INFO:     Started server process [31213]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54737 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:37:39.661Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_ef14995de13b4bf9", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 265}
+INFO:     127.0.0.1:54742 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:37:41.567Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_e5269fb05e21425a", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 125}
+WARNING:  WatchFiles detected changes in 'app/tools/due_diligence.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31213]
+INFO:     Started server process [31255]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54798 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:38:11.831Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d6faf96f5e424d07", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 388}
+INFO:     127.0.0.1:54852 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:38:39.568Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_0c2db0fa4f7e4a94", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 161}
+INFO:     127.0.0.1:54859 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:38:41.567Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_3c55c25818794926", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 123}
+INFO:     127.0.0.1:54877 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:39:11.603Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d38e331726504aa9", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 132}
+WARNING:  WatchFiles detected changes in 'tests/test_dd_credit_amount.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31255]
+INFO:     Started server process [31401]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54897 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:39:39.750Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_bcc2e47108c64de0", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 353}
+INFO:     127.0.0.1:54902 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:39:41.562Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_91320112a481473d", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 119}
+WARNING:  WatchFiles detected changes in 'eval/dd04_credit.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31401]
+INFO:     Started server process [31585]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54923 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:40:11.772Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_081b7fdbc98b44d4", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 329}
+INFO:     127.0.0.1:54949 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:40:39.545Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_bd56fb5d9bb64f65", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 139}
+INFO:     127.0.0.1:54952 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:40:41.601Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b415b13460a34580", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 135}
+INFO:     127.0.0.1:54970 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:41:11.585Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_06615125600c4272", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 142}
+INFO:     127.0.0.1:54974 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:41:19.027Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_c9ec1a0fd2d64408", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 131}
+INFO:     127.0.0.1:54998 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:41:39.517Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_585eba5d8d104833", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 115}
+INFO:     127.0.0.1:55003 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:41:41.576Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_4f50b48e9f584c35", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 132}
+INFO:     127.0.0.1:55049 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:42:11.583Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_bcd818d690934687", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 138}
+WARNING:  WatchFiles detected changes in 'tests/test_dd_credit_amount.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31585]
+INFO:     Started server process [31709]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55071 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:42:39.724Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_faffc80db94f429d", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 322}
+INFO:     127.0.0.1:55076 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:42:41.554Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_ff2e82ecd79444ed", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 108}
+WARNING:  WatchFiles detected changes in 'eval/dd04_credit.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31709]
+INFO:     Started server process [31745]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55120 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:43:11.768Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_bf9d2d83a9c74216", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 323}
+INFO:     127.0.0.1:55148 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:43:39.528Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_887c45fea3c2494e", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 128}
+INFO:     127.0.0.1:55151 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:43:41.575Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a26f74372bd74ba0", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 130}
+WARNING:  WatchFiles detected changes in 'eval/dd04_credit.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31745]
+INFO:     Started server process [31787]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'tests/test_dd_credit_amount.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31787]
+INFO:     Started server process [31825]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55183 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:44:11.740Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_da8f6ae9cf8c4e91", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 293}
+INFO:     127.0.0.1:55229 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:44:39.568Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_32e892fd2ea14b97", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 166}
+INFO:     127.0.0.1:55232 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:44:41.614Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f6af60567d4c4a94", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 165}
+INFO:     127.0.0.1:55250 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:45:11.595Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_293c03a28f154beb", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 147}
+INFO:     127.0.0.1:55325 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:45:39.523Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_ce6de0429eaf441d", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 122}
+INFO:     127.0.0.1:55330 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:45:41.568Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_fc8ba310aefc4fb8", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 119}
+INFO:     127.0.0.1:55408 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:46:11.567Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_25bc53c0f06b4daa", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 117}
+INFO:     127.0.0.1:55427 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:46:39.460Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_5a527db713074cc8", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 132}
+INFO:     127.0.0.1:55430 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:46:41.507Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f4b953bb0c6844d2", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 135}
+INFO:     127.0.0.1:55499 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:11.538Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d0678c59680f41b2", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 164}
+{"ts": "2026-10-24T05:47:22.089Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b2cc1e26f6e34cdb", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 149}
+INFO:     127.0.0.1:55536 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:22.564Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_670e70aa059549c9", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 233}
+INFO:     127.0.0.1:55535 - "GET /api/agent/catalog/enterprise_dd HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:22.688Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_433dc0dd560e40f3", "method": "GET", "path": "/api/agent/catalog/enterprise_dd", "status": 200, "durationMs": 365}
+INFO:     127.0.0.1:55537 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:22.716Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_af9e1a06ecff4a94", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 150}
+{"ts": "2026-10-24T05:47:23.189Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b3f05a3f817f4a66", "method": "GET", "path": "/api/agent/catalog/enterprise_dd", "status": 200, "durationMs": 581}
+INFO:     127.0.0.1:55561 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:23.242Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_75dc487e25e2472a", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 191}
+{"ts": "2026-10-24T05:47:23.308Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_9e926a19e1554dc1", "method": "GET", "path": "/api/agent/stats", "status": 200, "durationMs": 737}
+INFO:     127.0.0.1:55564 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:23.362Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b23bb3ab39d8445c", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 115}
+{"ts": "2026-10-24T05:47:23.397Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_2f53c6c63fa44706", "method": "GET", "path": "/api/agent/stats", "status": 200, "durationMs": 477}
+INFO:     127.0.0.1:55560 - "GET /api/agent/catalog/enterprise_dd HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:23.686Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_e05f8dbce3e34d7f", "method": "GET", "path": "/api/agent/catalog/enterprise_dd", "status": 200, "durationMs": 640}
+INFO:     127.0.0.1:55565 - "GET /api/agent/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55566 - "GET /api/agent/catalog/enterprise_dd HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:23.829Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_8054d1b7013a4bfe", "method": "GET", "path": "/api/agent/stats", "status": 200, "durationMs": 501}
+{"ts": "2026-10-24T05:47:23.862Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_e47b81535b284a74", "method": "GET", "path": "/api/agent/catalog/enterprise_dd", "status": 200, "durationMs": 234}
+INFO:     127.0.0.1:55567 - "GET /api/agent/stats HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:24.187Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_e5cd81bcd0194918", "method": "GET", "path": "/api/agent/stats", "status": 200, "durationMs": 422}
+INFO:     127.0.0.1:55583 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:29.123Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_37dd7fe5666f47f1", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 218}
+INFO:     127.0.0.1:55586 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:29.250Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_38de4d92718e4c78", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 124}
+INFO:     127.0.0.1:55582 - "GET /api/agent/catalog/enterprise_dd HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:29.440Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b7c0a264e3af4eb6", "method": "GET", "path": "/api/agent/catalog/enterprise_dd", "status": 200, "durationMs": 537}
+INFO:     127.0.0.1:55587 - "GET /api/agent/stats HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:29.540Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_57cb715891d349c7", "method": "GET", "path": "/api/agent/stats", "status": 200, "durationMs": 348}
+INFO:     127.0.0.1:55588 - "GET /api/agent/catalog/enterprise_dd HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:29.599Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a3e1ce7c402341fa", "method": "GET", "path": "/api/agent/catalog/enterprise_dd", "status": 200, "durationMs": 215}
+INFO:     127.0.0.1:55589 - "GET /api/agent/stats HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:29.812Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_8458f9054140491f", "method": "GET", "path": "/api/agent/stats", "status": 200, "durationMs": 338}
+INFO:     127.0.0.1:55622 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:41.514Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_25f22a09803c4fea", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 139}
+INFO:     127.0.0.1:55632 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:47:59.059Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_451456c8aa0e4c8d", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 155}
+INFO:     127.0.0.1:55651 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:48:11.484Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_3d8a5747ad0d42c6", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 112}
+INFO:     127.0.0.1:55657 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:48:16.577Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_a00ed0172d7e433c", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 105}
+INFO:     127.0.0.1:55664 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:48:29.302Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b8144570e5904237", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 400}
+INFO:     127.0.0.1:55685 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:48:41.500Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_890561f1a0c9479f", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 127}
+INFO:     127.0.0.1:55714 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:48:59.011Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_2e70e28020d84cee", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 106}
+INFO:     127.0.0.1:55725 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:49:11.496Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_235aa1dc81ff45f4", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 124}
+INFO:     127.0.0.1:55776 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:49:29.451Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_f486a09ea11f4e12", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 124}
+WARNING:  WatchFiles detected changes in 'tests/test_token_budget.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31825]
+INFO:     Started server process [32900]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55785 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:49:41.719Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_8bae40fcf9ba46ba", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 322}
+WARNING:  WatchFiles detected changes in 'tests/test_dd_regressions.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [32900]
+INFO:     Started server process [32924]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55802 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:49:59.770Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_05fa30b8c5ac4813", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 443}
+INFO:     127.0.0.1:55821 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:50:11.491Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_2046aae241dc4d55", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 119}
+INFO:     127.0.0.1:55824 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:50:29.435Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_c7471d1364a0455b", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 110}
+INFO:     127.0.0.1:55830 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:50:41.489Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d034e9c292f54b87", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 118}
+INFO:     127.0.0.1:55841 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:50:59.569Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_5070a0a80e674e4e", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 241}
+INFO:     127.0.0.1:55857 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:51:11.483Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_76caee4097bd4f29", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 112}
+INFO:     127.0.0.1:55868 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:51:39.456Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_0c35b75a71844883", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 124}
+INFO:     127.0.0.1:55871 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:51:41.494Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_1dc30335fd2f4c02", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 121}
+INFO:     127.0.0.1:55917 - "GET /api/health/ready HTTP/1.1" 200 OK
+{"ts": "2026-10-24T05:52:11.502Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_738c6777ff584a30", "method": "GET", "path": "/api/health/ready", "status": 200, "durationMs": 130}

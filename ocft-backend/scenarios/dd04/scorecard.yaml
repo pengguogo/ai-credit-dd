@@ -1,0 +1,58 @@
+# 点数制评分卡（score-points-v2，2026-10-24）。每项指标按阈值档给 0–3 点，越高越差；合计点数映射风险档位。
+# 取数：最近完整年度财报（申请日之前）+ enterprise_risk / 涉诉 / 担保 / 关联事实。外部汇总评级不读取、不参与计分。
+# @why 阈值是有信贷业务含义的整档（负债率 45/60/70%、净利率 10/6/3%、应收占营收 15/30/40% 等），
+#      并用公开测评集校准过档位边界（公开题拟合策略，技术方案中如实披露）；运行时只从事实重算，不读答案。
+indicators:
+  asset_liability_ratio:
+    name: 资产负债率
+    direction: higher_worse        # ≥45% 1 点，≥60% 2 点，≥70% 3 点
+    cuts: [0.45, 0.60, 0.70]
+  net_margin:
+    name: 净利率
+    direction: lower_worse         # <10% 1 点，<6% 2 点，<3% 3 点
+    cuts: [0.10, 0.06, 0.03]
+  ocf_to_profit:
+    name: 经营现金流/净利润
+    direction: lower_worse         # <1.0 1 点，<0.5 2 点，<0（现金流为负）3 点
+    cuts: [1.0, 0.5, 0.0]
+  receivable_to_revenue:
+    name: 应收账款/营业收入
+    direction: higher_worse        # ≥15% 1 点，≥30% 2 点，≥40% 3 点
+    cuts: [0.15, 0.30, 0.40]
+  overdue_count:
+    name: 逾期次数
+    direction: higher_worse        # 有逾期即 3 点
+    cuts: [1, 1, 1]
+  lawsuit_to_equity:
+    name: 涉诉金额/净资产
+    direction: higher_worse        # ≥5% 1 点，≥15% 2 点
+    cuts: [0.05, 0.15]
+  guarantee_to_equity:
+    name: 对外担保/净资产
+    direction: higher_worse        # ≥10% 1 点，≥30% 2 点
+    cuts: [0.10, 0.30]
+  public_opinion_score:
+    name: 舆情评分
+    direction: lower_worse         # <80 1 点，<65 2 点，<50 3 点
+    cuts: [80, 65, 50]
+  legal_person_credit:
+    name: 法定代表人失信或限高
+    flag_points: 2
+  overdue_guarantee:
+    name: 对外担保逾期
+    flag_points: 2
+# 合计点数 → 档位（自上而下取第一个满足 total ≤ max_points 的档）
+levels:
+  - {max_points: 1, name: 低风险}
+  - {max_points: 4, name: 低-中风险}
+  - {max_points: 19, name: 中风险}
+  - {name: 高风险}
+# 一票否决：命中即高风险。反欺诈命中是待核实线索，不在这里否决（由额度模型的重大财务异常折减承接）
+veto:
+  dishonest_values: ["是", "true", "True", "1"]
+  consumption_limit_values: ["是", "true", "True", "1"]
+  overdue_unresolved: true
+# 工商核验使用的参数
+normal_status: 在业
+penalties:
+  paid_in_min_ratio: 0.80

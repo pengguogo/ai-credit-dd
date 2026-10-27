@@ -1,0 +1,24 @@
+
+> ocft-starter@0.0.0 build
+> tsc -b && vite build
+
+You are using Node.js 20.14.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 2667 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                         0.56 kB │ gzip:   0.37 kB
+dist/report-preview.html                0.57 kB │ gzip:   0.39 kB
+dist/assets/logo-orange-NCW9wTCN.svg   18.62 kB │ gzip:   5.84 kB
+dist/assets/src-Bh9JG0Kt.css          109.33 kB │ gzip:  17.18 kB
+dist/assets/main-COVgEDUq.js          206.72 kB │ gzip:  63.61 kB
+dist/assets/report-LQxUvEud.js        255.58 kB │ gzip:  78.40 kB
+dist/assets/src-Mk_wl8EC.js           508.18 kB │ gzip: 168.83 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 446ms

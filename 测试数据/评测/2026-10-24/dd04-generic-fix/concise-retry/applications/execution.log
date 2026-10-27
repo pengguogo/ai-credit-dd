@@ -1,0 +1,14 @@
+题目 10 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/dd04-generic-fix/concise-retry/applications
+[1/10] LA001 succeeded 18947ms
+[2/10] LA002 succeeded 15826ms
+[3/10] LA003 needs_confirmation 13097ms
+[4/10] LA004 succeeded 14923ms
+[5/10] LA005 succeeded 16935ms
+[6/10] LA006 needs_confirmation 13563ms
+[7/10] LA007 succeeded 22840ms
+[8/10] LA008 succeeded 16481ms
+[9/10] LA009 succeeded 15783ms
+[10/10] LA010 needs_confirmation 13732ms
+完成 10 道：{'succeeded': 7, 'needs_confirmation': 3}
+无证据答案 0 道，平均耗时 16212ms，总 token 225938
+结果表格：../测试数据/评测/2026-10-24/dd04-generic-fix/concise-retry/applications/results.csv、../测试数据/评测/2026-10-24/dd04-generic-fix/concise-retry/applications/results.xlsx

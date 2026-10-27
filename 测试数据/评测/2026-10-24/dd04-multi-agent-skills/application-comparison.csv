@@ -1,0 +1,11 @@
+﻿applicationId,status,errorCode,systemRisk,referenceRisk,riskExact,systemCredit,referenceCredit,creditExact,durationMs,totalTokens,runIds
+LA001,succeeded,,低风险,低风险,True,2500-3000,2500-3000,True,39203,30614,['run_21f0ee4a1b3e']
+LA002,needs_confirmation,,低风险,中风险,False,1200-1500,1200-1500,True,73781,32546,['run_8a443874971a']
+LA003,needs_confirmation,,高风险,高风险,True,0,拒贷/极小额度,True,56390,36540,['run_dc50cdbebee6']
+LA004,succeeded,,低风险,中风险,False,1700-2000,1500-2000,False,39453,30574,['run_53a7ab5ef922']
+LA005,succeeded,,低风险,低-中风险,False,600-800,600-800,True,40046,30168,['run_77071dea2ee4']
+LA006,needs_confirmation,,高风险,高风险,True,0,拒贷/极小额度,True,61484,44744,['run_110ee15a5c61']
+LA007,needs_confirmation,,低风险,低风险,True,400-500,400-500,True,61922,42887,['run_2bf090fa7f73']
+LA008,succeeded,,低风险,中风险,False,1000-1200,1000-1200,True,39890,30897,['run_78ef55bbcc45']
+LA009,succeeded,,低风险,低风险,True,2100-2500,2000-2500,False,84202,44270,['run_a46555e63f77']
+LA010,needs_confirmation,,高风险,中风险,False,0,1500-2000,False,35656,32279,['run_1a5209e447e5']

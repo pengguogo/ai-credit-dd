@@ -1,0 +1,1213 @@
+{
+  "generatedAt": "2026-10-24T04:53:21+00:00",
+  "total": 10,
+  "answers": [
+    {
+      "id": "LA001",
+      "status": "failed",
+      "answer": "run 累计 token 超出上限 20000",
+      "evidence": [
+        {
+          "id": "ev_291885dd2175",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA001"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_3afbeaf32ce4",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_58a6f1e6bfc9",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_61ebeff47382",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_6ad5cebf9eea",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_87a8b546d9fa",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA001"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_8b456b5ce94d",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_9250a05def2d",
+          "source": {
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_a9452b8a2ec1",
+          "source": {
+            "table": "enterprise_guarantee",
+            "filters": {
+              "sql": "SELECT * FROM enterprise_guarantee WHERE enterprise_id = 'E001' LIMIT 20"
+            }
+          }
+        },
+        {
+          "id": "ev_b98aabaa6165",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_c22cb454a06b",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_ed6eaa1fff98",
+          "source": {
+            "keys": {
+              "applicationId": "LA001"
+            },
+            "table": "loan_application"
+          }
+        }
+      ],
+      "runIds": [
+        "run_804764e90018"
+      ]
+    },
+    {
+      "id": "LA002",
+      "status": "failed",
+      "answer": "run 累计 token 超出上限 20000",
+      "evidence": [
+        {
+          "id": "ev_1590884a3bb8",
+          "source": {
+            "table": "loan_application",
+            "filters": {
+              "sql": "SELECT * FROM loan_application WHERE enterprise_id = 'E002' LIMIT 20"
+            }
+          }
+        },
+        {
+          "id": "ev_23436f5efbac",
+          "source": {
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_2c4793fde8a5",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_4759d0676d25",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_68a632211d26",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_76ea1f089285",
+          "source": {
+            "keys": {
+              "applicationId": "LA002"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_84766f4cf3b2",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA002"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_8565f0d0173c",
+          "source": {
+            "table": "enterprise_guarantee",
+            "filters": {
+              "sql": "SELECT * FROM enterprise_guarantee WHERE enterprise_id = 'E002' LIMIT 20"
+            }
+          }
+        },
+        {
+          "id": "ev_933d90a09480",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA002"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_95a63949f7c4",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_d3343b35666c",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_d5f6ecda8647",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_f92b029fffd5",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_basic"
+          }
+        }
+      ],
+      "runIds": [
+        "run_15c60bbf2c9c"
+      ]
+    },
+    {
+      "id": "LA003",
+      "status": "needs_confirmation",
+      "answer": "# 鑫达置业有限公司（E003）信贷尽调报告\n\n**申请信息**：LA003｜申请金额 8,000 万元｜期限 18 个月｜用途：项目开发建设资金｜担保方式：抵押担保｜申请日期 2024-02-28\n\n---\n\n## 一、企业概况\n\n| 项目 | 内容 |\n|---|---|\n| 企业名称 | 鑫达置业有限公司 |\n| 所属行业 | 房地产开发经营 |\n| 成立日期 | 2010-03-15 |\n| 经营状态 | 在业 |\n| 实缴比例 | 100% |\n| 实际控制人 / 第一大股东 | 王德发（两者一致） |\n| 关联企业数 | 申报 5 家，实际 5 家（一致），其中担保圈 2 家 |\n\n工商核验发现（verify_business_info）：\n- **B03（block，拦截）**：法定代表人被限制高消费。\n- **B07（block，拦截）**：对外担保逾期 1 笔。\n- **B08（warn，警示）**：担保圈关联 2 家。\n\n## 二、财务分析\n\n单位：万元；存货与应收账款周转以营业收入为分母（数据集无营业成本）。\n\n| 指标 | 2021 | 2022 | 2023 |\n|---|---|---|---|\n| 营业收入 | 68,000 | 72,000 | 56,000 |\n| 净利润 | 4,800 | 5,600 | 1,800 |\n| 总资产 | 85,000 | 92,000 | 88,000 |\n| 总负债 | 62,000 | 68,000 | 66,000 |\n| 所有者权益 | 23,000 | 24,000 | 22,000 |\n| 经营现金流 | 3,200 | 3,800 | 1,200 |\n| 资产负债率 | 72.94%（warn） | 73.91%（warn） | 75.00%（warn） |\n| 净利率 | 7.06% | 7.78% | 3.21% |\n| ROE | 20.87% | 23.33% | 8.18% |\n| 存货周转天数 | 220.07（warn） | 228.13（warn） | 273.75（warn） |\n| 有息负债/总资产 | 40.00% | 42.39%（warn） | 45.45%（warn） |\n\n- **勾稽校验**：三年均为资产 = 负债 + 所有者权益，差额为 0.0，在 1.0 容差内，全部平衡。\n- **趋势**：2023 年营业收入同比 **-22.22%**，净利润同比 **-67.86%**；营收 CAGR -9.25%，净利润 CAGR -38.76%。盈利与规模同步收缩，收入下降而存货（42,000）与有息负债（40,000）居高不下，去化与偿债压力上升。\n- **审计意见**：三年均为标准无保留意见。\n\n## 三、风险提示\n\n**系统评级：高风险，评分 55.25**（rate_risk）\n\n维度得分：财务 76.0（权重 0.3）、偿债 46.0（权重 0.2）、稳定性 75.0（权重 0.15）、司法 0.0（权重 0.2）、反欺诈 80.0（权重 0.15）。\n\n**一票否决项**：法定代表人限高、存在未结逾期。\n\n**司法与舆情**（scan_public_opinion，opinionRiskScore 100.0，healthScore 0.0）：\n- 标签：司法执行、经营负面、未结被告/被执行。\n- 未结被告金额合计 **1,850 万元**：C00301 审理中 850 万、C00302 审理中 680 万、C00303 已执行完毕 320 万；另有已结案 C00304 420 万。\n- 负面事件：PO00301 经营负面（2023-12-20，影响高，28.56 分）、PO00302 工商异常（2023-06-10，影响中，19.04 分）、PO00303 司法执行（2022-08-15，影响高，24.28 分）；正面报道仅 1 条（-4.33 分）。\n\n**反欺诈**（detect_fraud_signals，命中 1 条）：\n- **F06 关联企业多且存在担保圈**：取值 5 家，阈值 4，置信度 medium。\n- F01–F05 均未命中：经营现金流/营收 0.0214（阈值 0.02，仅微超未判定命中）、存货增速减营收增速 0.1555（阈值 0.3）、应收增速减营收增速 0.0133（阈值 0.1）、其他应收款/总资产 0.0136（阈值 0.08）、净利与现金流长期背离 0 年。\n\n**外部对照**：externalRiskLevel 为“高风险”，与本系统评级一致，externalUsedInScore = false，仅作对照、不参与计分，无需另行复核。\n\n## 四、额度建议\n\n**建议额度：0 万元**（calc_credit_limit；高风险档按 0 输出，rateDirection 不适用）\n\n测算过程：\n\n| 步骤 | 公式 | 取值（万元） |\n|---|---|---|\n| 营收口径上限 | 最近一年营业收入 × revenue_coef | 6,720.00 |\n| 净资产口径上限 | 所有者权益 × equity_coef | 8,800.00 |\n| 经营现金流覆盖 | 经营现金流 × 期限年数 × ocf_coef | 1,800.00 |\n| 申请额上限 | apply_amount | 8,000.00 |\n| 多口径取小 | min(上述正数口径) | 1,800.00 |\n| 扣减存量与或有负债 | 上限 − 存量贷款×权重 − 对外担保×权重 | **-32,200.00** |\n| 评级系数 | 高风险 × 0.0 | 0.00 |\n| 输出区间 | 中枢按 band 展开并按步长取整 | **0** |\n\n即使不考虑评级系数，扣减存量与或有负债后上限已为负值（-32,200 万元），说明企业现有负债与对外担保已远超其现金流可支撑的授信空间，本次 8,000 万元项目开发贷款无法成立。\n\n## 五、风控条件\n\n1. 担保方式按申请的抵押担保落实。\n2. 一票否决项解除前不新增授信：法定代表人限高、存在未结逾期。\n3. 存量逾期结清前不投放。\n4. 高风险档建议额度为 0。\n\n## 结论\n\n**不予授信（建议额度 0 万元）**。核心理由：法定代表人限高与未结逾期构成一票否决；未结被告诉讼 1,850 万元、对外担保逾期 1 笔、担保圈 2 家叠加反欺诈 F06；2023 年营收同比 -22.22%、净利润同比 -67.86%，资产负债率升至 75.00%、有息负债占比 45.45%，存货周转天数延长至 273.75 天。若企业后续结清逾期、解除限高并提供担保圈风险化解方案，可重新提交申请评估。\n\n*本报告数字与规则编号均直接取自上述工具输出，未作调整。*",
+      "evidence": [
+        {
+          "id": "ev_1eb2271622c6",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_271380ce1fa8",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_297bc0bf5132",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_56fa652d8e5d",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA003"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_88659ba5e900",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_9c04ef7d65ae",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_9d24fba6f8c0",
+          "source": {
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_9d6fae075d38",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_a5b816e7e5cf",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_d2cd0c0ed7bf",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA003"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_fc93c7c197af",
+          "source": {
+            "keys": {
+              "applicationId": "LA003"
+            },
+            "table": "loan_application"
+          }
+        }
+      ],
+      "runIds": [
+        "run_12edb609d7d9"
+      ]
+    },
+    {
+      "id": "LA004",
+      "status": "succeeded",
+      "answer": "# 企业信贷尽调报告\n\n**申请编号：LA004 ｜ 企业：远洋进出口贸易有限公司（E004）｜ 尽调基准日：2024-03-10**\n\n申请要素：申请金额 2,000 万元，期限 12 个月，用途「采购备货流动资金」，担保方式信用担保，申请日 2024-03-10。\n证据：`ev_a1cc2fb425b2`（申请）、`ev_15daf1532450`（主体定位）。\n\n---\n\n## 一、企业概况\n\n| 项目 | 内容 | 依据 |\n|---|---|---|\n| 企业编号/名称 | E004 / 远洋进出口贸易有限公司 | ev_15daf1532450 |\n| 所属行业 | 批发业 | 报告 overview |\n| 成立日期 | 2012-07-08 | 报告 overview |\n| 经营状态 | 在业 | ev_307acf78a8f8 |\n| 实缴比例 | 100% | ev_307acf78a8f8 |\n| 实际控制人 | 张海涛，与第一大股东一致 | ev_307acf78a8f8 |\n| 关联企业数 | 申报 1 家 / 实际 1 家，无差异 | ev_307acf78a8f8 |\n| 对外担保 | 担保逾期 0 笔，担保圈 0 个 | ev_307acf78a8f8 |\n\n工商核验未发现异常项（findings 为空），无失信、无限高记录，股权与控制权结构清晰。\n\n## 二、财务分析\n\n单位：万元（`ev_a600a271d234`）\n\n| 科目 | 2021 | 2022 | 2023 |\n|---|---|---|---|\n| 营业收入 | 76,000 | 82,000 | 95,000 |\n| 净利润 | 1,380 | 1,620 | 1,850 |\n| 资产总计 | 15,200 | 16,500 | 18,000 |\n| 负债合计 | 11,000 | 11,800 | 12,500 |\n| 所有者权益 | 4,200 | 4,700 | 5,500 |\n| 经营现金流 | 1,280 | 1,450 | 1,600 |\n\n**核心指标（2023 年）**\n- 资产负债率 69.44%（2021 年 72.37%、2022 年 71.52%，逐年下降，2023 年已不触发预警）\n- 净利率 1.95%（三年分别为 1.82%、1.98%、1.95%，连续处于 warn 状态，盈利空间薄）\n- 净资产收益率 33.64%，总资产收益率 10.28%\n- 经营现金流／净利润 0.8649；有息负债／总资产 19.44%；期间费用率 4.04%\n- 应收账款周转天数 32.66 天，存货周转天数 12.29 天，总资产周转 5.28 次（周转效率高，与其批发业态相符）\n\n**成长性**：营收同比 +15.85%，净利同比 +14.20%，营收 CAGR 11.80%，净利 CAGR 15.78%；存货同比 +14.29%，应收同比 +18.06%。\n\n**数据质量**：三年「资产 = 负债 + 所有者权益」勾稽差额均为 0.0，校验通过；三年审计意见均为标准无保留意见。周转指标以营业收入为分母（数据集无营业成本），口径需在贷后比较时保持一致。\n\n## 三、风险提示\n\n**系统评级：低风险，评分 87.61，一票否决项：无。**（`ev_f369124de2d9`）\n分维度：财务 92.0、偿债 92.0、稳定性 100.0、司法 73.04、反欺诈 80.0。\n\n需关注事项：\n\n1. **反欺诈命中 1 条：F01「营收与经营现金流背离」**（`ev_a243e4782aa1`）\n   命中值 0.0168（2023 年经营现金流／营业收入），阈值 0.02，置信度 medium。属轻度擦线命中——现金流为正且与净利方向一致，但相对 9.5 亿元营收规模，现金留存偏薄，建议核查结算方式与回款节奏。F02（存货异常增长）、F03（应收增速高于营收）、F04（其他应收款占比 1.11%）、F05（长期背离）、F06（关联担保圈）均未命中。\n2. **行政处罚记录**（`ev_e50d1a129548`）：PO00401，2023-04-12，行政处罚，负面影响程度「低」，计 11.9 分；另有正面报道 PO00402（2022-11-20，计 -6.94 分）。舆情风险分 26.96，健康分 73.04。处罚距今约 11 个月，需补充了解处罚事由及整改情况。\n3. **涉诉情况**：2 件诉讼均**已结案且企业为原告**（C00401 涉 120 万元、C00402 涉 100 万元），未结被告金额 0.0 万元，无被动涉诉风险敞口。\n4. **外部评级与本系统评级不一致，须人工复核**：externalRiskLevel 为「中风险」，本系统 rate_risk 为「低风险」，且该字段 externalUsedInScore = false、needsManualReview = true。按规则，**外部汇总仅作对照，不参与计分、不替代本系统评级**；本次结论以本系统「低风险（87.61）」为准，同时将不一致点列为人工复核必查项。\n\n## 四、额度建议\n\n**建议额度：0 万元**（期限 12 个月，利率方向：下浮，担保方式：信用担保",
+      "evidence": [
+        {
+          "id": "ev_0852b081a662",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA004"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_15daf1532450",
+          "source": {
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_1dfe130527b3",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA004"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_307acf78a8f8",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_3fb28b813a79",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_a1cc2fb425b2",
+          "source": {
+            "keys": {
+              "applicationId": "LA004"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_a243e4782aa1",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_a600a271d234",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_e50d1a129548",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_ee503d0ad06f",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_f369124de2d9",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_risk"
+          }
+        }
+      ],
+      "runIds": [
+        "run_dc579a1c23a1"
+      ]
+    },
+    {
+      "id": "LA005",
+      "status": "succeeded",
+      "answer": "## 贷款申请 LA005 企业信贷尽调报告\n\n**企业**：绿源生态农业发展有限公司（E005）｜**行业**：农业种植｜**成立日期**：2013-04-20\n**申请要素**：申请金额 800 万元，期限 36 个月，用途「扩建温室大棚及冷链设施」，担保方式「抵押担保」，申请日期 2024-03-18\n**证据**：ev_838b4f2e62d9、ev_afe7d1285cb2\n\n---\n\n### 一、企业概况\n\n| 项目 | 内容 | 依据 |\n|---|---|---|\n| 经营状态 | 在业 | 工商核验（ev_43a28dd6cf41） |\n| 实缴比例 | 1.0（100% 实缴） | 同上 |\n| 实控人 / 第一大股东 | 刘丰收 / 刘丰收，两者一致 | 同上 |\n| 关联企业 | 申报 1 家，实际 1 家，无差异 | 同上 |\n| 担保逾期 / 担保圈 | 逾期笔数 0；担保圈 0 | 同上 |\n| 工商异常发现 | 无（findings 为空） | 同上 |\n\n工商维度未发现失信、限高、担保逾期或担保圈问题，主体资格与股权结构清晰。\n\n---\n\n### 二、财务分析（单位：万元；周转指标以营业收入为分母）\n\n| 科目/指标 | 2021 | 2022 | 2023 |\n|---|---|---|---|\n| 营业收入 | 5,500.00 | 8,200.00 | 6,800.00 |\n| 净利润 | 420.00 | 720.00 | 580.00 |\n| 总资产 | 4,800.00 | 5,600.00 | 5,200.00 |\n| 总负债 | 2,600.00 | 3,000.00 | 2,800.00 |\n| 所有者权益 | 2,200.00 | 2,600.00 | 2,400.00 |\n| 经营现金流 | 450.00 | 680.00 | 620.00 |\n| 有息负债 | 1,200.00 | 1,400.00 | 1,300.00 |\n| 资产负债率 | 54.17% | 53.57% | 53.85% |\n| 净利率 | 7.64% | 8.78% | 8.53% |\n| 净资产收益率 | 19.09% | 27.69% | 24.17% |\n| 总资产收益率 | 8.75% | 12.86% | 11.15% |\n| 经营现金流/净利润 | 1.0714 | 0.9444 | 1.0690 |\n| 应收账款周转天数 | 66.36 | 66.77 | 64.41 |\n| 存货周转天数 | 106.18 | 93.48 | 96.62 |\n| 有息负债/总资产 | 25.00% | 25.00% | 25.00% |\n| 期间费用率 | 22.04% | 17.17% | 19.19% |\n| 研发费用率 | 1.64% | 1.34% | 1.76% |\n| 审计意见 | 标准无保留 | 标准无保留 | 标准无保留 |\n\n（依据：analyze_financials，ev_191c5ae26516）\n\n- **勾稽校验**：三年“资产 = 负债 + 所有者权益”差额均为 0.0，容差 1.0，全部平衡，报表内部逻辑自洽。\n- **盈利能力**：净利率由 7.64% 升至 8.53%，ROE 24.17%，处于较好水平；期间费用率 19.19%，为主要成本压缩项。\n- **现金流质量**：2023 年经营现金流 620 万元，为净利润的 1.069 倍，利润的现金转化正常。\n- **营运效率**：应收周转天数 64.41 天、存货周转天数 96.62 天，较 2021 年均有改善。\n- **需关注的下行信号**：2023 年营业收入同比 **-17.07%**、净利润同比 **-19.44%**，存货 -14.29%、应收 -20.00%，即规模与营运占用同步收缩。三年区间看收入 CAGR 11.19%、净利润 CAGR 17.51%，长期仍为正增长，但最近一年为负增长，需在授信后跟踪订单与收入恢复情况。\n- **杠杆水平**：资产负债率三年稳定在 53.57%–54.17%，有息负债/总资产恒定 25%，有息负债 1,300 万元（短期 800 + 长期 500），债务结构未见恶化。\n\n---\n\n### 三、风险提示\n\n1. **本系统风险评级：低风险，评分 98.3**（rate_risk，ev_81745ae8b529）。分维度：财务 100、偿债 100、稳定性 100、司法 91.5、",
+      "evidence": [
+        {
+          "id": "ev_191c5ae26516",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_43a28dd6cf41",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_44279739e2b4",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA005"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_7de110a5f5c1",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_81745ae8b529",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_838b4f2e62d9",
+          "source": {
+            "keys": {
+              "applicationId": "LA005"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_afe7d1285cb2",
+          "source": {
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_aff1ebea62fa",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA005"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_ce540e6790f0",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_dedfb4e47486",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_fb39e244cb7c",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_finance"
+          }
+        }
+      ],
+      "runIds": [
+        "run_ee3c3a30277e"
+      ]
+    },
+    {
+      "id": "LA006",
+      "status": "needs_confirmation",
+      "answer": "## 尽调结论\n\n**宏基建设工程有限公司（E006）· 贷款申请 LA006**\n\n**结论：高风险（评分 55.0），建议额度 0 万元，不予新增授信。**\n\n申请要素：2500 万元、12 个月、保证担保、用途为工程项目履约保证金及材料采购（申请日 2024-03-05）。\n\n---\n\n### 一、企业概况\n\n| 项目 | 内容 |\n|---|---|\n| 企业名称 / 编号 | 宏基建设工程有限公司 / E006 |\n| 所属行业 | 房屋建筑业 |\n| 成立日期 | 2009-11-30 |\n| 经营状态 | 在业 |\n| 实缴比例 | 100% |\n| 实际控制人 / 第一大股东 | 赵立功 / 赵立功（两者一致） |\n| 关联企业数 | 申报 4 家，实际 4 家（一致） |\n| 担保逾期笔数 | 0 |\n| 担保圈 | 0 |\n\n工商核验未产出异常发现项（findings 为空），公司治理结构清晰、股权实缴到位、关联企业申报与实际相符。此部分是本次尽调中唯一完全健康的模块。\n\n### 二、财务分析\n\n单位：万元；周转指标以营业收入为分母（数据集无营业成本）。三年资产负债表勾稽均平衡（gap = 0，容差 1.0），审计意见均为标准无保留意见。\n\n| 指标 | 2021 | 2022 | 2023 | 标注 |\n|---|---|---|---|---|\n| 营业收入 | 35,000 | 38,000 | 42,000 | — |\n| 净利润 | 1,200 | 1,450 | 980 | — |\n| 经营现金流 | 680 | 820 | 350 | — |\n| 资产负债率 | 75% | 75% | 75% | warn |\n| 净利率 | 3.43% | 3.82% | 2.33% | warn |\n| 经营现金流/净利润 | 0.57 | 0.57 | 0.36 | warn |\n| 应收账款周转天数 | 154.34 | 155.61 | 160.77 | warn |\n| 有息负债/总资产 | 19.17% | 19.23% | 19.64% | — |\n| 净资产收益率 | 20.0% | 22.31% | 14.0% | — |\n\n增长结构：营收同比增长 10.53%（CAGR 9.54%），但净利润同比 **-32.41%**（CAGR -9.63%），应收账款同比 +14.2%，存货 +7.14%。\n\n核心矛盾是**增收不增利、且现金含量持续恶化**：营收三年增长 20%，净利润反降 18.3%；经营现金流从 820 万元降至 350 万元，仅为净利润的 35.71%（2021 年为 56.67%）。应收账款周转天数升至 160.77 天，18,500 万元应收款占总资产 66%，建筑业回款周期长的特征叠加占用加剧，是净利润下滑与现金流枯竭的直接来源。资产负债率连续三年锁定在 75% 高位，权益缓冲仅 7,000 万元。\n\n### 三、风险提示\n\n**1. 一票否决项：存在未结逾期**（来自 rate_risk vetoes）→ 直接判为高风险。\n> 需人工核对一处口径差异：verify_business_info 返回的 guaranteeOverdueCount（担保逾期笔数）为 0，而 rate_risk 的一票否决项为\"存在未结逾期\"。两处统计口径可能不同（担保逾期 vs 存量贷款逾期），建议在提交审批前由人工确认逾期主体与金额，本条不影响\"高风险\"结论。\n\n**2. 舆情扫描：健康分 0.0，负面风险分 100.0**，标签为「司法执行、经营负面、未结被告/被执行」。\n\n| 事件 | 时间 | 类型 | 影响 | 分值 |\n|---|---|---|---|---|\n| PO00603 | 2022-06-08 | 司法执行 | 高 | 24.28 |\n| PO00601 | 2023-10-25 | 安全事故 | 中 | 19.04 |\n| PO00602 | 2023-03-15 | 经营负面 | 中 | 19.04 |\n\n涉诉 5 起，**未结被告金额合计 1,280 万元**（C00601 审理中 680 万、C00602 审理中 320 万、C00603 被执行人已执行完毕 280 万）；已结被告 570 万元（C00604 150 万、C00605 420 万）。未结被告金额相当于净资产的 18.3%、本次申请额的 51.2%。\n\n**3. 反欺诈规则命中 F01：营收与经营现金流背离**，取值 0.0083，阈值 0.02，置信度 high（2023 年经营现金流 350 万 / 营业收入 42,000 万）。其余 F02–F06 未命中（存货增速差 -3.39%、应收增速差 3.67%、其他应收款占比 2.86%、长期背离 0 年、关联企业 4 家但无担保圈）。\n\n**4. 评级分项**：财务 68.0（权重 0.30）、偿债 38.0（0.20）、稳定性 100.0（0.15）、司法 0.0（0.20）、欺诈 80.0（0.15）。司法维度 0 分是主要拖累项。externalRiskLevel 为\"高风险\"，与本系统评级一致（externalUsedInScore = false，外部汇总未参与计分）。\n\n### 四、额度建议\n\n**建议授信额度：0 万元**（高风险档位）。\n\n测算路径（单位：万元）：\n\n| 步骤 | 公式 | 取值 |\n|---|---|---|\n| 营收口径上限 | 营业收入 42,000 × 系数 | 5,040 |\n| 净资产口径上限 | 所有者权益 7,000 × 系数 | 2,800 |\n| 经营现金流覆盖 | 350 × 1 年 × 系数 | 350 |\n| 申请额上限 | apply_amount | 2,500 |\n| 多口径取小 | min(上述正数口径) | **350** |\n| 扣减存量与或有负债 | 350 - 存量贷款×权重 - 对外担保×权重 | **-6,650** |\n| 评级系数 | 高风险 × 0.0 | 0.0 |\n| 输出区间 | 高风险为 0 | **0** |\n\n即使忽略评级系数，多口径取小后的 350 万元上限在扣减存量与或有负债后已为 -6,650 万元，覆盖能力为负；再叠加高风险 0 系数，最终建议额度为 0。期限 12 个月，利率方向不适用。\n\n### 五、风控条件\n\n1. 担保方式按申请的保证担保落实。\n2. 一票否决项未解除前不新增授信：存在未结逾期。\n3. 存量逾期结清前不投放。\n4. 高风险档建议额度为 0。\n\n**给审批的补充建议（非工具结论）**：若企业后续补充结清逾期凭证、并就得 1,280 万元未结被告诉讼提供判决/和解进展，可重新提交评级；在此之前，本次 2,500 万元申请不具备可批条件。\n\n---\n\n**证据编号**：申请与企业定位 ev_57cf824a9f25、ev_21eb2bf5f36d；工商核验 ev_73ad182cf183；财务分析 ev_1225e2a327dd；舆情涉诉 ev_06cb809cbb2c；反欺诈 ev_de73e70e4f2c；风险评级 ev_e25d435cab63；额度测算 ev_035699d03801；报告汇总 ev_25c7652f6121、ev_dc60e548cd4c、ev_0ef7e5b8f367。所有数字均取自上述工具输出，未做调整。",
+      "evidence": [
+        {
+          "id": "ev_035699d03801",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA006"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_06cb809cbb2c",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_0ef7e5b8f367",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_1225e2a327dd",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_21eb2bf5f36d",
+          "source": {
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_25c7652f6121",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA006"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_57cf824a9f25",
+          "source": {
+            "keys": {
+              "applicationId": "LA006"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_73ad182cf183",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_dc60e548cd4c",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_de73e70e4f2c",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_e25d435cab63",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_risk"
+          }
+        }
+      ],
+      "runIds": [
+        "run_d9d5dc2bae36"
+      ]
+    },
+    {
+      "id": "LA007",
+      "status": "succeeded",
+      "answer": "# 蜀香餐饮连锁管理有限公司（E007）信贷尽调报告\n**申请编号 LA007｜申请金额 500 万元｜期限 24 个月｜信用担保｜申请日 2024-03-22｜尽调基准日 2024-03-22**\n\n结论先行：系统评级 **低风险（93.69 分）**，无失信、无限高、无未结逾期、无严重欺诈信号（一票否决项为空）；但额度模型按“多口径取小后扣减存量与或有负债”测算，建议额度为 **0 万元**。即：主体资质良好，但本次申请额在现有存量负债扣减后不获新增敞口，需按第五部分条件处理或压降金额。\n\n---\n\n## 一、企业概况\n- 企业名称：蜀香餐饮连锁管理有限公司，企业编号 E007，所属行业餐饮服务，成立日期 2016-06-15，经营状态**在业**（工商核验，ev_d0daa2db02a5）。\n- 本次申请：新开门店装修及设备采购，500 万元，24 个月，信用担保（ev_40074d797f7b）。\n- 股权与实控：实控人**周味鲜**，第一大股东同为周味鲜，二者一致；实缴比例 **100%**（paidInRatio=1.0）。\n- 关联与担保：申报关联企业 2 家，实际关联企业 2 家，无差异；**担保逾期 0 笔、担保圈 0 个**。\n- 工商核验 findings 为空，未发现工商层面的异常事项。\n- 定位说明：以企业编号 E007 检索为唯一命中（matchStatus=unique），对应申请 LA007，无多候选歧义（ev_6baf39a1a039）。\n\n## 二、财务分析（单位：万元，近三年，ev_20ebaa9bb239）\n审计意见三年均为**标准无保留意见**；三年资产负债勾稽（资产=负债+所有者权益）差额均为 0.00，**校验通过**（容差 1.0）。\n\n| 项目 | 2021 | 2022 | 2023 |\n|---|---|---|---|\n| 营业收入 | 6,500 | 8,200 | 9,800 |\n| 净利润 | 480 | 680 | 850 |\n| 总资产 | 3,200 | 3,800 | 4,200 |\n| 总负债 | 1,500 | 1,700 | 1,800 |\n| 所有者权益 | 1,700 | 2,100 | 2,400 |\n| 经营现金流 | 560 | 750 | 920 |\n| 资产负债率 | 46.88% | 44.74% | 42.86% |\n| 净利率 | 7.38% | 8.29% | 8.67% |\n| ROE | 28.24% | 32.38% | 35.42% |\n| ROA | 15.00% | 17.89% | 20.24% |\n| 经营现金流/净利润 | 1.1667 | 1.1029 | 1.0824 |\n| 应收账款周转天数 | 14.04 | 14.24 | 14.15 |\n| 存货周转天数 | 25.27 | 24.48 | 22.35 |\n| 有息负债/总资产 | 6.25% | 6.58% | 7.14% |\n| 期间费用率 | 45.66%（warn） | 42.95%（warn） | 41.07%（warn） |\n\n成长性：营收同比 +19.51%、净利润同比 +25.00%、营收 CAGR 22.79%、净利润 CAGR 33.07%；存货同比 +9.09%、应收同比 +18.75%，均未跑赢异常阈值。\n\n要点解读：\n1. **盈利与现金流质量好**：净利率、ROE 逐年抬升，经营现金流/净利润连续三年 >1（1.08–1.17），利润有现金支撑。\n2. **杠杆偏低且下降**：资产负债率由 46.88% 降至 42.86%，有息负债仅 300 万元、占有息负债/总资产 7.14%，偿债压力小。\n3. **营运效率稳定**：应收周转约 14 天、存货周转天数由 25.27 天降至 22.35 天，无积压迹象。\n4. **唯一警示项为期间费用率**：三年分别为 45.66%、42.95%、41.07%，持续被标注 warn（虽逐年改善）。餐饮连锁门店租金、人工刚性较强，费用率偏高会压缩后续扩张的利润弹性，建议作为跟踪指标（其销售费用 2023 年为 2,800 万元、管理费用 1,200 万元）。\n5. 研发费用率为 0，与餐饮服务业务属性一致，非异常。\n\n## 三、风险提示\n**1）系统风险评级：低风险，93.69 分（ev_a6907889a322）**\n- 维度得分：财务 92.00（权重 0.30）、偿债 92.00（0.20）、稳定性 100.00（0.15）、司法 88.44（0.20）、反欺诈 100.00（0.15）。\n- 一票否决（vetoes）：无。即未触发失信、限高、未结逾期、严重欺诈的否决条款。\n- externalRiskLevel 为“低风险”，与系统评级一致（externalUsedInScore=false，外部等级未参与计分，仅作对照）；外部与本系统一致，无需因不一致而人工复核。\n\n**2）反欺诈检测：0 条命中（ev_3fcc6a68a69d）**\n- F01 营收与经营现金流背离：未命中，值 0.0939（阈值 0.02）\n- F02 存货异常增长：未命中，值 -0.1042（阈值 0.3）\n- F03 应收增速高于营收增速：未命中，值 -0.0076（阈值 0.1）\n- F04 其他应收款占比：未命中，1.90%（阈值 8%）\n- F05 净利与现金流长期背离：未命中，0（阈值 2）\n- F06 关联企业多且存在担保圈：未命中，值 2（阈值 4）\n\n**3）舆情与涉诉（ev_e26cd16f95b7，as_of 2024-03-22）**\n- 舆情风险分 11.57，健康分 88.44，标签“荣誉资质”。\n- 事件 2 条，均为正面、低影响：PO00701（2023-09-20 荣誉资质，-5.1 分）、PO00702（2022-12-15 正面报道，-4.33 分）；无负面事件。\n- 诉讼 1 条：C00701 已结案、企业为**原告**、金额 12 万元（closed_other，+1 分）；**未结被告金额 0.00 万元**。\n\n**4）需人工关注的两点（提示，不是工具风险结论）**\n- 期间费用率连续三年 warn，扩张期（新开门店）费用前置，需评估单店盈亏平衡周期。\n- 本次申请 500 万元为信用担保，无抵押缓释，还款来源完全依赖经营性现金流。\n\n## 四、额度建议（ev_82638d3ad782，单位：万元）\n建议额度：**0 万元**；期限 24 个月；利率方向**下浮**（低风险 ×1.0 系数）；担保方式按申请的信用担保落实。\n\n测算过程（原样引用工具输出）：\n| 步骤 | 公式 | 取值 |\n|---|---|---|\n| 营收口径上限 | 最近一年营业收入 × revenue_coef | 1,176.00 |\n| 净资产口径上限 | 所有者权益 × equity_coef | 960.00 |\n| 经营现金流覆盖 | 经营现金流 × 期限年数 × ocf_coef | 1,840.00 |\n| 申请额上限 | apply_amount | 500.00 |\n| 多口径取小 | min(上述正数口径) | 500.00 |\n| 扣减存量与或有负债 | 上限 − 存量贷款 × 权重 − 对外担保 × 权重 | **-100.00** |\n| 评级系数 | 低风险 × 1.0 | 0.00 |\n|",
+      "evidence": [
+        {
+          "id": "ev_206807c8f9de",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_20ebaa9bb239",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_33f5e82a18df",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_3fcc6a68a69d",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_40074d797f7b",
+          "source": {
+            "keys": {
+              "applicationId": "LA007"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_6baf39a1a039",
+          "source": {
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_82638d3ad782",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA007"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_9b60de93b6f7",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA007"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_a6907889a322",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_d0daa2db02a5",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_e26cd16f95b7",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        }
+      ],
+      "runIds": [
+        "run_1a060c9da56d"
+      ]
+    },
+    {
+      "id": "LA008",
+      "status": "succeeded",
+      "answer": "# 顺达物流运输有限公司（E008）信贷尽调结论\n**申请编号 LA008｜申请金额 1,200 万元｜期限 36 个月｜用途 购置运输车辆｜担保方式 抵押担保｜申请日 2024-03-12｜数据基准日 2024-03-12**\n\n---\n\n## 一、企业概况\n\n| 项目 | 内容 | 依据 |\n|---|---|---|\n| 企业名称 | 顺达物流运输有限公司 | ev_37d4d19eb892 |\n| 行业 | 道路货物运输 | 报告 overview |\n| 成立日期 | 2011-08-10 | 报告 overview |\n| 经营状态 | 在业 | ev_0933e479952f |\n| 实缴比例 | 1.0（100% 实缴） | ev_0933e479952f |\n| 实控人 / 第一大股东 | 孙长运 / 孙长运，二者一致 | ev_0933e479952f |\n| 关联企业数 | 申报 1 家，实际 1 家（一致） | ev_0933e479952f |\n| 担保逾期 / 担保圈 | 逾期 0 笔、担保圈 0 | ev_0933e479952f |\n\n工商核验未发现风险发现项（findings 为空），股权与治理结构清晰，无失信、限高、担保逾期记录。\n\n## 二、财务分析（单位：万元，近三年）\n\n| 科目/指标 | 2021 | 2022 | 2023 |\n|---|---|---|---|\n| 营业收入 | 10,500.00 | 11,800.00 | 12,500.00 |\n| 净利润 | 550.00 | 620.00 | 680.00 |\n| 总资产 | 7,800.00 | 8,200.00 | 8,500.00 |\n| 总负债 | 4,000.00 | 4,100.00 | 4,200.00 |\n| 所有者权益 | 3,800.00 | 4,100.00 | 4,300.00 |\n| 经营现金流 | 600.00 | 680.00 | 720.00 |\n| 资产负债率 | 51.28% | 50.00% | 49.41% |\n| 净利率 | 5.24% | 5.25% | 5.44% |\n| ROE | 14.47% | 15.12% | 15.81% |\n| 经营现金流/净利润 | 1.0909 | 1.0968 | 1.0588 |\n| 应收账款周转天数 | 83.43 | 80.42 | 81.76 |\n| 有息负债/总资产 | 23.08% | 23.17% | 23.53% |\n| 期间费用率 | 35.57% ⚠warn | 33.73% ⚠warn | 32.92% ⚠warn |\n| 审计意见 | 标准无保留 | 标准无保留 | 标准无保留 |\n\n- **勾稽校验**：三年“资产 = 负债 + 所有者权益”差额均为 0.0，全部平衡（容差 1.0）。\n- **成长性**：营收 YoY +5.93%、净利 YoY +9.68%；三年营收 CAGR 9.11%、净利 CAGR 11.19%。\n- **盈利质量**：净利率稳定在 5.2%~5.4%，ROE 由 14.47% 升至 15.81%，经营现金流/净利润连续三年 >1（1.06~1.10），利润有现金支撑。\n- **周转**：应收账款周转天数 80~83 天、存货周转天数约 10 天，周转效率稳定（该指标以营业收入为分母，数据集无营业成本）。\n- **需关注**：期间费用率连续三年触发 warn 标记（32.92%~35.57%），且以营业费用为主（2023 年销售费用 3,200 万元，占营收 25.6%），费用端是利润率的主要压制项。\n- 数据来源：ev_70b468572b42\n\n## 三、风险提示\n\n**本系统风险评级：低风险，评分 86.58（rate_risk）。一票否决：无。**\n\n| 维度 | 得分 | 权重 |\n|---|---|---|\n| 财务 financial | 92.00 | 30% |\n| 偿债 solvency | 92.00 | 20% |\n| 稳定性 stability | 100.00 | 15% |\n| 司法 judicial | 52.92 | 20% |\n| 反欺诈 fraud | 100.00 | 15% |\n\n1. **反欺诈**：6 条规则（F01~F06）全部未命中，hitCount = 0。关键值：现金流/营收 0.0576（阈值 0.02，未背离方向）、存货增速-营收增速 0.0013、应收增速-营收增速 0.0176、其他应收款占总资产 1.41%（阈值 8%）、关联企业 1 家且无担保圈。（ev_138bced2d650）\n2. **司法维度为最短板（52.92）**：涉诉 3 笔均为被告、均已结案，金额 45 + 28 + 12 = 85 万元；**未结被告金额 0.0 万元**，无在诉风险敞口。（ev_205856c34f53）\n3. **舆情**：舆情风险分 47.08，健康分 52.92；标签“行政处罚”“荣誉资质”。负面事件 2 项均为低影响——2023-05-18 行政处罚（11.9 分）、2022-03-22 交通事故（10.11 分）；正面事件 1 项，2022-08-10 荣誉资质（-6.94 分）。作为道路运输企业，交通事故类事件属经营性风险，建议纳入保单与安全管理制度核查。（ev_205856c34f53）\n4. **⚠ 外部评级不一致，需人工复核**：`externalRiskLevel = 中风险`，与本系统 `riskLevel = 低风险` 不一致，工具标记 `needsManualReview = true`。该外部等级**未参与计分**（externalUsedInScore = false），此处仅作对照披露，不能替代本系统评级。建议人工核查外部中风险结论的具体成因（是否与上述行政处罚、交通事故或已结诉讼相关）。（ev_28dc9b4684a3）\n\n## 四、额度建议\n\n**建议额度：0 万元（工具输出 `suggestedCreditAmount = \"0\"`）｜期限 36 个月｜利率方向：下浮｜担保：抵押担保**\n\n测算过程（ev_16f47805d734、ev_eb9d2bd686ec）：\n\n| 步骤 | 公式 | 取值（万元） |\n|---|---|---|\n| 营收口径上限 | 最近一年营业收入 × revenue_coef | 1,500.00 |\n| 净资产口径上限 | 所有者权益 × equity_coef | 1,720.00 |\n| 经营现金流覆盖 | 经营现金流 × 期限年数 × ocf_coef | 2,160.00 |\n| 申请额上限 | apply_amount | 1,200.00 |\n| **多口径取小** | min(上述正数口径) | **1,200.00** |\n| **扣减存量与或有负债** | 上限 - 存量贷款 × 权重 - 对外担保 × 权重 | **-750.00** |\n| 评级系数 | 低风险 × 1.0 | 0.00 |\n| 输出区间 | 中枢按 band 展开并按步长取整，高风险为 0 | **0** |\n\n**结论解读**：企业主体质量本身较好（低风险、86.58 分，四项经营口径均支持 1,200~2,160 万元上限），但**扣减存量贷款与对外担保后为 -750 万元**，即现有存量贷款（2023 年末短期借款 1,200 万元 + 长期借款 800 万元 = 有息负债 2,000 万元）叠加对外担保已超过多口径上限，评级系数 1.0 放大后仍为负值，按模型取整规则最终输出",
+      "evidence": [
+        {
+          "id": "ev_0933e479952f",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_0bdbc44d0376",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_138bced2d650",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_16f47805d734",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA008"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_205856c34f53",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_28dc9b4684a3",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_37d4d19eb892",
+          "source": {
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_6fd5d1549d2a",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_70b468572b42",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_c19b4f20ba72",
+          "source": {
+            "keys": {
+              "applicationId": "LA008"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_eb9d2bd686ec",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA008"
+            },
+            "table": "loan_application"
+          }
+        }
+      ],
+      "runIds": [
+        "run_726f4574c146"
+      ]
+    },
+    {
+      "id": "LA009",
+      "status": "failed",
+      "answer": "run 累计 token 超出上限 20000",
+      "evidence": [
+        {
+          "id": "ev_045256d6aa02",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_0be891b5dc0e",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA009"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_15be8423c473",
+          "source": {
+            "keys": {
+              "applicationId": "LA009"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_502578aa3e1d",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA009"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_5128c7a66bfa",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_5b05ba8fd963",
+          "source": {
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_7271337faf71",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_9b0336429c16",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_ae4401abba06",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_d494b869e5d2",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_d4ebcdbe8ae3",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_finance"
+          }
+        }
+      ],
+      "runIds": [
+        "run_55f76e2984cf"
+      ]
+    },
+    {
+      "id": "LA010",
+      "status": "needs_confirmation",
+      "answer": "## 尽调结论：LA010 光耀新能源科技有限公司\n\n**结论：高风险（评分 66.89），建议授信额度 0 万元，不予新增授信。**\n一票否决：严重反欺诈信号（F01、F03、F04、F06 四项命中）。\n\n---\n\n### 一、企业概况\n\n| 项目 | 内容 |\n|---|---|\n| 企业编号、名称 | E010 光耀新能源科技有限公司 |\n| 行业、成立日期 | 太阳能发电、2014-10-25 |\n| 经营状态 | 在业 |\n| 申请编号 | LA010（2024-03-08 提交） |\n| 申请金额、期限、用途 | 3000 万元、60 个月、光伏电站建设资金 |\n| 担保方式 | 抵押担保 |\n| 实控人与第一大股东 | 郑光伏（两者一致，实缴比例 1.0） |\n| 关联企业 | 申报 6 家，实际 6 家，一致 |\n| 担保逾期 | 0 笔 |\n\n核验结论：工商登记状态正常，股权结构清晰，实控人与第一大股东一致，注册资本已全部实缴。**唯一工商预警 B08：担保圈关联 2 家企业**，构成风险传导隐患。\n\n---\n\n### 二、财务分析（单位：万元）\n\n三年资产=负债+所有者权益勾稽校验全部通过（gap 均为 0.0），三年均为标准无保留意见。\n\n| 指标 | 2021 | 2022 | 2023 | 趋势 |\n|---|---|---|---|---|\n| 营业收入 | 12,000 | 16,500 | 22,000 | 营收 CAGR 35.4% |\n| 净利润 | 850 | 1,200 | 1,850 | 净利 CAGR 47.53% |\n| 资产负债率 | 0.697 | 0.6456 | 0.6216 | 逐步下降 |\n| 净利率 | 7.08% | 7.27% | 8.41% | 上升 |\n| ROE | 21.25% | 21.43% | 26.43% | 上升 |\n| 经营现金流 | 380 | 450 | **-800** | **转负** |\n| 经营现金流与净利润之比 | 0.4471⚠ | 0.375⚠ | **-0.4324⚠** | 持续恶化 |\n| 应收账款 | 4,800 | 6,500 | 9,800 | +50.77% |\n| 应收账款周转天数 | 146.0⚠ | 143.7879⚠ | 162.5909⚠ | 高于 140 天 |\n| 其他应收款 | 800 | 1,200 | 3,500 | 占 2023 总资产 18.92% |\n| 有息负债与总资产之比 | 0.3258 | 0.3038 | 0.2973 | 稳定 |\n| 期间费用率 | 41.83%⚠ | 36.24%⚠ | 32.05%⚠ | 改善但仍偏高 |\n\n**关键矛盾：利润表连续高增长（净利 +54.17%、营收 +33.33%），经营现金流却由 450 万元转为 -800 万元，应收账款增速（50.77%）显著高于营收增速（33.33%），其他应收款一年内从 1,200 增至 3,500 万元。**利润缺乏现金支撑，收入质量存疑。\n\n---\n\n### 三、风险提示\n\n**1. 反欺诈规则（命中 4 条；这是本次一票否决的直接依据）**\n\n| 规则 | 名称 | 命中值 | 阈值 | 置信度 |\n|---|---|---|---|---|\n| F01 | 营收与经营现金流背离 | -0.0364 | 0.02 | 高 |\n| F03 | 应收增速高于营收增速 | 0.1744 | 0.1 | 高 |\n| F04 | 其他应收款占总资产过高 | 0.1892 | 0.08 | 高 |\n| F06 | 关联企业多且存在担保圈 | 6（担保圈 2 家） | 4 | 高 |\n\n未命中 F02（存货异常增长，-0.2643）、F05（净利与现金流长期背离，1 年）。\n\n**2. 舆情与涉诉**：舆情风险分 45.55，健康分 54.45。标签含“经营负面”“荣誉资质”“未结被告/被执行”。  \n- 2023-09-28 经营负面事件（影响中，计 19.04 分）；  \n- 2022-04-20 荣誉资质（-4.33）、2023-04-15 正面报道（-8.16）形成对冲；  \n- 未结被告案件 C01001（审理中，涉案 **280 万元**）；已结原告案 C01002（100 万元）。**未结被告金额合计 280 万元。**\n\n**3. 担保圈风险**：B08 显示担保圈关联 2 家企业，叠加 6 家关联企业，存在代偿连带传导可能。\n\n**4. 外部评级对照提示**：系统 rating 为**高风险**（score 66.89，各维度：财务 76、偿债 76、稳定 100、司法 54.45、反欺诈 20），外部汇总 `externalRiskLevel` 为“中风险”，两者**不一致**，且外部值未参与本系统计分（externalUsedInScore=false）。按流程需**人工复核**，但不得以外部“中风险”替代本系统“高风险”评级。\n\n---\n\n### 四、额度建议\n\n**建议额度：0 万元**（高风险档评级系数 0.0，不适用定价方向）。\n\n测算过程（configFile: scenarios/dd04/credit_model.yaml）：\n\n| 步骤 | 公式 | 取值（万元） |\n|---|---|---|\n| 营收口径上限 | 22,000 × revenue_coef | 2,640.0 |\n| 净资产口径上限 | 7,000 × equity_coef | 2,800.0 |\n| 经营现金流覆盖 | -800 × 期限年数 × ocf_coef | 0.0 |\n| 申请额上限 | apply_amount | 3,000.0 |\n| 多口径取小 | min(上述正数口径) | 2,640.0 |\n| 扣减存量与或有负债 | 上限 − 存量贷款×权重 − 对外担保×权重 | **-3,110.0** |\n| 评级系数 | 高风险 × 0.0 | 0.0 |\n| 输出区间 | 按 band 展开并取整，高风险为 0 | **0** |\n\n需说明：扣减存量与或有负债后，结果已为负值（-3,110 万元），意味着存量有息负债（2023 年 5,500 万元）与对外担保扣减合计约 5,750 万元，已超过按营收、净资产算出的上限；即使不存在一票否决，按模型口径也无新增空间。\n\n---\n\n### 五、风控条件\n\n1. 担保方式按申请的**抵押担保**落实；\n2. **一票否决项未解除前不新增授信**：严重反欺诈信号（F01、F03、F04、F06）；\n3. 高风险档建议额度为 0；\n4. 建议补充人工复核事项：外部评级（中风险）与本系统评级（高风险）不一致；2023 年经营现金流为 -800 万元与净利 1,850 万元的背离成因、其他应收款 3,500 万元对手方与回收性、应收账款 9,800 万元的账龄与集中度、担保圈 2 家关联企业的实际担保余额、未结被告案 C01001（280 万元）进展。\n\n---\n\n**证据索引**：ev_129e627fea51（申请）、ev_c0356f205ee6（企业定位）、ev_0a94daa2386f（工商核验）、ev_1fbb6263edd9（财报解析）、ev_6dbec2b90",
+      "evidence": [
+        {
+          "id": "ev_0a94daa2386f",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_129e627fea51",
+          "source": {
+            "keys": {
+              "applicationId": "LA010"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_1fbb6263edd9",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_31cac832dc59",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_6dbec2b90d94",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_953052c16bcb",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_a017668b46ab",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA010"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_b5d9b0f59661",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA010"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_bbb8c066c143",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_c0356f205ee6",
+          "source": {
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_e9378c1d554d",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_finance"
+          }
+        }
+      ],
+      "runIds": [
+        "run_ea2c58400afb"
+      ]
+    }
+  ]
+}

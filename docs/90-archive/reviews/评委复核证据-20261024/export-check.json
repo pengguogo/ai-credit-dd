@@ -1,0 +1,28 @@
+{
+  "scope": "existing same-version export, not a new model execution",
+  "applications": 10,
+  "unique_scoring_points": 1,
+  "scoring_points_example": "财报解析;工商核验;舆情扫描;反欺诈检测;风险评级;额度测算",
+  "conclusion_char_lengths": {
+    "LA001": 44,
+    "LA002": 44,
+    "LA003": 52,
+    "LA004": 46,
+    "LA005": 44,
+    "LA006": 44,
+    "LA007": 42,
+    "LA008": 44,
+    "LA009": 44,
+    "LA010": 59
+  },
+  "LA001_export_conclusion": "风险评级低风险（评分0）。建议额度2500-3000万元。一票否决：无。反欺诈命中：无。",
+  "simulation_score": {
+    "evaluation": 18,
+    "engineering": 20,
+    "robustness_explainability": 15,
+    "compliance": 16,
+    "total": 69
+  },
+  "official_score": "not available: detailed official weights undisclosed",
+  "report_local_links_missing": []
+}

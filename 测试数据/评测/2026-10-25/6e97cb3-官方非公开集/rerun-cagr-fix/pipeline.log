@@ -1,0 +1,54 @@
+=== run 2026-10-25T01:11:28Z ===
+题目 20 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-25/6e97cb3-官方非公开集/rerun-cagr-fix/runs
+[1/20] LA011 succeeded 20973ms
+[2/20] LA012 succeeded 21223ms
+[3/20] LA013 needs_confirmation 23653ms
+[4/20] LA014 succeeded 24114ms
+[5/20] LA015 succeeded 20872ms
+[6/20] LA016 needs_confirmation 22410ms
+[7/20] LA017 succeeded 20092ms
+[8/20] LA018 succeeded 21258ms
+[9/20] LA019 succeeded 25567ms
+[10/20] LA020 succeeded 23067ms
+[11/20] LA021 succeeded 21380ms
+[12/20] LA022 succeeded 19734ms
+[13/20] LA023 succeeded 19921ms
+[14/20] LA024 failed 44385ms
+[15/20] LA025 succeeded 23079ms
+[16/20] LA026 succeeded 23422ms
+[17/20] LA027 succeeded 32928ms
+[18/20] LA028 needs_confirmation 22979ms
+[19/20] LA029 needs_confirmation 23327ms
+[20/20] LA030 needs_confirmation 35156ms
+完成 20 道：{'succeeded': 14, 'needs_confirmation': 5, 'failed': 1}
+无证据答案 0 道，平均耗时 24477ms，总 token 768854
+结果表格：../测试数据/评测/2026-10-25/6e97cb3-官方非公开集/rerun-cagr-fix/runs/results.csv、../测试数据/评测/2026-10-25/6e97cb3-官方非公开集/rerun-cagr-fix/runs/results.xlsx
+=== export 2026-10-25T01:19:41Z ===
+{
+  "output": "../测试数据/评测/2026-10-25/6e97cb3-官方非公开集/rerun-cagr-fix/official-export/非公开测评集结果.csv",
+  "statusFile": "../测试数据/评测/2026-10-25/6e97cb3-官方非公开集/rerun-cagr-fix/official-export/非公开测评集结果-status.csv",
+  "total": 20,
+  "concluded": 19,
+  "notConcluded": 1,
+  "pendingConfirmation": [
+    "LA013",
+    "LA016",
+    "LA028",
+    "LA029",
+    "LA030"
+  ],
+  "statuses": {
+    "succeeded": 14,
+    "needs_confirmation": 5,
+    "failed": 1
+  },
+  "scope": "结论取自同次 run 已落库的工具证据；needs_confirmation 为结论已出、待业务确认",
+  "validation": {
+    "passed": true,
+    "expectedCount": 20,
+    "actualCount": 20,
+    "errors": [],
+    "scope": "仅格式与完整性，不代表业务正确或正式答题成功"
+  }
+}
+=== end 2026-10-25T01:19:46Z ===

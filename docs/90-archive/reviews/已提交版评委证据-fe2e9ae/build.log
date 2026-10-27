@@ -1,0 +1,28 @@
+
+> ocft-starter@0.0.0 build
+> tsc -b && vite build --outDir /tmp/ocft-judge-fe2e9ae-build
+
+You are using Node.js 20.14.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 2669 modules transformed.
+
+(!) outDir /tmp/ocft-judge-fe2e9ae-build is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../../../../tmp/ocft-judge-fe2e9ae-build/index.html                         0.56 kB │ gzip:   0.37 kB
+../../../../tmp/ocft-judge-fe2e9ae-build/report-preview.html                0.57 kB │ gzip:   0.39 kB
+../../../../tmp/ocft-judge-fe2e9ae-build/assets/logo-orange-NCW9wTCN.svg   18.62 kB │ gzip:   5.84 kB
+../../../../tmp/ocft-judge-fe2e9ae-build/assets/src-D1gurC3E.css          109.40 kB │ gzip:  17.19 kB
+../../../../tmp/ocft-judge-fe2e9ae-build/assets/main-Cx6QT4Un.js          209.02 kB │ gzip:  64.60 kB
+../../../../tmp/ocft-judge-fe2e9ae-build/assets/report-CB4r1S1y.js        255.58 kB │ gzip:  78.35 kB
+../../../../tmp/ocft-judge-fe2e9ae-build/assets/src-DfiEJhVp.js           508.19 kB │ gzip: 168.83 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 588ms

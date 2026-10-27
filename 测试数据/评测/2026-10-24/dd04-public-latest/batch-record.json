@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-10-24T17:37:56+08:00",
+  "gitHead": "4518e8494bc4c3c2d9c37e215a28977d69defd2d",
+  "model": "deepseek-v4.1-flash",
+  "apiModelId": "deepseek-flash",
+  "execution": "两个进程分别串行运行10题；非独立串行性能基准；fresh；泄漏检查开启",
+  "hashes": {
+    "测试数据/评测/2026-10-24/dd04-public-latest/inputs/applications.jsonl": "9b1823e3c399836b81b356341aac333530201a51d4b467104d7cc5825b4f7daf",
+    "测试数据/评测/2026-10-24/dd04-public-latest/inputs/questions.jsonl": "90a4f24347c9e5ee4acaf8d96c491b43ec754f7a400a53ea7a63fda90183d865",
+    "docs/00-rules/赛题/赛题04_企业智能信贷尽调/data/loan_application.csv": "c3f21b2912c3735f589469a3a7e2c9f937d4a0d4b48746edc78a0dc792dae0a5",
+    "docs/00-rules/赛题/赛题04_企业智能信贷尽调/data/question_public.csv": "0606432927b3b3b3d468e79a2a5fbc824659f549c553a3837384af2b3540aaea",
+    "docs/00-rules/赛题/赛题04_企业智能信贷尽调/data/公开测试集答案.csv": "04d58ae6109158ef195caa0db5e32b284438a84e52285bfc8b66225af04d3991"
+  },
+  "changedCodeDuringRecordedInterval": [],
+  "runtime": {
+    "model": "deepseek-v4.1-flash",
+    "apiModelId": "deepseek-flash",
+    "maxToolRounds": null,
+    "runTimeout": null,
+    "maxTotalTokens": 1048576,
+    "llmTimeout": 30.0
+  }
+}

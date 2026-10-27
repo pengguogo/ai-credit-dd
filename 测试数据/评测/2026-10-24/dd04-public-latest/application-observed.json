@@ -1,0 +1,152 @@
+[
+  {
+    "applicationId": "LA001",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_d32343a364dc"
+    ],
+    "evidenceId": "ev_b9cc4934f5db",
+    "systemRisk": "低风险",
+    "systemCredit": "2500-3000",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected"
+  },
+  {
+    "applicationId": "LA002",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_d3eea991a2b5"
+    ],
+    "evidenceId": "ev_323e4c1ce619",
+    "systemRisk": "中风险",
+    "systemCredit": "1200-1500",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected"
+  },
+  {
+    "applicationId": "LA003",
+    "status": "needs_confirmation",
+    "errorCode": null,
+    "runIds": [
+      "run_0e4693a08c92"
+    ],
+    "evidenceId": "ev_59829cac06fd",
+    "systemRisk": "高风险",
+    "systemCredit": "0",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": null,
+    "finalAmountParse": "not_detected"
+  },
+  {
+    "applicationId": "LA004",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_b1f2e6da1273"
+    ],
+    "evidenceId": "ev_87104465de22",
+    "systemRisk": "中风险",
+    "systemCredit": "1500-2000",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected"
+  },
+  {
+    "applicationId": "LA005",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_11787bf6914d"
+    ],
+    "evidenceId": "ev_669261c6e3f5",
+    "systemRisk": "低-中风险",
+    "systemCredit": "600-800",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected"
+  },
+  {
+    "applicationId": "LA006",
+    "status": "needs_confirmation",
+    "errorCode": null,
+    "runIds": [
+      "run_918fa75f00b9"
+    ],
+    "evidenceId": "ev_d3a09684b600",
+    "systemRisk": "高风险",
+    "systemCredit": "0",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected"
+  },
+  {
+    "applicationId": "LA007",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_bbd062c8641c"
+    ],
+    "evidenceId": "ev_7fe5853947e3",
+    "systemRisk": "低风险",
+    "systemCredit": "400-500",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected"
+  },
+  {
+    "applicationId": "LA008",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_dcd343c2d9b2"
+    ],
+    "evidenceId": "ev_caf7d8669b50",
+    "systemRisk": "中风险",
+    "systemCredit": "1000-1200",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": null,
+    "finalAmountParse": "not_detected"
+  },
+  {
+    "applicationId": "LA009",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_8adff3a89336"
+    ],
+    "evidenceId": "ev_11609a1b427b",
+    "systemRisk": "低风险",
+    "systemCredit": "2000-2500",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": null,
+    "finalAmountParse": "not_detected"
+  },
+  {
+    "applicationId": "LA010",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_337cf8701a20"
+    ],
+    "evidenceId": "ev_a635e6894191",
+    "systemRisk": "中风险",
+    "systemCredit": "1500-2000",
+    "policyVersion": "incremental-v2",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected"
+  }
+]

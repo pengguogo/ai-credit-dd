@@ -1,0 +1,25 @@
+
+> ocft-starter@0.0.0 build
+> tsc -b && vite build --outDir /tmp/ocft-judge-current-review/dist
+
+You are using Node.js 20.14.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 2658 modules transformed.
+
+(!) outDir /tmp/ocft-judge-current-review/dist is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../../../../tmp/ocft-judge-current-review/dist/index.html                         0.49 kB │ gzip:   0.34 kB
+../../../../tmp/ocft-judge-current-review/dist/assets/logo-orange-NCW9wTCN.svg   18.62 kB │ gzip:   5.84 kB
+../../../../tmp/ocft-judge-current-review/dist/assets/index-N4sX8-Nx.css        109.54 kB │ gzip:  17.22 kB
+../../../../tmp/ocft-judge-current-review/dist/assets/index-Blh9A9xP.js         719.18 kB │ gzip: 232.38 kB
+
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 560ms

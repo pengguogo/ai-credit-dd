@@ -1,0 +1,10 @@
+﻿主表,主键,从表,外键/关联键,说明
+enterprise_basic,enterprise_id,enterprise_shareholder,enterprise_id,一个企业有多个股东
+enterprise_basic,enterprise_id,enterprise_finance,enterprise_id,一个企业对应多条年度财务记录
+enterprise_basic,enterprise_id,enterprise_public_opinion,enterprise_id,一个企业对应多条舆情事件
+enterprise_basic,enterprise_id,enterprise_lawsuit,enterprise_id,一个企业可涉及多起诉讼案件
+enterprise_basic,enterprise_id,enterprise_related,enterprise_id,一个企业可有多个关联企业
+enterprise_basic,enterprise_id,enterprise_guarantee,enterprise_id,一个企业可有多笔对外担保
+enterprise_basic,enterprise_id,enterprise_risk,enterprise_id,一个企业对应一条风险汇总记录
+enterprise_basic,enterprise_id,loan_application,enterprise_id,一个企业可提交多笔贷款申请
+loan_application,enterprise_id + apply_date,enterprise_finance,enterprise_id + year,额度测算需关联申请时点最近年度财务数据

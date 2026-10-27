@@ -1,0 +1,18 @@
+{
+  "input": "eval/output/dd04-20261024-baseline/inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T04:50:04+00:00",
+  "total": 1,
+  "statuses": {
+    "failed": 1
+  },
+  "errorCodes": {
+    "token_limit_exceeded": 1
+  },
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 16969,
+  "totalTokens": 20161,
+  "failures": []
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "table": "enterprise_basic",
+    "expectedRows": 10,
+    "actualRows": 10,
+    "matched": true,
+    "comparedColumns": [
+      "enterprise_id",
+      "enterprise_name",
+      "credit_code",
+      "legal_person",
+      "legal_person_id",
+      "register_capital",
+      "registered_capital_paid",
+      "establish_date",
+      "enterprise_type",
+      "industry",
+      "register_address",
+      "business_scope",
+      "employee_count",
+      "related_enterprise_count",
+      "business_status",
+      "legal_person_dishonest",
+      "legal_person_consumption_limit",
+      "actual_controller"
+    ],
+    "missingRows": 0,
+    "differentOrExtraRows": 0
+  },
+  {
+    "table": "enterprise_finance",
+    "expectedRows": 30,
+    "actualRows": 30,
+    "matched": true,
+    "comparedColumns": [
+      "enterprise_id",
+      "year",
+      "revenue",
+      "net_profit",
+      "total_assets",
+      "total_liabilities",
+      "operating_cashflow",
+      "accounts_receivable",
+      "inventory",
+      "fixed_assets",
+      "short_term_loan",
+      "long_term_loan",
+      "accounts_payable",
+      "other_receivable",
+      "prepayment",
+      "owners_equity",
+      "rd_expense",
+      "sales_expense",
+      "admin_expense",
+      "finance_expense",
+      "audit_opinion"
+    ],
+    "missingRows": 0,
+    "differentOrExtraRows": 0
+  },
+  {
+    "table": "enterprise_guarantee",
+    "expectedRows": 11,
+    "actualRows": 11,
+    "matched": true,
+    "comparedColumns": [
+      "enterprise_id",
+      "guaranteed_party",
+      "guarantee_amount",
+      "guarantee_type",
+      "guarantee_period",
+      "is_overdue"
+    ],
+    "missingRows": 0,
+    "differentOrExtraRows": 0
+  },
+  {
+    "table": "enterprise_lawsuit",
+    "expectedRows": 22,
+    "actualRows": 22,
+    "matched": true,
+    "comparedColumns": [
+      "enterprise_id",
+      "case_id",
+      "case_number",
+      "case_type",
+      "cause",
+      "filing_date",
+      "case_status",
+      "litigation_role",
+      "amount"
+    ],
+    "missingRows": 0,
+    "differentOrExtraRows": 0
+  },
+  {
+    "table": "enterprise_public_opinion",
+    "expectedRows": 28,
+    "actualRows": 28,
+    "matched": true,
+    "comparedColumns": [
+      "enterprise_id",
+      "event_id",
+      "event_date",
+      "event_type",
+      "event_source",
+      "event_content",
+      "sentiment",
+      "impact_level"
+    ],
+    "missingRows": 0,
+    "differentOrExtraRows": 0
+  },
+  {
+    "table": "enterprise_related",
+    "expectedRows": 27,
+    "actualRows": 27,
+    "matched": true,
+    "comparedColumns": [
+      "enterprise_id",
+      "related_enterprise_name",
+      "relation_type",
+      "shareholding_ratio",
+      "is_guarantee_circle"
+    ],
+    "missingRows": 0,
+    "differentOrExtraRows": 0
+  },
+  {
+    "table": "enterprise_risk",
+    "expectedRows": 10,
+    "actualRows": 10,
+    "matched": true,
+    "comparedColumns": [
+      "enterprise_id",
+      "existing_loan_balance",
+      "overdue_count",
+      "overdue_amount",
+      "external_guarantee_amount",
+      "public_opinion_score",
+      "risk_level_summary",
+      "abnormal_operation"
+    ],
+    "missingRows": 0,
+    "differentOrExtraRows": 0
+  },
+  {
+    "table": "enterprise_shareholder",
+    "expectedRows": 23,
+    "actualRows": 23,
+    "matched": true,
+    "comparedColumns": [
+      "enterprise_id",
+      "shareholder_name",
+      "shareholder_type",
+      "shareholding_ratio",
+      "contribution_amount",
+      "contribution_ratio"
+    ],
+    "missingRows": 0,
+    "differentOrExtraRows": 0
+  },
+  {
+    "table": "loan_application",
+    "expectedRows": 10,
+    "actualRows": 10,
+    "matched": true,
+    "comparedColumns": [
+      "application_id",
+      "enterprise_id",
+      "apply_amount",
+      "loan_purpose",
+      "loan_term_months",
+      "apply_date",
+      "guarantee_type"
+    ],
+    "missingRows": 0,
+    "differentOrExtraRows": 0
+  }
+]

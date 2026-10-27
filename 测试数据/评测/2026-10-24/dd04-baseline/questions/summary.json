@@ -1,0 +1,17 @@
+{
+  "input": "eval/output/dd04-20261024-baseline/inputs/questions.jsonl",
+  "generatedAt": "2026-10-24T04:51:49+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 9,
+    "needs_confirmation": 1
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 14199,
+  "totalTokens": 126649,
+  "failures": []
+}

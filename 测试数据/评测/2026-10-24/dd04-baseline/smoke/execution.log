@@ -1,0 +1,5 @@
+题目 1 道，已完成 0 道，输出到 eval/output/dd04-20261024-baseline/smoke
+[1/1] LA001 failed 16969ms
+完成 1 道：{'failed': 1}
+无证据答案 0 道，平均耗时 16969ms，总 token 20161
+结果表格：eval/output/dd04-20261024-baseline/smoke/results.csv、eval/output/dd04-20261024-baseline/smoke/results.xlsx

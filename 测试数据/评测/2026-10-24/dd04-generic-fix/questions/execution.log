@@ -1,0 +1,14 @@
+题目 10 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/dd04-generic-fix/questions
+[1/10] Q001 failed 21081ms
+[2/10] Q002 needs_confirmation 11762ms
+[3/10] Q003 succeeded 11312ms
+[4/10] Q004 succeeded 10450ms
+[5/10] Q005 succeeded 9242ms
+[6/10] Q006 succeeded 12497ms
+[7/10] Q007 failed 25895ms
+[8/10] Q008 succeeded 11431ms
+[9/10] Q009 succeeded 9086ms
+[10/10] Q010 succeeded 10074ms
+完成 10 道：{'failed': 2, 'needs_confirmation': 1, 'succeeded': 7}
+无证据答案 0 道，平均耗时 13283ms，总 token 118652
+结果表格：../测试数据/评测/2026-10-24/dd04-generic-fix/questions/results.csv、../测试数据/评测/2026-10-24/dd04-generic-fix/questions/results.xlsx

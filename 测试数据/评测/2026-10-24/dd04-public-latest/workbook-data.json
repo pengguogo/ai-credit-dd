@@ -1,0 +1,445 @@
+{
+  "metrics": {
+    "applications": {
+      "total": 10,
+      "statuses": {
+        "succeeded": 8,
+        "needs_confirmation": 2
+      },
+      "errors": {},
+      "avgSeconds": 86.57,
+      "p50Seconds": 85.434,
+      "p95Seconds": 119.203,
+      "totalTokens": 560475,
+      "withEvidence": 10,
+      "answersWithoutEvidence": 0
+    },
+    "questions": {
+      "total": 10,
+      "statuses": {
+        "succeeded": 9,
+        "needs_confirmation": 1
+      },
+      "errors": {},
+      "avgSeconds": 34.72,
+      "p50Seconds": 25.126,
+      "p95Seconds": 98.06,
+      "totalTokens": 272053,
+      "withEvidence": 10,
+      "answersWithoutEvidence": 0
+    },
+    "applicationFields": {
+      "total": 10,
+      "statuses": {
+        "succeeded": 8,
+        "needs_confirmation": 2
+      },
+      "numericReferenceCount": 8,
+      "referenceNonNumericCount": 2,
+      "eligibleExactCount": 8,
+      "eligibleOverlapCount": 8,
+      "eligibleWithinCount": 8,
+      "candidateRiskExactCount": 10,
+      "failedCount": 0,
+      "exactRateAllRows": 0.8,
+      "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+    }
+  },
+  "runs": [
+    {
+      "kind": "申请",
+      "id": "LA001",
+      "status": "succeeded",
+      "seconds": 62.14,
+      "tokens": 44381,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_d32343a364dc"
+    },
+    {
+      "kind": "申请",
+      "id": "LA002",
+      "status": "succeeded",
+      "seconds": 119.2,
+      "tokens": 71157,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_d3eea991a2b5"
+    },
+    {
+      "kind": "申请",
+      "id": "LA003",
+      "status": "needs_confirmation",
+      "seconds": 85.43,
+      "tokens": 55779,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_0e4693a08c92"
+    },
+    {
+      "kind": "申请",
+      "id": "LA004",
+      "status": "succeeded",
+      "seconds": 89.65,
+      "tokens": 56611,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_b1f2e6da1273"
+    },
+    {
+      "kind": "申请",
+      "id": "LA005",
+      "status": "succeeded",
+      "seconds": 94.8,
+      "tokens": 54997,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_11787bf6914d"
+    },
+    {
+      "kind": "申请",
+      "id": "LA006",
+      "status": "needs_confirmation",
+      "seconds": 76.15,
+      "tokens": 59826,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_918fa75f00b9"
+    },
+    {
+      "kind": "申请",
+      "id": "LA007",
+      "status": "succeeded",
+      "seconds": 89.07,
+      "tokens": 54877,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_bbd062c8641c"
+    },
+    {
+      "kind": "申请",
+      "id": "LA008",
+      "status": "succeeded",
+      "seconds": 56.89,
+      "tokens": 41622,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_dcd343c2d9b2"
+    },
+    {
+      "kind": "申请",
+      "id": "LA009",
+      "status": "succeeded",
+      "seconds": 84.64,
+      "tokens": 54716,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_8adff3a89336"
+    },
+    {
+      "kind": "申请",
+      "id": "LA010",
+      "status": "succeeded",
+      "seconds": 107.71,
+      "tokens": 66509,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_337cf8701a20"
+    },
+    {
+      "kind": "问询",
+      "id": "Q001",
+      "status": "succeeded",
+      "seconds": 98.06,
+      "tokens": 69858,
+      "evidence": 8,
+      "error": "",
+      "runId": "run_4dd368e7157a"
+    },
+    {
+      "kind": "问询",
+      "id": "Q002",
+      "status": "needs_confirmation",
+      "seconds": 35.37,
+      "tokens": 42449,
+      "evidence": 7,
+      "error": "",
+      "runId": "run_ef31066101a0"
+    },
+    {
+      "kind": "问询",
+      "id": "Q003",
+      "status": "succeeded",
+      "seconds": 22.48,
+      "tokens": 23100,
+      "evidence": 5,
+      "error": "",
+      "runId": "run_9ff2020fa79f"
+    },
+    {
+      "kind": "问询",
+      "id": "Q004",
+      "status": "succeeded",
+      "seconds": 29.91,
+      "tokens": 31340,
+      "evidence": 7,
+      "error": "",
+      "runId": "run_d49924516a20"
+    },
+    {
+      "kind": "问询",
+      "id": "Q005",
+      "status": "succeeded",
+      "seconds": 13.98,
+      "tokens": 8868,
+      "evidence": 2,
+      "error": "",
+      "runId": "run_a191df81da3e"
+    },
+    {
+      "kind": "问询",
+      "id": "Q006",
+      "status": "succeeded",
+      "seconds": 29.51,
+      "tokens": 17745,
+      "evidence": 2,
+      "error": "",
+      "runId": "run_04ffd339a2ab"
+    },
+    {
+      "kind": "问询",
+      "id": "Q007",
+      "status": "succeeded",
+      "seconds": 59.0,
+      "tokens": 41469,
+      "evidence": 9,
+      "error": "",
+      "runId": "run_c970a914f807"
+    },
+    {
+      "kind": "问询",
+      "id": "Q008",
+      "status": "succeeded",
+      "seconds": 18.28,
+      "tokens": 12638,
+      "evidence": 2,
+      "error": "",
+      "runId": "run_2cd07fa0b6d9"
+    },
+    {
+      "kind": "问询",
+      "id": "Q009",
+      "status": "succeeded",
+      "seconds": 15.5,
+      "tokens": 9474,
+      "evidence": 2,
+      "error": "",
+      "runId": "run_2efc71ee314d"
+    },
+    {
+      "kind": "问询",
+      "id": "Q010",
+      "status": "succeeded",
+      "seconds": 25.13,
+      "tokens": 15112,
+      "evidence": 4,
+      "error": "",
+      "runId": "run_3618a78d8303"
+    }
+  ],
+  "applications": [
+    {
+      "id": "LA001",
+      "status": "succeeded",
+      "risk": "低风险",
+      "referenceRisk": "低风险",
+      "riskExact": true,
+      "amount": "2500-3000",
+      "referenceAmount": "2500-3000",
+      "exact": "一致",
+      "within": "是",
+      "note": ""
+    },
+    {
+      "id": "LA002",
+      "status": "succeeded",
+      "risk": "中风险",
+      "referenceRisk": "中风险",
+      "riskExact": true,
+      "amount": "1200-1500",
+      "referenceAmount": "1200-1500",
+      "exact": "一致",
+      "within": "是",
+      "note": ""
+    },
+    {
+      "id": "LA003",
+      "status": "needs_confirmation",
+      "risk": "高风险",
+      "referenceRisk": "高风险",
+      "riskExact": true,
+      "amount": "0",
+      "referenceAmount": "拒贷/极小额度",
+      "exact": "非数值参考",
+      "within": "不适用",
+      "note": "拒贷方向符合；报告“需确认/无需复核”矛盾，现金流趋势描述有误。"
+    },
+    {
+      "id": "LA004",
+      "status": "succeeded",
+      "risk": "中风险",
+      "referenceRisk": "中风险",
+      "riskExact": true,
+      "amount": "1500-2000",
+      "referenceAmount": "1500-2000",
+      "exact": "一致",
+      "within": "是",
+      "note": ""
+    },
+    {
+      "id": "LA005",
+      "status": "succeeded",
+      "risk": "低-中风险",
+      "referenceRisk": "低-中风险",
+      "riskExact": true,
+      "amount": "600-800",
+      "referenceAmount": "600-800",
+      "exact": "一致",
+      "within": "是",
+      "note": ""
+    },
+    {
+      "id": "LA006",
+      "status": "needs_confirmation",
+      "risk": "高风险",
+      "referenceRisk": "高风险",
+      "riskExact": true,
+      "amount": "0",
+      "referenceAmount": "拒贷/极小额度",
+      "exact": "非数值参考",
+      "within": "不适用",
+      "note": "0万元与拒贷方向相符；非数值参考单列，尚待业务确认。"
+    },
+    {
+      "id": "LA007",
+      "status": "succeeded",
+      "risk": "低风险",
+      "referenceRisk": "低风险",
+      "riskExact": true,
+      "amount": "400-500",
+      "referenceAmount": "400-500",
+      "exact": "一致",
+      "within": "是",
+      "note": ""
+    },
+    {
+      "id": "LA008",
+      "status": "succeeded",
+      "risk": "中风险",
+      "referenceRisk": "中风险",
+      "riskExact": true,
+      "amount": "1000-1200",
+      "referenceAmount": "1000-1200",
+      "exact": "一致",
+      "within": "是",
+      "note": "自动解析未检出；人工核对最终额度1000–1200万元与证据一致。"
+    },
+    {
+      "id": "LA009",
+      "status": "succeeded",
+      "risk": "低风险",
+      "referenceRisk": "低风险",
+      "riskExact": true,
+      "amount": "2000-2500",
+      "referenceAmount": "2000-2500",
+      "exact": "一致",
+      "within": "是",
+      "note": "自动解析未检出；人工核对最终额度2000–2500万元与证据一致。"
+    },
+    {
+      "id": "LA010",
+      "status": "succeeded",
+      "risk": "中风险",
+      "referenceRisk": "中风险",
+      "riskExact": true,
+      "amount": "1500-2000",
+      "referenceAmount": "1500-2000",
+      "exact": "一致",
+      "within": "是",
+      "note": "评级额度符合；报告写“需业务人员确认”，终态却为成功，口径需核对。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "status": "succeeded",
+      "question": "请对该企业进行尽调并生成尽调报告",
+      "verdict": "核心要点符合",
+      "note": "完整报告覆盖企业概况、三年财务趋势、低风险、F01–F06未命中、2500–3000万元额度及风控条件；报告内舆情为自算健康分，不能与外部预存分直接视为同一指标。"
+    },
+    {
+      "id": "Q002",
+      "status": "needs_confirmation",
+      "question": "该企业的资产负债率是多少？是否存在偿债风险？",
+      "verdict": "基本符合，部分遗漏",
+      "note": "75%资产负债率、持续走高、较高偿债风险、对外担保12000万元、法人限高均命中；未直接列出参考中的逾期320万元与全部涉诉4件，改列未结被告2件1530万元。"
+    },
+    {
+      "id": "Q003",
+      "status": "succeeded",
+      "question": "该企业是否存在财务异常或欺诈线索？",
+      "verdict": "核心要点符合",
+      "note": "识别营收22000万元与现金流-800万元背离、其他应收3500万元、应收9800万元增速异常、关联6家与担保圈；提出流水及关联往来核验。未明确写应收/营收44.5%，但给出原始数值。"
+    },
+    {
+      "id": "Q004",
+      "status": "succeeded",
+      "question": "请测算该企业的建议授信额度",
+      "verdict": "基本符合，口径有差异",
+      "note": "给出2000–2500万元区间，上限与问询参考2500万元一致；期限60个月、利率下浮、存量贷款3000万元一致。问询参考为点值，申请参考为2000–2500区间，不将二者算成完全相同的输出。"
+    },
+    {
+      "id": "Q005",
+      "status": "succeeded",
+      "question": "该企业的舆情和诉讼风险如何？",
+      "verdict": "参考口径差异及遗漏",
+      "note": "高风险、事故/欠薪/被执行线索均识别。答复列未结被告2件1000万元、已结3件；参考为涉诉5件3200万元。明细5件实际合计1850万元，需区分明细与汇总冲突。自算舆情健康分0与参考预存48分不同；未覆盖担保3000万元和逾期180万元。"
+    },
+    {
+      "id": "Q006",
+      "status": "succeeded",
+      "question": "分析该企业近三年成长性",
+      "verdict": "核心符合，参考表述有误",
+      "note": "营收8600→12800→18500万元、CAGR46.7%、净利润920→1560→2100万元均正确，提示应收占用与回款风险。参考称应收增速快于营收，与原始数据冲突：2023年应收增41.7%，营收增44.5%；全期应收CAGR45.8%也低于营收46.7%。未把这一参考错误算成系统错误。"
+    },
+    {
+      "id": "Q007",
+      "status": "succeeded",
+      "question": "该企业适合发放贷款吗？给出尽调结论",
+      "verdict": "基本符合，口径有差异",
+      "note": "低风险、建议准入、经营现金流920万元>净利850万元、负债率42.9%、24个月信用担保与参考方向一致。额度给400–500万元区间而参考问询给500万元点值；舆情自算88.4分与参考预存82分口径不同。"
+    },
+    {
+      "id": "Q008",
+      "status": "succeeded",
+      "question": "该企业的营运能力如何？",
+      "verdict": "核心符合，解释有瑕疵",
+      "note": "营收95000万元、应收周转11.18次、存货周转29.69次、总资产周转5.28次及净利率约1.95%均吻合。解释称应收天数未拉长，但表内2022→2023为32.05→32.66天，略有增加；将应收周转的营收口径也笼统称为非标准口径不准确。"
+    },
+    {
+      "id": "Q009",
+      "status": "succeeded",
+      "question": "扫描该企业的舆情事件并评估影响",
+      "verdict": "核心符合，评分口径差异",
+      "note": "4条舆情（延期交付、经营异常、子公司被执行、项目竣工）及日期、负面影响均覆盖；自算健康分0/风险分100，与参考外部汇总45分不同。已执行完毕案件与当前未结敞口分开，未将历史已结案件当作未结。"
+    },
+    {
+      "id": "Q010",
+      "status": "succeeded",
+      "question": "核查该企业的关联企业和对外担保情况",
+      "verdict": "基本符合，合计遗漏",
+      "note": "关联6家、关系类型构成、担保圈2家、对外担保2笔1500及1000万元均列出，也提示担保链风险。但答复明确拒绝提供合计，未满足参考“合计2500万元”；应由工具提供合计字段，而非要求模型凭空补数。角色标记需复核，运行终态仍succeeded，应区分角色提示与终态。"
+    }
+  ],
+  "fieldSummary": "申请评级严格一致10/10；数值额度区间精确一致8/8；非数值参考2笔单列复核。"
+}

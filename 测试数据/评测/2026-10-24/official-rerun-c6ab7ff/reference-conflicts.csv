@@ -1,0 +1,3 @@
+﻿id,referenceClaim,observedFacts,source,resolution
+Q006,应收账款增速快于营收,营收累计115.12%/CAGR46.67%；应收累计112.50%/CAGR45.77%,指定版本enterprise_finance.csv/E002/2021-2023,保留参考，单列冲突，不要求复述错误
+Q005/LA006,5件诉讼合计3200万元,680+320+280+150+420=1850万元,指定版本enterprise_lawsuit.csv/E006,保留参考，按明细核验，单列冲突

@@ -1,0 +1,50 @@
+{
+  "valueCounts": {
+    "enterprise_name": 10,
+    "credit_code": 10,
+    "legal_person": 10,
+    "legal_person_id": 10,
+    "actual_controller": 10,
+    "register_address": 10,
+    "person_shareholder": 11,
+    "enterprise_shareholder": 12,
+    "guaranteed_party": 11,
+    "related_enterprise": 27
+  },
+  "live": {
+    "runs": [
+      {
+        "case": "LA001-full-dd",
+        "runId": "run_73a4a28fa7bd",
+        "status": "succeeded",
+        "llmCalls": 8,
+        "seconds": 29.0
+      },
+      {
+        "case": "name-in-question",
+        "runId": "run_6dfdb99f36a3",
+        "status": "succeeded",
+        "llmCalls": 7,
+        "seconds": 12.9
+      },
+      {
+        "case": "Q003-public-question",
+        "runId": "run_9630117126aa",
+        "status": "succeeded",
+        "llmCalls": 7,
+        "seconds": 14.5
+      }
+    ],
+    "requestsCaptured": 22,
+    "requestChars": 150119,
+    "hits": []
+  },
+  "files": {
+    "scanned": 36,
+    "hits": [],
+    "legacyHitCounts": {
+      "测试数据/评测/2026-10-24/dd04-multi-agent": 118,
+      "测试数据/评测/2026-10-24/dd04-multi-agent-skills": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "Q005": {
+    "source": "enterprise_lawsuit.csv",
+    "enterpriseId": "E006",
+    "cases": [
+      {
+        "caseId": "C00601",
+        "status": "审理中",
+        "amount": 680.0
+      },
+      {
+        "caseId": "C00602",
+        "status": "审理中",
+        "amount": 320.0
+      },
+      {
+        "caseId": "C00603",
+        "status": "已执行完毕",
+        "amount": 280.0
+      },
+      {
+        "caseId": "C00604",
+        "status": "已结案",
+        "amount": 150.0
+      },
+      {
+        "caseId": "C00605",
+        "status": "已结案",
+        "amount": 420.0
+      }
+    ],
+    "detailTotal": 1850.0,
+    "referenceTotal": 3200,
+    "unit": "万元"
+  },
+  "Q006": {
+    "source": "enterprise_finance.csv",
+    "enterpriseId": "E002",
+    "growth2023Percent": {
+      "revenue": 44.5312,
+      "accounts_receivable": 41.6667
+    },
+    "referenceClaim": "应收账款增速快于营收",
+    "verified": false
+  }
+}

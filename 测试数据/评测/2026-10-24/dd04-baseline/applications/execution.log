@@ -1,0 +1,14 @@
+题目 10 道，已完成 0 道，输出到 eval/output/dd04-20261024-baseline/applications
+[1/10] LA001 failed 16146ms
+[2/10] LA002 failed 14299ms
+[3/10] LA003 needs_confirmation 18103ms
+[4/10] LA004 succeeded 20356ms
+[5/10] LA005 succeeded 22086ms
+[6/10] LA006 needs_confirmation 20713ms
+[7/10] LA007 succeeded 21508ms
+[8/10] LA008 succeeded 20921ms
+[9/10] LA009 failed 15665ms
+[10/10] LA010 needs_confirmation 19801ms
+完成 10 道：{'failed': 3, 'needs_confirmation': 3, 'succeeded': 4}
+无证据答案 0 道，平均耗时 18959ms，总 token 243416
+结果表格：eval/output/dd04-20261024-baseline/applications/results.csv、eval/output/dd04-20261024-baseline/applications/results.xlsx

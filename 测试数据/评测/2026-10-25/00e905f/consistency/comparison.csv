@@ -1,0 +1,5 @@
+﻿application_id,riskBand,run1Status,run2Status,run1Error,run2Error,run1Risk,run2Risk,riskConsistent,run1Credit,run2Credit,creditConsistent,structureConsistent,formatConsistent,run1Sections,run2Sections,run1Chars,run2Chars,run1Tokens,run2Tokens,note
+LA001,低风险,succeeded,succeeded,,,低风险,低风险,是,2500-3000,2500-3000,是,是,是,企业概况/财务分析/风险提示/额度建议/风控条件,企业概况/财务分析/风险提示/额度建议/风控条件,4902,4917,30066,30070,
+LA002,中风险,succeeded,succeeded,,,中风险,中风险,是,1200-1500,1200-1500,是,是,是,企业概况/财务分析/风险提示/额度建议/风控条件,企业概况/财务分析/风险提示/额度建议/风控条件,5190,5160,30619,46116,
+LA003,高风险,failed,failed,narrative_check_failed,narrative_check_failed,,,是,,,是,是,是,,,0,0,48688,48627,主测集本轮 LA003 为 needs_confirmation 且有完整报告；一致性双跑均 narrative_check_failed; 双跑同失败码（叙事校验）
+LA006,高风险(补),failed,needs_confirmation,narrative_check_failed,,,高风险,否,,0,否,否,否,,企业概况/财务分析/风险提示/额度建议/风控条件,0,5393,47547,31880,补跑：run1 failed / run2 needs_confirmation，不稳定

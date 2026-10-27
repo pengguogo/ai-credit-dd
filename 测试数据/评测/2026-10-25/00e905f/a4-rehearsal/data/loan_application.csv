@@ -1,0 +1,6 @@
+﻿application_id,enterprise_id,apply_amount,loan_purpose,loan_term_months,apply_date,guarantee_type,status
+LA101,E101,5900,购置数控机床及产线扩建,36,2024-01-23,抵押担保,pending
+LA102,E102,750,研发投入及市场推广,24,2024-01-02,信用担保,pending
+LA103,E103,12350,项目开发建设资金,18,2024-04-21,抵押担保,pending
+LA104,E104,2300,采购备货流动资金,12,2024-04-25,信用担保,pending
+LA105,E105,1050,扩建温室大棚及冷链设施,36,2024-05-26,抵押担保,pending

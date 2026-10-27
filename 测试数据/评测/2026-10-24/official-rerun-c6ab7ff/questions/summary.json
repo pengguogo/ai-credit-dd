@@ -1,0 +1,17 @@
+{
+  "input": "/tmp/ocft-official-rerun-c6ab7ff/questions.jsonl",
+  "generatedAt": "2026-10-24T10:25:25+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 9,
+    "needs_confirmation": 1
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 31613,
+  "totalTokens": 251833,
+  "failures": []
+}

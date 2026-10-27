@@ -1,0 +1,486 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><title>测试报告</title><style>
+@page { size: A4; margin: 16mm 15mm; }
+* { box-sizing: border-box; }
+body {
+  font-size: 11pt; line-height: 1.65; color: #1a2433; margin: 0;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+}
+h1 { font-size: 19pt; margin: 0 0 10pt; padding-bottom: 8pt; border-bottom: 2px solid #172b44; }
+h2 { font-size: 14pt; margin: 18pt 0 8pt; padding-bottom: 4pt; border-bottom: 1px solid #c9d4e0; page-break-after: avoid; }
+h3 { font-size: 12pt; margin: 12pt 0 6pt; page-break-after: avoid; }
+p { margin: 6pt 0; }
+strong { color: #172b44; }
+code {
+  font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 9.5pt;
+  background: #f1f4f8; border: 1px solid #dde4ec; border-radius: 3px; padding: 0 3px;
+}
+blockquote {
+  margin: 8pt 0; padding: 5pt 10pt; border-left: 3px solid #7b93b0;
+  background: #f6f8fb; color: #37475e;
+}
+blockquote p { margin: 2pt 0; }
+ul, ol { margin: 6pt 0; padding-left: 22pt; }
+li { margin: 3pt 0; }
+a { color: #2a5b8f; text-decoration: none; }
+hr { border: none; border-top: 1px solid #c9d4e0; margin: 12pt 0; }
+table {
+  width: 100%; border-collapse: collapse; font-size: 10.5pt; margin: 8pt 0;
+}
+thead { display: table-header-group; }
+th, td { border: 1px solid #c2cedd; padding: 4pt 7pt; vertical-align: top; text-align: left; }
+th { background: #eef2f7; color: #172b44; font-weight: 600; }
+tr { page-break-inside: avoid; }
+tbody tr:nth-child(even) td { background: #fafbfd; }
+</style></head><body><h1>赛题 04 企业智能信贷尽调 · 测试报告</h1>
+<p>状态：定稿（程柳供数，彭国补人工要点复核）。提交命名 <code>智算先锋队_赛题04_测试报告.md/.pdf</code>，A4、PDF≤30MB。<br />
+<strong>只引用</strong> 基线 <code>00e905f</code> 归档 <a href="../../测试数据/评测/2026-10-25/00e905f/"><code>测试数据/评测/2026-10-25/00e905f/</code></a>，不混用 <code>2026-10-24/</code> 旧结果。</p>
+<h2>1. 环境与版本</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>记录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>代码 SHA、分支</td>
+<td><code>00e905faeaf508021383e3a3fab58480d5aaec90</code>（短 <code>00e905f</code>），分支 <code>main</code></td>
+</tr>
+<tr>
+<td>数据包来源/哈希、样本数</td>
+<td>官方公开包：<code>loan_application.csv</code> sha256 <code>5fe59629…671da</code>（10 笔）；<code>question_public.csv</code> <code>06064329…40aaea</code>（10 题）；答案仅评分侧 <code>公开测试集答案.csv</code> <code>04d58ae6…04d3991</code></td>
+</tr>
+<tr>
+<td>场景 ID、配置版本/哈希</td>
+<td><code>enterprise_dd</code>；<code>agents.yaml</code> / <code>scorecard.yaml</code> / <code>credit_model.yaml</code> 等见 <code>start-record.json</code> → <code>configVersions</code></td>
+</tr>
+<tr>
+<td>OS、Python、依赖版本</td>
+<td>评测机 macOS；<code>ocft-backend/.venv</code> Python 3.x；依赖见 <code>requirements.txt</code> 冻结版</td>
+</tr>
+<tr>
+<td>模型身份/API 标识与调用时间</td>
+<td><code>deepseek-v4.1-flash</code>，仅经 <code>app/llm.py</code>；申请批约 <code>2026-10-24T12:36Z</code> 起；不问询凭据</td>
+</tr>
+<tr>
+<td>命令、原始结果与日志路径</td>
+<td><code>eval.dd04 prepare</code> → <code>eval.run --fresh</code> → <code>eval.dd04 export/validate</code>；产物目录见上；日志 <code>…/00e905f/logs/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>2. 公开申请逐条比对</h2>
+<p>标准列仅评分侧读取；Agent 运行时未注入答案。</p>
+<table>
+<thead>
+<tr>
+<th>申请编号</th>
+<th>企业编号</th>
+<th>系统风险评级</th>
+<th>标准风险评级</th>
+<th>评级一致</th>
+<th>系统建议额度</th>
+<th>标准建议额度</th>
+<th>额度一致</th>
+<th>评分要点覆盖</th>
+<th>runId</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LA001</td>
+<td>E001</td>
+<td>低风险</td>
+<td>低风险</td>
+<td>是</td>
+<td>2500-3000</td>
+<td>2500-3000</td>
+<td>是</td>
+<td>5/5</td>
+<td><code>run_61653ed11f87</code></td>
+</tr>
+<tr>
+<td>LA002</td>
+<td>E002</td>
+<td>中风险</td>
+<td>中风险</td>
+<td>是</td>
+<td>1200-1500</td>
+<td>1200-1500</td>
+<td>是</td>
+<td>5/5</td>
+<td><code>run_b7c5edb621ec</code></td>
+</tr>
+<tr>
+<td>LA003</td>
+<td>E003</td>
+<td>高风险</td>
+<td>高风险</td>
+<td>是</td>
+<td>0</td>
+<td>拒贷/极小额度</td>
+<td>是</td>
+<td>6/6</td>
+<td><code>run_3342b5eae017</code></td>
+</tr>
+<tr>
+<td>LA004</td>
+<td>E004</td>
+<td>中风险</td>
+<td>中风险</td>
+<td>是</td>
+<td>1500-2000</td>
+<td>1500-2000</td>
+<td>是</td>
+<td>5/5</td>
+<td><code>run_d61a54826392</code></td>
+</tr>
+<tr>
+<td>LA005</td>
+<td>E005</td>
+<td>低-中风险</td>
+<td>低-中风险</td>
+<td>是</td>
+<td>600-800</td>
+<td>600-800</td>
+<td>是</td>
+<td>5/5</td>
+<td><code>run_ffc68115348d</code></td>
+</tr>
+<tr>
+<td>LA006</td>
+<td>E006</td>
+<td>高风险</td>
+<td>高风险</td>
+<td>是</td>
+<td>0</td>
+<td>拒贷/极小额度</td>
+<td>是</td>
+<td>5/5</td>
+<td><code>run_4f436af5c45f</code>（补测，原 <code>run_a18a600faff3</code> 失败）</td>
+</tr>
+<tr>
+<td>LA007</td>
+<td>E007</td>
+<td>低风险</td>
+<td>低风险</td>
+<td>是</td>
+<td>400-500</td>
+<td>400-500</td>
+<td>是</td>
+<td>5/5</td>
+<td><code>run_53b573e340bf</code></td>
+</tr>
+<tr>
+<td>LA008</td>
+<td>E008</td>
+<td>中风险</td>
+<td>中风险</td>
+<td>是</td>
+<td>1000-1200</td>
+<td>1000-1200</td>
+<td>是</td>
+<td>5/5</td>
+<td><code>run_82388e5646ab</code>（补测，原 <code>run_6627883fad5d</code> 失败）</td>
+</tr>
+<tr>
+<td>LA009</td>
+<td>E009</td>
+<td>低风险</td>
+<td>低风险</td>
+<td>是</td>
+<td>2000-2500</td>
+<td>2000-2500</td>
+<td>是</td>
+<td>5/5</td>
+<td><code>run_41fa51a7732b</code></td>
+</tr>
+<tr>
+<td>LA010</td>
+<td>E010</td>
+<td>中风险</td>
+<td>中风险</td>
+<td>是</td>
+<td>1500-2000</td>
+<td>1500-2000</td>
+<td>是</td>
+<td>6/6</td>
+<td><code>run_18b0456a426f</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>评级一致项数 / 总申请数：<strong>10 / 10</strong>（LA006、LA008 为补测结果，见下方「补测说明」）。</li>
+<li>额度完全一致项数 / 总申请数：<strong>10 / 10</strong>（LA003、LA006 按拒贷语义 0 计）；数值区间精确 <strong>8 / 8</strong>。</li>
+<li>结论与证据事实一致性：十笔六列结论与工具侧评级/额度对齐。</li>
+<li>要点覆盖（人工复核，团队口径，非官方评分）：逐笔对照 <code>scoring_points</code> 阅读报告正文判定，合计 <strong>52 / 52</strong>；LA006 覆盖应收占营收 44.05%、经营现金流 350 万元远低于净利润 980 万元、未结被告 2 件 1,000 万元与被执行 280 万元、暂不准入；LA008 覆盖固定资产 4,500 万元与资产负债率 49.4%、全部涉诉 3 件 85 万元、建议额度 1000-1200 万元、抵押担保。覆盖只看要点是否被正确提及，不代表官方给分。</li>
+<li>失败、空结果和未完成项保留在分母及错误清单中，不按成功子集虚增一致率。</li>
+</ul>
+<p><strong>补测说明（2026-10-25）</strong>：主批次（<code>00e905f</code>）中 LA006、LA008 因 <code>narrative_check_failed</code> 未出结论。两笔已在后续代码版本上经同一业务入口单独重跑（LA006 <code>run_4f436af5c45f</code>，10:29；LA008 <code>run_82388e5646ab</code>，10:31，模型 <code>deepseek-v4.1-flash</code>），结论取自同次 run 落库证据，并写入 <code>系统输出/智算先锋队_赛题04_公开测评集结果.csv</code>。其余 8 笔仍为 <code>00e905f</code> 主批次结果，两部分并非同一代码版本、同一批次；耗时与 token 统计只描述主批次。最终冻结 SHA 上仍须整批重跑并以整批结果替换。</p>
+<p>申请批：均 <strong>27.14 s/笔</strong>，P95 <strong>34.25 s</strong>，token <strong>369,791</strong>；<code>answersWithoutEvidence</code> = 0。</p>
+<h2>3. 不一致与异常归因</h2>
+<table>
+<thead>
+<tr>
+<th>申请/问题编号</th>
+<th>错误类型</th>
+<th>系统实际行为</th>
+<th>证据/日志</th>
+<th>归属负责人</th>
+<th>修复版本</th>
+<th>复测结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LA006 / LA008</td>
+<td><code>narrative_check_failed</code></td>
+<td>主批次中模型正文写入工具结果中不存在的百分比/金额，事实校验拦截</td>
+<td><code>applications/results.jsonl</code>、<code>official-export/*-status.csv</code></td>
+<td>王小文/黎锦涛（A2）</td>
+<td>后续版本</td>
+<td>已补测：LA006 needs_confirmation、LA008 succeeded，评级与额度均与参考一致</td>
+</tr>
+<tr>
+<td>LA003（主测）</td>
+<td>needs_confirmation</td>
+<td>高风险否决项触发确认门禁，仍产出评级/额度 0</td>
+<td>同上</td>
+<td>产品口径</td>
+<td>—</td>
+<td>与参考「高风险/拒贷」一致</td>
+</tr>
+<tr>
+<td>LA003 / LA006（A3）</td>
+<td>一致性不稳</td>
+<td>双跑同失败码或 failed↔needs_confirmation</td>
+<td><code>consistency/一致性报告.md</code></td>
+<td>A2</td>
+<td>待修</td>
+<td>低/中风险一致已达标；高风险不宣称达标</td>
+</tr>
+<tr>
+<td>LA003 / LA004 / LA005 / LA010</td>
+<td>复核状态自相矛盾</td>
+<td>「评级解释」写「无需人工复核」，同一报告「人工复核」节写「需业务人员确认 / 待业务人员复核」；评级与额度不受影响</td>
+<td><code>applications/results.jsonl</code> 报告正文</td>
+<td>王小文（A2）</td>
+<td>待修</td>
+<td>未复测</td>
+</tr>
+<tr>
+<td>Q003 / Q010</td>
+<td>申请编号误引</td>
+<td>E010 在库中对应 LA010 与 LA011 两笔申请，问询答复引用了 LA011；企业事实与数字正确</td>
+<td><code>questions/results.jsonl</code> 证据 <code>applicationIds</code></td>
+<td>胡乾豪（数据）/王小文</td>
+<td>待修</td>
+<td>未复测</td>
+</tr>
+<tr>
+<td>Q005 / Q009 / LA003</td>
+<td>舆情分口径</td>
+<td>舆情健康分按事件重算为 0.0，与 <code>enterprise_risk.public_opinion_score</code>（45/48）并列出现，读者易误解</td>
+<td>报告正文、<code>opinion.yaml</code></td>
+<td>王小文</td>
+<td>待定（口径说明或改名）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Q002 / Q005 / Q010</td>
+<td>要点遗漏</td>
+<td>单项追问只调用对应角色工具，未汇总逾期、担保等跨维度事实</td>
+<td><code>questions/results.jsonl</code></td>
+<td>王小文（A2）</td>
+<td>待修</td>
+<td>未复测</td>
+</tr>
+<tr>
+<td>参考答案自身</td>
+<td>口径冲突</td>
+<td>如 Q006 应收增长（数据显示应收同比低于营收）、Q005 涉诉金额 3200 万（数据合计 1850 万）</td>
+<td>公开答案文件</td>
+<td>评分侧披露</td>
+<td>—</td>
+<td>不迎合改系统</td>
+</tr>
+</tbody>
+</table>
+<h2>4. 自然语言问询</h2>
+<table>
+<thead>
+<tr>
+<th>问题编号</th>
+<th>企业编号</th>
+<th>系统答复与 runId</th>
+<th>覆盖判定（人工，团队口径）</th>
+<th>事实复核与差异</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q001</td>
+<td>E001</td>
+<td>succeeded / <code>run_f120449f1323</code></td>
+<td>全覆盖</td>
+<td>五章完整报告；低风险、2500-3000 万、反欺诈未命中、风控条件齐全</td>
+</tr>
+<tr>
+<td>Q002</td>
+<td>E003</td>
+<td>succeeded / <code>run_9dfe3874b22e</code></td>
+<td>部分覆盖</td>
+<td>75.0% 计算正确并判定偿债风险高；<strong>未结合</strong>逾期、涉诉 4 件、对外担保 1.2 亿、法人限高</td>
+</tr>
+<tr>
+<td>Q003</td>
+<td>E010</td>
+<td>succeeded / <code>run_1fe570f458a3</code></td>
+<td>全覆盖</td>
+<td>现金流 -800 万背离、其他应收 3500 万、应收偏高、关联 6 家均识别；答复把申请编号写成 LA011（库中 E010 另有一笔非公开集申请，见 §3）</td>
+</tr>
+<tr>
+<td>Q004</td>
+<td>E009</td>
+<td>succeeded / <code>run_81ce42d54f37</code></td>
+<td>全覆盖</td>
+<td>区间 2000-2500 万含参考 2500 万；60 个月、利率下浮一致</td>
+</tr>
+<tr>
+<td>Q005</td>
+<td>E006</td>
+<td>succeeded / <code>run_7af8f61977bb</code></td>
+<td>部分覆盖</td>
+<td>涉诉 5 件、被执行、三条负面舆情均识别；<strong>未提</strong>逾期 1 次 180 万、对外担保 3000 万；舆情健康分 0.0 与数据表 48 分口径不同（见 §3）；涉诉金额 5 件合计 1850 万，参考答案写 3200 万</td>
+</tr>
+<tr>
+<td>Q006</td>
+<td>E002</td>
+<td>succeeded / <code>run_62cfd209284a</code></td>
+<td>全覆盖</td>
+<td>营收/净利三年数据与 46.7% CAGR 一致；参考称「应收增速快于营收」，按数据 2023 应收同比 41.7% &lt; 营收 44.5%，系统写「基本同步」符合数据</td>
+</tr>
+<tr>
+<td>Q007</td>
+<td>E007</td>
+<td>succeeded / <code>run_8505b3103269</code></td>
+<td>全覆盖</td>
+<td>完整报告：低风险、400-500 万、24 个月、建议准入</td>
+</tr>
+<tr>
+<td>Q008</td>
+<td>E004</td>
+<td>succeeded / <code>run_438f3edaf844</code></td>
+<td>基本覆盖</td>
+<td>应收 11.18 次、存货 29.69 次、总资产 5.28 次、净利率 1.9% 一致；未明确写「符合贸易行业特征」</td>
+</tr>
+<tr>
+<td>Q009</td>
+<td>E003</td>
+<td>succeeded / <code>run_788b14530ef2</code></td>
+<td>基本覆盖</td>
+<td>4 条舆情事件与影响等级全部识别；综合分 0.0 与参考 45 分口径不同（见 §3）</td>
+</tr>
+<tr>
+<td>Q010</td>
+<td>E010</td>
+<td>succeeded / <code>run_ddfb811d1c8b</code></td>
+<td>部分覆盖</td>
+<td>关联 6 家、担保圈 2 家识别；<strong>未给</strong>关联企业构成（母/子/同一控制/联营）与对外担保 2 笔合计 2500 万；同样误写 LA011</td>
+</tr>
+</tbody>
+</table>
+<p>合计：全覆盖 6、基本覆盖 2、部分覆盖 3（Q002/Q005/Q010），无失败。</p>
+<p>问询：<strong>10 / 10 succeeded</strong>；均约 <strong>14.12 s</strong>，P95 <strong>23.55 s</strong>，token <strong>157,814</strong>。自动跑通 ≠ 要点满分；上表覆盖判定为团队人工口径，不代表官方给分。</p>
+<h2>5. 非公开集运行与耗时</h2>
+<blockquote>
+<p>官方非公开测评集（<code>06_非公开测试集_现场加试</code>，LA011–LA030 / E011–E030，<strong>仅输入、无答案</strong>），2026-10-25 实时重算。代码对应 <code>e87748b</code>（后端与正式批次运行代码逐行一致），即 <code>6e97cb3</code> + 一行通用 CAGR 修复（见下）。无标准答案，不给一致率。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>总申请数</th>
+<th>succeeded</th>
+<th>待确认</th>
+<th>失败</th>
+<th>出具评级+额度</th>
+<th>跑题墙钟</th>
+<th>平均单笔</th>
+<th>P50</th>
+<th>P95</th>
+<th>最大单笔</th>
+<th>超过30秒数</th>
+<th>token</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>14</td>
+<td>5（LA013/016/028/029/030，均高风险拒贷）</td>
+<td>1（LA024，<code>narrative_check_failed</code>）</td>
+<td>19 / 20</td>
+<td>8 min 13 s（端到端约 8.6 min）</td>
+<td>24.5 s</td>
+<td>23.0 s</td>
+<td>35.2 s</td>
+<td>44.4 s</td>
+<td>3</td>
+<td>768,854</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>系统评级分布：低风险 5、低-中风险 2、中风险 7、高风险 5、未生成 1；无证据答案 0。</li>
+<li>首轮（未修复）4 笔末年净利润为负的企业因 <code>_cagr</code> 返回复数导致财报角色崩溃、未出结论；修复后重跑均为高风险 / 0。其余 15 笔两轮评级与额度一致；LA024 首轮 succeeded、正式批次 failed，如实保留。</li>
+<li>结果文件：<code>系统输出/智算先锋队_赛题04_非公开测评集结果.csv</code> 与 <code>-status.csv</code>（<code>validate</code> 通过）</li>
+<li>逐笔明细、输入哈希与两轮对比：<a href="../../测试数据/评测/2026-10-25/6e97cb3-官方非公开集/非公开测评报告.md">非公开测评报告</a></li>
+</ul>
+<h2>6. 工程与合规验证</h2>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>方法</th>
+<th>结果/证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据体检与原文件不变</td>
+<td><code>eval.dd04</code> 准备工具</td>
+<td>见 <a href="../../docs/10-strategy/赛题04准备验证.md">赛题04准备验证</a>；≠ 正式业务分</td>
+</tr>
+<tr>
+<td>参考答案/expected 隔离</td>
+<td>prepare 白名单；扰动答案不进 Agent</td>
+<td><code>inputs/*.jsonl</code> 无答案字段；红线扫描另跑</td>
+</tr>
+<tr>
+<td>六列结果格式与完整性</td>
+<td><code>eval.dd04 validate</code></td>
+<td>公开 10 笔、演练 5 笔均 <strong>passed</strong>（<code>系统输出/</code>）</td>
+</tr>
+<tr>
+<td>外送模型与导出脱敏</td>
+<td>抽查 llm 审计 / 报告</td>
+<td>正式抽查属 A7（黎锦涛）</td>
+</tr>
+<tr>
+<td>相同企业重复运行一致性</td>
+<td>A3 双跑</td>
+<td>LA001/LA002 一致；高风险不稳定，见一致性报告</td>
+</tr>
+<tr>
+<td>失败与证据不足不编结论</td>
+<td>业务异常 + 叙事拦截</td>
+<td>LA006/LA008/LA104 六列保留「未生成结论」</td>
+</tr>
+<tr>
+<td>干净环境启动</td>
+<td>最终包解压</td>
+<td>属 A6（陈修活），本报告不代替</td>
+</tr>
+</tbody>
+</table>
+<p>本轮准备工具验证见 <a href="../../docs/10-strategy/赛题04准备验证.md">验证记录</a>。正式 PDF 定稿时保留「工具验证 / 真实模型评测」两类区别。</p></body></html>

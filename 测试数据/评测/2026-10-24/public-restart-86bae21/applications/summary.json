@@ -1,0 +1,18 @@
+{
+  "input": "/tmp/ocft-public-restart-20261024-inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T09:44:25+00:00",
+  "total": 10,
+  "statuses": {
+    "runner_error": 10
+  },
+  "errorCodes": {
+    "runner_error": 10
+  },
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 0,
+  "totalTokens": 0,
+  "failures": []
+}

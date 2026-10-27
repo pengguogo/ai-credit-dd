@@ -1,0 +1,12 @@
+{
+  "enterprise_related.csv": true,
+  "enterprise_shareholder.csv": true,
+  "enterprise_risk.csv": true,
+  "enterprise_public_opinion.csv": true,
+  "enterprise_basic.csv": true,
+  "enterprise_lawsuit.csv": true,
+  "enterprise_finance.csv": true,
+  "schema_relationships.csv": true,
+  "enterprise_guarantee.csv": true,
+  "loan_application.csv": true
+}

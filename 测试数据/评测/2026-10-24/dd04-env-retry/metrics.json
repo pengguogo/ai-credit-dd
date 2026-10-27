@@ -1,0 +1,38 @@
+{
+  "applications": {
+    "total": 10,
+    "statuses": {
+      "failed": 2,
+      "needs_confirmation": 2,
+      "succeeded": 6
+    },
+    "p50MsNearestRank": 21238,
+    "p95MsNearestRank": 24897,
+    "maxMs": 24897,
+    "over30s": 0,
+    "totalTokens": 251269,
+    "avgMs": 20244,
+    "answersWithoutEvidence": 0
+  },
+  "questions": {
+    "total": 10,
+    "statuses": {
+      "failed": 1,
+      "succeeded": 9
+    },
+    "p50MsNearestRank": 10918,
+    "p95MsNearestRank": 21039,
+    "maxMs": 21039,
+    "over30s": 0,
+    "totalTokens": 112773,
+    "avgMs": 12263,
+    "answersWithoutEvidence": 0
+  },
+  "comparison": {
+    "denominator": 10,
+    "finalRiskExact": 2,
+    "candidateRiskExact": 5,
+    "officialRows": 6,
+    "draftRows": 10
+  }
+}

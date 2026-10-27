@@ -1,0 +1,41 @@
+{
+  "score": 1.0,
+  "passed": true,
+  "checks": [
+    {
+      "name": "status",
+      "passed": true,
+      "detail": "实际 succeeded，期望 succeeded/needs_confirmation"
+    },
+    {
+      "name": "toolsCalled:run_dd_agents",
+      "passed": true,
+      "detail": "已调用"
+    },
+    {
+      "name": "requireEvidence",
+      "passed": true,
+      "detail": "证据 9 条"
+    },
+    {
+      "name": "riskLevel",
+      "passed": true,
+      "detail": "期望 低风险，已命中"
+    },
+    {
+      "name": "suggestedCreditAmount",
+      "passed": true,
+      "detail": "命中 ['2500-3000']"
+    },
+    {
+      "name": "dueDiligenceConclusion",
+      "passed": true,
+      "detail": "文本匹配覆盖（不代表业务正确） 7/7=100%（阈值 70%）；命中 ['2.86亿', '净利润3120', '净利率10.9', '资产负债率40', '经营现金流3580', '现有贷款4500', '对外担保500']"
+    },
+    {
+      "name": "scoringPoints",
+      "passed": true,
+      "detail": "文本匹配覆盖（不代表业务正确） 4/5=80%（阈值 60%）；命中 ['风险评级正确', '现金流质量好', '额度合理', '结论完整']；未命中 ['财务指标计算正确']"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "input": "/tmp/ocft-public-restart-20261024-inputs/questions.jsonl",
+  "generatedAt": "2026-10-24T09:50:05+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 9,
+    "needs_confirmation": 1
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 28458,
+  "totalTokens": 250967,
+  "failures": []
+}

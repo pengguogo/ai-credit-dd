@@ -1,0 +1,65 @@
+[
+  {
+    "table": "loan_application",
+    "sourceRows": 10,
+    "dbRows": 10,
+    "allSourceRowsPresentUnchanged": true,
+    "noExtraRows": true
+  },
+  {
+    "table": "enterprise_basic",
+    "sourceRows": 10,
+    "dbRows": 10,
+    "allSourceRowsPresentUnchanged": true,
+    "noExtraRows": true
+  },
+  {
+    "table": "enterprise_shareholder",
+    "sourceRows": 23,
+    "dbRows": 23,
+    "allSourceRowsPresentUnchanged": true,
+    "noExtraRows": true
+  },
+  {
+    "table": "enterprise_finance",
+    "sourceRows": 30,
+    "dbRows": 30,
+    "allSourceRowsPresentUnchanged": true,
+    "noExtraRows": true
+  },
+  {
+    "table": "enterprise_lawsuit",
+    "sourceRows": 22,
+    "dbRows": 22,
+    "allSourceRowsPresentUnchanged": true,
+    "noExtraRows": true
+  },
+  {
+    "table": "enterprise_public_opinion",
+    "sourceRows": 28,
+    "dbRows": 28,
+    "allSourceRowsPresentUnchanged": true,
+    "noExtraRows": true
+  },
+  {
+    "table": "enterprise_related",
+    "sourceRows": 27,
+    "dbRows": 27,
+    "allSourceRowsPresentUnchanged": true,
+    "noExtraRows": true
+  },
+  {
+    "table": "enterprise_guarantee",
+    "sourceRows": 11,
+    "dbRows": 11,
+    "allSourceRowsPresentUnchanged": true,
+    "noExtraRows": true
+  },
+  {
+    "table": "enterprise_risk",
+    "sourceRows": 10,
+    "dbRows": 10,
+    "allSourceRowsPresentUnchanged": true,
+    "noExtraRows": true
+  }
+]

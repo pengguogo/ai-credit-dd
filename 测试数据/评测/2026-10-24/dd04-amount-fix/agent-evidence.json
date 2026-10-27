@@ -1,0 +1,4276 @@
+[
+  {
+    "applicationId": "LA001",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_48fb4dec57e4"
+    ],
+    "evidenceId": "ev_8afd73037007",
+    "systemRisk": "低风险",
+    "systemCredit": "2500-3000",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected",
+    "answer": "# 华东精密机械制造有限公司（E001）信贷尽调报告\n\n**申请 LA001｜3000万元、36个月｜用途：购置数控机床及产线扩建｜抵押担保｜申请日 2024-03-15**\n\n## 一、企业概况\n通用设备制造业，2008-05-12 成立，经营状态“在业”（工商核验 ev_79cd3ea05c26）。实缴比例 100%，实控人与第一大股东均为陈建国，二者一致；关联企业申报 2 家、实际 2 家，无担保逾期、无担保圈；未发现工商异常 findings。\n\n## 二、财务分析\n依据 analyze_financials（ev_a248176866a3），取申请前三个完整年度 2021–2023：\n- 营收 23500→25800→28600 万元；净利润 2380→2750→3120 万元。最近一期同比：营收 +10.85%，净利润 +13.45%（相邻年度比较）。三年营收年复合增速 10.32%、净利润年复合增速 14.50%。\n- 资产负债率 44.34%→42.11%→40.00%，逐年下降；2023 年净资产 14700 万元，有息负债/总资产 18.37%。\n- 盈利与现金：2023 年净利率 10.91%、ROE 21.22%、ROA 12.73%，经营现金流/净利润 1.1474（现金含量良好）。\n- 周转（以营业收入为分母，数据集无营业成本）：应收周转天数 55.91→55.17→53.60 天，存货周转天数 76.11→73.57→71.47 天，持续改善。\n- 三年审计意见均为标准无保留意见；资产=负债+所有者权益勾稽差额 0，勾稽通过。\n\n## 三、风险提示\n- 系统评级：**低风险，评分 98.71**（ev_e39255973109）；各维度 financial/solvency/stability/fraud 均为 100，judicial 93.53；无否决项。外部汇总评级同为低风险，与本系统一致（externalUsedInScore=false，无需人工复核）。\n- 反欺诈：6 条规则全部未命中（hitCount=0，ev_f8a35e059f71），包括营收与经营现金流背离、存货异常增长、应收增速、其他应收款占比、长期背离、担保圈。\n- 舆情（ev_831a4da387aa）：仅 3 条正面事件——PO00101（2023-08-15，省工信厅，获评省级专精特新中小企业）、PO00102（2023-05-20，上海证券报，订单同比增20%、产能利用率92%）、PO00103（2022-11-08，市科技局，通过高新技术企业复审）。\n- 涉诉：C00101 为**已结案**原告案件，金额 85 万元（属历史已结，不计入风险敞口）；当前未结被告金额 0 万元。\n- 需注意：本次为模拟政策测算，非银行批准额度；缺少还本付息计划，经营现金流仅作保守调整，不等同精确偿债覆盖率。\n\n## 四、额度建议\n按 incremental-v1 政策（ev_2153cca1c3e4）：营收口径上限 28600×0.12=3432 万元；净资产口径 14700×0.4=5880 万元；取小得财务能力 3432 万元；低风险系数 1.0、现金流系数 1 → 3432 万元；申请额封顶 min(3000, 3432)=3000 万元；输出区间 2500–3000 万元。\n**建议授信 2500–3000 万元，期限 36 个月，利率方向下浮，担保方式为抵押担保。** 敞口参照：存量贷款余额 4500 万元、对外担保 500 万元（仅作核验，不重复全额扣减）。\n\n## 五、风控条件\n1. 担保方式按申请的抵押担保落实，抵押物办妥登记与评估；\n2. 核验存量贷款 4500 万元及履约安排，不作为本次额度全额扣减；\n3. 核验对外担保 500 万元及履约安排，不作为本次额度全额扣减；\n4. 跟踪设备采购与产线扩建进度、订单与产能利用率变化，按季复核财务与舆情。\n\n**结论：低风险（98.71 分），无否决、无反欺诈命中，建议在 2500–3000 万元区间内授信，落实上述条件后放款。**",
+    "creditEvidence": {
+      "asOf": "2024-03-15",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [],
+          "industry": "通用设备制造业",
+          "enterpriseId": "E001",
+          "establishDate": "2008-05-12",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 98.71,
+          "title": "风险提示",
+          "vetoes": [],
+          "fraudHits": [],
+          "riskLevel": "低风险",
+          "opinionLabels": [
+            "荣誉资质"
+          ],
+          "externalRiskLevel": "低风险",
+          "needsManualReview": false,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的抵押担保落实",
+            "核验存量贷款4500万元及履约安排，不作为本次额度全额扣减",
+            "核验对外担保500万元及履约安排，不作为本次额度全额扣减"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-03-15",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 3432.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 5880.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 3432.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 3432.0,
+              "formula": "财务能力 × 低风险系数1.0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 3432.0,
+              "formula": "评级后能力 × 现金流系数1"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 3000.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "2500-3000",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 4500.0,
+            "externalGuaranteeAmount": 500.0
+          },
+          "termMonths": 36,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "抵押担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "下浮",
+          "suggestedCreditAmount": "2500-3000"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1123
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2017
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0306
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.1013
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.0924
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.1085
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 76.1064
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 55.9149
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 4.7959
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.0906
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 6.5278
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.4434
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1934
+                }
+              },
+              "subjects": {
+                "revenue": 23500.0,
+                "inventory": 4900.0,
+                "netProfit": 2380.0,
+                "rdExpense": 720.0,
+                "totalAssets": 21200.0,
+                "adminExpense": 850.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 2500.0,
+                "ownersEquity": 11800.0,
+                "salesExpense": 1180.0,
+                "shortTermLoan": 1600.0,
+                "financeExpense": 100.0,
+                "otherReceivable": 320.0,
+                "totalLiabilities": 9400.0,
+                "operatingCashflow": 2600.0,
+                "accountsReceivable": 3600.0,
+                "interestBearingDebt": 4100.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1206
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2083
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0302
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.1066
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.0727
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.1316
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 73.5659
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 55.1744
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 4.9615
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.0895
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 6.6154
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.4211
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1886
+                }
+              },
+              "subjects": {
+                "revenue": 25800.0,
+                "inventory": 5200.0,
+                "netProfit": 2750.0,
+                "rdExpense": 780.0,
+                "totalAssets": 22800.0,
+                "adminExpense": 900.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 2500.0,
+                "ownersEquity": 13200.0,
+                "salesExpense": 1300.0,
+                "shortTermLoan": 1800.0,
+                "financeExpense": 110.0,
+                "otherReceivable": 350.0,
+                "totalLiabilities": 9600.0,
+                "operatingCashflow": 2950.0,
+                "accountsReceivable": 3900.0,
+                "interestBearingDebt": 4300.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1273
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2122
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0301
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.1091
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.1474
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.1673
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 71.4685
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 53.6014
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 5.1071
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.0892
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 6.8095
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.4
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1837
+                }
+              },
+              "subjects": {
+                "revenue": 28600.0,
+                "inventory": 5600.0,
+                "netProfit": 3120.0,
+                "rdExpense": 860.0,
+                "totalAssets": 24500.0,
+                "adminExpense": 980.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 2500.0,
+                "ownersEquity": 14700.0,
+                "salesExpense": 1450.0,
+                "shortTermLoan": 2000.0,
+                "financeExpense": 120.0,
+                "otherReceivable": 380.0,
+                "totalLiabilities": 9800.0,
+                "operatingCashflow": 3580.0,
+                "accountsReceivable": 4200.0,
+                "interestBearingDebt": 4500.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": 0.1085,
+            "revenueCagr": 0.1032,
+            "inventoryYoy": 0.0769,
+            "netProfitYoy": 0.1345,
+            "netProfitCagr": 0.145,
+            "receivableYoy": 0.0769
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "低风险",
+      "enterpriseId": "E001",
+      "applicationId": "LA001",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "2500-3000",
+      "dueDiligenceConclusion": "风险评级低风险（评分98.71）。建议额度2500-3000万元。一票否决：无。反欺诈命中：无。"
+    }
+  },
+  {
+    "applicationId": "LA002",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_6c798b1bc849"
+    ],
+    "evidenceId": "ev_d093154041a2",
+    "systemRisk": "低风险",
+    "systemCredit": "1200-1500",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected",
+    "answer": "# 星辰智能科技有限公司（E002）信贷尽调报告\n**申请 LA002 ｜ 申请金额 1500 万元 ｜ 期限 24 个月 ｜ 信用担保 ｜ 申请日 2024-03-20 ｜ 用途：研发投入及市场推广**\n\n## 一、企业概况\n企业处于在业状态，所属行业为软件和信息技术服务业，成立于 2015-09-23。注册资本实缴比例 100%；实控人为李明轩，同时为第一大股东，二者一致。申报的关联企业 3 家，实际也为 3 家，二者匹配。担保逾期 0 笔，担保圈 0 个。工商核验无异常发现项（ev_0009d271a2f3）。\n\n## 二、财务分析\n本次取申请日之前 3 个完整年度（2021—2023）的数据，三年均经标准无保留意见审计，且资产=负债+所有者权益的勾稽差额均为 0，分别 0.0、0.0、0.0（ev_6a89751c4778）。\n\n- **规模与增长**：营收从 8600 万元增至 12800 万元、再增至 18500 万元；净利润从 920 万元增至 1560 万元、再增至 2100 万元。最近一年营收同比 +44.53%、净利润同比 +34.62%。2021—2023 年营收年复合增长率 46.67%，净利润年复合增长率 51.08%；这两个指标是三年复合值，并非单年同比。\n- **盈利与杠杆**：2023 年净利率 11.35%、加权 ROE 28.38%、ROA 15.91%；资产负债率连续下降（58.54%→49.52%→43.94%），有息负债/总资产仅 11.36%，负债结构较轻。\n- **现金流质量**：经营现金流/净利润三年为 0.96、0.85、0.88，利润的现金支撑尚可，没有长期背离。\n- **关注项**：应收账款周转天数三年分别为 135.81、136.88、134.16 天，持续处于预警区间；期间费用率虽然由 41.22% 降至 32.86%，但仍被标记为预警。因为数据集没有提供营业成本，所以不能据此推断毛利率。\n\n## 三、风险提示\n- **系统评级：低风险，评分 82.29**，无一票否决事项。各维度分数：财务 84.0、偿付 84.0、稳定性 100.0、司法 51.45、反欺诈 100.0（ev_e719630e2d2b）。其中司法维度最低。\n- **反欺诈**：F01—F06 全部未命中（命中数 0）。具体表现为：营收与现金流背离度 0.10 未超阈值；存货增速-营收增速为 -30.24%，没有异常增长；应收增速未超过营收增速；其他应收款/总资产 3.41%，低于 8%（ev_93e10c8c9641）。\n- **舆情与涉诉**（ev_6ccf71328ea2）：负面事件 PO00201（2023-11-12，21世纪经济报道）——核心算法团队 3 名骨干离职，市场担忧技术竞争力下降，影响中等。正面事件：PO00202 发布新一代 AI 大模型并获多项发明专利（科技日报，2023-06-05）；PO00203 获评高新技术企业（深圳市科创委，2022-09-18）。涉诉方面：C00201 为**当前未结被告**案件，金额 120 万元，案件审理中；C00202 已结案被告 30 万元，属于历史已结案件，两者不应混同；未结被告合计 120 万元。\n- **外部评级差异**：外部汇总为“中风险”，与本系统“低风险”不一致，且该外部级别未参与计分；工具已标注 needsManualReview，**需人工复核**，不得以外部级别替代本系统评级。\n\n## 四、额度建议\n建议授信区间 **1200—1500 万元**，期限 24 个月，利率方向下浮，担保方式按申请的信用担保落实；政策版本为 incremental-v1（ev_6cd4feeeda17）。\n\n测算要点：营收口径上限 18500×0.12=2220 万元；净资产口径上限 7400×0.4=2960 万元；取两者中较小值，得到财务能力 2220 万元；按低风险系数 1.0 和现金流系数 1 调整后仍为 2220 万元；再与本次申请额 1500 万元取较小值，硬上限为 1500 万元，下界按 1500×(1-15%) 取整后得到区间 1200—1500 万元。存量贷款 2000 万元、对外担保 800 万元仅作敞口核验条件，未全额扣减。\n\n## 五、风控条件\n1. 担保方式按申请的信用担保落实。\n2. 核验存量贷款 2000 万元及还款履约安排，不作为本次额度全额扣减。\n3. 核验对外担保 800 万元及履约安排，不作为本次额度全额扣减。\n4. 建议补充：跟踪 C00201 未结案件（120 万元）进展；核验应收账款回款与账龄（周转天数约 134 天）；就 PO00201 核心技术人员流失情况下的技术团队稳定性做访谈。\n\n**结论**：本系统评级为低风险（82.29），无反欺诈命中、无一票否决，建议在 1200—1500 万元区间内授信，并完成上述核验条件与外部评级差异的人工复核。",
+    "creditEvidence": {
+      "asOf": "2024-03-20",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [],
+          "industry": "软件和信息技术服务业",
+          "enterpriseId": "E002",
+          "establishDate": "2015-09-23",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 82.29,
+          "title": "风险提示",
+          "vetoes": [],
+          "fraudHits": [],
+          "riskLevel": "低风险",
+          "opinionLabels": [
+            "荣誉资质",
+            "未结被告/被执行"
+          ],
+          "externalRiskLevel": "中风险",
+          "needsManualReview": true,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的信用担保落实",
+            "核验存量贷款2000万元及履约安排，不作为本次额度全额扣减",
+            "核验对外担保800万元及履约安排，不作为本次额度全额扣减"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-03-20",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 2220.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 2960.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 2220.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 2220.0,
+              "formula": "财务能力 × 低风险系数1.0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 2220.0,
+              "formula": "评级后能力 × 现金流系数1"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 1500.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "1200-1500",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 2000.0,
+            "externalGuaranteeAmount": 800.0
+          },
+          "termMonths": 24,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "信用担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "下浮",
+          "suggestedCreditAmount": "1200-1500"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1122
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2706
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.1744
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.107
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.9565
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.0488
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 10.6105
+                },
+                "receivableDays": {
+                  "flag": "warn",
+                  "name": "应收账款周转天数",
+                  "value": 135.814
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 34.4
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.4122
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 2.6875
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.5854
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.122
+                }
+              },
+              "subjects": {
+                "revenue": 8600.0,
+                "inventory": 250.0,
+                "netProfit": 920.0,
+                "rdExpense": 1500.0,
+                "totalAssets": 8200.0,
+                "adminExpense": 1100.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 0.0,
+                "ownersEquity": 3400.0,
+                "salesExpense": 2400.0,
+                "shortTermLoan": 1000.0,
+                "financeExpense": 45.0,
+                "otherReceivable": 320.0,
+                "totalLiabilities": 4800.0,
+                "operatingCashflow": 880.0,
+                "accountsReceivable": 3200.0,
+                "interestBearingDebt": 1000.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1486
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2943
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.1641
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.1219
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.8462
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.219
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 7.9844
+                },
+                "receivableDays": {
+                  "flag": "warn",
+                  "name": "应收账款周转天数",
+                  "value": 136.875
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 45.7143
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.3641
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 2.6667
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.4952
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1143
+                }
+              },
+              "subjects": {
+                "revenue": 12800.0,
+                "inventory": 280.0,
+                "netProfit": 1560.0,
+                "rdExpense": 2100.0,
+                "totalAssets": 10500.0,
+                "adminExpense": 1400.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 0.0,
+                "ownersEquity": 5300.0,
+                "salesExpense": 3200.0,
+                "shortTermLoan": 1200.0,
+                "financeExpense": 60.0,
+                "otherReceivable": 380.0,
+                "totalLiabilities": 5200.0,
+                "operatingCashflow": 1320.0,
+                "accountsReceivable": 4800.0,
+                "interestBearingDebt": 1200.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1591
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2838
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.1514
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.1135
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.881
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.4015
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 6.3135
+                },
+                "receivableDays": {
+                  "flag": "warn",
+                  "name": "应收账款周转天数",
+                  "value": 134.1622
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 57.8125
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.3286
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 2.7206
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.4394
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1136
+                }
+              },
+              "subjects": {
+                "revenue": 18500.0,
+                "inventory": 320.0,
+                "netProfit": 2100.0,
+                "rdExpense": 2800.0,
+                "totalAssets": 13200.0,
+                "adminExpense": 1800.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 0.0,
+                "ownersEquity": 7400.0,
+                "salesExpense": 4200.0,
+                "shortTermLoan": 1500.0,
+                "financeExpense": 80.0,
+                "otherReceivable": 450.0,
+                "totalLiabilities": 5800.0,
+                "operatingCashflow": 1850.0,
+                "accountsReceivable": 6800.0,
+                "interestBearingDebt": 1500.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": 0.4453,
+            "revenueCagr": 0.4667,
+            "inventoryYoy": 0.1429,
+            "netProfitYoy": 0.3462,
+            "netProfitCagr": 0.5108,
+            "receivableYoy": 0.4167
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "低风险",
+      "enterpriseId": "E002",
+      "applicationId": "LA002",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "1200-1500",
+      "dueDiligenceConclusion": "风险评级低风险（评分82.29）。建议额度1200-1500万元。一票否决：无。反欺诈命中：无。"
+    }
+  },
+  {
+    "applicationId": "LA003",
+    "status": "needs_confirmation",
+    "errorCode": null,
+    "runIds": [
+      "run_052f62ddf761"
+    ],
+    "evidenceId": "ev_585fbc046a0f",
+    "systemRisk": "高风险",
+    "systemCredit": "0",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected",
+    "answer": "## 鑫达置业有限公司 LA003 尽调报告\n\n**申请要素**：申请 8,000 万元，期限 18 个月，用途为项目开发建设资金，担保方式为抵押担保，申请日 2024-02-28（企业编号 E003，房地产开发经营，2010-03-15 成立，在业）。\n\n**一、企业概况**\n工商核验显示：企业在业，实缴比例 100%，实控人与第一大股东均为王德发，二者一致；关联企业申报 5 家，实际 5 家，申报与实际情况一致。阻断项为 B03（法定代表人被限制高消费）、B07（对外担保逾期 1 笔）；警示项为 B08（担保圈关联 2 家）。\n\n**二、财务分析**\n2021—2023 年资产=负债+所有者权益勾稽均平衡（差额 0）。营业收入从 68,000 万元降至 72,000 万元，再降至 56,000 万元；2023 年营业收入同比 **-22.22%**，净利润由 5,600 万元降至 1,800 万元，同比 **-67.86%**；净利率分别为 7.06%、7.78%、3.21%，ROE 分别为 20.87%、23.33%、8.18%。资产负债率分别为 72.94%、73.91%、75.00%（均警示），2023 年有息负债与总资产之比为 45.45%（警示）。存货周转天数分别为 220 天、228 天、274 天（持续恶化、警示）；经营现金流与净利润之比三年均为 0.67，未落入 F01、F05 背离口径。三年审计意见均为标准无保留。数据集没有营业成本，因此不推断毛利率。\n\n**三、风险提示**\n风险评级采用 rate_risk 的结果：**高风险，评分 55.25**。维度得分分别为：财务 76、偿债 46、稳定性 75、司法 0、反欺诈 80。一票否决项为法定代表人限高、存在未结逾期；externalRiskLevel 同为高风险，与系统内部评级一致，needsManualReview=false。反欺诈检查仅命中 F06（关联企业 5 家，且存在担保圈，置信度 medium），F01—F05 均未命中。\n舆情扫描显示：PO00301（2023-12-20，扬子晚报）鑫达府上项目延期交付超 6 个月，业主集体维权；PO00302（2023-06-10，国家企业信用信息公示系统）因未按期公示 2022 年报被列入经营异常名录；PO00303（2022-08-15，中国执行信息公开网）子公司鑫达物业被强制执行 320 万元（已执行完毕）。诉讼方面，未结被告两笔：C00301 为 850 万元、C00302 为 680 万元，合计 **未结被告金额 1,530 万元**；已结案件 C00303（320 万元）、C00304（420 万元）为历史已结，不计入当前未结敞口。\n\n**四、额度建议**\n建议授信额度为 **0 万元**。测算过程为：营业收入口径上限 56,000×0.12=6,720 万元；净资产口径上限 22,000×0.4=8,800 万元，取较小值 6,720 万元；高风险系数为 0，评级调整后为 0；现金流系数为 1，调整后仍为 0；按申请额封顶后为 0，输出区间为 0。存量敞口：存量贷款余额 28,000 万元，对外担保 12,000 万元。\n\n**五、风控条件**\n1）担保方式按申请的抵押担保方式落实；2）核验存量贷款 28,000 万元及其履约安排，不作为本次额度全额扣减；3）核验对外担保 12,000 万元及其履约安排；4）一票否决项（法定代表人限高、存在未结逾期）未解除前不新增授信；5）存量逾期结清前不投放；6）高风险档建议额度为 0。\n说明：额度是按团队模拟政策计算的，并非银行批准额度；营业收入与净资产构成约束，存量与担保仅用于敞口核验，不重复扣减。\n\n**结论**：一票否决项和司法维度得分 0 导致评级为高风险，建议不予新增授信，待限高解除、逾期结清、未结诉讼（1,530 万元）化解后再行评估。",
+    "creditEvidence": {
+      "asOf": "2024-02-28",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [
+            {
+              "code": "B03",
+              "level": "block",
+              "detail": "法定代表人被限制高消费"
+            },
+            {
+              "code": "B07",
+              "level": "block",
+              "detail": "对外担保逾期 1 笔"
+            },
+            {
+              "code": "B08",
+              "level": "warn",
+              "detail": "担保圈关联 2 家"
+            }
+          ],
+          "industry": "房地产开发经营",
+          "enterpriseId": "E003",
+          "establishDate": "2010-03-15",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 55.25,
+          "title": "风险提示",
+          "vetoes": [
+            "法定代表人限高",
+            "存在未结逾期"
+          ],
+          "fraudHits": [
+            "F06"
+          ],
+          "riskLevel": "高风险",
+          "opinionLabels": [
+            "司法执行",
+            "经营负面",
+            "未结被告/被执行"
+          ],
+          "externalRiskLevel": "高风险",
+          "needsManualReview": false,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的抵押担保落实",
+            "核验存量贷款28000万元及履约安排，不作为本次额度全额扣减",
+            "核验对外担保12000万元及履约安排，不作为本次额度全额扣减",
+            "一票否决项未解除前不新增授信：法定代表人限高、存在未结逾期",
+            "存量逾期结清前不投放",
+            "高风险档建议额度为 0"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-02-28",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 6720.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 8800.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 6720.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 0.0,
+              "formula": "财务能力 × 高风险系数0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 0.0,
+              "formula": "评级后能力 × 现金流系数1"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 0.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "0",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 28000.0,
+            "externalGuaranteeAmount": 12000.0
+          },
+          "termMonths": 18,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "抵押担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "不适用",
+          "suggestedCreditAmount": "0"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0565
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2087
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0706
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.6667
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 0.8
+                },
+                "inventoryDays": {
+                  "flag": "warn",
+                  "name": "存货周转天数",
+                  "value": 220.0735
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 76.2206
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 1.6585
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1221
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 4.7887
+                },
+                "assetLiabilityRatio": {
+                  "flag": "warn",
+                  "name": "资产负债率",
+                  "value": 0.7294
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.4
+                }
+              },
+              "subjects": {
+                "revenue": 68000.0,
+                "inventory": 41000.0,
+                "netProfit": 4800.0,
+                "rdExpense": 0.0,
+                "totalAssets": 85000.0,
+                "adminExpense": 3000.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 22000.0,
+                "ownersEquity": 23000.0,
+                "salesExpense": 3500.0,
+                "shortTermLoan": 12000.0,
+                "financeExpense": 1800.0,
+                "otherReceivable": 900.0,
+                "totalLiabilities": 62000.0,
+                "operatingCashflow": 3200.0,
+                "accountsReceivable": 14200.0,
+                "interestBearingDebt": 34000.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0609
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2333
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0778
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.6786
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 0.7826
+                },
+                "inventoryDays": {
+                  "flag": "warn",
+                  "name": "存货周转天数",
+                  "value": 228.125
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 80.0972
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 1.6
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.125
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 4.557
+                },
+                "assetLiabilityRatio": {
+                  "flag": "warn",
+                  "name": "资产负债率",
+                  "value": 0.7391
+                },
+                "interestBearingRatio": {
+                  "flag": "warn",
+                  "name": "有息负债/总资产",
+                  "value": 0.4239
+                }
+              },
+              "subjects": {
+                "revenue": 72000.0,
+                "inventory": 45000.0,
+                "netProfit": 5600.0,
+                "rdExpense": 0.0,
+                "totalAssets": 92000.0,
+                "adminExpense": 3200.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 25000.0,
+                "ownersEquity": 24000.0,
+                "salesExpense": 3800.0,
+                "shortTermLoan": 14000.0,
+                "financeExpense": 2000.0,
+                "otherReceivable": 1000.0,
+                "totalLiabilities": 68000.0,
+                "operatingCashflow": 3800.0,
+                "accountsReceivable": 15800.0,
+                "interestBearingDebt": 39000.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0205
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.0818
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0321
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.6667
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 0.6364
+                },
+                "inventoryDays": {
+                  "flag": "warn",
+                  "name": "存货周转天数",
+                  "value": 273.75
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 81.4732
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 1.3333
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1393
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 4.48
+                },
+                "assetLiabilityRatio": {
+                  "flag": "warn",
+                  "name": "资产负债率",
+                  "value": 0.75
+                },
+                "interestBearingRatio": {
+                  "flag": "warn",
+                  "name": "有息负债/总资产",
+                  "value": 0.4545
+                }
+              },
+              "subjects": {
+                "revenue": 56000.0,
+                "inventory": 42000.0,
+                "netProfit": 1800.0,
+                "rdExpense": 0.0,
+                "totalAssets": 88000.0,
+                "adminExpense": 2800.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 28000.0,
+                "ownersEquity": 22000.0,
+                "salesExpense": 3200.0,
+                "shortTermLoan": 12000.0,
+                "financeExpense": 1800.0,
+                "otherReceivable": 1200.0,
+                "totalLiabilities": 66000.0,
+                "operatingCashflow": 1200.0,
+                "accountsReceivable": 12500.0,
+                "interestBearingDebt": 40000.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": -0.2222,
+            "revenueCagr": -0.0925,
+            "inventoryYoy": -0.0667,
+            "netProfitYoy": -0.6786,
+            "netProfitCagr": -0.3876,
+            "receivableYoy": -0.2089
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "高风险",
+      "enterpriseId": "E003",
+      "applicationId": "LA003",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "0",
+      "dueDiligenceConclusion": "风险评级高风险（评分55.25）。建议额度0万元。一票否决：法定代表人限高、存在未结逾期。反欺诈命中：F06。"
+    }
+  },
+  {
+    "applicationId": "LA004",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_ff223ffff52e"
+    ],
+    "evidenceId": "ev_f10dfa933422",
+    "systemRisk": "低风险",
+    "systemCredit": "1700-2000",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected",
+    "answer": "# 远洋进出口贸易有限公司（E004）尽调报告\n\n申请 LA004：2000万元，12个月，采购备货流动资金，信用担保，申请日2024-03-10\n\n## 一、企业概况\n批发业，2012-07-08成立，经营状态“在业”；实缴比例100%，实控人与第一大股东均为张海涛，两者一致；关联企业1家（申报1家，与实测一致），担保逾期0笔，无担保圈。工商核验未发现异常事项。（ev_461c47843e41）\n\n## 二、财务分析\n2021—2023年三个年度财报勾稽均平衡（资产=负债+所有者权益，差额0），均为标准无保留意见（ev_0744004f5d9a）：\n- 营收76000→82000→95000万元，2023年同比增长15.85%，三年CAGR 11.8%；净利1380→1620→1850万元，同比增长14.2%。\n- 资产负债率从72.37%降至69.44%、71.52%，2023年不再触发预警；净利率仅1.95%（连续三年预警）。\n- 经营现金流1280→1450→1600万元，经营现金流/净利0.86—0.93，现金流与利润基本匹配。\n- 应收账款周转天数约32天、存货约12天（以营业收入为分母，数据集无营业成本，故不测算毛利率）；有息负债/总资产19.44%。\n\n## 三、风险提示\n系统评级：**低风险，评分87.61**（金融92、偿债92、稳定性100、司法73.04、反欺诈80），无一票否决（ev_5a6bda917160）。\n- 反欺诈命中F01“营收与经营现金流背离”，含量值0.0168、阈值0.02，置信度中等；其余F02—F06均未命中（ev_40fb3c6e03d5）。\n- 舆情：PO00401（2023-04-12，厦门海关）报关单填制不规范，罚款2万元，影响低；PO00402（2022-11-20，福建日报）获海关AEO高级认证，属正面报道。涉诉C00401、C00402均为**已结案**且企业为原告（金额120万、100万元），当前未结被告金额为0（ev_7b7e32f4259b）。\n- **需人工复核**：外部汇总评级为“中风险”，与本系统“低风险”不一致；外部评级未参与计分，不得替代本系统评级。\n\n## 四、额度建议\n建议 **1700—2000万元**，12个月，利率方向下浮，信用担保（ev_73d7fcb0d3fa）。测算：营收上限95000×0.12=11400万元；净资产上限5500×0.4=2200万元；取小2200万元；低风险系数1.0、现金流系数1后仍为2200万元；按申请额封顶2000万元；下界=2000×(1-15%)=1700万元。存量贷款余额3500万元、对外担保0元仅作核验，不重复扣减。注：此为团队模拟政策额度，非银行批准额度。\n\n## 五、风控条件\n1. 担保方式按申请的信用担保落实；\n2. 核验存量贷款3500万元及履约安排，不作为本次额度全额扣减；\n3. 就F01现金流背离中0.0168与阈值0.02接近这一情况，追加近12个月流水与回款凭证抽查；\n4. 外部“中风险”与本系统“低风险”的差异须人工复核后再定稿。",
+    "creditEvidence": {
+      "asOf": "2024-03-10",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [],
+          "industry": "批发业",
+          "enterpriseId": "E004",
+          "establishDate": "2012-07-08",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 87.61,
+          "title": "风险提示",
+          "vetoes": [],
+          "fraudHits": [
+            "F01"
+          ],
+          "riskLevel": "低风险",
+          "opinionLabels": [
+            "行政处罚"
+          ],
+          "externalRiskLevel": "中风险",
+          "needsManualReview": true,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的信用担保落实",
+            "核验存量贷款3500万元及履约安排，不作为本次额度全额扣减"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-03-10",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 11400.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 2200.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 2200.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 2200.0,
+              "formula": "财务能力 × 低风险系数1.0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 2200.0,
+              "formula": "评级后能力 × 现金流系数1"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 2000.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "1700-2000",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 3500.0,
+            "externalGuaranteeAmount": 0.0
+          },
+          "termMonths": 12,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "信用担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "下浮",
+          "suggestedCreditAmount": "1700-2000"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0908
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.3286
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0005
+                },
+                "netMargin": {
+                  "flag": "warn",
+                  "name": "净利率",
+                  "value": 0.0182
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.9275
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 5.0
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 12.0066
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 32.6579
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 30.4
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.0419
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 11.1765
+                },
+                "assetLiabilityRatio": {
+                  "flag": "warn",
+                  "name": "资产负债率",
+                  "value": 0.7237
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1974
+                }
+              },
+              "subjects": {
+                "revenue": 76000.0,
+                "inventory": 2500.0,
+                "netProfit": 1380.0,
+                "rdExpense": 40.0,
+                "totalAssets": 15200.0,
+                "adminExpense": 820.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 0.0,
+                "ownersEquity": 4200.0,
+                "salesExpense": 2300.0,
+                "shortTermLoan": 3000.0,
+                "financeExpense": 68.0,
+                "otherReceivable": 160.0,
+                "totalLiabilities": 11000.0,
+                "operatingCashflow": 1280.0,
+                "accountsReceivable": 6800.0,
+                "interestBearingDebt": 3000.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0982
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.3447
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0005
+                },
+                "netMargin": {
+                  "flag": "warn",
+                  "name": "净利率",
+                  "value": 0.0198
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.8951
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 4.9697
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 12.4634
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 32.0488
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 29.2857
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.0421
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 11.3889
+                },
+                "assetLiabilityRatio": {
+                  "flag": "warn",
+                  "name": "资产负债率",
+                  "value": 0.7152
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1939
+                }
+              },
+              "subjects": {
+                "revenue": 82000.0,
+                "inventory": 2800.0,
+                "netProfit": 1620.0,
+                "rdExpense": 45.0,
+                "totalAssets": 16500.0,
+                "adminExpense": 880.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 0.0,
+                "ownersEquity": 4700.0,
+                "salesExpense": 2500.0,
+                "shortTermLoan": 3200.0,
+                "financeExpense": 75.0,
+                "otherReceivable": 180.0,
+                "totalLiabilities": 11800.0,
+                "operatingCashflow": 1450.0,
+                "accountsReceivable": 7200.0,
+                "interestBearingDebt": 3200.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1028
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.3364
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0005
+                },
+                "netMargin": {
+                  "flag": "warn",
+                  "name": "净利率",
+                  "value": 0.0195
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.8649
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 5.2778
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 12.2947
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 32.6579
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 29.6875
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.0404
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 11.1765
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.6944
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1944
+                }
+              },
+              "subjects": {
+                "revenue": 95000.0,
+                "inventory": 3200.0,
+                "netProfit": 1850.0,
+                "rdExpense": 50.0,
+                "totalAssets": 18000.0,
+                "adminExpense": 950.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 0.0,
+                "ownersEquity": 5500.0,
+                "salesExpense": 2800.0,
+                "shortTermLoan": 3500.0,
+                "financeExpense": 85.0,
+                "otherReceivable": 200.0,
+                "totalLiabilities": 12500.0,
+                "operatingCashflow": 1600.0,
+                "accountsReceivable": 8500.0,
+                "interestBearingDebt": 3500.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": 0.1585,
+            "revenueCagr": 0.118,
+            "inventoryYoy": 0.1429,
+            "netProfitYoy": 0.142,
+            "netProfitCagr": 0.1578,
+            "receivableYoy": 0.1806
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "低风险",
+      "enterpriseId": "E004",
+      "applicationId": "LA004",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "1700-2000",
+      "dueDiligenceConclusion": "风险评级低风险（评分87.61）。建议额度1700-2000万元。一票否决：无。反欺诈命中：F01。"
+    }
+  },
+  {
+    "applicationId": "LA005",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_ff1660c1282f"
+    ],
+    "evidenceId": "ev_d0c21d06fef5",
+    "systemRisk": "低风险",
+    "systemCredit": "600-800",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected",
+    "answer": "# 绿源生态农业发展有限公司（E005）信贷尽调报告\n申请编号 LA005｜申请金额 800 万元｜期限 36 个月｜用途：扩建温室大棚及冷链设施｜申请日 2024-03-18\n\n## 一、企业概况\n农业种植行业，成立日期 2013-04-20，经营状态为在业。实缴比例 1.0；实际控制人刘丰收为第一大股东，两者一致；关联企业声明数量与实际数量均为 1 家；对外担保逾期 0 笔，无担保圈。工商核验未发现异常事项（证据 ev_4576d57b117d）。\n\n## 二、财务分析\n按申请日前完整年度取数，单位为万元；三年资产负债表勾稽全部平衡，gap=0，审计意见均为标准无保留意见（证据 ev_09e2cce82c0b）。\n\n- 收入与利润：营业收入从 2021 年 5,500 变为 2022 年 8,200，再变为 2023 年 6,800；净利润从 420 变为 720，再变为 580。2023 年营收同比 -17.07%，净利同比 -19.44%，属于相邻年度回落；但 2021 至 2023 年营收年复合增长率为 11.19%、净利年复合增长率为 17.51%，累计增幅与年复合增长率不可混用。\n- 偿债与盈利：2023 年资产负债率 53.85%、净利率 8.53%、ROE 24.17%、有息负债/总资产 25%，三年资产负债率稳定在 53.6%–54.2%。\n- 现金流质量：经营现金流/净利润 2021 年为 1.07、2022 年为 0.94、2023 年为 1.07；2023 年经营现金流 620 万，净利润现金含量正常。\n- 周转：因数据集没有营业成本，存货与应收周转以营业收入为分母。2023 年应收账款周转天数 64.41 天，存货周转天数 96.62 天，期间费用率 19.19%。\n\n## 三、风险提示\n- 系统评级结果为低风险，评分 98.3（财务 100、偿债 100、稳定性 100、司法 91.5、反欺诈 100），无一项一票否决（证据 ev_5e5fad7035b0）。\n- 反欺诈六条规则全部未命中：F01 现金流背离 0.0912（阈值 0.02，规则判定为未命中）、F02 0.0278、F03 -0.0293、F04 0.0288、F05 0、F06 关联企业 1 家；hitCount=0（证据 ev_8c3707f7a45e）。\n- 舆情健康分 91.5，标签为荣誉资质：PO00501（2023-07-10，山东省农业农村厅）获评省级农业产业化重点龙头企业；PO00502（2022-09-15，潍坊日报）绿色食品认证并出口东南亚，均为正面事件。\n- 司法：C00501 为已结案件，企业为原告，金额 35 万元；当前未结被告金额 0 元，需区分历史已结案件与当前未结金额（证据 ev_39322c2f7f0f）。\n- 需要人工复核：外部汇总评级为“低-中风险”，与本系统评级“低风险”不一致（externalUsedInScore=false，未参与计分）；按规定以本系统 rate_risk 结果为准，外部评级仅作对照，差异提交人工复核。\n- 经营关注点：2023 年营收与净利润同比双降约 17%–19%，需核实订单与销售恢复情况；本次用途为扩建，建设期现金流压力需跟踪。\n\n## 四、额度建议\n建议额度 600–800 万元，期限 36 个月，利率方向为下浮，担保方式按抵押担保落实（政策版本 incremental-v1，证据 ev_b5e74f99b67f）。\n\n测算步骤：营收口径上限 6,800×0.12=816 万；净资产口径上限 2,400×0.4=960 万；财务能力取小 816 万；低风险系数 1.0 与现金流系数 1 调整后仍为 816 万；与申请额 800 万封顶后为 800 万；输出下界 800×0.85≈600 万，上界 800 万，均向下取整至百万元，即 600–800 万元。\n\n敞口：存量贷款 1,200 万元、对外担保 200 万元，作为核验条件列示，不在净资产口径下全额重复扣减。注意：这是团队模拟政策测算，并非银行批准额度。\n\n## 五、风控条件\n1. 担保方式按申请的抵押担保落实，办理抵押登记与评估。\n2. 核验存量贷款 1,200 万元及履约安排，不作为本次额度全额扣减。\n3. 核验对外担保 200 万元及履约安排，不作为本次额度全额扣减。\n4. 放款前补充 2023 年营收下滑原因说明与在手订单证明；按建设进度分期提款。\n5. 外部评级与本系统评级不一致，提交人工复核结论后方可终审。\n\n结论：风险评级为低风险（评分 98.3），建议授信 600–800 万元；无一票否决，无欺诈信号命中。",
+    "creditEvidence": {
+      "asOf": "2024-03-18",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [],
+          "industry": "农业种植",
+          "enterpriseId": "E005",
+          "establishDate": "2013-04-20",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 98.3,
+          "title": "风险提示",
+          "vetoes": [],
+          "fraudHits": [],
+          "riskLevel": "低风险",
+          "opinionLabels": [
+            "荣誉资质"
+          ],
+          "externalRiskLevel": "低-中风险",
+          "needsManualReview": true,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的抵押担保落实",
+            "核验存量贷款1200万元及履约安排，不作为本次额度全额扣减",
+            "核验对外担保200万元及履约安排，不作为本次额度全额扣减"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-03-18",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 816.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 960.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 816.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 816.0,
+              "formula": "财务能力 × 低风险系数1.0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 816.0,
+              "formula": "评级后能力 × 现金流系数1"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 800.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "600-800",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 1200.0,
+            "externalGuaranteeAmount": 200.0
+          },
+          "termMonths": 36,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "抵押担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "下浮",
+          "suggestedCreditAmount": "600-800"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0875
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.1909
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0164
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0764
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.0714
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.1458
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 106.1818
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 66.3636
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 3.4375
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.2204
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 5.5
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.5417
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.25
+                }
+              },
+              "subjects": {
+                "revenue": 5500.0,
+                "inventory": 1600.0,
+                "netProfit": 420.0,
+                "rdExpense": 90.0,
+                "totalAssets": 4800.0,
+                "adminExpense": 400.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 500.0,
+                "ownersEquity": 2200.0,
+                "salesExpense": 780.0,
+                "shortTermLoan": 700.0,
+                "financeExpense": 32.0,
+                "otherReceivable": 120.0,
+                "totalLiabilities": 2600.0,
+                "operatingCashflow": 450.0,
+                "accountsReceivable": 1000.0,
+                "interestBearingDebt": 1200.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1286
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2769
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0134
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0878
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.9444
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.4643
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 93.4756
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 66.7683
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 3.9048
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1717
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 5.4667
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.5357
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.25
+                }
+              },
+              "subjects": {
+                "revenue": 8200.0,
+                "inventory": 2100.0,
+                "netProfit": 720.0,
+                "rdExpense": 110.0,
+                "totalAssets": 5600.0,
+                "adminExpense": 450.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 500.0,
+                "ownersEquity": 2600.0,
+                "salesExpense": 920.0,
+                "shortTermLoan": 900.0,
+                "financeExpense": 38.0,
+                "otherReceivable": 140.0,
+                "totalLiabilities": 3000.0,
+                "operatingCashflow": 680.0,
+                "accountsReceivable": 1500.0,
+                "interestBearingDebt": 1400.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1115
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2417
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0176
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0853
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.069
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.3077
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 96.6176
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 64.4118
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 3.7778
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1919
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 5.6667
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.5385
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.25
+                }
+              },
+              "subjects": {
+                "revenue": 6800.0,
+                "inventory": 1800.0,
+                "netProfit": 580.0,
+                "rdExpense": 120.0,
+                "totalAssets": 5200.0,
+                "adminExpense": 420.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 500.0,
+                "ownersEquity": 2400.0,
+                "salesExpense": 850.0,
+                "shortTermLoan": 800.0,
+                "financeExpense": 35.0,
+                "otherReceivable": 150.0,
+                "totalLiabilities": 2800.0,
+                "operatingCashflow": 620.0,
+                "accountsReceivable": 1200.0,
+                "interestBearingDebt": 1300.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": -0.1707,
+            "revenueCagr": 0.1119,
+            "inventoryYoy": -0.1429,
+            "netProfitYoy": -0.1944,
+            "netProfitCagr": 0.1751,
+            "receivableYoy": -0.2
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "低风险",
+      "enterpriseId": "E005",
+      "applicationId": "LA005",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "600-800",
+      "dueDiligenceConclusion": "风险评级低风险（评分98.3）。建议额度600-800万元。一票否决：无。反欺诈命中：无。"
+    }
+  },
+  {
+    "applicationId": "LA006",
+    "status": "needs_confirmation",
+    "errorCode": null,
+    "runIds": [
+      "run_b33a3afedab7"
+    ],
+    "evidenceId": "ev_a912504b8cfd",
+    "systemRisk": "高风险",
+    "systemCredit": "0",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected",
+    "answer": "# 宏基建设工程有限公司（E006）贷款申请 LA006 尽职调查\n\n## 一、企业概况\n企业编号是 E006，企业名称为宏基建设工程有限公司，所属行业为房屋建筑业，成立日期是 2009-11-30，经营状态为“在业”，是本次申请的唯一匹配主体。本次申请金额为 2500 万元，期限为 12 个月，用途是工程项目履约保证金及材料采购，担保方式为保证担保，申请日期为 2024-03-05。工商核验显示：实缴比例为 100%，实际控制人和第一大股东均为赵立功，二者一致；申报的关联企业有 4 家，实际也是 4 家；对外担保的逾期笔数为 0，未发现担保圈。工商核验没有异常发现。\n\n## 二、财务分析（数据来自 2021—2023 年度，单位：万元）\n- 营收 35,000→38,000→42,000，同比 +10.53%，三年年复合 +9.54%；净利润 1200→1450→980，2023 年同比 −32.41%，年复合 −9.63%，呈现“增收不增利”。\n- 资产负债率三年均 75%（warn 警示），2023 年末负债 21,000、所有者权益 7,000；三年勾稽差额均为 0，报表平衡。\n- 净利率由 3.82% 降至 2.33%（warn）；经营现金流/净利润由 0.5667→0.3571（warn），2023 年经营现金流仅 350，盈利现金含量持续弱化。\n- 应收账款周转天数 154.34→155.61→160.77 天（warn，连续恶化），2023 年应收账款 18,500，占营收 44%；有息负债/总资产约 19.6%，期间费用率 14.95%。三年审计意见均为标准无保留。\n\n## 三、风险提示\n1. **一票否决**：风险评级命中“存在未结逾期”，评级为**高风险**，评分 55.0（财务 68、偿债 38、稳定性 100、司法 0、欺诈 80）；externalRiskLevel 同为高风险，仅作对照，未参与计分，评级采用本系统结果。\n2. **反欺诈**：命中 F01“营收与经营现金流背离”，最近一年经营现金流/营业收入 0.0083，低于阈值 0.02（高置信）；F02—F06 未命中。\n3. **舆情与涉诉**：舆情标签为司法执行、经营负面、未结被告/被执行。PO00601（2023-10-25，大河报）工地安全事故致 1 人轻伤被责令整改；PO00602（2023-03-15，河南商报）被投诉拖欠农民工工资、人社局介入；PO00603（2022-06-08，中国执行信息公开网）建设工程施工合同纠纷被执行 280 万。未结被告案件 C00601（680 万）、C00602（320 万）审理中，**未结被告合计 1,000 万元**；C00603（280 万，已执行完毕）、C00604（150 万）、C00605（420 万）为已结案件，与未结金额须分开看待。\n\n## 四、额度建议\n建议授信 **0 万元**，期限 12 个月，利率方向不适用。测算过程：营收口径上限 42,000×0.12＝5,040；净资产口径 `7,000×0.4`＝2,800；两者取小得到 2,800；高风险系数 0 调整后为 0，现金流系数 1 仍为 0；按申请额 2,500 封顶后为 0，输出区间“0”。此为团队模拟政策，非银行批准额度。\n\n## 五、风控条件\n按保证担保落实担保方式；核验存量贷款 5,500 万元及对外担保 3,000 万元的履约安排（仅作敞口核验，不作全额扣减）；一票否决项未解除前不新增授信，存量逾期结清前不投放；高风险档建议额度为 0。\n\n**结论**：一票否决与司法、舆情风险叠加，不予新增授信；如企业结清逾期并改善回款，可重新申报复核。",
+    "creditEvidence": {
+      "asOf": "2024-03-05",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [],
+          "industry": "房屋建筑业",
+          "enterpriseId": "E006",
+          "establishDate": "2009-11-30",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 55.0,
+          "title": "风险提示",
+          "vetoes": [
+            "存在未结逾期"
+          ],
+          "fraudHits": [
+            "F01"
+          ],
+          "riskLevel": "高风险",
+          "opinionLabels": [
+            "司法执行",
+            "经营负面",
+            "未结被告/被执行"
+          ],
+          "externalRiskLevel": "高风险",
+          "needsManualReview": false,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的保证担保落实",
+            "核验存量贷款5500万元及履约安排，不作为本次额度全额扣减",
+            "核验对外担保3000万元及履约安排，不作为本次额度全额扣减",
+            "一票否决项未解除前不新增授信：存在未结逾期",
+            "存量逾期结清前不投放",
+            "高风险档建议额度为 0"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-03-05",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 5040.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 2800.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 2800.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 0.0,
+              "formula": "财务能力 × 高风险系数0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 0.0,
+              "formula": "评级后能力 × 现金流系数1"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 0.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "0",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 5500.0,
+            "externalGuaranteeAmount": 3000.0
+          },
+          "termMonths": 12,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "保证担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "不适用",
+          "suggestedCreditAmount": "0"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.05
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0343
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.5667
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.4583
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 41.7143
+                },
+                "receivableDays": {
+                  "flag": "warn",
+                  "name": "应收账款周转天数",
+                  "value": 154.3429
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 8.75
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1491
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 2.3649
+                },
+                "assetLiabilityRatio": {
+                  "flag": "warn",
+                  "name": "资产负债率",
+                  "value": 0.75
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1917
+                }
+              },
+              "subjects": {
+                "revenue": 35000.0,
+                "inventory": 4000.0,
+                "netProfit": 1200.0,
+                "rdExpense": 0.0,
+                "totalAssets": 24000.0,
+                "adminExpense": 1800.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 1800.0,
+                "ownersEquity": 6000.0,
+                "salesExpense": 3200.0,
+                "shortTermLoan": 2800.0,
+                "financeExpense": 220.0,
+                "otherReceivable": 600.0,
+                "totalLiabilities": 18000.0,
+                "operatingCashflow": 680.0,
+                "accountsReceivable": 14800.0,
+                "interestBearingDebt": 4600.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0558
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2231
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0382
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 0.5655
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.4615
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 40.3421
+                },
+                "receivableDays": {
+                  "flag": "warn",
+                  "name": "应收账款周转天数",
+                  "value": 155.6053
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 9.0476
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1513
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 2.3457
+                },
+                "assetLiabilityRatio": {
+                  "flag": "warn",
+                  "name": "资产负债率",
+                  "value": 0.75
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1923
+                }
+              },
+              "subjects": {
+                "revenue": 38000.0,
+                "inventory": 4200.0,
+                "netProfit": 1450.0,
+                "rdExpense": 0.0,
+                "totalAssets": 26000.0,
+                "adminExpense": 2000.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 2000.0,
+                "ownersEquity": 6500.0,
+                "salesExpense": 3500.0,
+                "shortTermLoan": 3000.0,
+                "financeExpense": 250.0,
+                "otherReceivable": 700.0,
+                "totalLiabilities": 19500.0,
+                "operatingCashflow": 820.0,
+                "accountsReceivable": 16200.0,
+                "interestBearingDebt": 5000.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.035
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.14
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0
+                },
+                "netMargin": {
+                  "flag": "warn",
+                  "name": "净利率",
+                  "value": 0.0233
+                },
+                "ocfToProfit": {
+                  "flag": "warn",
+                  "name": "经营现金流/净利润",
+                  "value": 0.3571
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.5
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 39.1071
+                },
+                "receivableDays": {
+                  "flag": "warn",
+                  "name": "应收账款周转天数",
+                  "value": 160.7738
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 9.3333
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1495
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 2.2703
+                },
+                "assetLiabilityRatio": {
+                  "flag": "warn",
+                  "name": "资产负债率",
+                  "value": 0.75
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1964
+                }
+              },
+              "subjects": {
+                "revenue": 42000.0,
+                "inventory": 4500.0,
+                "netProfit": 980.0,
+                "rdExpense": 0.0,
+                "totalAssets": 28000.0,
+                "adminExpense": 2200.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 2000.0,
+                "ownersEquity": 7000.0,
+                "salesExpense": 3800.0,
+                "shortTermLoan": 3500.0,
+                "financeExpense": 280.0,
+                "otherReceivable": 800.0,
+                "totalLiabilities": 21000.0,
+                "operatingCashflow": 350.0,
+                "accountsReceivable": 18500.0,
+                "interestBearingDebt": 5500.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": 0.1053,
+            "revenueCagr": 0.0954,
+            "inventoryYoy": 0.0714,
+            "netProfitYoy": -0.3241,
+            "netProfitCagr": -0.0963,
+            "receivableYoy": 0.142
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "高风险",
+      "enterpriseId": "E006",
+      "applicationId": "LA006",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "0",
+      "dueDiligenceConclusion": "风险评级高风险（评分55.0）。建议额度0万元。一票否决：存在未结逾期。反欺诈命中：F01。"
+    }
+  },
+  {
+    "applicationId": "LA007",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_adb4427b99d4"
+    ],
+    "evidenceId": "ev_0be977c6f563",
+    "systemRisk": "低风险",
+    "systemCredit": "400-500",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected",
+    "answer": "# 蜀香餐饮连锁管理有限公司（E007）信贷尽调报告\n申请编号 LA007 | 申请日 2024-03-22 | 申请金额 500 万元 | 期限 24 个月 | 担保方式：信用担保\n\n## 一、企业概况\n蜀香餐饮连锁管理有限公司，餐饮服务行业，2016-06-15 成立，工商状态为在业。实缴比例 100%，实控人周味鲜同时是第一大股东（两者一致）。关联企业申报 2 家，与实际 2 家一致；担保逾期 0 笔、担保圈 0 个，工商核验无异常发现。\n\n## 二、财务分析\n申请日前完整年度为 2021—2023 年，三年均标准无保留意见；三年资产=负债+所有者权益的勾稽差额均为 0，校验通过。\n- 2023 年营业收入 9800 万元、净利润 850 万元、所有者权益 2400 万元、经营现金流 920 万元。\n- 资产负债率从 46.88%（2021）降至 42.86%（2023）；净利率从 7.38% 升至 8.67%；ROE 为 35.42%；有息负债/总资产为 7.14%。\n- 经营现金流/净利润为 1.08，现金流与盈利匹配良好；应收周转天数 14.15 天、存货周转天数 22.35 天，周转较快。\n- 最近相邻年度比较：营收同比 +19.51%、净利同比 +25.00%；2021—2023 年营收复合增速为 22.79%（复合增速与累计增长不是同一概念，未混用）。\n- 提示：期间费用率三年分别为 45.66%、42.95%、41.07%，工具标记为 warn，餐饮行业属费用偏高，需关注门店扩张的费用控制。\n\n## 三、风险提示\n系统评级为**低风险**，评分 93.69，无一项否决项；外部汇总评级同为低风险，且未参与计分，两者一致，无需人工复核差异。\n反欺诈六条规则（F01—F06）均未命中，命中 0 条。舆情健康分 88.44，标签为荣誉资质：PO00701（2023-09-20，成都市商务局）获评放心餐饮示范店；PO00702（2022-12-15，成都商报）报道一年新开 20 家门店、扩张至西南五省。涉诉仅有 C00701，状态为已结案，公司为原告，金额 12 万元，属历史已结案件；当前作为被告的未结金额为 0。\n\n## 四、额度建议\n建议额度 **400—500 万元**，期限 24 个月，利率方向下浮。\n测算：营收口径上限 9800×0.12＝1176 万元；净资产口径上限 2400×0.4＝960 万元；取较小值为 960 万元；低风险系数 1.0、现金流系数 1，调整后仍为 960 万元；再按申请金额 500 万元封顶，硬上限 500 万元，下界按 500×0.85＝425 万元向下取整到 100 万元，得出 400—500 万元。\n说明：本额度为团队模拟政策结果，不是银行批准额度；政策版本 incremental-v1。\n\n## 五、风控条件\n1. 担保方式按申请的信用担保落实。\n2. 核验企业存量贷款 600 万元及还款履约安排；该存量只用于核验敞口和履约，不在净资产口径中全额重复扣减（外部担保 0）。\n3. 追加：贷款用于门店装修及设备采购，建议按进度分批用款，并持续关注期间费用率偏高的趋势。\n\n结论：风险评级为低风险（评分 93.69），建议额度 400—500 万元，无反欺诈命中、无一票否决。",
+    "creditEvidence": {
+      "asOf": "2024-03-22",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [],
+          "industry": "餐饮服务",
+          "enterpriseId": "E007",
+          "establishDate": "2016-06-15",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 93.69,
+          "title": "风险提示",
+          "vetoes": [],
+          "fraudHits": [],
+          "riskLevel": "低风险",
+          "opinionLabels": [
+            "荣誉资质"
+          ],
+          "externalRiskLevel": "低风险",
+          "needsManualReview": false,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的信用担保落实",
+            "核验存量贷款600万元及履约安排，不作为本次额度全额扣减"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-03-22",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 1176.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 960.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 960.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 960.0,
+              "formula": "财务能力 × 低风险系数1.0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 960.0,
+              "formula": "评级后能力 × 现金流系数1"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 500.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "400-500",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 600.0,
+            "externalGuaranteeAmount": 0.0
+          },
+          "termMonths": 24,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "信用担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "下浮",
+          "suggestedCreditAmount": "400-500"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.15
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2824
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0738
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.1667
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 2.0312
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 25.2692
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 14.0385
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 14.4444
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.4566
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 26.0
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.4688
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.0625
+                }
+              },
+              "subjects": {
+                "revenue": 6500.0,
+                "inventory": 450.0,
+                "netProfit": 480.0,
+                "rdExpense": 0.0,
+                "totalAssets": 3200.0,
+                "adminExpense": 950.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 0.0,
+                "ownersEquity": 1700.0,
+                "salesExpense": 2000.0,
+                "shortTermLoan": 200.0,
+                "financeExpense": 18.0,
+                "otherReceivable": 60.0,
+                "totalLiabilities": 1500.0,
+                "operatingCashflow": 560.0,
+                "accountsReceivable": 250.0,
+                "interestBearingDebt": 200.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1789
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.3238
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0829
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.1029
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 2.1579
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 24.4817
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 14.2439
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 14.9091
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.4295
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 25.625
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.4474
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.0658
+                }
+              },
+              "subjects": {
+                "revenue": 8200.0,
+                "inventory": 550.0,
+                "netProfit": 680.0,
+                "rdExpense": 0.0,
+                "totalAssets": 3800.0,
+                "adminExpense": 1100.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 0.0,
+                "ownersEquity": 2100.0,
+                "salesExpense": 2400.0,
+                "shortTermLoan": 250.0,
+                "financeExpense": 22.0,
+                "otherReceivable": 70.0,
+                "totalLiabilities": 1700.0,
+                "operatingCashflow": 750.0,
+                "accountsReceivable": 320.0,
+                "interestBearingDebt": 250.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.2024
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.3542
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0867
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.0824
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 2.3333
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 22.3469
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 14.1531
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 16.3333
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.4107
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 25.7895
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.4286
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.0714
+                }
+              },
+              "subjects": {
+                "revenue": 9800.0,
+                "inventory": 600.0,
+                "netProfit": 850.0,
+                "rdExpense": 0.0,
+                "totalAssets": 4200.0,
+                "adminExpense": 1200.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 0.0,
+                "ownersEquity": 2400.0,
+                "salesExpense": 2800.0,
+                "shortTermLoan": 300.0,
+                "financeExpense": 25.0,
+                "otherReceivable": 80.0,
+                "totalLiabilities": 1800.0,
+                "operatingCashflow": 920.0,
+                "accountsReceivable": 380.0,
+                "interestBearingDebt": 300.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": 0.1951,
+            "revenueCagr": 0.2279,
+            "inventoryYoy": 0.0909,
+            "netProfitYoy": 0.25,
+            "netProfitCagr": 0.3307,
+            "receivableYoy": 0.1875
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "低风险",
+      "enterpriseId": "E007",
+      "applicationId": "LA007",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "400-500",
+      "dueDiligenceConclusion": "风险评级低风险（评分93.69）。建议额度400-500万元。一票否决：无。反欺诈命中：无。"
+    }
+  },
+  {
+    "applicationId": "LA008",
+    "status": "failed",
+    "errorCode": "llm_output_incomplete",
+    "runIds": [
+      "run_e3bf2dd4970f"
+    ],
+    "evidenceId": "ev_72ac6204b4b6",
+    "systemRisk": "低风险",
+    "systemCredit": "1000-1200",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": null,
+    "finalAmountParse": "not_detected",
+    "answer": null,
+    "creditEvidence": {
+      "asOf": "2024-03-12",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [],
+          "industry": "道路货物运输",
+          "enterpriseId": "E008",
+          "establishDate": "2011-08-10",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 86.58,
+          "title": "风险提示",
+          "vetoes": [],
+          "fraudHits": [],
+          "riskLevel": "低风险",
+          "opinionLabels": [
+            "行政处罚",
+            "荣誉资质"
+          ],
+          "externalRiskLevel": "中风险",
+          "needsManualReview": true,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的抵押担保落实",
+            "核验存量贷款1800万元及履约安排，不作为本次额度全额扣减",
+            "核验对外担保300万元及履约安排，不作为本次额度全额扣减"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-03-12",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 1500.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 1720.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 1500.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 1500.0,
+              "formula": "财务能力 × 低风险系数1.0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 1500.0,
+              "formula": "评级后能力 × 现金流系数1"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 1200.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "1000-1200",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 1800.0,
+            "externalGuaranteeAmount": 300.0
+          },
+          "termMonths": 36,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "抵押担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "下浮",
+          "suggestedCreditAmount": "1000-1200"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0705
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.1447
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0043
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0524
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.0909
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.3462
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 10.4286
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 83.4286
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 35.0
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.3557
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 4.375
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.5128
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.2308
+                }
+              },
+              "subjects": {
+                "revenue": 10500.0,
+                "inventory": 300.0,
+                "netProfit": 550.0,
+                "rdExpense": 45.0,
+                "totalAssets": 7800.0,
+                "adminExpense": 780.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 800.0,
+                "ownersEquity": 3800.0,
+                "salesExpense": 2900.0,
+                "shortTermLoan": 1000.0,
+                "financeExpense": 55.0,
+                "otherReceivable": 100.0,
+                "totalLiabilities": 4000.0,
+                "operatingCashflow": 600.0,
+                "accountsReceivable": 2400.0,
+                "interestBearingDebt": 1800.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0756
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.1512
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0041
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0525
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.0968
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.439
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 10.2076
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 80.4237
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 35.7576
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.3373
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 4.5385
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.5
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.2317
+                }
+              },
+              "subjects": {
+                "revenue": 11800.0,
+                "inventory": 330.0,
+                "netProfit": 620.0,
+                "rdExpense": 48.0,
+                "totalAssets": 8200.0,
+                "adminExpense": 820.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 800.0,
+                "ownersEquity": 4100.0,
+                "salesExpense": 3100.0,
+                "shortTermLoan": 1100.0,
+                "financeExpense": 60.0,
+                "otherReceivable": 110.0,
+                "totalLiabilities": 4100.0,
+                "operatingCashflow": 680.0,
+                "accountsReceivable": 2600.0,
+                "interestBearingDebt": 1900.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.08
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.1581
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.004
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0544
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.0588
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.4706
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 10.22
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 81.76
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 35.7143
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.3292
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 4.4643
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.4941
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.2353
+                }
+              },
+              "subjects": {
+                "revenue": 12500.0,
+                "inventory": 350.0,
+                "netProfit": 680.0,
+                "rdExpense": 50.0,
+                "totalAssets": 8500.0,
+                "adminExpense": 850.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 800.0,
+                "ownersEquity": 4300.0,
+                "salesExpense": 3200.0,
+                "shortTermLoan": 1200.0,
+                "financeExpense": 65.0,
+                "otherReceivable": 120.0,
+                "totalLiabilities": 4200.0,
+                "operatingCashflow": 720.0,
+                "accountsReceivable": 2800.0,
+                "interestBearingDebt": 2000.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": 0.0593,
+            "revenueCagr": 0.0911,
+            "inventoryYoy": 0.0606,
+            "netProfitYoy": 0.0968,
+            "netProfitCagr": 0.1119,
+            "receivableYoy": 0.0769
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "低风险",
+      "enterpriseId": "E008",
+      "applicationId": "LA008",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "1000-1200",
+      "dueDiligenceConclusion": "风险评级低风险（评分86.58）。建议额度1000-1200万元。一票否决：无。反欺诈命中：无。"
+    }
+  },
+  {
+    "applicationId": "LA009",
+    "status": "succeeded",
+    "errorCode": null,
+    "runIds": [
+      "run_565d9b6b9b87"
+    ],
+    "evidenceId": "ev_8e383ad52187",
+    "systemRisk": "低风险",
+    "systemCredit": "2100-2500",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected",
+    "answer": "# 康宁生物制药有限公司（E009）信贷尽调报告\n申请编号 LA009｜申请日期 2024-03-25｜申请金额 2,500 万元｜期限 60 个月｜用途：新建制剂生产线及 GMP 改造\n\n## 一、企业概况\n该企业成立于 2007-02-18，所属行业为医药制造业，经营状态为**在业**（工商核验 ev_64dca58aee14）。实缴比例为 100%，实际控制人与第一大股东一致，均为吴济世。申报的关联企业 2 家，实际核实也是 2 家；对外担保逾期 0 笔，且不存在担保圈。工商核验未发现问题项。\n\n## 二、财务分析\n数据取 2023 年完整年度，金额单位为万元（ev_619ea18d78d2）；三个年度均按资产等于负债加所有者权益勾稽，差异为 0。\n- 营业收入 38,500，同比增长 13.24%；净利润 6,200，同比增长 14.81%；三年营收 CAGR 为 13.28%（与累计增长口径不同，不混用）。\n- 资产负债率 31.43%，有息负债占总资产 12.50%，有息负债 3,500；净资产 19,200。\n- 净利率 16.10%，净资产收益率（ROE）32.29%，总资产收益率（ROA）22.14%。\n- 经营现金流 6,800，经营现金流与净利润之比为 1.0968，表明利润有现金支撑。\n- 应收周转天数 30.34 天，存货周转天数 45.51 天（数据集没有营业成本，因此以营业收入为分母），两项均逐年改善。\n- 研发费用率 10.91%，期间费用率 16.57%；三年审计意见均为标准无保留意见。\n\n## 三、风险提示\n- 系统评级：**低风险，评分 100.0**，五个维度均为 100 分，没有一票否决项（ev_f3b2f973a9d0）。外部汇总评级同为低风险且一致，未参与计分。\n- 反欺诈：命中 0 条（F01 至 F06 全部未命中）。营收与现金流比值为 0.1766，存货增速减营收增速为 -6.57%，应收增速减营收增速为 -2.90%，其他应收款占总资产 0.71%。\n- 舆情：健康度 100（ev_7cf677d9b2e8）。PO00901（2023-11-25，健康报）自主研发新药获国家药监局批准上市；PO00902（2022-06-18，工信部）获评国家技术创新示范企业；PO00903（2021-09-10，医药经济报）通过 WHO 药品质量认证、出口 20 国。诉讼仅 C00901：企业作为**原告、已结案**，涉案金额 60 万元；当前未结被告金额为 0。\n- 关注点：本次授信存在存量贷款余额 3,000 万元，需关注期限结构与本次 60 个月贷款的偿债安排叠加；额度测算未做还本付息计划，经营现金流仅作保守调整，不构成精确偿债覆盖率。\n\n## 四、额度建议\n建议额度 **2,100–2,500 万元**，期限 60 个月，担保方式为抵押担保，定价方向为下浮（政策版本 incremental-v1，属团队模拟政策，非银行批准额度）：\n- 营收口径上限 38,500×0.12 = 4,620；净资产口径上限 19,200×0.4 = 7,680；财务能力取小为 4,620。\n- 低风险系数 1.0、现金流系数 1，调整后仍为 4,620；再按申请额封顶，即 min(2,500, 4,620) = 2,500，于是区间下界 2,500×0.85 = 2,100（向下取整至百万元）。\n\n## 五、风控条件\n1. 担保方式按申请的抵押担保落实，办妥抵押登记与评估。\n2. 核验存量贷款 3,000 万元及其履约安排，作为核验条件，不在本次额度中全额扣减。\n3. 外部担保金额为 0，持续监测关联企业 2 家的担保变动。\n4. 按季度跟踪 GMP 改造及新线投产进度、经营现金流与存货周转，出现偏离时重检额度。\n\n**结论**：低风险，无否决项与欺诈命中，建议按 2,100–2,500 万元区间推进，以抵押落实和存量债务核验为放款前提。",
+    "creditEvidence": {
+      "asOf": "2024-03-25",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [],
+          "industry": "医药制造业",
+          "enterpriseId": "E009",
+          "establishDate": "2007-02-18",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 100.0,
+          "title": "风险提示",
+          "vetoes": [],
+          "fraudHits": [],
+          "riskLevel": "低风险",
+          "opinionLabels": [
+            "荣誉资质"
+          ],
+          "externalRiskLevel": "低风险",
+          "needsManualReview": false,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的抵押担保落实",
+            "核验存量贷款3000万元及履约安排，不作为本次额度全额扣减"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-03-25",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 4620.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 7680.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 4620.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 4620.0,
+              "formula": "财务能力 × 低风险系数1.0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 4620.0,
+              "formula": "评级后能力 × 现金流系数1"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 2500.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "2100-2500",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 3000.0,
+            "externalGuaranteeAmount": 0.0
+          },
+          "termMonths": 60,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "抵押担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "下浮",
+          "suggestedCreditAmount": "2100-2500"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1983
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.3067
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.1133
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.1533
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.1304
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.2931
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 51.1
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 31.6333
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 7.1429
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1782
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 11.5385
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.3534
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1336
+                }
+              },
+              "subjects": {
+                "revenue": 30000.0,
+                "inventory": 4200.0,
+                "netProfit": 4600.0,
+                "rdExpense": 3400.0,
+                "totalAssets": 23200.0,
+                "adminExpense": 2000.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 1500.0,
+                "ownersEquity": 15000.0,
+                "salesExpense": 3200.0,
+                "shortTermLoan": 1600.0,
+                "financeExpense": 145.0,
+                "otherReceivable": 160.0,
+                "totalLiabilities": 8200.0,
+                "operatingCashflow": 5200.0,
+                "accountsReceivable": 2600.0,
+                "interestBearingDebt": 3100.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.2118
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.3176
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.1118
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.1588
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.0926
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.3333
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 48.3088
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 31.1324
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 7.5556
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1724
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 11.7241
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.3333
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.1294
+                }
+              },
+              "subjects": {
+                "revenue": 34000.0,
+                "inventory": 4500.0,
+                "netProfit": 5400.0,
+                "rdExpense": 3800.0,
+                "totalAssets": 25500.0,
+                "adminExpense": 2200.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 1500.0,
+                "ownersEquity": 17000.0,
+                "salesExpense": 3500.0,
+                "shortTermLoan": 1800.0,
+                "financeExpense": 160.0,
+                "otherReceivable": 180.0,
+                "totalLiabilities": 8500.0,
+                "operatingCashflow": 5900.0,
+                "accountsReceivable": 2900.0,
+                "interestBearingDebt": 3300.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.2214
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.3229
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.1091
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.161
+                },
+                "ocfToProfit": {
+                  "flag": null,
+                  "name": "经营现金流/净利润",
+                  "value": 1.0968
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.375
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 45.5065
+                },
+                "receivableDays": {
+                  "flag": null,
+                  "name": "应收账款周转天数",
+                  "value": 30.3377
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 8.0208
+                },
+                "periodExpenseRatio": {
+                  "flag": null,
+                  "name": "期间费用率",
+                  "value": 0.1657
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 12.0312
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.3143
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.125
+                }
+              },
+              "subjects": {
+                "revenue": 38500.0,
+                "inventory": 4800.0,
+                "netProfit": 6200.0,
+                "rdExpense": 4200.0,
+                "totalAssets": 28000.0,
+                "adminExpense": 2400.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 1500.0,
+                "ownersEquity": 19200.0,
+                "salesExpense": 3800.0,
+                "shortTermLoan": 2000.0,
+                "financeExpense": 180.0,
+                "otherReceivable": 200.0,
+                "totalLiabilities": 8800.0,
+                "operatingCashflow": 6800.0,
+                "accountsReceivable": 3200.0,
+                "interestBearingDebt": 3500.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": 0.1324,
+            "revenueCagr": 0.1328,
+            "inventoryYoy": 0.0667,
+            "netProfitYoy": 0.1481,
+            "netProfitCagr": 0.161,
+            "receivableYoy": 0.1034
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "低风险",
+      "enterpriseId": "E009",
+      "applicationId": "LA009",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "2100-2500",
+      "dueDiligenceConclusion": "风险评级低风险（评分100.0）。建议额度2100-2500万元。一票否决：无。反欺诈命中：无。"
+    }
+  },
+  {
+    "applicationId": "LA010",
+    "status": "needs_confirmation",
+    "errorCode": null,
+    "runIds": [
+      "run_9012854bb529"
+    ],
+    "evidenceId": "ev_17228e2c4953",
+    "systemRisk": "高风险",
+    "systemCredit": "0",
+    "policyVersion": "incremental-v1",
+    "financialYear": 2023,
+    "finalTextCreditMatch": true,
+    "finalAmountParse": "detected",
+    "answer": "# 光耀新能源科技有限公司（E010）尽调报告\n**申请 LA010｜申请额 3000 万元｜期限 60 个月｜用途为光伏电站建设｜抵押担保｜申请日 2024-03-08**\n\n## 一、企业概况\n该公司所属行业为太阳能发电，2014-10-25 成立，经营状态为在业。实缴比例为 100%，实际控制人与第一大股东均为郑光伏。申报关联企业数量与实际数量一致，为 6 家，但工商核验发现 B08 警告：**担保圈关联 2 家**；担保逾期记录为 0。\n\n## 二、财务分析\n2021—2023 年报表勾稽关系均平衡（资产＝负债＋所有者权益，差额为 0），三年审计意见均为标准无保留意见。2023 年实现营业收入 22000 万元、净利润 1850 万元，同比分别增长 33.33% 和 54.17%（相邻年度比较；三年营业收入年复合增长率为 35.40%）。资产负债率从 2021 年的 69.70% 降至 2023 年的 62.16%，净资产收益率为 26.43%。\n但质量指标偏弱：2023 年经营现金流为 **-800 万元**，占净利润的 -43.24%，由 2021 年的 +380 万元转为净流出；应收账款周转天数从 146 天升至 162.59 天，应收账款增长 50.77%，快于营业收入增长；期间费用率连续三年高于 32%。由于数据集未提供营业成本，因此未测算毛利率。\n\n## 三、风险提示\n- **系统评级：高风险（评分 66.89）**，且触发一票否决项——**严重反欺诈信号**。\n- 反欺诈规则命中 4 条：F01 最近一年经营现金流／营业收入为 -0.0364（阈值 0.02，置信度高）；F03 应收账款增速高于营业收入增速 0.1744（阈值 0.1）；F04 其他应收款占总资产的 18.92%（阈值 8%）；F06 关联企业 6 家且存在担保圈（阈值 4）。\n- 舆情与涉诉（截至 2024-03-08）：PO01001（2023-09-28，经济观察报）质疑应收账款异常偏高、对光伏补贴依赖度达 35%；当前未结被告金额为 280 万元（案件 C01001，审理中，被告）；已结案件 C01002（原告，100 万元）属历史已结，不计入未结敞口。正面事件为 PO01002（中标西北 EPC 项目）、PO01003（行业领跑者称号）。\n- **评级差异提示**：外部汇总评级为中风险，与本系统评级不一致；外部评级未参与系统计分，需人工复核。\n\n## 四、额度建议\n建议授信额度为 **0 万元**。测算路径为：先取营业收入口径上限 2640 万元（营业收入 22000 万元 × 12%）与净资产口径上限 2800 万元（所有者权益 7000 万元 × 40%）两者中的较小值，得到财务能力 2640 万元；再乘以高风险系数 0，并按现金流系数 0.45 调整后仍为 0，最终将申请额封顶为 0 万元（政策 incremental-v1，本团队模拟政策，并非银行批准额度）。该 0 万元额度并非因能力不足，而是高风险一票否决所致。\n\n## 五、风控条件\n1. 一票否决项（严重反欺诈信号）未解除前不新增授信。\n2. 按抵押担保方式落实担保，并核验抵押物权属与评估值。\n3. 核验存量贷款 4500 万元、对外担保 2500 万元及履约安排；这些将作为敞口核验项，不做全额扣减。\n4. 经营现金流为负，需核验还本付息来源与资金用途（该系数仅作保守折减，并非精确偿债覆盖率）。\n5. 需就其他应收款 3500 万元（占总资产 18.92%）、应收账款 9800 万元的回收性与关联方资金往来补充尽调；担保圈中的 2 家关联企业需纳入统一授信管理。\n6. 外部评级与本系统评级不一致，提交人工复核。\n\n**证据**：财报解析 ev_1bc7f1a208ca；工商核验 ev_241833902e7e；舆情 ev_8571067a7fc1；反欺诈 ev_a00195173edc；评级 ev_bb5598bc96c5；额度 ev_c602aaf40772；报告汇总 ev_17228e2c4953／ev_004871633606／ev_4bd26e2e15b3。",
+    "creditEvidence": {
+      "asOf": "2024-03-08",
+      "sections": {
+        "overview": {
+          "title": "企业概况",
+          "findings": [
+            {
+              "code": "B08",
+              "level": "warn",
+              "detail": "担保圈关联 2 家"
+            }
+          ],
+          "industry": "太阳能发电",
+          "enterpriseId": "E010",
+          "establishDate": "2014-10-25",
+          "businessStatus": "在业"
+        },
+        "riskAlerts": {
+          "score": 66.89,
+          "title": "风险提示",
+          "vetoes": [
+            "严重反欺诈信号"
+          ],
+          "fraudHits": [
+            "F01",
+            "F03",
+            "F04",
+            "F06"
+          ],
+          "riskLevel": "高风险",
+          "opinionLabels": [
+            "经营负面",
+            "荣誉资质",
+            "未结被告/被执行"
+          ],
+          "externalRiskLevel": "中风险",
+          "needsManualReview": true,
+          "externalUsedInScore": false
+        },
+        "riskConditions": {
+          "title": "风控条件",
+          "conditions": [
+            "担保方式按申请的抵押担保落实",
+            "核验存量贷款4500万元及履约安排，不作为本次额度全额扣减",
+            "核验对外担保2500万元及履约安排，不作为本次额度全额扣减",
+            "经营现金流非正，按中风险系数0.45保守折减；需核验还本付息来源及资金用途，不等同于精确偿债覆盖率",
+            "一票否决项未解除前不新增授信：严重反欺诈信号",
+            "高风险档建议额度为 0"
+          ]
+        },
+        "creditSuggestion": {
+          "asOf": "2024-03-08",
+          "unit": "万元",
+          "steps": [
+            {
+              "step": "营收口径上限",
+              "value": 2640.0,
+              "formula": "营业收入 × 0.12"
+            },
+            {
+              "step": "净资产口径上限",
+              "value": 2800.0,
+              "formula": "max(所有者权益, 0) × 0.4"
+            },
+            {
+              "step": "财务能力取小",
+              "value": 2640.0,
+              "formula": "min(营收口径, 净资产口径)，保留零值"
+            },
+            {
+              "step": "评级调整",
+              "value": 0.0,
+              "formula": "财务能力 × 高风险系数0"
+            },
+            {
+              "step": "现金流调整",
+              "value": 0.0,
+              "formula": "评级后能力 × 现金流系数0.45"
+            },
+            {
+              "step": "申请额封顶",
+              "value": 0.0,
+              "formula": "min(申请额, 调整后能力)；高风险/否决为0"
+            },
+            {
+              "step": "输出区间",
+              "value": "0",
+              "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元"
+            }
+          ],
+          "title": "额度建议",
+          "exposures": {
+            "existingLoanBalance": 4500.0,
+            "externalGuaranteeAmount": 2500.0
+          },
+          "termMonths": 60,
+          "assumptions": [
+            "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+            "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+            "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+            "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+          ],
+          "creditScope": "new_application_financing",
+          "financialYear": 2023,
+          "guaranteeType": "抵押担保",
+          "policyVersion": "incremental-v1",
+          "rateDirection": "不适用",
+          "suggestedCreditAmount": "0"
+        },
+        "financialAnalysis": {
+          "unit": "万元",
+          "title": "财务分析",
+          "years": [
+            {
+              "year": 2021,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0644
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2125
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0417
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0708
+                },
+                "ocfToProfit": {
+                  "flag": "warn",
+                  "name": "经营现金流/净利润",
+                  "value": 0.4471
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 0.9091
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 158.1667
+                },
+                "receivableDays": {
+                  "flag": "warn",
+                  "name": "应收账款周转天数",
+                  "value": 146.0
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 2.3077
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.4183
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 2.5
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.697
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.3258
+                }
+              },
+              "subjects": {
+                "revenue": 12000.0,
+                "inventory": 5200.0,
+                "netProfit": 850.0,
+                "rdExpense": 500.0,
+                "totalAssets": 13200.0,
+                "adminExpense": 1600.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 1800.0,
+                "ownersEquity": 4000.0,
+                "salesExpense": 3200.0,
+                "shortTermLoan": 2500.0,
+                "financeExpense": 220.0,
+                "otherReceivable": 800.0,
+                "totalLiabilities": 9200.0,
+                "operatingCashflow": 380.0,
+                "accountsReceivable": 4800.0,
+                "interestBearingDebt": 4300.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2022,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.0759
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2143
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0394
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0727
+                },
+                "ocfToProfit": {
+                  "flag": "warn",
+                  "name": "经营现金流/净利润",
+                  "value": 0.375
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.0443
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 128.303
+                },
+                "receivableDays": {
+                  "flag": "warn",
+                  "name": "应收账款周转天数",
+                  "value": 143.7879
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 2.8448
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.3624
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 2.5385
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.6456
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.3038
+                }
+              },
+              "subjects": {
+                "revenue": 16500.0,
+                "inventory": 5800.0,
+                "netProfit": 1200.0,
+                "rdExpense": 650.0,
+                "totalAssets": 15800.0,
+                "adminExpense": 1900.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 2000.0,
+                "ownersEquity": 5600.0,
+                "salesExpense": 3800.0,
+                "shortTermLoan": 2800.0,
+                "financeExpense": 280.0,
+                "otherReceivable": 1200.0,
+                "totalLiabilities": 10200.0,
+                "operatingCashflow": 450.0,
+                "accountsReceivable": 6500.0,
+                "interestBearingDebt": 4800.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            },
+            {
+              "year": 2023,
+              "metrics": {
+                "roa": {
+                  "flag": null,
+                  "name": "总资产收益率",
+                  "value": 0.1
+                },
+                "roe": {
+                  "flag": null,
+                  "name": "净资产收益率",
+                  "value": 0.2643
+                },
+                "rdRatio": {
+                  "flag": null,
+                  "name": "研发费用率",
+                  "value": 0.0364
+                },
+                "netMargin": {
+                  "flag": null,
+                  "name": "净利率",
+                  "value": 0.0841
+                },
+                "ocfToProfit": {
+                  "flag": "warn",
+                  "name": "经营现金流/净利润",
+                  "value": -0.4324
+                },
+                "assetTurnover": {
+                  "flag": null,
+                  "name": "总资产周转次数",
+                  "value": 1.1892
+                },
+                "inventoryDays": {
+                  "flag": null,
+                  "name": "存货周转天数",
+                  "value": 102.8636
+                },
+                "receivableDays": {
+                  "flag": "warn",
+                  "name": "应收账款周转天数",
+                  "value": 162.5909
+                },
+                "inventoryTurnover": {
+                  "flag": null,
+                  "name": "存货周转次数（营收口径）",
+                  "value": 3.5484
+                },
+                "periodExpenseRatio": {
+                  "flag": "warn",
+                  "name": "期间费用率",
+                  "value": 0.3205
+                },
+                "receivableTurnover": {
+                  "flag": null,
+                  "name": "应收账款周转次数（营收口径）",
+                  "value": 2.2449
+                },
+                "assetLiabilityRatio": {
+                  "flag": null,
+                  "name": "资产负债率",
+                  "value": 0.6216
+                },
+                "interestBearingRatio": {
+                  "flag": null,
+                  "name": "有息负债/总资产",
+                  "value": 0.2973
+                }
+              },
+              "subjects": {
+                "revenue": 22000.0,
+                "inventory": 6200.0,
+                "netProfit": 1850.0,
+                "rdExpense": 800.0,
+                "totalAssets": 18500.0,
+                "adminExpense": 2200.0,
+                "auditOpinion": "标准无保留意见",
+                "longTermLoan": 2000.0,
+                "ownersEquity": 7000.0,
+                "salesExpense": 4500.0,
+                "shortTermLoan": 3500.0,
+                "financeExpense": 350.0,
+                "otherReceivable": 3500.0,
+                "totalLiabilities": 11500.0,
+                "operatingCashflow": -800.0,
+                "accountsReceivable": 9800.0,
+                "interestBearingDebt": 5500.0
+              },
+              "balanceCheck": {
+                "gap": 0.0,
+                "formula": "资产 = 负债 + 所有者权益",
+                "balanced": true,
+                "tolerance": 1.0
+              }
+            }
+          ],
+          "growth": {
+            "revenueYoy": 0.3333,
+            "revenueCagr": 0.354,
+            "inventoryYoy": 0.069,
+            "netProfitYoy": 0.5417,
+            "netProfitCagr": 0.4753,
+            "receivableYoy": 0.5077
+          },
+          "denominatorNote": "存货与应收账款周转以营业收入为分母（数据集没有营业成本）"
+        }
+      },
+      "riskLevel": "高风险",
+      "enterpriseId": "E010",
+      "applicationId": "LA010",
+      "scoringPoints": [
+        "财报解析",
+        "工商核验",
+        "舆情扫描",
+        "反欺诈检测",
+        "风险评级",
+        "额度测算"
+      ],
+      "suggestedCreditAmount": "0",
+      "dueDiligenceConclusion": "风险评级高风险（评分66.89）。建议额度0万元。一票否决：严重反欺诈信号。反欺诈命中：F01、F03、F04、F06。"
+    }
+  }
+]

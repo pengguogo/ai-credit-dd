@@ -1,0 +1,17 @@
+{
+  "input": "/Users/dawn/ai马拉松/docs/10-strategy/AI评委-origin-main-证据-20261025-c7dbd23/inputs/questions.jsonl",
+  "generatedAt": "2026-10-25T00:10:12+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 9,
+    "needs_confirmation": 1
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 8053,
+  "totalTokens": 202525,
+  "failures": []
+}

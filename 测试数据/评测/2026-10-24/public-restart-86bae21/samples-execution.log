@@ -1,0 +1,15 @@
+题目 6 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/public-restart-86bae21/samples
+[1/6] dd-001 succeeded 53097ms ✗
+[2/6] dd-002 succeeded 22736ms ✗
+[3/6] dd-003 succeeded 37370ms ✗
+[4/6] dd-004 needs_clarification 4812ms ✓
+[5/6] dd-005 needs_clarification 5443ms ✓
+[6/6] dd-006 succeeded 47256ms ✗
+完成 6 道：{'succeeded': 4, 'needs_clarification': 2}
+正确率 33.3%（6 道有期望），平均分 0.78
+无证据答案 0 道，平均耗时 28452ms，总 token 142726
+  ✗ dd-001 [succeeded] toolsCalled:build_dd_report：实际调用 ['get_loan_application', 'run_dd_agents']
+  ✗ dd-002 [succeeded] toolsCalled:analyze_financials：实际调用 ['find_enterprise', 'run_dd_agents']
+  ✗ dd-003 [succeeded] toolsCalled:detect_fraud_signals：实际调用 ['find_enterprise', 'run_dd_agents']
+  ✗ dd-006 [succeeded] toolsCalled:calc_credit_limit：实际调用 ['find_enterprise', 'get_loan_application', 'run_dd_agents']
+结果表格：../测试数据/评测/2026-10-24/public-restart-86bae21/samples/results.csv、../测试数据/评测/2026-10-24/public-restart-86bae21/samples/results.xlsx

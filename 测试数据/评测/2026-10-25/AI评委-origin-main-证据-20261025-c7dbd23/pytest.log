@@ -1,0 +1,35 @@
+........................................................................ [ 12%]
+........................................................................ [ 25%]
+........................................................................ [ 37%]
+........................................................................ [ 50%]
+........................................................................ [ 63%]
+........................................................................ [ 75%]
+........................................................................ [ 88%]
+..................................................................       [100%]
+=============================== warnings summary ===============================
+tests/test_db_redis.py::test_string_json_counter_ttl
+tests/test_db_redis.py::test_get_or_set_caches
+tests/test_db_redis.py::test_collections_and_scan
+tests/test_db_redis.py::test_lock
+tests/test_db_redis.py::test_ping
+  /private/tmp/ocft-origin-main-judge-20261025-c7dbd23/ocft-backend/tests/test_db_redis.py:17: DeprecationWarning: Call to '__init__' function with deprecated usage of input argument/s 'retry_on_timeout'. (TimeoutError is included by default.) -- Deprecated since version 6.0.0.
+    return RedisOps(client=fakeredis.FakeRedis(decode_responses=True), key_prefix="t:")
+
+tests/test_db_redis.py::test_string_json_counter_ttl
+tests/test_db_redis.py::test_get_or_set_caches
+tests/test_db_redis.py::test_collections_and_scan
+tests/test_db_redis.py::test_lock
+tests/test_db_redis.py::test_ping
+  /private/tmp/ocft-topic04-review-venv/lib/python3.12/site-packages/fakeredis/_connection.py:186: DeprecationWarning: Call to '__init__' function with deprecated usage of input argument/s 'lib_name'. (Use 'driver_info' parameter instead. lib_name and lib_version will be removed in a future version.)
+    super().__init__(**kwds)
+
+tests/test_db_redis.py::test_string_json_counter_ttl
+tests/test_db_redis.py::test_get_or_set_caches
+tests/test_db_redis.py::test_collections_and_scan
+tests/test_db_redis.py::test_lock
+tests/test_db_redis.py::test_ping
+  /private/tmp/ocft-topic04-review-venv/lib/python3.12/site-packages/fakeredis/_connection.py:186: DeprecationWarning: Call to '__init__' function with deprecated usage of input argument/s 'lib_version'. (Use 'driver_info' parameter instead. lib_name and lib_version will be removed in a future version.)
+    super().__init__(**kwds)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+570 passed, 15 warnings in 6.59s

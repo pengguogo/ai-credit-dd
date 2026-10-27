@@ -1,0 +1,103 @@
+{
+  "export": {
+    "output": "ocft-backend/eval/output/minimal-score-fixes-final-20261024/official-results.csv",
+    "statusFile": "ocft-backend/eval/output/minimal-score-fixes-final-20261024/official-results-status.csv",
+    "total": 10,
+    "concluded": 10,
+    "notConcluded": 0,
+    "pendingConfirmation": [
+      "LA003",
+      "LA006"
+    ],
+    "statuses": {
+      "succeeded": 8,
+      "needs_confirmation": 2
+    },
+    "scope": "结论取自同次 run 已落库的工具证据；needs_confirmation 为结论已出、待业务确认"
+  },
+  "formatValidation": {
+    "passed": true,
+    "expectedCount": 10,
+    "actualCount": 10,
+    "errors": [],
+    "scope": "仅格式与完整性，不代表业务正确或正式答题成功"
+  },
+  "riskExact": 10,
+  "numericReferences": 8,
+  "numericAmountExact": 8,
+  "nonNumericZeroCompatible": 2,
+  "runtimeHashChanges": [],
+  "comparisons": [
+    {
+      "applicationId": "LA001",
+      "riskMatch": true,
+      "numericReference": true,
+      "amountMatch": true,
+      "semanticZero": false
+    },
+    {
+      "applicationId": "LA002",
+      "riskMatch": true,
+      "numericReference": true,
+      "amountMatch": true,
+      "semanticZero": false
+    },
+    {
+      "applicationId": "LA003",
+      "riskMatch": true,
+      "numericReference": false,
+      "amountMatch": null,
+      "semanticZero": true
+    },
+    {
+      "applicationId": "LA004",
+      "riskMatch": true,
+      "numericReference": true,
+      "amountMatch": true,
+      "semanticZero": false
+    },
+    {
+      "applicationId": "LA005",
+      "riskMatch": true,
+      "numericReference": true,
+      "amountMatch": true,
+      "semanticZero": false
+    },
+    {
+      "applicationId": "LA006",
+      "riskMatch": true,
+      "numericReference": false,
+      "amountMatch": null,
+      "semanticZero": true
+    },
+    {
+      "applicationId": "LA007",
+      "riskMatch": true,
+      "numericReference": true,
+      "amountMatch": true,
+      "semanticZero": false
+    },
+    {
+      "applicationId": "LA008",
+      "riskMatch": true,
+      "numericReference": true,
+      "amountMatch": true,
+      "semanticZero": false
+    },
+    {
+      "applicationId": "LA009",
+      "riskMatch": true,
+      "numericReference": true,
+      "amountMatch": true,
+      "semanticZero": false
+    },
+    {
+      "applicationId": "LA010",
+      "riskMatch": true,
+      "numericReference": true,
+      "amountMatch": true,
+      "semanticZero": false
+    }
+  ],
+  "scope": "Offline field comparison only; not full business correctness or official score."
+}

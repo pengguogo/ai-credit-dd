@@ -1,0 +1,1201 @@
+{
+  "generatedAt": "2026-10-24T08:15:55.455Z",
+  "total": 50,
+  "passed": 50,
+  "rows": [
+    {
+      "step": "business",
+      "enterpriseId": "E001",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E001",
+      "applicationId": "LA001",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "business",
+      "enterpriseId": "E002",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E002",
+      "applicationId": "LA002",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "business",
+      "enterpriseId": "E003",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E003",
+      "applicationId": "LA003",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "business",
+      "enterpriseId": "E004",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E004",
+      "applicationId": "LA004",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "business",
+      "enterpriseId": "E005",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E005",
+      "applicationId": "LA005",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "business",
+      "enterpriseId": "E006",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E006",
+      "applicationId": "LA006",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "business",
+      "enterpriseId": "E007",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E007",
+      "applicationId": "LA007",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "business",
+      "enterpriseId": "E008",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E008",
+      "applicationId": "LA008",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "business",
+      "enterpriseId": "E009",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E009",
+      "applicationId": "LA009",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "business",
+      "enterpriseId": "E010",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E010",
+      "applicationId": "LA010",
+      "toolStatuses": [
+        {
+          "name": "verify_business_info",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E001",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E001",
+      "applicationId": "LA001",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E002",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E002",
+      "applicationId": "LA002",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E003",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E003",
+      "applicationId": "LA003",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E004",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E004",
+      "applicationId": "LA004",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E005",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E005",
+      "applicationId": "LA005",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E006",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E006",
+      "applicationId": "LA006",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E007",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E007",
+      "applicationId": "LA007",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E008",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E008",
+      "applicationId": "LA008",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E009",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E009",
+      "applicationId": "LA009",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "finance",
+      "enterpriseId": "E010",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E010",
+      "applicationId": "LA010",
+      "toolStatuses": [
+        {
+          "name": "analyze_financials",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E001",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E001",
+      "applicationId": "LA001",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E002",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E002",
+      "applicationId": "LA002",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E003",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E003",
+      "applicationId": "LA003",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E004",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E004",
+      "applicationId": "LA004",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E005",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E005",
+      "applicationId": "LA005",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E006",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E006",
+      "applicationId": "LA006",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E007",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E007",
+      "applicationId": "LA007",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E008",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E008",
+      "applicationId": "LA008",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E009",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E009",
+      "applicationId": "LA009",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "opinion",
+      "enterpriseId": "E010",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E010",
+      "applicationId": "LA010",
+      "toolStatuses": [
+        {
+          "name": "scan_public_opinion",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E001",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E001",
+      "applicationId": "LA001",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E002",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E002",
+      "applicationId": "LA002",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E003",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E003",
+      "applicationId": "LA003",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E004",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E004",
+      "applicationId": "LA004",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E005",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E005",
+      "applicationId": "LA005",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E006",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E006",
+      "applicationId": "LA006",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E007",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E007",
+      "applicationId": "LA007",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E008",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E008",
+      "applicationId": "LA008",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E009",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E009",
+      "applicationId": "LA009",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "fraud",
+      "enterpriseId": "E010",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E010",
+      "applicationId": "LA010",
+      "toolStatuses": [
+        {
+          "name": "detect_fraud_signals",
+          "status": "ok",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E001",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E001",
+      "applicationId": "LA001",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "2500-3000"
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E002",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E002",
+      "applicationId": "LA002",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "1200-1500"
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E003",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E003",
+      "applicationId": "LA003",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "0"
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E004",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E004",
+      "applicationId": "LA004",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "1700-2000"
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E005",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E005",
+      "applicationId": "LA005",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "600-800"
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E006",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E006",
+      "applicationId": "LA006",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "0"
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E007",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E007",
+      "applicationId": "LA007",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "400-500"
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E008",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E008",
+      "applicationId": "LA008",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "1000-1200"
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E009",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E009",
+      "applicationId": "LA009",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "2100-2500"
+    },
+    {
+      "step": "credit-risk",
+      "enterpriseId": "E010",
+      "http": 200,
+      "status": "ok",
+      "resolvedEnterprise": "E010",
+      "applicationId": "LA010",
+      "toolStatuses": [
+        {
+          "name": "rate_risk",
+          "status": "ok",
+          "errorCode": null
+        },
+        {
+          "name": "calc_credit_limit",
+          "status": "ok",
+          "errorCode": null
+        }
+      ],
+      "credit": "0"
+    }
+  ],
+  "boundaries": [
+    {
+      "name": "missing-identity",
+      "input": {
+        "step": "business",
+        "enterpriseId": "E001"
+      },
+      "http": 400,
+      "expectedHttp": 400,
+      "body": {
+        "errorCode": "actor_id_required",
+        "message": "缺少 X-Actor-Id 请求头"
+      }
+    },
+    {
+      "name": "missing-id",
+      "input": {
+        "step": "finance"
+      },
+      "http": 400,
+      "expectedHttp": 400,
+      "body": {
+        "errorCode": "invalid_args",
+        "message": "需要 enterpriseId"
+      }
+    },
+    {
+      "name": "invalid-step",
+      "input": {
+        "step": "invalid",
+        "enterpriseId": "E001"
+      },
+      "http": 422,
+      "expectedHttp": 422,
+      "body": {
+        "detail": [
+          {
+            "type": "literal_error",
+            "loc": [
+              "body",
+              "step"
+            ],
+            "msg": "Input should be 'business', 'finance', 'opinion', 'fraud' or 'credit-risk'",
+            "input": "invalid",
+            "ctx": {
+              "expected": "'business', 'finance', 'opinion', 'fraud' or 'credit-risk'"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "unknown-enterprise",
+      "input": {
+        "step": "business",
+        "enterpriseId": "E999"
+      },
+      "http": 200,
+      "expectedHttp": 200,
+      "body": {
+        "step": "business",
+        "label": "工商校验",
+        "status": "error",
+        "enterpriseId": "E999",
+        "applicationId": null,
+        "tools": [
+          {
+            "toolName": "verify_business_info",
+            "status": "error",
+            "errorCode": "not_found",
+            "message": "企业 E999 不存在",
+            "data": null
+          }
+        ],
+        "note": "单步核对：不经模型，结果与 Agent 同工具同源；不写证据库、不读评测答案。"
+      }
+    },
+    {
+      "name": "application-only",
+      "input": {
+        "step": "credit-risk",
+        "applicationId": "LA001"
+      },
+      "http": 200,
+      "expectedHttp": 200,
+      "body": {
+        "step": "credit-risk",
+        "label": "额度与风险",
+        "status": "ok",
+        "enterpriseId": "E001",
+        "applicationId": "LA001",
+        "tools": [
+          {
+            "toolName": "rate_risk",
+            "status": "ok",
+            "errorCode": null,
+            "message": null,
+            "data": {
+              "enterpriseId": "E001",
+              "riskLevel": "低风险",
+              "score": 98.71,
+              "dimensions": [
+                {
+                  "dimension": "financial",
+                  "score": 100,
+                  "weight": 0.3,
+                  "source": "calculated"
+                },
+                {
+                  "dimension": "solvency",
+                  "score": 100,
+                  "weight": 0.2,
+                  "source": "calculated"
+                },
+                {
+                  "dimension": "stability",
+                  "score": 100,
+                  "weight": 0.15,
+                  "source": "calculated"
+                },
+                {
+                  "dimension": "judicial",
+                  "score": 93.53,
+                  "weight": 0.2,
+                  "source": "calculated"
+                },
+                {
+                  "dimension": "fraud",
+                  "score": 100,
+                  "weight": 0.15,
+                  "source": "calculated"
+                }
+              ],
+              "vetoes": [],
+              "needsManualReview": false,
+              "configFile": "scenarios/dd04/scorecard.yaml",
+              "applicationId": "LA001"
+            }
+          },
+          {
+            "toolName": "calc_credit_limit",
+            "status": "ok",
+            "errorCode": null,
+            "message": null,
+            "data": {
+              "applicationId": "LA001",
+              "enterpriseId": "E001",
+              "riskLevel": "低风险",
+              "suggestedCreditAmount": "2500-3000",
+              "unit": "万元",
+              "termMonths": 36,
+              "rateDirection": "下浮",
+              "guaranteeType": "抵押担保",
+              "conditions": [
+                "担保方式按申请的抵押担保落实",
+                "核验存量贷款4500万元及履约安排，不作为本次额度全额扣减",
+                "核验对外担保500万元及履约安排，不作为本次额度全额扣减"
+              ],
+              "steps": [
+                {
+                  "step": "营收口径上限",
+                  "formula": "营业收入 × 0.12",
+                  "value": 3432
+                },
+                {
+                  "step": "净资产口径上限",
+                  "formula": "max(所有者权益, 0) × 0.4",
+                  "value": 5880
+                },
+                {
+                  "step": "财务能力取小",
+                  "formula": "min(营收口径, 净资产口径)，保留零值",
+                  "value": 3432
+                },
+                {
+                  "step": "评级调整",
+                  "formula": "财务能力 × 低风险系数1.0",
+                  "value": 3432
+                },
+                {
+                  "step": "现金流调整",
+                  "formula": "评级后能力 × 现金流系数1",
+                  "value": 3432
+                },
+                {
+                  "step": "申请额封顶",
+                  "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+                  "value": 3000
+                },
+                {
+                  "step": "输出区间",
+                  "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+                  "value": "2500-3000"
+                }
+              ],
+              "configFile": "scenarios/dd04/credit_model.yaml",
+              "policyVersion": "incremental-v1",
+              "creditScope": "new_application_financing",
+              "financialYear": 2023,
+              "asOf": "2024-03-15",
+              "exposures": {
+                "existingLoanBalance": 4500,
+                "externalGuaranteeAmount": 500
+              },
+              "assumptions": [
+                "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+                "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+                "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+                "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+              ]
+            }
+          }
+        ],
+        "note": "单步核对：不经模型，结果与 Agent 同工具同源；不写证据库、不读评测答案。"
+      }
+    },
+    {
+      "name": "conflicting-identifiers",
+      "input": {
+        "step": "credit-risk",
+        "enterpriseId": "E001",
+        "applicationId": "LA002"
+      },
+      "http": 200,
+      "expectedHttp": 200,
+      "body": {
+        "step": "credit-risk",
+        "label": "额度与风险",
+        "status": "ok",
+        "enterpriseId": "E002",
+        "applicationId": "LA002",
+        "tools": [
+          {
+            "toolName": "rate_risk",
+            "status": "ok",
+            "errorCode": null,
+            "message": null,
+            "data": {
+              "enterpriseId": "E002",
+              "riskLevel": "低风险",
+              "score": 82.29,
+              "dimensions": [
+                {
+                  "dimension": "financial",
+                  "score": 84,
+                  "weight": 0.3,
+                  "source": "calculated"
+                },
+                {
+                  "dimension": "solvency",
+                  "score": 84,
+                  "weight": 0.2,
+                  "source": "calculated"
+                },
+                {
+                  "dimension": "stability",
+                  "score": 100,
+                  "weight": 0.15,
+                  "source": "calculated"
+                },
+                {
+                  "dimension": "judicial",
+                  "score": 51.45,
+                  "weight": 0.2,
+                  "source": "calculated"
+                },
+                {
+                  "dimension": "fraud",
+                  "score": 100,
+                  "weight": 0.15,
+                  "source": "calculated"
+                }
+              ],
+              "vetoes": [],
+              "needsManualReview": false,
+              "configFile": "scenarios/dd04/scorecard.yaml",
+              "applicationId": "LA002"
+            }
+          },
+          {
+            "toolName": "calc_credit_limit",
+            "status": "ok",
+            "errorCode": null,
+            "message": null,
+            "data": {
+              "applicationId": "LA002",
+              "enterpriseId": "E002",
+              "riskLevel": "低风险",
+              "suggestedCreditAmount": "1200-1500",
+              "unit": "万元",
+              "termMonths": 24,
+              "rateDirection": "下浮",
+              "guaranteeType": "信用担保",
+              "conditions": [
+                "担保方式按申请的信用担保落实",
+                "核验存量贷款2000万元及履约安排，不作为本次额度全额扣减",
+                "核验对外担保800万元及履约安排，不作为本次额度全额扣减"
+              ],
+              "steps": [
+                {
+                  "step": "营收口径上限",
+                  "formula": "营业收入 × 0.12",
+                  "value": 2220
+                },
+                {
+                  "step": "净资产口径上限",
+                  "formula": "max(所有者权益, 0) × 0.4",
+                  "value": 2960
+                },
+                {
+                  "step": "财务能力取小",
+                  "formula": "min(营收口径, 净资产口径)，保留零值",
+                  "value": 2220
+                },
+                {
+                  "step": "评级调整",
+                  "formula": "财务能力 × 低风险系数1.0",
+                  "value": 2220
+                },
+                {
+                  "step": "现金流调整",
+                  "formula": "评级后能力 × 现金流系数1",
+                  "value": 2220
+                },
+                {
+                  "step": "申请额封顶",
+                  "formula": "min(申请额, 调整后能力)；高风险/否决为0",
+                  "value": 1500
+                },
+                {
+                  "step": "输出区间",
+                  "formula": "下界=硬上限×(1-0.15)；上界=硬上限；均向下取整至100万元",
+                  "value": "1200-1500"
+                }
+              ],
+              "configFile": "scenarios/dd04/credit_model.yaml",
+              "policyVersion": "incremental-v1",
+              "creditScope": "new_application_financing",
+              "financialYear": 2023,
+              "asOf": "2024-03-20",
+              "exposures": {
+                "existingLoanBalance": 2000,
+                "externalGuaranteeAmount": 800
+              },
+              "assumptions": [
+                "团队模拟政策，非银行批准额度；营收和净资产约束本次融资",
+                "存量与担保用于敞口及履约核验，不与净资产口径重复全额扣减",
+                "无还本付息计划；经营现金流仅作保守调整，不是精确偿债覆盖率",
+                "按申请前完整年度取数；缺少披露日期，不能保证申请当日已经披露"
+              ]
+            }
+          }
+        ],
+        "note": "单步核对：不经模型，结果与 Agent 同工具同源；不写证据库、不读评测答案。"
+      }
+    }
+  ],
+  "offlineRoutes": [
+    {
+      "path": "/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/tables/loan_application",
+      "http": 404,
+      "contentType": "application/json"
+    },
+    {
+      "path": "/report/business?enterpriseId=E001",
+      "http": 404,
+      "contentType": "application/json"
+    },
+    {
+      "path": "/api/not-existing",
+      "http": 404,
+      "contentType": "application/json"
+    },
+    {
+      "path": "/assets/index-QQxDPMcp.js",
+      "http": 200,
+      "contentType": "text/javascript; charset=utf-8"
+    }
+  ]
+}

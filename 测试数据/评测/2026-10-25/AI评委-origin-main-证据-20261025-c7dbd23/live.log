@@ -1,0 +1,32 @@
+FROZEN 94 files ['LA001', 'LA002', 'LA003', 'LA004', 'LA005', 'LA006', 'LA007', 'LA008', 'LA009', 'LA010']
+题目 10 道，已完成 0 道，输出到 /Users/dawn/ai马拉松/docs/10-strategy/AI评委-origin-main-证据-20261025-c7dbd23/live/applications
+[1/10] LA001 succeeded 16908ms
+[2/10] LA002 succeeded 17970ms
+[3/10] LA003 needs_confirmation 18900ms
+[4/10] LA004 succeeded 17412ms
+[5/10] LA005 succeeded 27817ms
+[6/10] LA006 needs_confirmation 17029ms
+[7/10] LA007 succeeded 15797ms
+[8/10] LA008 succeeded 16941ms
+[9/10] LA009 succeeded 15325ms
+[10/10] LA010 succeeded 18519ms
+完成 10 道：{'succeeded': 8, 'needs_confirmation': 2}
+无证据答案 0 道，平均耗时 18261ms，总 token 356602
+结果表格：/Users/dawn/ai马拉松/docs/10-strategy/AI评委-origin-main-证据-20261025-c7dbd23/live/applications/results.csv、/Users/dawn/ai马拉松/docs/10-strategy/AI评委-origin-main-证据-20261025-c7dbd23/live/applications/results.xlsx
+题目 10 道，已完成 0 道，输出到 /Users/dawn/ai马拉松/docs/10-strategy/AI评委-origin-main-证据-20261025-c7dbd23/live/questions
+[1/10] Q001 succeeded 16736ms
+[2/10] Q002 needs_confirmation 7762ms
+[3/10] Q003 succeeded 7431ms
+[4/10] Q004 succeeded 6791ms
+[5/10] Q005 succeeded 7443ms
+[6/10] Q006 succeeded 8093ms
+[7/10] Q007 succeeded 6578ms
+[8/10] Q008 succeeded 6341ms
+[9/10] Q009 succeeded 7458ms
+[10/10] Q010 succeeded 5903ms
+完成 10 道：{'succeeded': 9, 'needs_confirmation': 1}
+无证据答案 0 道，平均耗时 8053ms，总 token 202525
+结果表格：/Users/dawn/ai马拉松/docs/10-strategy/AI评委-origin-main-证据-20261025-c7dbd23/live/questions/results.csv、/Users/dawn/ai马拉松/docs/10-strategy/AI评委-origin-main-证据-20261025-c7dbd23/live/questions/results.xlsx
+RUNTIME_HASH_CHANGES []
+{"output": "/Users/dawn/ai马拉松/docs/10-strategy/AI评委-origin-main-证据-20261025-c7dbd23/live/official-results.csv", "statusFile": "/Users/dawn/ai马拉松/docs/10-strategy/AI评委-origin-main-证据-20261025-c7dbd23/live/official-results-status.csv", "total": 10, "concluded": 10, "notConcluded": 0, "pendingConfirmation": ["LA003", "LA006"], "statuses": {"succeeded": 8, "needs_confirmation": 2}, "scope": "结论取自同次 run 已落库的工具证据；needs_confirmation 为结论已出、待业务确认"}
+COMPLETE; evidence archived

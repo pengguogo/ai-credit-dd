@@ -1,0 +1,19 @@
+{
+  "input": "eval/datasets/public_sample.jsonl",
+  "generatedAt": "2026-10-24T04:50:27+00:00",
+  "total": 6,
+  "statuses": {
+    "succeeded": 4,
+    "needs_clarification": 2
+  },
+  "errorCodes": {
+    "clarification_required": 2
+  },
+  "scored": 6,
+  "accuracy": 1.0,
+  "meanScore": 1.0,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 9822,
+  "totalTokens": 55826,
+  "failures": []
+}

@@ -1,0 +1,173 @@
+{
+  "negative_to_positive": [],
+  "wrong_account": [],
+  "name_restore": "法人：测试法人甲",
+  "attachment_path": {
+    "text_masked": true,
+    "image_bytes_unchanged": true,
+    "scope": "local message capture only; no real personal data, no network call"
+  },
+  "dist_routes": {
+    "/": 200,
+    "/report/business?enterpriseId=E001": 404,
+    "/api/unknown": 404
+  },
+  "existing_eval_hash_check": {
+    "checked": 88,
+    "changed": []
+  },
+  "existing_eval_metrics": {
+    "applications": {
+      "total": 10,
+      "statuses": {
+        "succeeded": 8,
+        "needs_confirmation": 2
+      },
+      "errors": {},
+      "withEvidence": 10,
+      "answersWithoutEvidence": 0,
+      "avgSeconds": 73.2,
+      "p95Seconds": 97.588,
+      "totalTokens": 519652
+    },
+    "questions": {
+      "total": 10,
+      "statuses": {
+        "succeeded": 9,
+        "needs_confirmation": 1
+      },
+      "errors": {},
+      "withEvidence": 10,
+      "answersWithoutEvidence": 0,
+      "avgSeconds": 31.61,
+      "p95Seconds": 91.624,
+      "totalTokens": 251833
+    },
+    "applicationFields": {
+      "total": 10,
+      "statuses": {
+        "succeeded": 8,
+        "needs_confirmation": 2
+      },
+      "numericReferenceCount": 8,
+      "referenceNonNumericCount": 2,
+      "eligibleExactCount": 8,
+      "eligibleOverlapCount": 8,
+      "eligibleWithinCount": 8,
+      "candidateRiskExactCount": 10,
+      "failedCount": 0,
+      "exactRateAllRows": 0.8,
+      "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+    }
+  },
+  "artifact_inventory": [
+    {
+      "path": "测试数据/评测/2026-10-24/dd04-public-latest/汇总与运行-preview.png",
+      "bytes": 71137
+    },
+    {
+      "path": "测试数据/评测/2026-10-24/dd04-public-latest/申请字段比对-preview.png",
+      "bytes": 167780
+    },
+    {
+      "path": "测试数据/评测/2026-10-24/dd04-public-latest/问询复核-preview.png",
+      "bytes": 449346
+    },
+    {
+      "path": "测试数据/前端交互/2026-10-24/截图/桌面/前端体检-桌面.png",
+      "bytes": 249067
+    },
+    {
+      "path": "测试数据/前端交互/2026-10-24/截图/移动端/前端体检-手机.png",
+      "bytes": 222327
+    },
+    {
+      "path": "测试数据/前端交互/2026-10-24/截图/异常/前端体检-搜索失败.png",
+      "bytes": 246635
+    },
+    {
+      "path": "assets/oneconnect/ocft_logo_white.png",
+      "bytes": 31330
+    },
+    {
+      "path": "assets/oneconnect/ocft_logo_orange.png",
+      "bytes": 42035
+    },
+    {
+      "path": "assets/oneconnect/favicon.png",
+      "bytes": 3460
+    },
+    {
+      "path": "全量测试证据-20261024/csv-rejected.png",
+      "bytes": 211673
+    },
+    {
+      "path": "全量测试证据-20261024/invalid-enterprise.png",
+      "bytes": 129058
+    },
+    {
+      "path": "全量测试证据-20261024/compliance-block.png",
+      "bytes": 150645
+    },
+    {
+      "path": "全量测试证据-20261024/live-run-audit.png",
+      "bytes": 268934
+    },
+    {
+      "path": "全量测试证据-20261024/offline-old-page.png",
+      "bytes": 143961
+    },
+    {
+      "path": "全量测试证据-20261024/request-race.png",
+      "bytes": 130613
+    },
+    {
+      "path": "全量测试证据-20261024/offline-deeplink-404.png",
+      "bytes": 10030
+    },
+    {
+      "path": "全量测试证据-20261024/desktop-credit-risk.png",
+      "bytes": 278629
+    },
+    {
+      "path": "全量测试证据-20261024/mobile-375-finance.png",
+      "bytes": 216465
+    },
+    {
+      "path": "全量测试证据-20261024/live-evidence.png",
+      "bytes": 257792
+    },
+    {
+      "path": "全量测试证据-20261024/search-error-hidden.png",
+      "bytes": 149944
+    },
+    {
+      "path": "全量测试证据-20261024/mobile-320-finance.png",
+      "bytes": 204903
+    },
+    {
+      "path": "全量测试证据-20261024/mobile-375-home.png",
+      "bytes": 118392
+    },
+    {
+      "path": "全量测试证据-20261024/mobile-390-home.png",
+      "bytes": 118935
+    },
+    {
+      "path": "全量测试证据-20261024/missing-enterprise.png",
+      "bytes": 102660
+    },
+    {
+      "path": "全量测试证据-20261024/conversation-memory.png",
+      "bytes": 256119
+    },
+    {
+      "path": "全量测试证据-20261024/mobile-320-home.png",
+      "bytes": 109094
+    },
+    {
+      "path": "全量测试证据-20261024/mobile-390-finance.png",
+      "bytes": 215518
+    }
+  ]
+}

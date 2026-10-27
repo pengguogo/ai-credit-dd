@@ -1,0 +1,1258 @@
+{
+  "manifest": {
+    "commit": "f711b78e1e9397a7a0371aa7ff99b61c846c11bd",
+    "isPrivate": true,
+    "realDataUsed": false,
+    "networkRequired": true,
+    "primaryPhoneComplete": false,
+    "primaryEmailComplete": false,
+    "externalOfflineFallbacks": {
+      "DeepSeek API（deepseek-v4.1-flash）": false,
+      "MySQL 8.0（云端）": false,
+      "Redis（云端）": false
+    }
+  },
+  "pdfs": [
+    {
+      "path": "submission/dd04/artifacts/尽调报告样例_E001.pdf",
+      "bytes": 857902,
+      "pages": 6,
+      "pageSizesPt": [
+        [
+          594.96,
+          841.92
+        ]
+      ],
+      "encrypted": false,
+      "mdSourceExists": true,
+      "mdSameDirectorySameName": true,
+      "textCharacters": 3966,
+      "baseVersionsFound": [
+        "00e905f"
+      ]
+    },
+    {
+      "path": "submission/dd04/artifacts/智算先锋队_赛题04_技术方案.pdf",
+      "bytes": 1437225,
+      "pages": 12,
+      "pageSizesPt": [
+        [
+          594.96,
+          841.92
+        ]
+      ],
+      "encrypted": false,
+      "mdSourceExists": true,
+      "mdSameDirectorySameName": false,
+      "textCharacters": 12456,
+      "baseVersionsFound": [
+        "00e905f"
+      ]
+    },
+    {
+      "path": "submission/dd04/artifacts/智算先锋队_赛题04_测试报告.pdf",
+      "bytes": 771768,
+      "pages": 3,
+      "pageSizesPt": [
+        [
+          594.96,
+          841.92
+        ]
+      ],
+      "encrypted": false,
+      "mdSourceExists": true,
+      "mdSameDirectorySameName": false,
+      "textCharacters": 5120,
+      "baseVersionsFound": [
+        "00e905f",
+        "00e905faeaf508021383e3a3fab58480d5aaec90"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "测试数据/评测/2026-10-25/a5-walkthrough/M4/截图01_尽调报告_完整.png",
+      "width": 1280,
+      "height": 12168,
+      "bytes": 1442837,
+      "sizePass": true
+    },
+    {
+      "path": "测试数据/评测/2026-10-25/a5-walkthrough/M4/截图02_财务分析.png",
+      "width": 1280,
+      "height": 3399,
+      "bytes": 347209,
+      "sizePass": true
+    },
+    {
+      "path": "测试数据/评测/2026-10-25/a5-walkthrough/M4/截图03_风险提示与反欺诈.png",
+      "width": 1280,
+      "height": 5830,
+      "bytes": 701242,
+      "sizePass": true
+    },
+    {
+      "path": "测试数据/评测/2026-10-25/a5-walkthrough/M4/截图04_自然语言问询.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 413767,
+      "sizePass": true
+    }
+  ],
+  "packScriptSourceExists": {
+    "docs/60-pitch/演示脚本.md": false,
+    "docs/60-pitch/赛题04演示脚本.md": true,
+    "submission/dd04/artifacts/截图01_尽调报告_完整.png": false,
+    "submission/dd04/artifacts/截图02_财务分析.png": false,
+    "submission/dd04/artifacts/截图03_风险提示与反欺诈.png": false
+  },
+  "csvs": [
+    {
+      "path": "系统输出/公开测评集结果-status.csv",
+      "bom": true,
+      "rows": 10,
+      "headers": [
+        "application_id",
+        "status",
+        "pending_confirmation",
+        "error_code",
+        "run_id"
+      ],
+      "applicationIds": [
+        "LA001",
+        "LA002",
+        "LA003",
+        "LA004",
+        "LA005",
+        "LA006",
+        "LA007",
+        "LA008",
+        "LA009",
+        "LA010"
+      ]
+    },
+    {
+      "path": "系统输出/公开测评集结果.csv",
+      "bom": true,
+      "rows": 10,
+      "headers": [
+        "application_id",
+        "enterprise_id",
+        "risk_level",
+        "suggested_credit_amount",
+        "due_diligence_conclusion",
+        "scoring_points"
+      ],
+      "applicationIds": [
+        "LA001",
+        "LA002",
+        "LA003",
+        "LA004",
+        "LA005",
+        "LA006",
+        "LA007",
+        "LA008",
+        "LA009",
+        "LA010"
+      ]
+    },
+    {
+      "path": "系统输出/智算先锋队_赛题04_公开测评集结果.csv",
+      "bom": true,
+      "rows": 10,
+      "headers": [
+        "application_id",
+        "enterprise_id",
+        "risk_level",
+        "suggested_credit_amount",
+        "due_diligence_conclusion",
+        "scoring_points"
+      ],
+      "applicationIds": [
+        "LA001",
+        "LA002",
+        "LA003",
+        "LA004",
+        "LA005",
+        "LA006",
+        "LA007",
+        "LA008",
+        "LA009",
+        "LA010"
+      ]
+    },
+    {
+      "path": "系统输出/智算先锋队_赛题04_非公开测评集结果.csv",
+      "bom": true,
+      "rows": 5,
+      "headers": [
+        "application_id",
+        "enterprise_id",
+        "risk_level",
+        "suggested_credit_amount",
+        "due_diligence_conclusion",
+        "scoring_points"
+      ],
+      "applicationIds": [
+        "LA101",
+        "LA102",
+        "LA103",
+        "LA104",
+        "LA105"
+      ]
+    },
+    {
+      "path": "系统输出/非公开测评集结果-演练衍生-status.csv",
+      "bom": true,
+      "rows": 5,
+      "headers": [
+        "application_id",
+        "status",
+        "pending_confirmation",
+        "error_code",
+        "run_id"
+      ],
+      "applicationIds": [
+        "LA101",
+        "LA102",
+        "LA103",
+        "LA104",
+        "LA105"
+      ]
+    },
+    {
+      "path": "系统输出/非公开测评集结果-演练衍生.csv",
+      "bom": true,
+      "rows": 5,
+      "headers": [
+        "application_id",
+        "enterprise_id",
+        "risk_level",
+        "suggested_credit_amount",
+        "due_diligence_conclusion",
+        "scoring_points"
+      ],
+      "applicationIds": [
+        "LA101",
+        "LA102",
+        "LA103",
+        "LA104",
+        "LA105"
+      ]
+    }
+  ],
+  "formalPrivateEqualsRehearsal": true,
+  "videoFiles": [
+    {
+      "path": "submission/dd04/artifacts/智算先锋队_赛题04_演示视频.mp4",
+      "bytes": 24759884
+    }
+  ],
+  "offlineDependencyFiles": [
+    {
+      "path": "vendor/python/python-3.14.9-win-amd64.zip",
+      "bytes": 15568326
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/websockets-17.3-cp312-cp312-win_amd64.whl",
+      "bytes": 219024
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/redis-8.1.0-py3-none-any.whl",
+      "bytes": 560618
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/langgraph_sdk-0.4.9-py3-none-any.whl",
+      "bytes": 167613
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/opentelemetry_api-1.45.1-py3-none-any.whl",
+      "bytes": 60256
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/uvicorn-0.54.0-py3-none-any.whl",
+      "bytes": 87427
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/zstandard-0.25.0-cp312-cp312-win_amd64.whl",
+      "bytes": 506276
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/sqlglot-30.24.0-py3-none-any.whl",
+      "bytes": 792162
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/et_xmlfile-2.0.0-py3-none-any.whl",
+      "bytes": 18059
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/anyio-4.15.1-py3-none-any.whl",
+      "bytes": 132079
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/sniffio-1.3.1-py3-none-any.whl",
+      "bytes": 10235
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/certifi-2026.10.23-py3-none-any.whl",
+      "bytes": 135082
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/click-8.5.0-py3-none-any.whl",
+      "bytes": 125251
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/httpx-0.28.1-py3-none-any.whl",
+      "bytes": 73517
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/jsonpatch-1.36-py3-none-any.whl",
+      "bytes": 17094
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/ormsgpack-1.13.0-cp312-cp312-win_amd64.whl",
+      "bytes": 157757
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/langgraph-1.2.16-py3-none-any.whl",
+      "bytes": 260357
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/sqlalchemy-2.1.5-cp312-cp312-win_amd64.whl",
+      "bytes": 2434617
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/langchain_core-1.6.13-py3-none-any.whl",
+      "bytes": 574683
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/orjson-3.13.0-cp312-cp312-win_amd64.whl",
+      "bytes": 121538
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/pydantic_core-2.50.1-cp312-cp312-win_amd64.whl",
+      "bytes": 2172522
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/langsmith-0.14.12-py3-none-any.whl",
+      "bytes": 883644
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/pydantic-2.14.1-py3-none-any.whl",
+      "bytes": 488106
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/jiter-0.18.0-cp312-cp312-win_amd64.whl",
+      "bytes": 225889
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/socksio-1.0.0-py3-none-any.whl",
+      "bytes": 12763
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/annotated_doc-0.0.5-py3-none-any.whl",
+      "bytes": 5302
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/truststore-0.10.5-py3-none-any.whl",
+      "bytes": 19017
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/tenacity-9.2.1-py3-none-any.whl",
+      "bytes": 32310
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/charset_normalizer-3.5.2-cp312-cp312-win_amd64.whl",
+      "bytes": 207486
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/langgraph_prebuilt-1.1.1-py3-none-any.whl",
+      "bytes": 42254
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/openai-3.35.1-py3-none-any.whl",
+      "bytes": 2280230
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/fastapi-0.157.0-py3-none-any.whl",
+      "bytes": 147897
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/typing_inspection-0.4.4-py3-none-any.whl",
+      "bytes": 14750
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/distro-1.9.0-py3-none-any.whl",
+      "bytes": 20277
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "bytes": 3824692
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/httpcore2-2.16.0-py3-none-any.whl",
+      "bytes": 85070
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/h11-0.16.0-py3-none-any.whl",
+      "bytes": 37515
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/cffi-2.1.1-cp312-cp312-win_amd64.whl",
+      "bytes": 185919
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/httpx2-2.16.0-py3-none-any.whl",
+      "bytes": 97880
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/jsonpointer-3.4-py3-none-any.whl",
+      "bytes": 9047
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/pyyaml-6.0.3-cp312-cp312-win_amd64.whl",
+      "bytes": 154003
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/packaging-26.3-py3-none-any.whl",
+      "bytes": 129956
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/langgraph_checkpoint-4.3.0-py3-none-any.whl",
+      "bytes": 58063
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/langchain_protocol-0.0.20-py3-none-any.whl",
+      "bytes": 7347
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/requests_toolbelt-1.0.0-py2.py3-none-any.whl",
+      "bytes": 54481
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/starlette-1.9.0-py3-none-any.whl",
+      "bytes": 80335
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/idna-3.20-py3-none-any.whl",
+      "bytes": 69583
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "bytes": 290643
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/httptools-0.9.0-cp312-cp312-win_amd64.whl",
+      "bytes": 92446
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/requests-2.34.2-py3-none-any.whl",
+      "bytes": 73075
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/pydantic_settings-2.16.1-py3-none-any.whl",
+      "bytes": 80771
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/python_dotenv-1.2.4-py3-none-any.whl",
+      "bytes": 23266
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/pymysql-1.2.3-py3-none-any.whl",
+      "bytes": 46740
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/urllib3-2.8.0-py3-none-any.whl",
+      "bytes": 135717
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/pycparser-3.12-py3-none-any.whl",
+      "bytes": 62600
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/httpcore-1.0.9-py3-none-any.whl",
+      "bytes": 78784
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/annotated_types-0.8.0-py3-none-any.whl",
+      "bytes": 13427
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/xxhash-4.0.2-cp312-cp312-win_amd64.whl",
+      "bytes": 37059
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/openpyxl-3.1.5-py2.py3-none-any.whl",
+      "bytes": 250910
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.12/uuid_utils-0.18.0-cp312-cp312-win_amd64.whl",
+      "bytes": 175954
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/redis-8.1.0-py3-none-any.whl",
+      "bytes": 560618
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/langgraph_sdk-0.4.9-py3-none-any.whl",
+      "bytes": 167613
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/xxhash-4.0.2-cp313-cp313-win_amd64.whl",
+      "bytes": 36502
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/opentelemetry_api-1.45.1-py3-none-any.whl",
+      "bytes": 60256
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/uvicorn-0.54.0-py3-none-any.whl",
+      "bytes": 87427
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/sqlglot-30.24.0-py3-none-any.whl",
+      "bytes": 792162
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/uuid_utils-0.18.0-cp313-cp313-win_amd64.whl",
+      "bytes": 175345
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/et_xmlfile-2.0.0-py3-none-any.whl",
+      "bytes": 18059
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/anyio-4.15.1-py3-none-any.whl",
+      "bytes": 132079
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/sniffio-1.3.1-py3-none-any.whl",
+      "bytes": 10235
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/certifi-2026.10.23-py3-none-any.whl",
+      "bytes": 135082
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/click-8.5.0-py3-none-any.whl",
+      "bytes": 125251
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/httpx-0.28.1-py3-none-any.whl",
+      "bytes": 73517
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/jsonpatch-1.36-py3-none-any.whl",
+      "bytes": 17094
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/langgraph-1.2.16-py3-none-any.whl",
+      "bytes": 260357
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/langchain_core-1.6.13-py3-none-any.whl",
+      "bytes": 574683
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/httptools-0.9.0-cp313-cp313-win_amd64.whl",
+      "bytes": 91549
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/langsmith-0.14.12-py3-none-any.whl",
+      "bytes": 883644
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/pydantic-2.14.1-py3-none-any.whl",
+      "bytes": 488106
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/socksio-1.0.0-py3-none-any.whl",
+      "bytes": 12763
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/annotated_doc-0.0.5-py3-none-any.whl",
+      "bytes": 5302
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/truststore-0.10.5-py3-none-any.whl",
+      "bytes": 19017
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/tenacity-9.2.1-py3-none-any.whl",
+      "bytes": 32310
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/langgraph_prebuilt-1.1.1-py3-none-any.whl",
+      "bytes": 42254
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/openai-3.35.1-py3-none-any.whl",
+      "bytes": 2280230
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/pyyaml-6.0.3-cp313-cp313-win_amd64.whl",
+      "bytes": 154090
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/fastapi-0.157.0-py3-none-any.whl",
+      "bytes": 147897
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/typing_inspection-0.4.4-py3-none-any.whl",
+      "bytes": 14750
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/distro-1.9.0-py3-none-any.whl",
+      "bytes": 20277
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "bytes": 3824692
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/httpcore2-2.16.0-py3-none-any.whl",
+      "bytes": 85070
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/h11-0.16.0-py3-none-any.whl",
+      "bytes": 37515
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/httpx2-2.16.0-py3-none-any.whl",
+      "bytes": 97880
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/charset_normalizer-3.5.2-cp313-cp313-win_amd64.whl",
+      "bytes": 206489
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/jsonpointer-3.4-py3-none-any.whl",
+      "bytes": 9047
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/packaging-26.3-py3-none-any.whl",
+      "bytes": 129956
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/langgraph_checkpoint-4.3.0-py3-none-any.whl",
+      "bytes": 58063
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/langchain_protocol-0.0.20-py3-none-any.whl",
+      "bytes": 7347
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/cffi-2.1.1-cp313-cp313-win_amd64.whl",
+      "bytes": 185688
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/orjson-3.13.0-cp313-cp313-win_amd64.whl",
+      "bytes": 121371
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/requests_toolbelt-1.0.0-py2.py3-none-any.whl",
+      "bytes": 54481
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/starlette-1.9.0-py3-none-any.whl",
+      "bytes": 80335
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/idna-3.20-py3-none-any.whl",
+      "bytes": 69583
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "bytes": 290643
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/pydantic_core-2.50.1-cp313-cp313-win_amd64.whl",
+      "bytes": 2170840
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/jiter-0.18.0-cp313-cp313-win_amd64.whl",
+      "bytes": 222493
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/requests-2.34.2-py3-none-any.whl",
+      "bytes": 73075
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/pydantic_settings-2.16.1-py3-none-any.whl",
+      "bytes": 80771
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/python_dotenv-1.2.4-py3-none-any.whl",
+      "bytes": 23266
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/pymysql-1.2.3-py3-none-any.whl",
+      "bytes": 46740
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/urllib3-2.8.0-py3-none-any.whl",
+      "bytes": 135717
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/ormsgpack-1.13.0-cp313-cp313-win_amd64.whl",
+      "bytes": 158109
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/pycparser-3.12-py3-none-any.whl",
+      "bytes": 62600
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/httpcore-1.0.9-py3-none-any.whl",
+      "bytes": 78784
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/annotated_types-0.8.0-py3-none-any.whl",
+      "bytes": 13427
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/sqlalchemy-2.1.5-cp313-cp313-win_amd64.whl",
+      "bytes": 2429688
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/websockets-17.3-cp313-cp313-win_amd64.whl",
+      "bytes": 219026
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/openpyxl-3.1.5-py2.py3-none-any.whl",
+      "bytes": 250910
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.13/zstandard-0.25.0-cp313-cp313-win_amd64.whl",
+      "bytes": 506232
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/xxhash-4.0.2-cp314-cp314-win_amd64.whl",
+      "bytes": 37133
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/redis-8.1.0-py3-none-any.whl",
+      "bytes": 560618
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/langgraph_sdk-0.4.9-py3-none-any.whl",
+      "bytes": 167613
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/uuid_utils-0.18.0-cp314-cp314-win_amd64.whl",
+      "bytes": 178681
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/opentelemetry_api-1.45.1-py3-none-any.whl",
+      "bytes": 60256
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/uvicorn-0.54.0-py3-none-any.whl",
+      "bytes": 87427
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/sqlglot-30.24.0-py3-none-any.whl",
+      "bytes": 792162
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/et_xmlfile-2.0.0-py3-none-any.whl",
+      "bytes": 18059
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/anyio-4.15.1-py3-none-any.whl",
+      "bytes": 132079
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/sniffio-1.3.1-py3-none-any.whl",
+      "bytes": 10235
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/certifi-2026.10.23-py3-none-any.whl",
+      "bytes": 135082
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/click-8.5.0-py3-none-any.whl",
+      "bytes": 125251
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/httpx-0.28.1-py3-none-any.whl",
+      "bytes": 73517
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/jsonpatch-1.36-py3-none-any.whl",
+      "bytes": 17094
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/langgraph-1.2.16-py3-none-any.whl",
+      "bytes": 260357
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/langchain_core-1.6.13-py3-none-any.whl",
+      "bytes": 574683
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/httptools-0.9.0-cp314-cp314-win_amd64.whl",
+      "bytes": 94809
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/langsmith-0.14.12-py3-none-any.whl",
+      "bytes": 883644
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/pydantic-2.14.1-py3-none-any.whl",
+      "bytes": 488106
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/socksio-1.0.0-py3-none-any.whl",
+      "bytes": 12763
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/annotated_doc-0.0.5-py3-none-any.whl",
+      "bytes": 5302
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/truststore-0.10.5-py3-none-any.whl",
+      "bytes": 19017
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/tenacity-9.2.1-py3-none-any.whl",
+      "bytes": 32310
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/pyyaml-6.0.3-cp314-cp314-win_amd64.whl",
+      "bytes": 156429
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/langgraph_prebuilt-1.1.1-py3-none-any.whl",
+      "bytes": 42254
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/openai-3.35.1-py3-none-any.whl",
+      "bytes": 2280230
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/fastapi-0.157.0-py3-none-any.whl",
+      "bytes": 147897
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/typing_inspection-0.4.4-py3-none-any.whl",
+      "bytes": 14750
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/distro-1.9.0-py3-none-any.whl",
+      "bytes": 20277
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "bytes": 3824692
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/httpcore2-2.16.0-py3-none-any.whl",
+      "bytes": 85070
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/h11-0.16.0-py3-none-any.whl",
+      "bytes": 37515
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/httpx2-2.16.0-py3-none-any.whl",
+      "bytes": 97880
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/jsonpointer-3.4-py3-none-any.whl",
+      "bytes": 9047
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/charset_normalizer-3.5.2-cp314-cp314-win_amd64.whl",
+      "bytes": 210965
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/packaging-26.3-py3-none-any.whl",
+      "bytes": 129956
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/langgraph_checkpoint-4.3.0-py3-none-any.whl",
+      "bytes": 58063
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/langchain_protocol-0.0.20-py3-none-any.whl",
+      "bytes": 7347
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/cffi-2.1.1-cp314-cp314-win_amd64.whl",
+      "bytes": 187949
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/pydantic_core-2.50.1-cp314-cp314-win_amd64.whl",
+      "bytes": 2171586
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/requests_toolbelt-1.0.0-py2.py3-none-any.whl",
+      "bytes": 54481
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/starlette-1.9.0-py3-none-any.whl",
+      "bytes": 80335
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/idna-3.20-py3-none-any.whl",
+      "bytes": 69583
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/orjson-3.13.0-cp314-cp314-win_amd64.whl",
+      "bytes": 121378
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "bytes": 290643
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/requests-2.34.2-py3-none-any.whl",
+      "bytes": 73075
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/pydantic_settings-2.16.1-py3-none-any.whl",
+      "bytes": 80771
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/jiter-0.18.0-cp314-cp314-win_amd64.whl",
+      "bytes": 225448
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/python_dotenv-1.2.4-py3-none-any.whl",
+      "bytes": 23266
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/pymysql-1.2.3-py3-none-any.whl",
+      "bytes": 46740
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/urllib3-2.8.0-py3-none-any.whl",
+      "bytes": 135717
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/sqlalchemy-2.1.5-cp314-cp314-win_amd64.whl",
+      "bytes": 2436983
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/pycparser-3.12-py3-none-any.whl",
+      "bytes": 62600
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/ormsgpack-1.13.0-cp314-cp314-win_amd64.whl",
+      "bytes": 157230
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/httpcore-1.0.9-py3-none-any.whl",
+      "bytes": 78784
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/annotated_types-0.8.0-py3-none-any.whl",
+      "bytes": 13427
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/websockets-17.3-cp314-cp314-win_amd64.whl",
+      "bytes": 218582
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/openpyxl-3.1.5-py2.py3-none-any.whl",
+      "bytes": 250910
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.14/zstandard-0.25.0-cp314-cp314-win_amd64.whl",
+      "bytes": 516118
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/redis-8.1.0-py3-none-any.whl",
+      "bytes": 560618
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/langgraph_sdk-0.4.9-py3-none-any.whl",
+      "bytes": 167613
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/opentelemetry_api-1.45.1-py3-none-any.whl",
+      "bytes": 60256
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/uvicorn-0.54.0-py3-none-any.whl",
+      "bytes": 87427
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/sqlglot-30.24.0-py3-none-any.whl",
+      "bytes": 792162
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/sqlalchemy-2.1.5-cp311-cp311-win_amd64.whl",
+      "bytes": 2435596
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/ormsgpack-1.13.0-cp311-cp311-win_amd64.whl",
+      "bytes": 153758
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/et_xmlfile-2.0.0-py3-none-any.whl",
+      "bytes": 18059
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/anyio-4.15.1-py3-none-any.whl",
+      "bytes": 132079
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/sniffio-1.3.1-py3-none-any.whl",
+      "bytes": 10235
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/certifi-2026.10.23-py3-none-any.whl",
+      "bytes": 135082
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/click-8.5.0-py3-none-any.whl",
+      "bytes": 125251
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/httpx-0.28.1-py3-none-any.whl",
+      "bytes": 73517
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/jsonpatch-1.36-py3-none-any.whl",
+      "bytes": 17094
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/websockets-17.3-cp311-cp311-win_amd64.whl",
+      "bytes": 219017
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/langgraph-1.2.16-py3-none-any.whl",
+      "bytes": 260357
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/zstandard-0.25.0-cp311-cp311-win_amd64.whl",
+      "bytes": 506183
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/langchain_core-1.6.13-py3-none-any.whl",
+      "bytes": 574683
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/charset_normalizer-3.5.2-cp311-cp311-win_amd64.whl",
+      "bytes": 214932
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/langsmith-0.14.12-py3-none-any.whl",
+      "bytes": 883644
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/pydantic-2.14.1-py3-none-any.whl",
+      "bytes": 488106
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/socksio-1.0.0-py3-none-any.whl",
+      "bytes": 12763
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/annotated_doc-0.0.5-py3-none-any.whl",
+      "bytes": 5302
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/cffi-2.1.1-cp311-cp311-win_amd64.whl",
+      "bytes": 185096
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/truststore-0.10.5-py3-none-any.whl",
+      "bytes": 19017
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/tenacity-9.2.1-py3-none-any.whl",
+      "bytes": 32310
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/pydantic_core-2.50.1-cp311-cp311-win_amd64.whl",
+      "bytes": 2176332
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/langgraph_prebuilt-1.1.1-py3-none-any.whl",
+      "bytes": 42254
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/openai-3.35.1-py3-none-any.whl",
+      "bytes": 2280230
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/fastapi-0.157.0-py3-none-any.whl",
+      "bytes": 147897
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/typing_inspection-0.4.4-py3-none-any.whl",
+      "bytes": 14750
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/distro-1.9.0-py3-none-any.whl",
+      "bytes": 20277
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "bytes": 3824692
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/orjson-3.13.0-cp311-cp311-win_amd64.whl",
+      "bytes": 121287
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/httpcore2-2.16.0-py3-none-any.whl",
+      "bytes": 85070
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/h11-0.16.0-py3-none-any.whl",
+      "bytes": 37515
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/jiter-0.18.0-cp311-cp311-win_amd64.whl",
+      "bytes": 219536
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/httpx2-2.16.0-py3-none-any.whl",
+      "bytes": 97880
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/httptools-0.9.0-cp311-cp311-win_amd64.whl",
+      "bytes": 92421
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/jsonpointer-3.4-py3-none-any.whl",
+      "bytes": 9047
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/packaging-26.3-py3-none-any.whl",
+      "bytes": 129956
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/langgraph_checkpoint-4.3.0-py3-none-any.whl",
+      "bytes": 58063
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/langchain_protocol-0.0.20-py3-none-any.whl",
+      "bytes": 7347
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/pyyaml-6.0.3-cp311-cp311-win_amd64.whl",
+      "bytes": 158763
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/requests_toolbelt-1.0.0-py2.py3-none-any.whl",
+      "bytes": 54481
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/starlette-1.9.0-py3-none-any.whl",
+      "bytes": 80335
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/idna-3.20-py3-none-any.whl",
+      "bytes": 69583
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/watchfiles-1.3.0-cp310-abi3-win_amd64.whl",
+      "bytes": 290643
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/requests-2.34.2-py3-none-any.whl",
+      "bytes": 73075
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/pydantic_settings-2.16.1-py3-none-any.whl",
+      "bytes": 80771
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/xxhash-4.0.2-cp311-cp311-win_amd64.whl",
+      "bytes": 36982
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/python_dotenv-1.2.4-py3-none-any.whl",
+      "bytes": 23266
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/pymysql-1.2.3-py3-none-any.whl",
+      "bytes": 46740
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/urllib3-2.8.0-py3-none-any.whl",
+      "bytes": 135717
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/uuid_utils-0.18.0-cp311-cp311-win_amd64.whl",
+      "bytes": 179803
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/pycparser-3.12-py3-none-any.whl",
+      "bytes": 62600
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/httpcore-1.0.9-py3-none-any.whl",
+      "bytes": 78784
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/annotated_types-0.8.0-py3-none-any.whl",
+      "bytes": 13427
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571
+    },
+    {
+      "path": "vendor/wheels/win_amd64-py3.11/openpyxl-3.1.5-py2.py3-none-any.whl",
+      "bytes": 250910
+    }
+  ],
+  "lineEndingCounts": {
+    ".py": {
+      "files": 117,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".ts": {
+      "files": 24,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".tsx": {
+      "files": 53,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".json": {
+      "files": 37,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".yaml": {
+      "files": 11,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".md": {
+      "files": 158,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".ps1": {
+      "files": 3,
+      "crlfCount": 3,
+      "examples": [
+        "start.ps1",
+        "pack-offline.ps1",
+        "submission/record_dd04_demo/tts.ps1"
+      ]
+    }
+  }
+}

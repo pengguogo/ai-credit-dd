@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-10-24T09:44:25+00:00",
+  "total": 10,
+  "answers": [
+    {
+      "id": "Q001",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    },
+    {
+      "id": "Q002",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    },
+    {
+      "id": "Q003",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    },
+    {
+      "id": "Q004",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    },
+    {
+      "id": "Q005",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    },
+    {
+      "id": "Q006",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    },
+    {
+      "id": "Q007",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    },
+    {
+      "id": "Q008",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    },
+    {
+      "id": "Q009",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    },
+    {
+      "id": "Q010",
+      "status": "runner_error",
+      "answer": "ApiError: 未知场景: enterprise_due_diligence",
+      "evidence": [],
+      "runIds": []
+    }
+  ]
+}

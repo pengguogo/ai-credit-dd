@@ -1,0 +1,39 @@
+{
+  "ready": [
+    200,
+    {
+      "status": "ok",
+      "service": "ocft-backend",
+      "checks": {
+        "modelLock": {
+          "ok": true,
+          "model": "deepseek-v4.1-flash",
+          "required": "deepseek-v4.1-flash"
+        },
+        "database": {
+          "ok": true
+        },
+        "redis": {
+          "ok": true
+        },
+        "llm": {
+          "ok": true,
+          "status": "unknown",
+          "errorCode": null,
+          "checkedAt": null
+        }
+      }
+    }
+  ],
+  "imageRejected": [
+    422,
+    {
+      "errorCode": "invalid_attachment",
+      "message": "图片内容暂无法安全脱敏，请改用脱敏后的文本资料"
+    }
+  ],
+  "businessStep": {
+    "httpStatus": 200,
+    "hasMask": true
+  }
+}

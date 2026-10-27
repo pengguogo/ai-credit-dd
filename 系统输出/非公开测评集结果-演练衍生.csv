@@ -1,0 +1,6 @@
+﻿application_id,enterprise_id,risk_level,suggested_credit_amount,due_diligence_conclusion,scoring_points
+LA101,E101,低风险,5000-5500,低风险，建议额度 5000-5500 万元；三年盈利与现金流同步改善，反欺诈未命中，无需人工复核。,财报解析;工商核验;舆情扫描;反欺诈检测;风险评级;额度测算
+LA102,E102,中风险,600-700,中风险，建议额度 600-700 万元；营收与盈利稳健、反欺诈未命中，但应收占比偏高，需业务人员复核。,财报解析;工商核验;舆情扫描;反欺诈检测;风险评级;额度测算
+LA103,E103,高风险,0,高风险（20 点），额度 0 万元；一票否决为法定代表人限高、存在未结逾期，需业务人员确认。,财报解析;工商核验;舆情扫描;反欺诈检测;风险评级;额度测算
+LA104,E104,未生成结论（failed/narrative_check_failed）,未生成结论（failed/narrative_check_failed）,未生成结论（failed/narrative_check_failed）,未生成结论（failed/narrative_check_failed）
+LA105,E105,低-中风险,800-1000,低-中风险，建议额度 800-1000 万元，经营现金流与盈利稳定，需落实抵押担保并核验存量贷款与对外担保。,财报解析;工商核验;舆情扫描;反欺诈检测;风险评级;额度测算

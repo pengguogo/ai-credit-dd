@@ -1,0 +1,461 @@
+schema_version: '1.0'
+submission:
+  topic_id: '04'
+  topic_name: 企业智能信贷尽调
+  team_name: 智算先锋队
+  submission_name: 04_智算先锋队_Agent大赛提交
+  version: v1.0
+  submit_date: '2026-10-25'
+members:
+- name: 王小文
+  role: Agent 开发（多 Agent 编排、工具、规则与额度模型）
+  phone: "13923740914"
+  email: "wangxiaowen@pingan.com.cn"
+- name: 胡乾豪
+  role: 数据开发与导入
+  phone: "18826540512"
+  email: "huqianhao961@pingan.com.cn"
+- name: 程柳
+  role: 前端交互与报告展示
+  phone: "13148930718"
+  email: "chengliu384@pingan.com.cn"
+- name: 彭国
+  role: 评测与批量答题
+  phone: "15013365620"
+  email: "pengguo343@pingan.com.cn"
+- name: 陈修活
+  role: 合规与提交包
+  phone: "13048987642"
+  email: "chenxiuhuo889@pingan.com.cn"
+- name: 黎锦涛
+  role: 文档与路演（第一联系人）
+  phone: "15629955252"
+  email: "lijintao711@pingan.com.cn"
+contact:
+  primary_name: 黎锦涛
+  primary_phone: "15629955252"
+  primary_email: "lijintao711@pingan.com.cn"
+code:
+  repo_url: https://github.com/pengguogo/ocft-ai-marathon
+  commit_sha: f711b78e1e9397a7a0371aa7ff99b61c846c11bd
+  branch: main
+  is_private: true
+  archive_in_package: true
+demo_env:
+  type: local
+  os: Windows 11（评测机为 Windows；不提供 Linux / macOS / Docker 方案）
+  runtime: 内置 Python 3.14.9（vendor/python，python.org 官方构建）；评测机无需预装 Python / Node.js
+  startup_command: start.bat（或 powershell -ExecutionPolicy Bypass -File .\start.ps1 -Offline）
+  access_url: http://127.0.0.1:8000
+  gpu_required: false
+  network_required: true
+  notes: '解压后双击 start.bat：解压内置 Python，从 vendor/wheels/win_amd64-py3.14 离线安装后端依赖（pip --no-index）， 前端为预构建
+    ocft-starter/dist，由后端同源提供。包内含 .env / config.yaml（enc: 密文）与 master.key，解压即可用。 依赖可离线安装，但运行时须能访问 DeepSeek
+    API 与云端 MySQL / Redis（network_required: true）； 评委机出口 IP 须加入云库白名单。场景 ID 为 enterprise_dd。首次启动约 2–4 分钟。'
+dependencies:
+- name: python
+  version: 3.14.9（内置于 vendor/python，离线）
+- name: fastapi
+  version: 0.157.0
+- name: uvicorn
+  version: 0.54.0
+- name: sqlalchemy
+  version: 2.1.5
+- name: pydantic
+  version: 2.14.1
+- name: pydantic-settings
+  version: 2.16.1
+- name: openai
+  version: 3.35.1
+- name: langgraph
+  version: 1.2.16
+- name: langchain-core
+  version: 1.6.13
+- name: pymysql
+  version: 1.2.3
+- name: redis
+  version: 8.1.0
+- name: cryptography
+  version: 50.0.2
+- name: sqlglot
+  version: 30.24.0
+- name: PyYAML
+  version: 6.0.3
+- name: socksio
+  version: 1.0.0
+- name: openpyxl
+  version: 3.1.5
+- name: react
+  version: 19.3.1
+external_services:
+- name: DeepSeek API（deepseek-v4.1-flash）
+  purpose: Agent 理解问题、规划工具调用、组织答复；业务结论由规则工具计算
+  credential_required: true
+  credential_source: 'ocft-backend/.env 的 LLM_API_KEY（enc: 密文 + 包内 master.key）'
+  offline_fallback: false
+  desensitization: 企业全称、法人姓名、统一社会信用代码在外送前替换为代号；身份证、银行卡、手机号、邮箱掩码。 2026-10-25 抽查 3 个真实 run、22 次调用，敏感原值命中
+    0（见 docs/10-strategy/脱敏复核证据-20261025/）。
+- name: MySQL 8.0（云端）
+  purpose: 业务事实与执行记录、证据、审计持久化
+  credential_required: true
+  credential_source: 'ocft-backend/config.yaml 的 database 段（enc: 密文）'
+  offline_fallback: false
+  desensitization: 不涉及外送；审计命中片段先做 PII 掩码；评委机出口 IP 须在云库白名单
+- name: Redis（云端）
+  purpose: 缓存、计数与分布式锁（db/redis/）
+  credential_required: true
+  credential_source: 'ocft-backend/config.yaml 的 redis 段（enc: 密文）'
+  offline_fallback: false
+  desensitization: 不涉及模型外送；评委机出口 IP 须在云库白名单
+llm_declaration:
+- provider: DeepSeek
+  model: deepseek-v4.1-flash
+  usage: 多 Agent 尽调：主控定位与调度 + 工商 / 财报 / 舆情 / 反欺诈 / 评级 / 报告角色解读与成文； 数字由规则工具计算，模型不得改数。场景级累计 token 上限 200000（scenarios/dd04/agents.yaml
+    controller.max_total_tokens）； 不限工具轮数与总时长，单次调用超时见 LLM_TIMEOUT_SECONDS；公开集实测约 27 秒/笔申请、14 秒/题问询。
+  data_sent: 系统提示词、代号/掩码后的用户问题与会话摘要、当次工具返回的官方样例业务数据（无真实客户）
+  temperature: 0.2
+third_party_components:
+- name: cryptography
+  version: 50.0.2
+  license: Apache-2.0 OR BSD-3-Clause
+  usage: 解密 .env 中的密文配置
+- name: fastapi
+  version: 0.157.0
+  license: MIT
+  usage: HTTP 框架
+- name: langchain-core
+  version: 1.6.13
+  license: MIT
+  usage: LangGraph 的依赖，本仓库不直接调用
+- name: langgraph
+  version: 1.2.16
+  license: MIT
+  usage: 调度 model / tools 两个节点的下一跳（ADR-0004）
+- name: openai
+  version: 3.35.1
+  license: Apache-2.0
+  usage: 以 OpenAI 兼容协议调用 deepseek-v4.1-flash（只负责 HTTP 传输）
+- name: openpyxl
+  version: 3.1.5
+  license: MIT
+  usage: 批量测评读写 xlsx
+- name: pydantic
+  version: 2.14.1
+  license: MIT
+  usage: 请求 / 响应模型校验
+- name: pydantic-settings
+  version: 2.16.1
+  license: MIT
+  usage: 配置加载
+- name: PyMySQL
+  version: 1.2.3
+  license: MIT
+  usage: MySQL 驱动
+- name: PyYAML
+  version: 6.0.3
+  license: MIT
+  usage: 读取 config.yaml
+- name: redis
+  version: 8.1.0
+  license: MIT
+  usage: Redis 客户端
+- name: socksio
+  version: 1.0.0
+  license: MIT License
+  usage: SOCKS 代理连接支持
+- name: SQLAlchemy
+  version: 2.1.5
+  license: MIT
+  usage: ORM / 数据库访问
+- name: sqlglot
+  version: 30.24.0
+  license: MIT
+  usage: sql_query 工具的 SQL 语法树只读校验
+- name: uvicorn
+  version: 0.54.0
+  license: BSD-3-Clause
+  usage: ASGI 服务器
+- name: annotated-doc
+  version: 0.0.5
+  license: MIT
+  usage: 传递依赖
+- name: annotated-types
+  version: 0.8.0
+  license: MIT
+  usage: 传递依赖
+- name: anyio
+  version: 4.15.1
+  license: MIT
+  usage: 传递依赖
+- name: certifi
+  version: 2026.10.19
+  license: MPL-2.0
+  usage: 传递依赖
+- name: cffi
+  version: 2.1.1
+  license: MIT-0
+  usage: 传递依赖
+- name: charset-normalizer
+  version: 3.5.2
+  license: MIT
+  usage: 传递依赖
+- name: click
+  version: 8.5.0
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: distro
+  version: 1.9.0
+  license: Apache License, Version 2.0
+  usage: 传递依赖
+- name: et_xmlfile
+  version: 2.0.0
+  license: MIT
+  usage: 传递依赖
+- name: h11
+  version: 0.16.0
+  license: MIT
+  usage: 传递依赖
+- name: httpcore
+  version: 1.0.9
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: httpcore2
+  version: 2.16.0
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: httptools
+  version: 0.9.0
+  license: MIT
+  usage: 传递依赖
+- name: httpx
+  version: 0.28.1
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: httpx2
+  version: 2.16.0
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: idna
+  version: '3.20'
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: jiter
+  version: 0.17.0
+  license: MIT
+  usage: 传递依赖
+- name: jsonpatch
+  version: '1.36'
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: jsonpointer
+  version: '3.4'
+  license: Modified BSD License
+  usage: 传递依赖
+- name: langchain-protocol
+  version: 0.0.20
+  license: MIT
+  usage: 传递依赖
+- name: langgraph-checkpoint
+  version: 4.3.0
+  license: MIT
+  usage: 传递依赖
+- name: langgraph-prebuilt
+  version: 1.1.1
+  license: MIT
+  usage: 传递依赖
+- name: langgraph-sdk
+  version: 0.4.8
+  license: MIT
+  usage: 传递依赖
+- name: langsmith
+  version: 0.14.12
+  license: MIT
+  usage: 传递依赖
+- name: opentelemetry-api
+  version: 1.45.1
+  license: Apache-2.0
+  usage: 传递依赖
+- name: orjson
+  version: 3.13.0
+  license: MPL-2.0 AND (Apache-2.0 OR MIT)
+  usage: 传递依赖
+- name: ormsgpack
+  version: 1.13.0
+  license: Apache-2.0 OR MIT
+  usage: 传递依赖
+- name: packaging
+  version: '26.3'
+  license: Apache-2.0 OR BSD-2-Clause
+  usage: 传递依赖
+- name: pycparser
+  version: '3.11'
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: pydantic_core
+  version: 2.50.1
+  license: MIT
+  usage: 传递依赖
+- name: python-dotenv
+  version: 1.2.4
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: requests
+  version: 2.34.2
+  license: Apache-2.0
+  usage: 传递依赖
+- name: requests-toolbelt
+  version: 1.0.0
+  license: Apache 2.0
+  usage: 传递依赖
+- name: sniffio
+  version: 1.3.1
+  license: MIT OR Apache-2.0
+  usage: 传递依赖
+- name: starlette
+  version: 1.9.0
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: tenacity
+  version: 9.2.1
+  license: Apache-2.0
+  usage: 传递依赖
+- name: truststore
+  version: 0.10.5
+  license: MIT
+  usage: 传递依赖
+- name: typing-inspection
+  version: 0.4.4
+  license: MIT
+  usage: 传递依赖
+- name: typing_extensions
+  version: 4.16.0
+  license: PSF-2.0
+  usage: 传递依赖
+- name: urllib3
+  version: 2.8.0
+  license: MIT
+  usage: 传递依赖
+- name: uuid_utils
+  version: 0.18.0
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: uvloop
+  version: 0.23.0
+  license: MIT License
+  usage: 传递依赖
+- name: watchfiles
+  version: 1.3.0
+  license: MIT
+  usage: 传递依赖
+- name: websockets
+  version: 16.1.1
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: xxhash
+  version: 4.0.2
+  license: BSD-2-Clause
+  usage: 传递依赖
+- name: zstandard
+  version: 0.25.0
+  license: BSD-3-Clause
+  usage: 传递依赖
+- name: '@base-ui/react'
+  version: 1.9.0
+  license: MIT
+  usage: 无样式组件底座
+- name: '@tailwindcss/vite'
+  version: 4.3.3
+  license: MIT
+  usage: Tailwind 构建插件
+- name: class-variance-authority
+  version: 0.7.1
+  license: Apache-2.0
+  usage: 组件变体样式
+- name: cn
+  version: 0.5.0
+  license: MIT
+  usage: class 合并工具
+- name: lucide-react
+  version: 1.61.0
+  license: ISC
+  usage: 图标
+- name: motion
+  version: 14.5.0
+  license: MIT
+  usage: 轨迹入场动效
+- name: react
+  version: 19.3.1
+  license: MIT
+  usage: UI 框架
+- name: react-dom
+  version: 19.3.1
+  license: MIT
+  usage: UI 渲染
+- name: shadcn
+  version: 4.22.1
+  license: MIT
+  usage: 组件样式工具
+- name: tailwindcss
+  version: 4.3.3
+  license: MIT
+  usage: 样式
+- name: tw-animate-css
+  version: 1.4.0
+  license: MIT
+  usage: 组件动画类
+- name: '@types/node'
+  version: 24.19.2
+  license: MIT
+  usage: 类型声明
+- name: '@types/react'
+  version: 19.3.0
+  license: MIT
+  usage: 类型声明
+- name: '@types/react-dom'
+  version: 19.3.0
+  license: MIT
+  usage: 类型声明
+- name: '@vitejs/plugin-react'
+  version: 6.1.2
+  license: MIT
+  usage: React 构建插件
+- name: oxlint
+  version: 1.88.0
+  license: MIT
+  usage: 代码检查
+- name: typescript
+  version: 7.0.2
+  license: Apache-2.0
+  usage: 类型检查
+- name: vite
+  version: 8.3.4
+  license: MIT
+  usage: 前端构建
+datasets_used:
+  official:
+  - docs/00-rules/赛题/赛题04_企业智能信贷尽调/data/（10 张业务 CSV + schema_relationships.csv；答案文件仅 eval 离线对照，运行时不读）
+  self_built:
+  - ocft-backend/app/seed.py 与 db 导入链路中的虚构补充样例（不含评测答案映射）
+  real_data_used: false
+attachments:
+- manifest.yaml
+- README.md
+- 智算先锋队_赛题04_技术方案.pdf
+- 智算先锋队_赛题04_技术方案.md
+- 智算先锋队_赛题04_测试报告.pdf
+- 智算先锋队_赛题04_测试报告.md
+- 智算先锋队_赛题04_演示视频.mp4
+- 智算先锋队_赛题04_团队与元信息表.xlsx
+- 智算先锋队_赛题04_可运行系统包.zip
+- 智算先锋队_赛题04_截图01_尽调报告_完整.png
+- 智算先锋队_赛题04_截图02_财务分析.png
+- 智算先锋队_赛题04_截图03_风险提示与反欺诈.png
+- 智算先锋队_赛题04_截图04_自然语言问询.png
+- 系统输出/智算先锋队_赛题04_公开测评集结果.csv
+- 系统输出/智算先锋队_赛题04_非公开测评集结果.csv
+- 附录/智算先锋队_赛题04_尽调报告样例_E001.pdf
+- 附录/智算先锋队_赛题04_尽调报告样例_E001.md
+- 附录/智算先锋队_赛题04_演示脚本.md
+- 第三方声明/智算先锋队_赛题04_第三方组件与License声明.md
+- 数据使用与脱敏说明.md
+- 关键技术难点与权衡说明.md

@@ -1,0 +1,17 @@
+{
+  "input": "/tmp/ocft-official-public-20261024/inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T08:19:03+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 6,
+    "needs_confirmation": 4
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 43047,
+  "totalTokens": 343680,
+  "failures": []
+}

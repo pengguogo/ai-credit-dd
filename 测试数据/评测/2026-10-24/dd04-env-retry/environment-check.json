@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-10-24T12:57:57.478304+08:00",
+  "sourceFile": "/Users/dawn/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/womenyiqixinfu_a5fc/msg/file/2026-10/(1).env",
+  "sourceSha256": "1543a3c5439801d0061040255e0da53fe35faad4650b87314de75d15c3b9886f",
+  "allProvidedValuesMatchCurrentEnv": true,
+  "providedKeys": [
+    "LLM_API_KEY",
+    "LLM_BASE_URL",
+    "LLM_MODEL",
+    "DATABASE_URL"
+  ],
+  "secretValuesRecorded": false,
+  "originalEnvModified": false
+}

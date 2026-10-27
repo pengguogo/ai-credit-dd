@@ -1,0 +1,59 @@
+{
+  "scenarioId": "enterprise_dd",
+  "applications": {
+    "input": "../测试数据/评测/2026-10-24/dd04-multi-agent/inputs/applications.jsonl",
+    "generatedAt": "2026-10-24T07:37:22+00:00",
+    "total": 10,
+    "statuses": {
+      "needs_confirmation": 10
+    },
+    "errorCodes": {},
+    "scored": 0,
+    "accuracy": null,
+    "meanScore": null,
+    "answersWithoutEvidence": 0,
+    "avgDurationMs": 54326,
+    "totalTokens": 359962,
+    "failures": []
+  },
+  "questions": {
+    "input": "../测试数据/评测/2026-10-24/dd04-multi-agent/inputs/questions.jsonl",
+    "generatedAt": "2026-10-24T07:37:23+00:00",
+    "total": 10,
+    "statuses": {
+      "needs_confirmation": 10
+    },
+    "errorCodes": {},
+    "scored": 0,
+    "accuracy": null,
+    "meanScore": null,
+    "answersWithoutEvidence": 0,
+    "avgDurationMs": 30357,
+    "totalTokens": 211151,
+    "failures": []
+  },
+  "officialValidation": {
+    "passed": false,
+    "errors": [
+      {
+        "code": "invalid_input",
+        "message": "official-results-succeeded-only.csv: 数据为空"
+      }
+    ]
+  },
+  "applicationComparison": {
+    "total": 10,
+    "statuses": {
+      "needs_confirmation": 10
+    },
+    "numericReferenceCount": 8,
+    "referenceNonNumericCount": 2,
+    "eligibleExactCount": 0,
+    "eligibleOverlapCount": 0,
+    "eligibleWithinCount": 0,
+    "candidateRiskExactCount": 5,
+    "failedCount": 0,
+    "exactRateAllRows": 0.0,
+    "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+  }
+}

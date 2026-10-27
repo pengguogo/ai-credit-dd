@@ -1,0 +1,51 @@
+{
+  "baseline": "fe2e9aecdeaa35f9a22387459b17688dd28580f1",
+  "scope": "git archive HEAD only; excludes working tree changes",
+  "pytest": {
+    "passed": 427,
+    "warnings": 15,
+    "seconds": 9.11,
+    "exitCode": 0,
+    "interpreter": "/tmp/ocft-topic04-review-venv/bin/python",
+    "usesFakeModel": true
+  },
+  "redline": {
+    "errors": 0,
+    "warnings": 3,
+    "manualReview": "three seed.py comment occurrences"
+  },
+  "officialExport": {
+    "rows": 10,
+    "ids": [
+      "LA001",
+      "LA002",
+      "LA003",
+      "LA004",
+      "LA005",
+      "LA006",
+      "LA007",
+      "LA008",
+      "LA009",
+      "LA010"
+    ],
+    "hasBom": true,
+    "uniqueScoringPoints": 1,
+    "conclusionLengths": [
+      44,
+      44,
+      52,
+      46,
+      44,
+      44,
+      42,
+      44,
+      44,
+      59
+    ]
+  },
+  "web": {
+    "fixedRuleUrl": "404",
+    "modelAlias": "https://api-docs.deepseek.com/news/news260910/"
+  },
+  "fixedTopicRuleMatchesHead": true
+}

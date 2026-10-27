@@ -1,0 +1,32 @@
+{
+  "passed": false,
+  "expectedCount": 10,
+  "actualCount": 4,
+  "errors": [
+    {
+      "code": "missing",
+      "applicationId": "LA001"
+    },
+    {
+      "code": "missing",
+      "applicationId": "LA002"
+    },
+    {
+      "code": "missing",
+      "applicationId": "LA003"
+    },
+    {
+      "code": "missing",
+      "applicationId": "LA006"
+    },
+    {
+      "code": "missing",
+      "applicationId": "LA009"
+    },
+    {
+      "code": "missing",
+      "applicationId": "LA010"
+    }
+  ],
+  "scope": "仅格式与完整性，不代表业务正确或正式答题成功"
+}

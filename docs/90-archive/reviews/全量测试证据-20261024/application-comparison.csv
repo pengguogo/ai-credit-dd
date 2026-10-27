@@ -1,0 +1,11 @@
+﻿applicationId,status,errorCode,systemRisk,referenceRisk,candidateRiskExact,systemCredit,referenceCredit,eligibleExact,eligibleOverlap,eligibleWithin,finalTextCreditMatch,runIds
+LA001,succeeded,,低风险,低风险,True,2500-3000,2500-3000,True,True,True,True,['run_0a93a752b992']
+LA002,needs_confirmation,,低风险,中风险,False,1200-1500,1200-1500,False,False,False,True,['run_944a0f3fe78c']
+LA003,needs_confirmation,,高风险,高风险,True,0,拒贷/极小额度,False,False,False,True,['run_459f16753d43']
+LA004,succeeded,,低风险,中风险,False,1700-2000,1500-2000,False,True,True,True,['run_7ad3ffeb1613']
+LA005,succeeded,,低风险,低-中风险,False,600-800,600-800,True,True,True,True,['run_a4b77cc2e44b']
+LA006,needs_confirmation,,高风险,高风险,True,0,拒贷/极小额度,False,False,False,True,['run_3d7822e54e81']
+LA007,succeeded,,低风险,低风险,True,400-500,400-500,True,True,True,True,['run_5f949e4c8f21']
+LA008,succeeded,,低风险,中风险,False,1000-1200,1000-1200,True,True,True,True,['run_dae3324c60c5']
+LA009,succeeded,,低风险,低风险,True,2100-2500,2000-2500,False,True,True,True,['run_0c70dc3ed96e']
+LA010,needs_confirmation,,高风险,中风险,False,0,1500-2000,False,False,False,True,['run_df239c0dc65d']

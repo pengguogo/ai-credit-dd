@@ -1,0 +1,24 @@
+# 舆情与涉诉打分。score 越高表示舆情司法风险越大，上限 100。
+base_score: 20
+max_score: 100
+decay_per_year: 0.85
+sentiment:
+  正面: -6
+  中性: 2
+  负面: 14
+impact:
+  低: 1
+  中: 1.6
+  高: 2.4
+closed_statuses: ["已结案", "结案", "已执行完毕"]
+defendant_roles: ["被告", "被执行人", "被申请人"]
+lawsuit:
+  open_defendant: 18
+  open_other: 6
+  closed_defendant: 4
+  closed_other: 1
+labels:
+  司法执行: ["被执行", "执行"]
+  行政处罚: ["处罚", "罚款"]
+  经营负面: ["负面", "异常", "失信"]
+  荣誉资质: ["荣誉", "资质", "专精特新"]

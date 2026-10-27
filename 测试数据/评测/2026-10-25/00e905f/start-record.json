@@ -1,0 +1,76 @@
+{
+  "recordedAt": "2026-10-24T12:36:51.378008+00:00",
+  "gitHead": "00e905faeaf508021383e3a3fab58480d5aaec90",
+  "gitShort": "00e905f",
+  "branch": "main",
+  "task": "A1 freeze + A3 consistency",
+  "runtime": {
+    "model": "deepseek-v4.1-flash",
+    "llmEnabled": true,
+    "timeout": 30.0
+  },
+  "configVersions": {
+    "agents.yaml": "ee803e88f54030aedabf86b4c34e6a22a59fb4277654e181c3d7126fc25ace11",
+    "credit_model.yaml": "66a38f65d341e1de0e5da5a373c1e9826325fb02937d6178f307ddb68a4933b4",
+    "fraud_rules.yaml": "e3e2345e1cc6e2c950e5ad7e42e1a15312d6e20a00c2fed9a4f064f477a41a17",
+    "metrics.yaml": "a13cf0955daea42fc44f80a1a24b9862138b136f401ae39229cb11485fe8f5bd",
+    "opinion.yaml": "1b87afb1b381d47966dd07cbb963f951576754e6307b6e1259faa31e1be2a786",
+    "scorecard.yaml": "7eb93ad7eb350cafc99f0eff26851f6175ffa549a1b31ead9fece43930240a7b",
+    "skills": {
+      "business-verification.md": {
+        "name": "business-verification",
+        "version": "1.1.0",
+        "sha256": "581f6663605a7e0a0029596f51683f8d72c1640dbe5f17b5c91918d28a12e6bf"
+      },
+      "credit-limit.md": {
+        "name": "credit-limit",
+        "version": "1.2.0",
+        "sha256": "87175e6a0d99d5360ee20257df53b51eebc03b468fbfd178764644faecaccaa3"
+      },
+      "dd-report.md": {
+        "name": "dd-report",
+        "version": "2.1.0",
+        "sha256": "e18877896ebc2e7409ee947c5277512304a9d0ea33b40bb423d1872c02f339f3"
+      },
+      "financial-analysis.md": {
+        "name": "financial-analysis",
+        "version": "1.1.0",
+        "sha256": "c7d230e7d6e5c85f6f5dbed627a24fe0ec8542ff109d71522147d1f0541d3df7"
+      },
+      "fraud-detection.md": {
+        "name": "fraud-detection",
+        "version": "1.1.0",
+        "sha256": "cc607755c0d8de33d9397390e58ad7eccf061d0f0774714e4ecbb511b6493455"
+      },
+      "opinion-scan.md": {
+        "name": "opinion-scan",
+        "version": "1.1.0",
+        "sha256": "f643995e6e7e9aa1c97775283d1a2f937cfd2970b82dc86cde5a67447c656fd2"
+      }
+    }
+  },
+  "inputHashes": {
+    "loan_application.csv": "5fe5962995d118c572ff3857b0af5b730d215e6cf8c5d48b6d083ab4591671da",
+    "question_public.csv": "0606432927b3b3b3d468e79a2a5fbc824659f549c553a3837384af2b3540aaea",
+    "公开测试集答案.csv": "04d58ae6109158ef195caa0db5e32b284438a84e52285bfc8b66225af04d3991",
+    "applications.jsonl": "9b1823e3c399836b81b356341aac333530201a51d4b467104d7cc5825b4f7daf",
+    "questions.jsonl": "90a4f24347c9e5ee4acaf8d96c491b43ec754f7a400a53ea7a63fda90183d865"
+  },
+  "codeHashes": {
+    "ocft-backend/app/agent/dd_graph.py": "e1d32b25f45aaf316ee5736adf907e46e080226ed796ae9e728f2f316da8152e",
+    "ocft-backend/app/agent/dd_roles.py": "78143f141787ebdd57d85497773f4657c5b30ce5359a86a4807e2b92723ae5a5",
+    "ocft-backend/app/tools/dd_calc.py": "55772ddbfb2094226cc03cd6b582423325ec613997bd2515f7e3676b1634587d",
+    "ocft-backend/app/tools/due_diligence.py": "7825d89e92ca895837ac0763cf104c736d6d20b8a3de8a9168e44d864490072d",
+    "ocft-backend/app/llm.py": "e58a4aca73c1ee2c609434b3226b13c25ef65302c4ff2fb6d9326e1bc0280124",
+    "ocft-backend/scenarios/dd04/agents.yaml": "ee803e88f54030aedabf86b4c34e6a22a59fb4277654e181c3d7126fc25ace11",
+    "ocft-backend/scenarios/dd04/credit_model.yaml": "66a38f65d341e1de0e5da5a373c1e9826325fb02937d6178f307ddb68a4933b4",
+    "ocft-backend/scenarios/dd04/fraud_rules.yaml": "e3e2345e1cc6e2c950e5ad7e42e1a15312d6e20a00c2fed9a4f064f477a41a17",
+    "ocft-backend/scenarios/dd04/metrics.yaml": "a13cf0955daea42fc44f80a1a24b9862138b136f401ae39229cb11485fe8f5bd",
+    "ocft-backend/scenarios/dd04/opinion.yaml": "1b87afb1b381d47966dd07cbb963f951576754e6307b6e1259faa31e1be2a786",
+    "ocft-backend/scenarios/dd04/scorecard.yaml": "7eb93ad7eb350cafc99f0eff26851f6175ffa549a1b31ead9fece43930240a7b",
+    "docs/00-rules/赛题/赛题04_企业智能信贷尽调/data/loan_application.csv": "5fe5962995d118c572ff3857b0af5b730d215e6cf8c5d48b6d083ab4591671da",
+    "docs/00-rules/赛题/赛题04_企业智能信贷尽调/data/question_public.csv": "0606432927b3b3b3d468e79a2a5fbc824659f549c553a3837384af2b3540aaea",
+    "docs/00-rules/赛题/赛题04_企业智能信贷尽调/data/公开测试集答案.csv": "04d58ae6109158ef195caa0db5e32b284438a84e52285bfc8b66225af04d3991"
+  },
+  "scope": "A1 公开集 10 申请 + 10 问询；A3 低/中/高风险各 1 笔双跑。不混用旧版本结果。"
+}

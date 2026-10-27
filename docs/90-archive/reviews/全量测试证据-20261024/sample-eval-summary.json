@@ -1,0 +1,53 @@
+{
+  "input": "eval/datasets/public_sample.jsonl",
+  "generatedAt": "2026-10-24T08:08:49+00:00",
+  "total": 6,
+  "statuses": {
+    "succeeded": 3,
+    "needs_confirmation": 1,
+    "needs_clarification": 2
+  },
+  "errorCodes": {
+    "clarification_required": 2
+  },
+  "scored": 6,
+  "accuracy": 0.3333,
+  "meanScore": 0.7778,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 23919,
+  "totalTokens": 111580,
+  "failures": [
+    {
+      "id": "dd-001",
+      "status": "succeeded",
+      "errorCode": null,
+      "failedChecks": [
+        "toolsCalled:build_dd_report：实际调用 ['get_loan_application', 'run_dd_agents']"
+      ]
+    },
+    {
+      "id": "dd-002",
+      "status": "succeeded",
+      "errorCode": null,
+      "failedChecks": [
+        "toolsCalled:analyze_financials：实际调用 ['find_enterprise', 'run_dd_agents']"
+      ]
+    },
+    {
+      "id": "dd-003",
+      "status": "needs_confirmation",
+      "errorCode": null,
+      "failedChecks": [
+        "toolsCalled:detect_fraud_signals：实际调用 ['find_enterprise', 'run_dd_agents']"
+      ]
+    },
+    {
+      "id": "dd-006",
+      "status": "succeeded",
+      "errorCode": null,
+      "failedChecks": [
+        "toolsCalled:calc_credit_limit：实际调用 ['find_enterprise', 'get_loan_application', 'run_dd_agents']"
+      ]
+    }
+  ]
+}

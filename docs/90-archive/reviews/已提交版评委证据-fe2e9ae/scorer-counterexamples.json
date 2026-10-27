@@ -1,0 +1,24 @@
+{
+  "opposite_cashflow": {
+    "score": 1.0,
+    "passed": true,
+    "checks": [
+      {
+        "name": "scoringPoints",
+        "passed": true,
+        "detail": "覆盖 1/1=100%（阈值 60%）；命中 ['现金流为正']"
+      }
+    ]
+  },
+  "wrong_account": {
+    "score": 1.0,
+    "passed": true,
+    "checks": [
+      {
+        "name": "dueDiligenceConclusion",
+        "passed": true,
+        "detail": "覆盖 1/1=100%（阈值 100%）；命中 ['经营现金流800万元']"
+      }
+    ]
+  }
+}

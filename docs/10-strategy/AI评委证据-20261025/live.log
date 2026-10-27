@@ -1,0 +1,32 @@
+FROZEN 92 files ['LA001', 'LA002', 'LA003', 'LA004', 'LA005', 'LA006', 'LA007', 'LA008', 'LA009', 'LA010']
+题目 10 道，已完成 0 道，输出到 /Users/dawn/ai马拉松/docs/10-strategy/AI评委证据-20261025/live/applications
+[1/10] LA001 succeeded 16290ms
+[2/10] LA002 succeeded 16228ms
+[3/10] LA003 needs_confirmation 28829ms
+[4/10] LA004 succeeded 17118ms
+[5/10] LA005 succeeded 15932ms
+[6/10] LA006 needs_confirmation 17503ms
+[7/10] LA007 succeeded 15377ms
+[8/10] LA008 succeeded 16286ms
+[9/10] LA009 succeeded 16290ms
+[10/10] LA010 succeeded 17236ms
+完成 10 道：{'succeeded': 8, 'needs_confirmation': 2}
+无证据答案 0 道，平均耗时 17708ms，总 token 352171
+结果表格：/Users/dawn/ai马拉松/docs/10-strategy/AI评委证据-20261025/live/applications/results.csv、/Users/dawn/ai马拉松/docs/10-strategy/AI评委证据-20261025/live/applications/results.xlsx
+题目 10 道，已完成 0 道，输出到 /Users/dawn/ai马拉松/docs/10-strategy/AI评委证据-20261025/live/questions
+[1/10] Q001 succeeded 15496ms
+[2/10] Q002 needs_confirmation 7315ms
+[3/10] Q003 succeeded 7784ms
+[4/10] Q004 succeeded 7749ms
+[5/10] Q005 succeeded 7821ms
+[6/10] Q006 succeeded 9833ms
+[7/10] Q007 succeeded 16096ms
+[8/10] Q008 succeeded 5795ms
+[9/10] Q009 succeeded 7071ms
+[10/10] Q010 succeeded 7274ms
+完成 10 道：{'succeeded': 9, 'needs_confirmation': 1}
+无证据答案 0 道，平均耗时 9223ms，总 token 216294
+结果表格：/Users/dawn/ai马拉松/docs/10-strategy/AI评委证据-20261025/live/questions/results.csv、/Users/dawn/ai马拉松/docs/10-strategy/AI评委证据-20261025/live/questions/results.xlsx
+RUNTIME_HASH_CHANGES []
+{"output": "/Users/dawn/ai马拉松/docs/10-strategy/AI评委证据-20261025/live/official-results.csv", "statusFile": "/Users/dawn/ai马拉松/docs/10-strategy/AI评委证据-20261025/live/official-results-status.csv", "total": 10, "concluded": 10, "notConcluded": 0, "pendingConfirmation": ["LA003", "LA006"], "statuses": {"succeeded": 8, "needs_confirmation": 2}, "scope": "结论取自同次 run 已落库的工具证据；needs_confirmation 为结论已出、待业务确认"}
+COMPLETE; evidence archived

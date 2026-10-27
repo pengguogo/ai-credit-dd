@@ -1,0 +1,18 @@
+{
+  "input": "../测试数据/评测/2026-10-25/00e905f/inputs/consistency-high.jsonl",
+  "generatedAt": "2026-10-24T12:48:44+00:00",
+  "total": 1,
+  "statuses": {
+    "failed": 1
+  },
+  "errorCodes": {
+    "narrative_check_failed": 1
+  },
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 35118,
+  "totalTokens": 47547,
+  "failures": []
+}

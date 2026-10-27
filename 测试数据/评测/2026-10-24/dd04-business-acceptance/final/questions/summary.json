@@ -1,0 +1,17 @@
+{
+  "input": "/Users/wbs/work/it/code/work_code/ocft-ai-marathon/测试数据/评测/2026-10-24/dd04-business-acceptance/inputs/questions.jsonl",
+  "generatedAt": "2026-10-24T12:55:06+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 9,
+    "needs_confirmation": 1
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 11785,
+  "totalTokens": 226637,
+  "failures": []
+}

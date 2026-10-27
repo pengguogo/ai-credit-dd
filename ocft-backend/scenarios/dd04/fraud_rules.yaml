@@ -1,0 +1,25 @@
+# 反欺诈规则阈值。命中与否由工具按当年数据计算，不读取任何预存结论。
+rules:
+  F01:
+    name: 营收与经营现金流背离
+    min_ocf_to_revenue: 0.02
+  F02:
+    name: 存货异常增长
+    min_inventory_growth: 0.20
+    gap_over_revenue_growth: 0.30
+  F03:
+    name: 应收增速高于营收增速
+    gap: 0.10
+  F04:
+    name: 其他应收款占比偏高
+    max_other_receivable_to_assets: 0.08
+  F05:
+    name: 净利与现金流长期背离
+    max_ocf_to_profit: 0.30
+    min_years: 2
+  F06:
+    name: 关联企业多且存在担保圈
+    min_related: 4
+confidence:
+  high_margin: 0.5
+  default: medium

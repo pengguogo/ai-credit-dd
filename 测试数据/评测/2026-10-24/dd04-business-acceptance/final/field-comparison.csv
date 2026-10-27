@@ -1,0 +1,11 @@
+﻿applicationId,status,systemRisk,referenceRisk,systemCredit,referenceCredit,financialYear,policyVersion,candidateExact,eligibleExact,eligibleOverlap,eligibleWithin,finalTextCreditMatch,errorCode,runIds,evidenceId
+LA001,succeeded,低风险,低风险,2500-3000,2500-3000,2023,incremental-v2,True,True,True,True,True,,['run_b4aca422fe18'],ev_e1062a7275dc
+LA002,succeeded,中风险,中风险,1200-1500,1200-1500,2023,incremental-v2,True,True,True,True,True,,['run_fc82d554da07'],ev_c60f3cf4db18
+LA003,needs_confirmation,高风险,高风险,0,拒贷/极小额度,2023,incremental-v2,False,False,False,False,True,,['run_7c5e9f6d076c'],ev_2c217c28ef53
+LA004,succeeded,中风险,中风险,1500-2000,1500-2000,2023,incremental-v2,True,True,True,True,True,,['run_c67ca67de46d'],ev_55b2d8fcb2a6
+LA005,succeeded,低-中风险,低-中风险,600-800,600-800,2023,incremental-v2,True,True,True,True,True,,['run_bffb2880439d'],ev_20b92318da9a
+LA006,needs_confirmation,高风险,高风险,0,拒贷/极小额度,2023,incremental-v2,False,False,False,False,,,['run_45e9ca3afdf3'],ev_97a03d4c5e64
+LA007,succeeded,低风险,低风险,400-500,400-500,2023,incremental-v2,True,True,True,True,True,,['run_ba7bf51cd7c1'],ev_9fcab458120b
+LA008,succeeded,中风险,中风险,1000-1200,1000-1200,2023,incremental-v2,True,True,True,True,True,,['run_9a6f3228cd10'],ev_d10ca0ca912b
+LA009,succeeded,低风险,低风险,2000-2500,2000-2500,2023,incremental-v2,True,True,True,True,True,,['run_99def385db09'],ev_93fd990052bb
+LA010,succeeded,中风险,中风险,1500-2000,1500-2000,2023,incremental-v2,True,True,True,True,True,,['run_489c36e9e425'],ev_1adacab946f8

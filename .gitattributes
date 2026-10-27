@@ -1,0 +1,30 @@
+# 《通用提交材料说明》第三章：统一 LF 换行，二进制文件标 binary
+* text=auto eol=lf
+
+# Shell 脚本保持 LF，Windows PowerShell 脚本保持 CRLF（UTF-8 BOM 由文件本身携带）；后写的规则覆盖上面的默认
+*.sh   text eol=lf
+*.ps1  text eol=crlf
+*.bat  text eol=crlf
+
+# 赛题数据包、图片、模型权重与离线包：禁止换行转换与 diff
+*.sqlite binary
+*.xlsx   binary
+*.pdf    binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.webp   binary
+*.onnx   binary
+*.whl    binary
+*.zip    binary
+*.gz     binary
+# 待办 A7：旧评测归档早于脱敏修复，含自然人姓名与信用代码原值（虚构数据），保留在开发仓库追溯但不打进 git archive 提交包
+测试数据/评测/2026-10-24/** export-ignore
+# 所有被替代的方案、评审与测试快照均不进入评委系统包；保留归档说明作为导航
+docs/90-archive/** export-ignore
+docs/90-archive/README.md -export-ignore
+
+# 演示视频 23.6MB：提交包需要，但不重复打进可运行系统包（外层 assemble 从 artifacts 取）
+submission/dd04/artifacts/*.mp4 export-ignore

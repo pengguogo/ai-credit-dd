@@ -1,0 +1,16 @@
+{
+  "input": "../测试数据/评测/2026-10-24/dd04-business-acceptance/inputs/questions.jsonl",
+  "generatedAt": "2026-10-24T12:36:28+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 10
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 11673,
+  "totalTokens": 158009,
+  "failures": []
+}

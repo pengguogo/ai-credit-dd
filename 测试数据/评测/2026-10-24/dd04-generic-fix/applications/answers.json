@@ -1,0 +1,1213 @@
+{
+  "generatedAt": "2026-10-24T05:16:16+00:00",
+  "total": 10,
+  "answers": [
+    {
+      "id": "LA001",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_06f069029d65",
+          "source": {
+            "table": "enterprise_guarantee",
+            "filters": {
+              "sql": "SELECT * FROM enterprise_guarantee WHERE enterprise_id = 'E001' LIMIT 20"
+            }
+          }
+        },
+        {
+          "id": "ev_11a5c79b028e",
+          "source": {
+            "keys": {
+              "applicationId": "LA001"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_2dc14f1c13cb",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_673e907458aa",
+          "source": {
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_6b2c4e664be7",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_7d730b646db3",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_7ee61a014bdd",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA001"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_a905bd963af0",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_b775c1755dbb",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA001"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_ddafc6e187a1",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_ebb29935e386",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_ec3445a468d5",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E001"
+            },
+            "table": "enterprise_basic"
+          }
+        }
+      ],
+      "runIds": [
+        "run_42dd474f6777"
+      ]
+    },
+    {
+      "id": "LA002",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_0a4cf68dcc96",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_52f311dd131e",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_abe2c1d0167b",
+          "source": {
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_b012fc69b489",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_b42e679c7ba8",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA002"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_bcf0ecc3a510",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_c1c822e33711",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_e319d736006b",
+          "source": {
+            "keys": {
+              "applicationId": "LA002"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_e709b5870da4",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_e75217342c9d",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E002"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_ee4c87664437",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA002"
+            },
+            "table": "loan_application"
+          }
+        }
+      ],
+      "runIds": [
+        "run_feffd156771e"
+      ]
+    },
+    {
+      "id": "LA003",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_15b8a59bdc71",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_28f6a0a9c3dd",
+          "source": {
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_2998fcda42f2",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA003"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_46983d4a521a",
+          "source": {
+            "keys": {
+              "applicationId": "LA003"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_6c03548a1fdf",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA003"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_6d11027e08e1",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_83e57fa643ac",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_9b906d09788d",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_d29451eae5f8",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_d52aba260774",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_d8fb25a3083a",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E003"
+            },
+            "table": "enterprise_finance"
+          }
+        }
+      ],
+      "runIds": [
+        "run_c5a3c02f841d"
+      ]
+    },
+    {
+      "id": "LA004",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_0ba317cd1364",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA004"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_19bd654e6d40",
+          "source": {
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_2af3116e44cb",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_31b041099fb3",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_34d194c5400d",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_a864edb2c8b5",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_b0d52449d099",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA004"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_c52299234464",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_cd1b68ee1b65",
+          "source": {
+            "keys": {
+              "applicationId": "LA004"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_e72775f5dd3e",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_eb3dc45b8a4f",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E004"
+            },
+            "table": "enterprise_basic"
+          }
+        }
+      ],
+      "runIds": [
+        "run_399e9cec427b"
+      ]
+    },
+    {
+      "id": "LA005",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_198a73d756fe",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_325c69eb77ba",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_71b53d558703",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_825ee08ef3a1",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA005"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_9d0768ba2a58",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_c113de3296a3",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_c8c402f1aaf3",
+          "source": {
+            "keys": {
+              "applicationId": "LA005"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_c8f55ea62a43",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_cd38f1148ac1",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA005"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_ecbe26fbf618",
+          "source": {
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_f5b128f389b5",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E005"
+            },
+            "table": "enterprise_basic"
+          }
+        }
+      ],
+      "runIds": [
+        "run_eeae11e52f3d"
+      ]
+    },
+    {
+      "id": "LA006",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_02ec873faf93",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_08cba67d103a",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA006"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_21c3a455abd4",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_43204d79c898",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_5f03ff0a0592",
+          "source": {
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_80dca8bdf798",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_b021d88196af",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_bf5d5aafc99b",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_c5864c88c902",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_ce85f6798c84",
+          "source": {
+            "keys": {
+              "applicationId": "LA006"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_e50cde0d7289",
+          "source": {
+            "table": "enterprise_risk",
+            "filters": {
+              "sql": "SELECT * FROM enterprise_risk WHERE enterprise_id = 'E006' LIMIT 10"
+            }
+          }
+        },
+        {
+          "id": "ev_e9579a7fa96d",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA006"
+            },
+            "table": "loan_application"
+          }
+        }
+      ],
+      "runIds": [
+        "run_18838788ea15"
+      ]
+    },
+    {
+      "id": "LA007",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_04d90df33467",
+          "source": {
+            "table": "enterprise_guarantee",
+            "filters": {
+              "sql": "SELECT * FROM enterprise_guarantee WHERE enterprise_id = 'E007' LIMIT 20"
+            }
+          }
+        },
+        {
+          "id": "ev_15105acab301",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_3e3886a07d23",
+          "source": {
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_45a0151e3a84",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA007"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_5fe00054d326",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_677fa0cdf0d8",
+          "source": {
+            "keys": {
+              "applicationId": "LA007"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_69f7fdf42e38",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_a6a0b365197c",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_c546102e578c",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_d8dce5c10266",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA007"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_ee304d2dadf3",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_f7c5febb87e9",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E007"
+            },
+            "table": "enterprise_basic"
+          }
+        }
+      ],
+      "runIds": [
+        "run_dff9577651f7"
+      ]
+    },
+    {
+      "id": "LA008",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_00e4165989b6",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_028be27fcbbe",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_309530dc805b",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA008"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_41f3ac22b9fd",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_441694a7b654",
+          "source": {
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_499baf9ef8f8",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_5d0164393fee",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_6171cf1d9116",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_81a60cb8b0ee",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA008"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_be60d0f8431e",
+          "source": {
+            "keys": {
+              "applicationId": "LA008"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_e3de05122a70",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E008"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        }
+      ],
+      "runIds": [
+        "run_5b496ffe1519"
+      ]
+    },
+    {
+      "id": "LA009",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_0b9c07ee6c28",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_0bde93de97f4",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_2445374d2dac",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_352ef100a1d4",
+          "source": {
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_5984d12aaf77",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_77a9f3822513",
+          "source": {
+            "keys": {
+              "applicationId": "LA009"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_8744d492f5b6",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_8c1de8a538c1",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_8fe3ca4c2a69",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA009"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_a75c46f5783e",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA009"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_d179211c3d49",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E009"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        }
+      ],
+      "runIds": [
+        "run_175974256ffb"
+      ]
+    },
+    {
+      "id": "LA010",
+      "status": "failed",
+      "answer": "模型响应达到长度上限，未生成完整内容",
+      "evidence": [
+        {
+          "id": "ev_2ae05cf4a419",
+          "source": {
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_7285ad6b633a",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA010"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_7583cc284825",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_7a76afdfde34",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_b7df2515e3ba",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_bca5030e9eff",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_cf0412c1e8bf",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA010"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_d0af0a78ae9f",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_d7e78290282b",
+          "source": {
+            "keys": {
+              "applicationId": "LA010"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_ee60190ff48b",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_f9bf99e984b7",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E010"
+            },
+            "table": "enterprise_finance"
+          }
+        }
+      ],
+      "runIds": [
+        "run_f17f6c43c33a"
+      ]
+    }
+  ]
+}

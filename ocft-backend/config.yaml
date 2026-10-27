@@ -1,0 +1,25 @@
+database:
+  # 完整连接串，填了就忽略下面的分项；可写 enc: 密文
+  url: ""
+  # 分项写法：url 为空且 host 非空时生效，密码里的特殊字符会自动 URL 编码
+  driver: mysql+pymysql
+  host: ""
+  port: 3306
+  username: ""
+  password: ""            # 写 enc: 密文或 ${DB_PASSWORD}
+  name: ai_marathon
+
+redis:
+  # 完整连接串，如 redis://<user>:<password>@<host>:6379/0；填了就忽略 host 等分项（可写 enc:）
+  url: ""
+  host: ""
+  port: 6379
+  db: 0
+  username: ""
+  password: ""
+  ssl: false
+  key_prefix: "ocft:"     # 所有 key 自动加前缀，避免和其他项目共用实例时冲突
+  socket_timeout: 3
+  socket_connect_timeout: 3
+  max_connections: 20
+  decode_responses: true

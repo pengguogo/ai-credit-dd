@@ -1,0 +1,261 @@
+{
+  "_note": "评测标签（离线评分专用，运行时禁读）。从早期样例 seed 迁出：Agent 工具、Prompt、会话均不得访问本文件。",
+  "creditApplicationStatus": {
+    "APP-2026-1001": "approved",
+    "APP-2026-1002": "pending",
+    "APP-2026-1003": "rejected",
+    "APP-2026-1004": "approved",
+    "APP-2026-1005": "pending",
+    "APP-2026-1006": "pending",
+    "APP-2026-1007": "approved",
+    "APP-2026-1008": "approved",
+    "APP-2026-1009": "rejected",
+    "APP-2026-1010": "approved",
+    "APP-2026-1011": "rejected",
+    "APP-2026-1012": "approved"
+  },
+  "fraudLabels": {
+    "TXN-88421001": {
+      "isFraud": false,
+      "fraudType": null
+    },
+    "TXN-88421002": {
+      "isFraud": false,
+      "fraudType": null
+    },
+    "TXN-88421003": {
+      "isFraud": true,
+      "fraudType": "卡片试探"
+    },
+    "TXN-88421004": {
+      "isFraud": true,
+      "fraudType": "卡片试探"
+    },
+    "TXN-88421005": {
+      "isFraud": false,
+      "fraudType": null
+    },
+    "TXN-88421006": {
+      "isFraud": true,
+      "fraudType": "异地盗刷"
+    },
+    "TXN-88421007": {
+      "isFraud": false,
+      "fraudType": null
+    },
+    "TXN-88421008": {
+      "isFraud": true,
+      "fraudType": "卡片试探"
+    },
+    "TXN-88421009": {
+      "isFraud": true,
+      "fraudType": "卡片试探"
+    },
+    "TXN-88421010": {
+      "isFraud": false,
+      "fraudType": null
+    },
+    "TXN-88421011": {
+      "isFraud": false,
+      "fraudType": null
+    },
+    "TXN-88421012": {
+      "isFraud": true,
+      "fraudType": "伪卡盗刷"
+    }
+  },
+  "fraudPatternHits": {
+    "F001": [
+      "TXN-88421003",
+      "TXN-88421004",
+      "TXN-88421008",
+      "TXN-88421009"
+    ],
+    "F002": [
+      "TXN-88421005",
+      "TXN-88421006"
+    ],
+    "F003": [
+      "TXN-88421012"
+    ]
+  },
+  "claimDecisions": {
+    "CLM-2026-0301": {
+      "decision": "auto_paid",
+      "decisionReason": "金额低于小额快赔线(10000 元)，材料齐全，责任明确"
+    },
+    "CLM-2026-0302": {
+      "decision": "manual_review",
+      "decisionReason": "意外经过描述与病历记录时间不一致，需人工核实"
+    },
+    "CLM-2026-0303": {
+      "decision": "auto_paid",
+      "decisionReason": "重疾标准件：三甲医院确诊，条款覆盖疾病编码匹配"
+    },
+    "CLM-2026-0304": {
+      "decision": "manual_review",
+      "decisionReason": "等待期内就诊，需核实是否带病投保"
+    },
+    "CLM-2026-0305": {
+      "decision": "manual_review",
+      "decisionReason": "金额超快赔线，且维修报价高于系统评估价 22%"
+    },
+    "CLM-2026-0306": {
+      "decision": "manual_review",
+      "decisionReason": "大额身故案件，需受益人身份核实"
+    },
+    "CLM-2026-0307": {
+      "decision": "rejected",
+      "decisionReason": "免赔额 1000 元，索赔金额未达起赔线"
+    },
+    "CLM-2026-0308": {
+      "decision": "auto_paid",
+      "decisionReason": "材料齐全，医保目录内费用占比 92%，符合赔付条款"
+    }
+  },
+  "docExtractedKpis": {
+    "DOC-2026-001": [
+      {
+        "name": "营业收入",
+        "value": 128.6,
+        "unit": "亿元",
+        "yoy": "+7.3%"
+      },
+      {
+        "name": "归母净利润",
+        "value": 46.2,
+        "unit": "亿元",
+        "yoy": "+9.1%"
+      },
+      {
+        "name": "不良贷款率",
+        "value": 1.42,
+        "unit": "%",
+        "yoy": "-0.08pct"
+      },
+      {
+        "name": "拨备覆盖率",
+        "value": 212.5,
+        "unit": "%"
+      },
+      {
+        "name": "资本充足率",
+        "value": 13.86,
+        "unit": "%"
+      }
+    ],
+    "DOC-2026-002": [
+      {
+        "name": "车险综合成本率",
+        "value": 98.3,
+        "unit": "%"
+      },
+      {
+        "name": "车险赔付率",
+        "value": 71.2,
+        "unit": "%"
+      },
+      {
+        "name": "车险费用率",
+        "value": 27.1,
+        "unit": "%"
+      },
+      {
+        "name": "非车综合成本率",
+        "value": 102.6,
+        "unit": "%"
+      },
+      {
+        "name": "全年车险COR预测",
+        "value": 97.5,
+        "unit": "%（预计）"
+      }
+    ],
+    "DOC-2026-003": [
+      {
+        "name": "报送时限",
+        "value": 15,
+        "unit": "个工作日"
+      },
+      {
+        "name": "触发线",
+        "value": 100,
+        "unit": "%（LCR，连续两季度）"
+      },
+      {
+        "name": "说明提交时限",
+        "value": 5,
+        "unit": "个工作日"
+      },
+      {
+        "name": "触发机构数",
+        "value": 3,
+        "unit": "家"
+      },
+      {
+        "name": "立案调查数",
+        "value": 1,
+        "unit": "家"
+      }
+    ],
+    "DOC-2026-004": [
+      {
+        "name": "质押股数",
+        "value": 1.2,
+        "unit": "亿股"
+      },
+      {
+        "name": "占总股本",
+        "value": 5.23,
+        "unit": "%"
+      }
+    ]
+  },
+  "extractionBench": [
+    {
+      "caseId": "B001",
+      "input": "较上年同期增长 7.3%",
+      "expected": {
+        "direction": "increase",
+        "value": 7.3,
+        "unit": "%"
+      }
+    },
+    {
+      "caseId": "B002",
+      "input": "下降 0.08 个百分点",
+      "expected": {
+        "direction": "decrease",
+        "value": 0.08,
+        "unit": "pct"
+      }
+    },
+    {
+      "caseId": "B003",
+      "input": "102.6%",
+      "expected": {
+        "direction": "none",
+        "value": 102.6,
+        "unit": "%"
+      }
+    },
+    {
+      "caseId": "B004",
+      "input": "15 个工作日内",
+      "expected": {
+        "direction": "deadline",
+        "value": 15,
+        "unit": "个工作日"
+      }
+    },
+    {
+      "caseId": "B005",
+      "input": "维持\"增持\"评级",
+      "expected": {
+        "direction": "none",
+        "value": null,
+        "note": "评级:增持"
+      }
+    }
+  ]
+}

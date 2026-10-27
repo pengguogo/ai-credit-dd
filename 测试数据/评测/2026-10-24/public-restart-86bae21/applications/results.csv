@@ -1,0 +1,11 @@
+﻿id,问题,场景,终态,答案,错误码,调用工具,证据数,证据来源,runId,耗时ms,评分通过
+LA001,企业编号：E001。请对贷款申请 LA001 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+LA002,企业编号：E002。请对贷款申请 LA002 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+LA003,企业编号：E003。请对贷款申请 LA003 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+LA004,企业编号：E004。请对贷款申请 LA004 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+LA005,企业编号：E005。请对贷款申请 LA005 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+LA006,企业编号：E006。请对贷款申请 LA006 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+LA007,企业编号：E007。请对贷款申请 LA007 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+LA008,企业编号：E008。请对贷款申请 LA008 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+LA009,企业编号：E009。请对贷款申请 LA009 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+LA010,企业编号：E010。请对贷款申请 LA010 完成企业信贷尽调，并提供结论与证据。,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,

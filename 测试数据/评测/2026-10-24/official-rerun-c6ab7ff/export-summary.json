@@ -1,0 +1,16 @@
+{
+  "output": "/Users/dawn/ai马拉松/测试数据/评测/2026-10-24/official-rerun-c6ab7ff/official-results.csv",
+  "statusFile": "/Users/dawn/ai马拉松/测试数据/评测/2026-10-24/official-rerun-c6ab7ff/official-results-status.csv",
+  "total": 10,
+  "concluded": 10,
+  "notConcluded": 0,
+  "pendingConfirmation": [
+    "LA003",
+    "LA006"
+  ],
+  "statuses": {
+    "succeeded": 8,
+    "needs_confirmation": 2
+  },
+  "scope": "结论取自同次 run 已落库的工具证据；needs_confirmation 为结论已出、待业务确认"
+}

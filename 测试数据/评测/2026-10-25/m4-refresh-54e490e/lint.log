@@ -1,0 +1,51 @@
+
+> ocft-starter@0.0.0 lint
+> oxlint
+
+
+  [38;2;244;191;117;1m⚠[0m [38;2;244;191;117;1mreact(set-state-in-effect): Calling setState synchronously within an effect can trigger cascading renders[0m
+    ╭─[[38;2;92;157;255;1msrc/components/report/dimension-page.tsx[0m:72:5]
+ [2m69[0m │ 
+ [2m70[0m │   useEffect(() => {
+    · [38;2;246;87;248m  ────┬────[0m
+    ·       [38;2;246;87;248m╰── [38;2;246;87;248mThis is the containing effect[0m[0m
+ [2m71[0m │     let cancelled = false
+ [2m72[0m │     setLoadingOptions(true)
+    · [38;2;30;201;212m    ────────┬────────[0m
+    ·             [38;2;30;201;212m╰── [38;2;30;201;212mAvoid calling setState() directly within an effect[0m[0m
+ [2m73[0m │     api.catalog(actorId, SCENARIO_ID, '', 'applications')
+    ╰────
+[38;2;106;159;181m  help: [0mEffects should synchronize React with external systems. Calling setState synchronously inside an effect starts another render and is usually unnecessary. Derive the value during render, initialize state directly, or update it from the event that caused the change. Use an effect only when synchronizing with an external system.
+[38;2;106;159;181m  note: [0mReact Compiler skipped optimizing this component or hook. Additional guidance: https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect
+
+  [38;2;244;191;117;1m⚠[0m [38;2;244;191;117;1mreact(set-state-in-effect): Calling setState synchronously within an effect can trigger cascading renders[0m
+     ╭─[[38;2;92;157;255;1msrc/components/report/dimension-page.tsx[0m:129:5]
+ [2m127[0m │ 
+ [2m128[0m │   useEffect(() => {
+     · [38;2;246;87;248m  ────┬────[0m
+     ·       [38;2;246;87;248m╰── [38;2;246;87;248mThis is the containing effect[0m[0m
+ [2m129[0m │     setApplicationId(initial.applicationId)
+     · [38;2;30;201;212m    ────────┬───────[0m
+     ·             [38;2;30;201;212m╰── [38;2;30;201;212mAvoid calling setState() directly within an effect[0m[0m
+ [2m130[0m │     setOpen(false)
+     ╰────
+[38;2;106;159;181m  help: [0mEffects should synchronize React with external systems. Calling setState synchronously inside an effect starts another render and is usually unnecessary. Derive the value during render, initialize state directly, or update it from the event that caused the change. Use an effect only when synchronizing with an external system.
+[38;2;106;159;181m  note: [0mReact Compiler skipped optimizing this component or hook. Additional guidance: https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect
+
+  [38;2;244;191;117;1m⚠[0m [38;2;244;191;117;1mreact(set-state-in-effect): Calling setState synchronously within an effect can trigger cascading renders[0m
+     ╭─[[38;2;92;157;255;1msrc/components/report/dimension-page.tsx[0m:138:5]
+ [2m135[0m │   // 所有步骤绑定所选申请；取消标记和序号阻止旧请求覆盖新对象。
+ [2m136[0m │   useEffect(() => {
+     · [38;2;246;87;248m  ────┬────[0m
+     ·       [38;2;246;87;248m╰── [38;2;246;87;248mThis is the containing effect[0m[0m
+ [2m137[0m │     const request = ++requestRef.current
+ [2m138[0m │     setResult(null)
+     · [38;2;30;201;212m    ────┬────[0m
+     ·         [38;2;30;201;212m╰── [38;2;30;201;212mAvoid calling setState() directly within an effect[0m[0m
+ [2m139[0m │     setError('')
+     ╰────
+[38;2;106;159;181m  help: [0mEffects should synchronize React with external systems. Calling setState synchronously inside an effect starts another render and is usually unnecessary. Derive the value during render, initialize state directly, or update it from the event that caused the change. Use an effect only when synchronizing with an external system.
+[38;2;106;159;181m  note: [0mReact Compiler skipped optimizing this component or hook. Additional guidance: https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect
+
+Found 3 warnings and 0 errors.
+Finished in 102ms on 85 files with 116 rules using 8 threads.

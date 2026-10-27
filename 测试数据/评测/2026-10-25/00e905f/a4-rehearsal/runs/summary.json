@@ -1,0 +1,20 @@
+{
+  "input": "../测试数据/评测/2026-10-25/00e905f/a4-rehearsal/inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T12:59:38+00:00",
+  "total": 5,
+  "statuses": {
+    "succeeded": 3,
+    "needs_confirmation": 1,
+    "failed": 1
+  },
+  "errorCodes": {
+    "narrative_check_failed": 1
+  },
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 34802,
+  "totalTokens": 214789,
+  "failures": []
+}

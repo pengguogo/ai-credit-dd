@@ -1,0 +1,11 @@
+题目 6 道，已完成 0 道，输出到 eval/output/dd04-20261024-baseline/scenario-samples
+[1/6] dd-001 succeeded 19945ms ✓
+[2/6] dd-002 succeeded 6037ms ✓
+[3/6] dd-003 succeeded 7052ms ✓
+[4/6] dd-004 needs_clarification 6449ms ✓
+[5/6] dd-005 needs_clarification 5694ms ✓
+[6/6] dd-006 succeeded 13759ms ✓
+完成 6 道：{'succeeded': 4, 'needs_clarification': 2}
+正确率 100.0%（6 道有期望），平均分 1.00
+无证据答案 0 道，平均耗时 9822ms，总 token 55826
+结果表格：eval/output/dd04-20261024-baseline/scenario-samples/results.csv、eval/output/dd04-20261024-baseline/scenario-samples/results.xlsx

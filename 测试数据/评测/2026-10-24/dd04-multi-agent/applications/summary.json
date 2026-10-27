@@ -1,0 +1,16 @@
+{
+  "input": "../测试数据/评测/2026-10-24/dd04-multi-agent/inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T07:37:22+00:00",
+  "total": 10,
+  "statuses": {
+    "needs_confirmation": 10
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 54326,
+  "totalTokens": 359962,
+  "failures": []
+}

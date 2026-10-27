@@ -1,0 +1,36 @@
+{
+  "baselineCode": "e8532863aa0027582ba5fd3d2f213c5a5280359d",
+  "baselineFieldsRescored": {
+    "total": 10,
+    "statuses": {
+      "succeeded": 5,
+      "needs_confirmation": 5
+    },
+    "numericReferenceCount": 8,
+    "referenceNonNumericCount": 2,
+    "eligibleExactCount": 5,
+    "eligibleOverlapCount": 7,
+    "eligibleWithinCount": 7,
+    "candidateRiskExactCount": 5,
+    "failedCount": 0,
+    "exactRateAllRows": 0.5,
+    "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+  },
+  "currentFields": {
+    "total": 10,
+    "statuses": {
+      "succeeded": 8,
+      "needs_confirmation": 2
+    },
+    "numericReferenceCount": 8,
+    "referenceNonNumericCount": 2,
+    "eligibleExactCount": 8,
+    "eligibleOverlapCount": 8,
+    "eligibleWithinCount": 8,
+    "candidateRiskExactCount": 10,
+    "failedCount": 0,
+    "exactRateAllRows": 0.8,
+    "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+  },
+  "note": "同一严格评级与数值区间口径重新评分；版本不同，不把变化归因于单个改动"
+}

@@ -1,0 +1,15 @@
+环境已加载；模型限制校验通过；凭据不回显
+题目 10 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/dd04-token-1m/applications
+[1/10] LA001 succeeded 22930ms
+[2/10] LA002 failed 16868ms
+[3/10] LA003 needs_confirmation 20865ms
+[4/10] LA004 succeeded 20376ms
+[5/10] LA005 succeeded 24278ms
+[6/10] LA006 needs_confirmation 22087ms
+[7/10] LA007 failed 16611ms
+[8/10] LA008 succeeded 20640ms
+[9/10] LA009 succeeded 19403ms
+[10/10] LA010 needs_confirmation 19369ms
+完成 10 道：{'succeeded': 5, 'failed': 2, 'needs_confirmation': 3}
+无证据答案 0 道，平均耗时 20342ms，总 token 257649
+结果表格：../测试数据/评测/2026-10-24/dd04-token-1m/applications/results.csv、../测试数据/评测/2026-10-24/dd04-token-1m/applications/results.xlsx

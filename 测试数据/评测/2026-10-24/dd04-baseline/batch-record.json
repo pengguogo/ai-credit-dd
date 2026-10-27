@@ -1,0 +1,43 @@
+{
+  "recordedAt": "2026-10-24T12:51:36.167556+08:00",
+  "codeSha": "cfa4d335bc5286e57e6a9b1d9930ee3209939e6f",
+  "python": "3.11.4 (main, Jul  5 2023, 08:40:20) [Clang 14.0.6 ]",
+  "model": "deepseek-v4.1-flash",
+  "apiModel": "deepseek-flash",
+  "limits": {
+    "timeoutSeconds": 60.0,
+    "toolRounds": 6,
+    "totalTokens": 20000
+  },
+  "packages": {
+    "openai": "3.35.1",
+    "fastapi": "0.157.0",
+    "sqlalchemy": "2.1.5",
+    "langgraph": "1.2.16",
+    "pytest": "8.4.2"
+  },
+  "hashes": {
+    "scenarios/dd04/metrics.yaml": "a13cf0955daea42fc44f80a1a24b9862138b136f401ae39229cb11485fe8f5bd",
+    "scenarios/dd04/credit_model.yaml": "b7e270b7aad8f88fd68197ce65f8aca1075f1badc67938ac1cb9ed99786c52a1",
+    "scenarios/dd04/fraud_rules.yaml": "e3e2345e1cc6e2c950e5ad7e42e1a15312d6e20a00c2fed9a4f064f477a41a17",
+    "scenarios/dd04/opinion.yaml": "de05db35fbc35ee7e4d20de45e33d5ea5e7001943eb54051ee2abd3377744125",
+    "scenarios/dd04/scorecard.yaml": "b1a3d53f35f8f13b47c061b24c6dd550f718fd085d9643266b352e901843dd29",
+    "scenarios/dd04/data/enterprise_related.csv": "fdf2c526aee15661e76e7fc0bc9ad6f819a682f0ac9efa75089a763a13bed7ee",
+    "scenarios/dd04/data/enterprise_shareholder.csv": "c581842a9a3490ba919ae68619574842c3c96493225bc320d9320225d74a4deb",
+    "scenarios/dd04/data/enterprise_risk.csv": "9e7942dc688e562e7f354f2c2390f2352e6d3beb025577e1387f844f7bd9d3fb",
+    "scenarios/dd04/data/enterprise_public_opinion.csv": "5fa3ee441c8ede953475b92d8071e87f2a198ab9426035c76d3e108f48542bae",
+    "scenarios/dd04/data/enterprise_basic.csv": "c6fc0d118938507638e5b3a5888b0b500baa99740cdeaf093d029f3b3cc05935",
+    "scenarios/dd04/data/enterprise_lawsuit.csv": "a5f737d5f126785f23c3bbefeeb658e152e9b32f2671a6ce95d90da90fb1044e",
+    "scenarios/dd04/data/enterprise_finance.csv": "69331403f2643aaa95c661a9ed68a03d64ff94d36b17478648d29e6b8427d790",
+    "scenarios/dd04/data/schema_relationships.csv": "2c4e507f3d34ebbbe99d846750057fa3718b919a190e38ad94118aa72b9ee34e",
+    "scenarios/dd04/data/enterprise_guarantee.csv": "0ffe86ab4a2b1710d1aec65fde04a8f6460ca892b7c2b3aa9fb2c53c39f433d6",
+    "scenarios/dd04/data/loan_application.csv": "c3f21b2912c3735f589469a3a7e2c9f937d4a0d4b48746edc78a0dc792dae0a5",
+    "eval/output/dd04-20261024-baseline/inputs/questions.jsonl": "90a4f24347c9e5ee4acaf8d96c491b43ec754f7a400a53ea7a63fda90183d865",
+    "eval/output/dd04-20261024-baseline/inputs/applications.jsonl": "9b1823e3c399836b81b356341aac333530201a51d4b467104d7cc5825b4f7daf"
+  },
+  "notes": [
+    "未修改模型、预算、规则或额度配置；仅移除参数说明中的样例编号",
+    "三组评测进程存在并发，耗时不能用作串行性能基准",
+    "每批新目录 fresh，不复用历史结果；smoke 独立保存，不进入10笔申请分母"
+  ]
+}

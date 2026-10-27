@@ -1,0 +1,41 @@
+{
+  "gitShort": "00e905f",
+  "gitHead": "00e905faeaf508021383e3a3fab58480d5aaec90",
+  "generatedAt": "2026-10-24T12:50:13.446348+00:00",
+  "applications": {
+    "total": 10,
+    "statuses": {
+      "succeeded": 7,
+      "needs_confirmation": 1,
+      "failed": 2
+    },
+    "errors": {
+      "narrative_check_failed": 2
+    },
+    "avgSeconds": 27.14,
+    "p50Seconds": 22.996,
+    "p95Seconds": 34.246,
+    "totalTokens": 369791,
+    "withEvidence": 10,
+    "answersWithoutEvidence": 0
+  },
+  "questions": {
+    "total": 10,
+    "statuses": {
+      "succeeded": 10
+    },
+    "errors": {},
+    "avgSeconds": 14.12,
+    "p50Seconds": 13.379,
+    "p95Seconds": 23.554,
+    "totalTokens": 157814,
+    "withEvidence": 10,
+    "answersWithoutEvidence": 0
+  },
+  "applicationFields": {
+    "riskExact": "8/10",
+    "creditExactAll": "8/10",
+    "creditNumericExact": "7/8",
+    "scope": "离线对照公开测试集答案；失败笔无结构化结论时记不一致；不代表全文正确率"
+  }
+}

@@ -1,0 +1,4 @@
+[WARN] answer-column   ocft-backend/app/seed.py:4  ×1  - 信贷申请的审批状态（status）、交易的 isFraud/fraudType、理赔的 decision/decis
+[WARN] eval-label      ocft-backend/app/seed.py:4  ×2  - 信贷申请的审批状态（status）、交易的 isFraud/fraudType、理赔的 decision/decis
+
+汇总：ERROR 0，WARN 3（WARN 需按 SKILL.md 人工复核；--verbose 看逐行）

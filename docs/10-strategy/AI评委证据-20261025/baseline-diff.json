@@ -1,0 +1,20 @@
+{
+  "baselineRuntimeFiles": 92,
+  "changedFiles": [
+    "ocft-backend/app/agent/dd_graph.py",
+    "ocft-backend/app/agent/dd_roles.py",
+    "ocft-backend/app/agent/dd_verify.py",
+    "ocft-backend/app/agent/graph.py",
+    "ocft-backend/app/dd_import.py",
+    "ocft-backend/app/schemas.py",
+    "ocft-backend/app/services/catalog_write.py",
+    "ocft-backend/app/services/csv_import_service.py",
+    "ocft-backend/app/services/dd_step.py",
+    "ocft-backend/app/tools/dd_calc.py",
+    "ocft-backend/scenarios/dd04/agents.yaml",
+    "ocft-backend/scenarios/dd04/prompts/controller.md",
+    "ocft-backend/scenarios/dd04/prompts/rating.md",
+    "ocft-backend/scenarios/dd04/skills/credit-limit.md",
+    "ocft-backend/scenarios/dd04/skills/dd-report.md"
+  ]
+}

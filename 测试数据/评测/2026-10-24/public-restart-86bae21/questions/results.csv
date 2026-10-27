@@ -1,0 +1,11 @@
+﻿id,问题,场景,终态,答案,错误码,调用工具,证据数,证据来源,runId,耗时ms,评分通过
+Q001,企业编号：E001。请对该企业进行尽调并生成尽调报告,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+Q002,企业编号：E003。该企业的资产负债率是多少？是否存在偿债风险？,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+Q003,企业编号：E010。该企业是否存在财务异常或欺诈线索？,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+Q004,企业编号：E009。请测算该企业的建议授信额度,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+Q005,企业编号：E006。该企业的舆情和诉讼风险如何？,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+Q006,企业编号：E002。分析该企业近三年成长性,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+Q007,企业编号：E007。该企业适合发放贷款吗？给出尽调结论,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+Q008,企业编号：E004。该企业的营运能力如何？,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+Q009,企业编号：E003。扫描该企业的舆情事件并评估影响,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,
+Q010,企业编号：E010。核查该企业的关联企业和对外担保情况,enterprise_due_diligence,runner_error,ApiError: 未知场景: enterprise_due_diligence,runner_error,,0,,,0,

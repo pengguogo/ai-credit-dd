@@ -1,0 +1,14 @@
+题目 10 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/public-restart-86bae21/official-questions
+[1/10] Q001 succeeded 75775ms
+[2/10] Q002 needs_confirmation 34833ms
+[3/10] Q003 succeeded 23877ms
+[4/10] Q004 succeeded 31592ms
+[5/10] Q005 succeeded 10930ms
+[6/10] Q006 succeeded 14677ms
+[7/10] Q007 succeeded 45496ms
+[8/10] Q008 succeeded 20784ms
+[9/10] Q009 succeeded 10367ms
+[10/10] Q010 succeeded 16255ms
+完成 10 道：{'succeeded': 9, 'needs_confirmation': 1}
+无证据答案 0 道，平均耗时 28458ms，总 token 250967
+结果表格：../测试数据/评测/2026-10-24/public-restart-86bae21/official-questions/results.csv、../测试数据/评测/2026-10-24/public-restart-86bae21/official-questions/results.xlsx

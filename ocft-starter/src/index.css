@@ -1,0 +1,217 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * 金融壹账通 × 科技工作台主题（浅色）。
+ * 主高亮：平安橙 #FF6600；冷灰蓝氛围底，面板半透明磨砂。
+ * 字体只用系统字体栈，离线可用。
+ */
+@theme inline {
+  --font-sans: -apple-system, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+  --font-heading: var(--font-sans);
+  --font-mono: ui-monospace, "SF Mono", Consolas, monospace;
+
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --color-tech: var(--tech);
+  --color-tech-soft: var(--tech-soft);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  /* 平安橙 */
+  --brand: #ff6600;
+  --brand-soft: #fff1e6;
+  --tech: #0e7490;
+  --tech-soft: #e6f4f7;
+  --success: #059669;
+  --warning: #d97706;
+  --info: #0284c7;
+
+  --background: #dbe4f0;
+  --foreground: #0f172a;
+  --card: #f3f7fb;
+  --card-foreground: #0f172a;
+  --popover: #f8fafc;
+  --popover-foreground: #0f172a;
+  --primary: #ff6600;
+  --primary-foreground: #ffffff;
+  --secondary: #d5e0ed;
+  --secondary-foreground: #0f172a;
+  --muted: #d5e0ed;
+  /* 对比度 ≥ 4.5:1（浅底） */
+  --muted-foreground: #475569;
+  --accent: #fff1e6;
+  --accent-foreground: #cc5200;
+  --destructive: #dc2626;
+  --border: #b6c5d8;
+  --input: #a8bad0;
+  --ring: #ff6600;
+  --chart-1: #ff6600;
+  --chart-2: #0284c7;
+  --chart-3: #059669;
+  --chart-4: #d97706;
+  --chart-5: #64748b;
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply h-full overflow-hidden font-sans;
+  }
+  body {
+    @apply h-full overflow-hidden text-foreground antialiased;
+    font-variant-numeric: tabular-nums;
+  }
+  #root {
+    @apply h-full;
+  }
+}
+
+/* 应用壳：网格 + 冷暖径向氛围 */
+.app-shell {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(ellipse 70% 45% at 8% -8%, rgb(255 102 0 / 0.16), transparent 55%),
+    radial-gradient(ellipse 55% 40% at 92% 4%, rgb(255 102 0 / 0.08), transparent 50%),
+    radial-gradient(ellipse 45% 35% at 70% 100%, rgb(14 116 144 / 0.08), transparent 55%),
+    linear-gradient(rgb(15 23 42 / 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(15 23 42 / 0.04) 1px, transparent 1px);
+  background-size: auto, auto, auto, 40px 40px, 40px 40px;
+  background-attachment: fixed;
+}
+
+/* 磨砂面板：半透明冷白 */
+.surface-panel {
+  background: color-mix(in srgb, var(--card) 86%, transparent);
+  backdrop-filter: blur(14px) saturate(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(1.1);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.55),
+    0 0 0 1px color-mix(in srgb, var(--border) 70%, var(--tech) 30%);
+}
+
+.surface-panel-solid {
+  background: var(--card);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.65),
+    0 0 0 1px color-mix(in srgb, var(--border) 75%, var(--tech) 25%);
+}
+
+.app-header {
+  background:
+    linear-gradient(180deg, #1e293b 0%, #162032 100%);
+  backdrop-filter: blur(16px) saturate(1.15);
+  -webkit-backdrop-filter: blur(16px) saturate(1.15);
+  border-bottom: 1px solid color-mix(in srgb, #334155 70%, var(--tech) 30%);
+  box-shadow: inset 0 -2px 0 var(--brand);
+  color: #e2e8f0;
+}
+
+.app-header .text-muted-foreground {
+  color: #94a3b8;
+}
+
+.app-nav-strip {
+  background: #0f172a;
+  border-top: 1px solid rgb(51 65 85 / 0.85);
+}
+
+.app-footer {
+  background: linear-gradient(180deg, #162032 0%, #0f172a 100%);
+  border-top: 1px solid color-mix(in srgb, #334155 70%, var(--tech) 30%);
+  color: #94a3b8;
+}
+
+.catalog-scroll {
+  overflow-x: scroll;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--tech) 35%, var(--border)) transparent;
+}
+.catalog-scroll::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+}
+.catalog-scroll::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--tech) 40%, #94a3b8);
+  border-radius: 999px;
+}
+.catalog-scroll::-webkit-scrollbar-track {
+  background: color-mix(in srgb, var(--muted) 80%, transparent);
+}
+
+/* 审批列表采用普通灰色滚动条，不使用滑块式控件。 */
+.approval-scroll {
+  scrollbar-width: auto;
+  /* 保持 auto，避免标准颜色属性覆盖 Chromium 的滚动条尺寸样式。 */
+  scrollbar-color: auto;
+  scrollbar-gutter: stable;
+}
+.approval-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.approval-scroll::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--muted-foreground) 40%, var(--border));
+  min-width: 48px;
+  min-height: 48px;
+  border: 1px solid var(--muted);
+  border-radius: 6px;
+}
+.approval-scroll::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+.main-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--tech) 35%, var(--border)) transparent;
+}
+.main-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.main-scroll::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--tech) 40%, #94a3b8);
+  border-radius: 999px;
+}
+.main-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}

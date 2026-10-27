@@ -1,0 +1,796 @@
+{
+  "current": {
+    "applications": {
+      "total": 10,
+      "statuses": {
+        "failed": 10
+      },
+      "errors": {
+        "llm_output_incomplete": 10
+      },
+      "totalTokens": 236202,
+      "avgDurationMs": 21521,
+      "sqlCalls": 4,
+      "rows": [
+        {
+          "id": "LA001",
+          "status": "failed",
+          "runIds": [
+            "run_42dd474f6777"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "sql_query",
+            "build_dd_report"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 23847
+        },
+        {
+          "id": "LA002",
+          "status": "failed",
+          "runIds": [
+            "run_feffd156771e"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 22566
+        },
+        {
+          "id": "LA003",
+          "status": "failed",
+          "runIds": [
+            "run_c5a3c02f841d"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 22626
+        },
+        {
+          "id": "LA004",
+          "status": "failed",
+          "runIds": [
+            "run_399e9cec427b"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 21555
+        },
+        {
+          "id": "LA005",
+          "status": "failed",
+          "runIds": [
+            "run_eeae11e52f3d"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 22016
+        },
+        {
+          "id": "LA006",
+          "status": "failed",
+          "runIds": [
+            "run_18838788ea15"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report",
+            "sql_query"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 22669
+        },
+        {
+          "id": "LA007",
+          "status": "failed",
+          "runIds": [
+            "run_dff9577651f7"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report",
+            "sql_query",
+            "sql_query"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 33618
+        },
+        {
+          "id": "LA008",
+          "status": "failed",
+          "runIds": [
+            "run_5b496ffe1519"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 23238
+        },
+        {
+          "id": "LA009",
+          "status": "failed",
+          "runIds": [
+            "run_175974256ffb"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 21878
+        },
+        {
+          "id": "LA010",
+          "status": "failed",
+          "runIds": [
+            "run_f17f6c43c33a"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 22189
+        }
+      ]
+    },
+    "questions": {
+      "total": 10,
+      "statuses": {
+        "failed": 2,
+        "needs_confirmation": 1,
+        "succeeded": 7
+      },
+      "errors": {
+        "llm_output_incomplete": 2
+      },
+      "totalTokens": 118652,
+      "avgDurationMs": 13283,
+      "sqlCalls": 3,
+      "rows": [
+        {
+          "id": "Q001",
+          "status": "failed",
+          "runIds": [
+            "run_c4469668241b"
+          ],
+          "tools": [
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 21394
+        },
+        {
+          "id": "Q002",
+          "status": "needs_confirmation",
+          "runIds": [
+            "run_5f6ffa83c802"
+          ],
+          "tools": [
+            "find_enterprise",
+            "analyze_financials",
+            "rate_risk"
+          ],
+          "errorCode": null,
+          "totalTokens": 7976
+        },
+        {
+          "id": "Q003",
+          "status": "succeeded",
+          "runIds": [
+            "run_aa14abf15985"
+          ],
+          "tools": [
+            "find_enterprise",
+            "analyze_financials",
+            "detect_fraud_signals"
+          ],
+          "errorCode": null,
+          "totalTokens": 10323
+        },
+        {
+          "id": "Q004",
+          "status": "succeeded",
+          "runIds": [
+            "run_63aecfeb344f"
+          ],
+          "tools": [
+            "find_enterprise",
+            "get_loan_application",
+            "calc_credit_limit"
+          ],
+          "errorCode": null,
+          "totalTokens": 8319
+        },
+        {
+          "id": "Q005",
+          "status": "succeeded",
+          "runIds": [
+            "run_956ae04c61cf"
+          ],
+          "tools": [
+            "find_enterprise",
+            "scan_public_opinion"
+          ],
+          "errorCode": null,
+          "totalTokens": 6013
+        },
+        {
+          "id": "Q006",
+          "status": "succeeded",
+          "runIds": [
+            "run_5b1cafa76ade"
+          ],
+          "tools": [
+            "find_enterprise",
+            "analyze_financials"
+          ],
+          "errorCode": null,
+          "totalTokens": 10318
+        },
+        {
+          "id": "Q007",
+          "status": "failed",
+          "runIds": [
+            "run_0a292ccbc86a"
+          ],
+          "tools": [
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report",
+            "sql_query"
+          ],
+          "errorCode": "llm_output_incomplete",
+          "totalTokens": 31856
+        },
+        {
+          "id": "Q008",
+          "status": "succeeded",
+          "runIds": [
+            "run_f61c42177695"
+          ],
+          "tools": [
+            "find_enterprise",
+            "analyze_financials"
+          ],
+          "errorCode": null,
+          "totalTokens": 7710
+        },
+        {
+          "id": "Q009",
+          "status": "succeeded",
+          "runIds": [
+            "run_f369f8d58ada"
+          ],
+          "tools": [
+            "find_enterprise",
+            "scan_public_opinion"
+          ],
+          "errorCode": null,
+          "totalTokens": 6024
+        },
+        {
+          "id": "Q010",
+          "status": "succeeded",
+          "runIds": [
+            "run_98ffc43e7065"
+          ],
+          "tools": [
+            "find_enterprise",
+            "verify_business_info",
+            "sql_query",
+            "sql_query"
+          ],
+          "errorCode": null,
+          "totalTokens": 8719
+        }
+      ]
+    }
+  },
+  "baseline": {
+    "applications": {
+      "total": 10,
+      "statuses": {
+        "succeeded": 5,
+        "failed": 2,
+        "needs_confirmation": 3
+      },
+      "errors": {
+        "round_limit_exceeded": 2
+      },
+      "totalTokens": 257649,
+      "avgDurationMs": 20343,
+      "sqlCalls": 6,
+      "rows": [
+        {
+          "id": "LA001",
+          "status": "succeeded",
+          "runIds": [
+            "run_68747cacb1e9"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 22111
+        },
+        {
+          "id": "LA002",
+          "status": "failed",
+          "runIds": [
+            "run_5f2613f9efcf"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report",
+            "sql_query",
+            "sql_query",
+            "sql_query"
+          ],
+          "errorCode": "round_limit_exceeded",
+          "totalTokens": 35234
+        },
+        {
+          "id": "LA003",
+          "status": "needs_confirmation",
+          "runIds": [
+            "run_13de37b4c698"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 22106
+        },
+        {
+          "id": "LA004",
+          "status": "succeeded",
+          "runIds": [
+            "run_1b4cd0746278"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 26261
+        },
+        {
+          "id": "LA005",
+          "status": "succeeded",
+          "runIds": [
+            "run_30e169503da1"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 27240
+        },
+        {
+          "id": "LA006",
+          "status": "needs_confirmation",
+          "runIds": [
+            "run_62ce9b851b9d"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 21910
+        },
+        {
+          "id": "LA007",
+          "status": "failed",
+          "runIds": [
+            "run_94d19f4b653d"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "sql_query",
+            "build_dd_report",
+            "sql_query",
+            "sql_query"
+          ],
+          "errorCode": "round_limit_exceeded",
+          "totalTokens": 34649
+        },
+        {
+          "id": "LA008",
+          "status": "succeeded",
+          "runIds": [
+            "run_bc85d3c292f4"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 21627
+        },
+        {
+          "id": "LA009",
+          "status": "succeeded",
+          "runIds": [
+            "run_78520858f5d8"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 20401
+        },
+        {
+          "id": "LA010",
+          "status": "needs_confirmation",
+          "runIds": [
+            "run_9e9652ec2bcb"
+          ],
+          "tools": [
+            "get_loan_application",
+            "find_enterprise",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 26110
+        }
+      ]
+    },
+    "questions": {
+      "total": 10,
+      "statuses": {
+        "succeeded": 10
+      },
+      "errors": {},
+      "totalTokens": 126451,
+      "avgDurationMs": 14051,
+      "sqlCalls": 4,
+      "rows": [
+        {
+          "id": "Q001",
+          "status": "succeeded",
+          "runIds": [
+            "run_a36963868807"
+          ],
+          "tools": [
+            "find_enterprise",
+            "get_loan_application",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 21291
+        },
+        {
+          "id": "Q002",
+          "status": "succeeded",
+          "runIds": [
+            "run_51abdeb70f00"
+          ],
+          "tools": [
+            "find_enterprise",
+            "analyze_financials"
+          ],
+          "errorCode": null,
+          "totalTokens": 9278
+        },
+        {
+          "id": "Q003",
+          "status": "succeeded",
+          "runIds": [
+            "run_286ed6d46456"
+          ],
+          "tools": [
+            "find_enterprise",
+            "analyze_financials",
+            "detect_fraud_signals",
+            "verify_business_info"
+          ],
+          "errorCode": null,
+          "totalTokens": 14526
+        },
+        {
+          "id": "Q004",
+          "status": "succeeded",
+          "runIds": [
+            "run_db08fa399b2f"
+          ],
+          "tools": [
+            "find_enterprise",
+            "get_loan_application",
+            "calc_credit_limit",
+            "rate_risk"
+          ],
+          "errorCode": null,
+          "totalTokens": 11354
+        },
+        {
+          "id": "Q005",
+          "status": "succeeded",
+          "runIds": [
+            "run_d3795a6412d6"
+          ],
+          "tools": [
+            "find_enterprise",
+            "scan_public_opinion"
+          ],
+          "errorCode": null,
+          "totalTokens": 5402
+        },
+        {
+          "id": "Q006",
+          "status": "succeeded",
+          "runIds": [
+            "run_8262457d7446"
+          ],
+          "tools": [
+            "find_enterprise",
+            "analyze_financials"
+          ],
+          "errorCode": null,
+          "totalTokens": 9540
+        },
+        {
+          "id": "Q007",
+          "status": "succeeded",
+          "runIds": [
+            "run_d4f59ea69b9b"
+          ],
+          "tools": [
+            "find_enterprise",
+            "get_loan_application",
+            "verify_business_info",
+            "analyze_financials",
+            "scan_public_opinion",
+            "detect_fraud_signals",
+            "rate_risk",
+            "calc_credit_limit",
+            "build_dd_report"
+          ],
+          "errorCode": null,
+          "totalTokens": 25688
+        },
+        {
+          "id": "Q008",
+          "status": "succeeded",
+          "runIds": [
+            "run_91a95d2bc066"
+          ],
+          "tools": [
+            "find_enterprise",
+            "analyze_financials"
+          ],
+          "errorCode": null,
+          "totalTokens": 6725
+        },
+        {
+          "id": "Q009",
+          "status": "succeeded",
+          "runIds": [
+            "run_1a762594b0be"
+          ],
+          "tools": [
+            "find_enterprise",
+            "scan_public_opinion"
+          ],
+          "errorCode": null,
+          "totalTokens": 7385
+        },
+        {
+          "id": "Q010",
+          "status": "succeeded",
+          "runIds": [
+            "run_f0f8b11e20cf"
+          ],
+          "tools": [
+            "find_enterprise",
+            "verify_business_info",
+            "sql_query",
+            "sql_query",
+            "sql_query",
+            "sql_query"
+          ],
+          "errorCode": null,
+          "totalTokens": 15262
+        }
+      ]
+    }
+  },
+  "settings": {
+    "llm_model": "deepseek-v4.1-flash",
+    "run_max_total_tokens": 1048576,
+    "run_max_tool_rounds": 6,
+    "run_timeout_seconds": 60.0,
+    "llm_max_tokens_per_request": 2048
+  },
+  "codeHashes": {
+    "app/agent/engine.py": "7a7835d89a5bb1f7d2e8fc785a7620295004c5be73041d3132c2c3c94dd51d64",
+    "app/agent/graph.py": "d14b8e90bd70f9ff6911ef7d88c4071c88b9066209db215f65829eea9aaea270",
+    "app/agent/scenarios.py": "cae25bdc81728ae5f584c51a2555b4d46aafd6c284beacca0866cf383b827415",
+    "app/agent/llm_audit.py": "d8bf8279bddf82252a150656ab85ed30e9c3fafc8f54c963391c7fe3bf15978b",
+    "app/tools/dd_calc.py": "83d63d7524b2120d2db1ad14ff09ac0a03d0f1b8adf0d4e743c3d36f33cff88b",
+    "scenarios/dd04/opinion.yaml": "1b87afb1b381d47966dd07cbb963f951576754e6307b6e1259faa31e1be2a786",
+    "scenarios/dd04/credit_model.yaml": "b7e270b7aad8f88fd68197ce65f8aca1075f1badc67938ac1cb9ed99786c52a1",
+    "scenarios/dd04/scorecard.yaml": "b1a3d53f35f8f13b47c061b24c6dd550f718fd085d9643266b352e901843dd29"
+  },
+  "codeHashNote": "Hashes reflect collection-time files, not a reconstruction of earlier running processes. Per-call requestSha256 is stored with the actual call.",
+  "inputHashes": {
+    "applications": "9b1823e3c399836b81b356341aac333530201a51d4b467104d7cc5825b4f7daf",
+    "questions": "90a4f24347c9e5ee4acaf8d96c491b43ec754f7a400a53ea7a63fda90183d865"
+  }
+}

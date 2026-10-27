@@ -1,0 +1,92 @@
+# 赛题 04 多 Agent 角色编排配置（ADR-0008，spec dd-multi-agent）。改这里不改代码。
+#
+# 执行顺序由 depends_on 决定：工商核验 / 财报解析 / 舆情扫描三路并行 → 反欺诈 → 评级授信 → 报告。
+# 每个角色先用 app/tools/dd_calc.py 的纯函数算出全部数字，再按 llm 开关调用一次模型写结构化解读；
+# 模型不能改动数字。prompt 为本目录 prompts/ 下的文件名。
+#
+# llm: false 时该角色只算不调模型（耗时压缩时使用，决策 2 首版全开）。
+# max_tokens：该角色单次模型输出上限。deepseek-v4.1-flash 的内部推理也计入这个上限，
+#   设太小会在正文输出前就被截断（finish_reason=length，内容为空）。2026-10-24 实测 700 / 3000 全部截断。
+#   截断后重试时上限自动翻倍（不超过 max_tokens_cap）。
+# retries：结构校验失败后的重试次数，用尽后记为 degraded（数字保留，解读为空，需人工复核）。
+# thinking：模型推理模式。false 关闭（显式传 thinking.type=disabled），不写沿用接口默认（开启）。
+#   2026-10-24 实测（公开集中最慢的一笔）：开启推理时报告首调 41s 且 8192 上限仍截断，重写后整笔 105s；
+#   同一请求关闭推理后耗时约为开启时的 1/5。数字由 dd_calc 算出、事实校验兜底，解读不依赖长推理。
+max_tokens_cap: 8192
+
+# 并行解读（耗时目标：单笔 ≤30s）。true 时先按 depends_on 顺序算完全部数字（毫秒级），
+# 再让工商 / 财报 / 舆情 / 反欺诈 / 评级五个角色同时写解读（反欺诈、评级只看上游数字，不等上游解读），
+# 最后报告汇总全部解读。false 回到逐级等待解读的串行口径。
+parallel_analysis: true
+
+controller:
+  name: 主控
+  prompt: controller.md
+  # 本场景 run 累计 token 上限（主控 + 六个角色合计）。不限轮数与总时长（决策 4），
+  # 失控只靠它截停；全局默认 run_max_total_tokens=20000 不够一次完整多 Agent 尽调。
+  max_total_tokens: 200000
+  # 主控只做定位和调度（每轮输出约 100 token），关闭推理
+  thinking: false
+
+roles:
+  business:
+    name: 工商核验
+    depends_on: []
+    llm: true
+    thinking: false
+    max_tokens: 2048
+    retries: 1
+    prompt: business.md
+  finance:
+    name: 财报解析
+    depends_on: []
+    llm: true
+    thinking: false
+    max_tokens: 2048
+    retries: 1
+    prompt: finance.md
+  opinion:
+    name: 舆情扫描
+    depends_on: []
+    llm: true
+    thinking: false
+    max_tokens: 2048
+    retries: 1
+    prompt: opinion.md
+  fraud:
+    name: 反欺诈
+    depends_on: [business, finance, opinion]
+    llm: true
+    thinking: false
+    max_tokens: 2048
+    retries: 1
+    prompt: fraud.md
+  rating:
+    name: 评级授信
+    depends_on: [fraud]
+    llm: true
+    thinking: false
+    max_tokens: 2048
+    retries: 1
+    prompt: rating.md
+  report:
+    name: 报告
+    depends_on: [rating]
+    llm: true
+    thinking: false
+    # 2.0 版报告约 2500 字且含多张表，加上推理 token，6000 容易截断
+    max_tokens: 8192
+    # 单次调用时限（秒），不配置用全局 LLM_TIMEOUT_SECONDS（30s）。
+    # 2026-10-24 实测报告单次 9–15s，约一半首调超过 30s 被判超时，两次都超时后报告降级。
+    # 关闭推理后报告单次约 15–20s，留 60s 余量
+    timeout_seconds: 60
+    retries: 1
+    prompt: report.md
+
+verify:
+  # 报告或问询答案未通过事实校验时，带问题清单重写的次数；用尽仍不通过返回 narrative_check_failed
+  # 2 次：模型偶发把某个百分数写错，一次重写后仍可能保留同一处；第二次只改问题清单，成本约 15s
+  max_rewrites: 2
+  disclaimer: 测算建议，非授信审批
+  # 企业口径报告（scope=enterprise）不测算额度，收尾条款不写「测算建议」
+  enterprise_disclaimer: 尽调分析建议，非授信审批

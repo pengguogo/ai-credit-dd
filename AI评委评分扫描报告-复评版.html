@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 评委评分扫描报告（复评版）· 赛题04 企业智能信贷尽调</title>
+<style>
+:root{
+  --paper:#f5f1e6;
+  --card:#fffdf7;
+  --ink:#1d1a15;
+  --ink-soft:#5c564b;
+  --ink-faint:#8a8375;
+  --line:#d9d2c0;
+  --line-strong:#b9b09a;
+  --seal:#b3352b;
+  --seal-deep:#8f2a22;
+  --jade:#2f6b4f;
+  --amber:#9a6b1c;
+  --blue:#3a5a78;
+  --mono:"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --serif:Georgia,"Songti SC","STSong","Noto Serif SC",serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.35;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.page{max-width:1060px;margin:0 auto;padding:56px 40px 80px}
+
+header{border-bottom:3px double var(--ink);padding-bottom:28px;animation:rise .6s ease both}
+.kicker{
+  font-family:var(--mono);font-size:11px;letter-spacing:.32em;
+  color:var(--seal);text-transform:uppercase;margin-bottom:14px;
+}
+h1{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(30px,5vw,44px);line-height:1.2;letter-spacing:.02em;
+}
+h1 small{display:block;font-size:.42em;font-weight:400;color:var(--ink-soft);margin-top:10px;letter-spacing:.14em;font-family:var(--sans)}
+.meta{
+  margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 28px;
+  font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+}
+.meta span b{color:var(--ink);font-weight:600}
+
+.verdict{
+  display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;
+  margin:48px 0 8px;animation:rise .6s .1s ease both;
+}
+.seal{
+  position:relative;width:210px;height:210px;flex:none;
+  border:3px solid var(--jade);border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transform:rotate(-7deg);color:var(--jade);
+  box-shadow:inset 0 0 0 2px var(--paper),inset 0 0 0 5px var(--jade);
+  background:radial-gradient(circle at 35% 30%,rgba(47,107,79,.06),transparent 60%);
+}
+.seal::after{
+  content:"";position:absolute;inset:8px;border:1px dashed var(--jade);border-radius:50%;opacity:.7;
+}
+.seal .lbl{font-family:var(--serif);font-size:14px;letter-spacing:.4em;margin-left:.4em}
+.seal .num{font-family:var(--serif);font-size:64px;font-weight:700;line-height:1.05}
+.seal .den{font-family:var(--mono);font-size:13px;letter-spacing:.2em;opacity:.85}
+.verdict-body h2{
+  font-family:var(--serif);font-size:24px;line-height:1.5;margin-bottom:12px;
+}
+.verdict-body h2 em{font-style:normal;color:var(--jade)}
+.verdict-body p{color:var(--ink-soft);max-width:60ch}
+.verdict-note{
+  margin-top:14px;font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);
+  border-left:2px solid var(--line-strong);padding-left:12px;
+}
+.dims{margin-top:30px;display:flex;flex-direction:column;gap:14px}
+.dim{display:grid;grid-template-columns:210px 1fr 58px;gap:16px;align-items:center}
+.dim .name{font-size:13.5px;font-weight:600;letter-spacing:.04em}
+.dim .name i{display:block;font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);letter-spacing:.18em;font-weight:400}
+.track{height:9px;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 11px);position:relative}
+.track i{position:absolute;left:0;top:0;bottom:0;background:var(--ink)}
+.track i.d1{background:var(--jade)} .track i.d2{background:var(--jade)}
+.track i.d3{background:var(--amber)} .track i.d4{background:var(--blue)}
+.dim .val{font-family:var(--mono);font-size:15px;font-weight:700;text-align:right}
+
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  border:1px solid var(--line-strong);background:var(--card);
+  margin:40px 0 0;animation:rise .6s .18s ease both;
+}
+.stat{padding:16px 18px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none}
+.stat .v{font-family:var(--mono);font-size:22px;font-weight:700;letter-spacing:-.02em}
+.stat .k{font-size:11px;color:var(--ink-faint);letter-spacing:.1em;margin-top:2px}
+.v.good{color:var(--jade)} .v.bad{color:var(--seal)} .v.warn{color:var(--amber)}
+
+section{margin-top:72px;animation:rise .6s ease both}
+.sec-head{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:8px}
+.sec-head .no{
+  font-family:var(--serif);font-size:30px;color:var(--seal);font-weight:700;line-height:1;
+}
+.sec-head h3{font-family:var(--serif);font-size:21px;letter-spacing:.05em}
+.sec-head .tag{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.14em}
+.lead{color:var(--ink-soft);margin:14px 0 22px;max-width:76ch}
+.lead b{color:var(--ink)}
+
+.dimcard{
+  border:1px solid var(--line-strong);border-left:4px solid var(--ink);
+  background:var(--card);padding:22px 26px 20px;margin-top:22px;
+}
+.dimcard.s1{border-left-color:var(--seal)} .dimcard.s2{border-left-color:var(--jade)}
+.dimcard.s3{border-left-color:var(--amber)} .dimcard.s4{border-left-color:var(--blue)}
+.dimcard header{
+  border:none;padding:0;display:flex;align-items:baseline;gap:14px;margin-bottom:6px;
+}
+.dimcard h4{font-family:var(--serif);font-size:17px;letter-spacing:.04em}
+.dimcard .score{font-family:var(--mono);font-size:26px;font-weight:700;margin-left:auto}
+.dimcard .of{font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+.ev{list-style:none;margin-top:8px}
+.ev li{
+  padding:5px 0 5px 26px;position:relative;font-size:13.5px;color:var(--ink-soft);
+  border-bottom:1px dashed var(--line);
+}
+.ev li:last-child{border-bottom:none}
+.ev li::before{position:absolute;left:2px;font-size:12px;top:6px}
+.ev li.p::before{content:"✓";color:var(--jade);font-weight:700}
+.ev li.w::before{content:"△";color:var(--amber);font-weight:700}
+.ev li.f::before{content:"✕";color:var(--seal);font-weight:700}
+.ev li b{color:var(--ink);font-weight:600}
+.ev code{font-family:var(--mono);font-size:12px;background:rgba(29,26,21,.06);padding:1px 5px;border-radius:2px}
+
+table{
+  width:100%;border-collapse:collapse;background:var(--card);
+  border-top:2px solid var(--ink);font-size:13px;
+}
+caption{
+  caption-side:top;text-align:left;font-family:var(--mono);font-size:11px;
+  color:var(--ink-faint);letter-spacing:.16em;padding:0 0 8px;
+}
+th{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--ink-soft);
+  text-align:left;font-weight:600;border-bottom:1px solid var(--ink);
+  padding:9px 10px;white-space:nowrap;
+}
+td{
+  padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;
+}
+tbody tr:hover td{background:rgba(47,107,79,.04)}
+td.mono{font-family:var(--mono);font-size:12.5px}
+td.num{text-align:right;font-family:var(--mono);font-weight:600}
+.badge{
+  display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;
+  padding:1px 8px 2px;border:1px solid currentColor;border-radius:2px;white-space:nowrap;
+}
+.b-ok{color:var(--jade)} .b-confirm{color:var(--amber)}
+.b-clarify{color:var(--blue)} .b-fail{color:var(--seal);background:rgba(179,53,43,.07)}
+.hit{color:var(--jade);font-family:var(--mono);font-weight:700}
+.mini{font-size:11.5px;color:var(--ink-faint);display:block;margin-top:2px;line-height:1.5}
+
+.case{
+  border:1px solid var(--line-strong);background:var(--card);margin-top:24px;
+  position:relative;padding:26px 28px 24px;
+}
+.case::before{
+  content:"改";position:absolute;top:-14px;left:22px;background:var(--jade);color:var(--paper);
+  font-family:var(--serif);width:28px;height:28px;display:flex;align-items:center;justify-content:center;
+  font-size:14px;transform:rotate(-4deg);
+}
+.case h5{font-family:var(--serif);font-size:16px;margin-bottom:12px}
+.case .flow{
+  font-family:var(--mono);font-size:12px;line-height:2.1;color:var(--ink-soft);
+  border:1px dashed var(--line-strong);background:rgba(255,253,247,.7);padding:14px 18px;margin:14px 0;
+}
+.case .flow b{color:var(--ink)}
+.case .flow .bad{color:var(--seal);font-weight:700}
+.case .flow .good{color:var(--jade);font-weight:700}
+.case p{font-size:13.5px;color:var(--ink-soft)}
+.case p+p{margin-top:8px}
+.case .verdict-line{
+  margin-top:14px;padding:10px 14px;border-left:3px solid var(--jade);
+  background:rgba(47,107,79,.06);font-size:13.5px;
+}
+
+.cmp td.bar{position:relative}
+.up{color:var(--jade)} .down{color:var(--seal)} .flat{color:var(--ink-faint)}
+
+.fix{counter-reset:fix;margin-top:24px;display:flex;flex-direction:column;gap:16px}
+.fix article{
+  background:var(--card);border:1px solid var(--line-strong);padding:18px 22px 16px 62px;
+  position:relative;counter-increment:fix;
+}
+.fix article::before{
+  content:counter(fix);position:absolute;left:0;top:0;bottom:0;width:44px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:22px;color:var(--paper);
+}
+.fix article.p0::before{background:var(--seal)}
+.fix article.p1::before{background:var(--amber)}
+.fix article.p2::before{background:var(--blue)}
+.fix article.done::before{background:var(--jade)}
+.fix article h6{font-size:14.5px;letter-spacing:.03em;margin-bottom:6px}
+.fix article h6 .pri{
+  font-family:var(--mono);font-size:10px;letter-spacing:.12em;margin-left:8px;
+  border:1px solid currentColor;padding:1px 6px;vertical-align:2px;
+}
+.fix article p{font-size:13px;color:var(--ink-soft)}
+.fix article p b{color:var(--ink)}
+.fix article .impact{
+  margin-top:8px;font-family:var(--mono);font-size:11px;color:var(--ink-faint);
+}
+
+figure{margin:22px 0 0}
+figure img{width:100%;border:1px solid var(--line-strong);background:var(--card)}
+figcaption{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:8px;letter-spacing:.08em}
+
+footer{
+  margin-top:80px;border-top:3px double var(--ink);padding-top:22px;
+  font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:2;
+  display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;
+}
+footer .chop{
+  font-family:var(--serif);color:var(--jade);border:2px solid var(--jade);
+  padding:4px 12px;letter-spacing:.3em;transform:rotate(-3deg);
+  display:inline-block;font-size:13px;
+}
+
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (max-width:760px){
+  .verdict{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .verdict-body{text-align:left}
+  .dim{grid-template-columns:130px 1fr 48px}
+  .seal{transform:rotate(-7deg) scale(.88)}
+  .page{padding:36px 20px 60px}
+}
+@media print{
+  body::before{display:none}
+  section{animation:none;break-inside:avoid}
+  .page{max-width:none}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <div class="kicker">OCFT · AI Marathon · AI Judge Re-Scan Report</div>
+  <h1>AI 评委评分扫描报告（复评版）
+    <small>赛题04 · 企业智能信贷尽调 · 公开测评集 16 题 · 两轮真实模型复跑 + 资产闭环核验</small>
+  </h1>
+  <div class="meta">
+    <span>复评时间 <b>2026-10-24 21:47 CST</b></span>
+    <span>代码版本 <b>9ecfefa</b>（评测版本，含资产档案与口径修复）</span>
+    <span>运行模型 <b>deepseek-v4.1-flash</b>（唯一，经 llm.py）</span>
+    <span>评测集 <b>public_sample.jsonl · 16 题</b></span>
+    <span>上一轮 <b>80 / 100</b>（eea0d32）</span>
+  </div>
+</header>
+
+<div class="verdict">
+  <div class="seal" role="img" aria-label="综合评分 97 分">
+    <div class="lbl">综合评分</div>
+    <div class="num">97</div>
+    <div class="den">/ 100</div>
+  </div>
+  <div class="verdict-body">
+    <h2>公开集 <em>16/16 全要素通过</em>，0 失败、0 无证据；<br>上一轮的三处失分点全部关闭。</h2>
+    <p>真实模型两轮复跑：准确率 100%、平均分 1.0000，评级与额度各 10/10，尽调结论与评分要点覆盖率均为 10/10；两轮逐题终态一致 16/16。事实校验不再误拦正确派生值，失败时可解释，会议与资产管理补上「任务 → 报告/证据档案 → 待复核 → 归档」闭环。</p>
+    <div class="verdict-note">口径说明：官方详细评分标准与分值未公开，本报告四维得分与综合分为 AI 评委自估口径；按①权重 40% 测算综合 97，等权平均 97。评测只使用公开集与团队回归集，不代表官方非公开集成绩。</div>
+    <div class="dims">
+      <div class="dim"><div class="name">评测集表现<i>EVAL ACCURACY</i></div><div class="track"><i class="d1" style="width:100%"></i></div><div class="val">100</div></div>
+      <div class="dim"><div class="name">工程架构完善度<i>ENGINEERING</i></div><div class="track"><i class="d2" style="width:96%"></i></div><div class="val">96</div></div>
+      <div class="dim"><div class="name">鲁棒性 / 可解释性<i>ROBUSTNESS</i></div><div class="track"><i class="d3" style="width:95%"></i></div><div class="val">95</div></div>
+      <div class="dim"><div class="name">合规性<i>COMPLIANCE</i></div><div class="track"><i class="d4" style="width:96%"></i></div><div class="val">96</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="v good">100.00%</div><div class="k">ACCURACY（16 题）</div></div>
+  <div class="stat"><div class="v good">1.0000</div><div class="k">MEAN SCORE</div></div>
+  <div class="stat"><div class="v good">10/10</div><div class="k">风险评级命中</div></div>
+  <div class="stat"><div class="v good">10/10</div><div class="k">建议额度命中</div></div>
+  <div class="stat"><div class="v good">16.8s</div><div class="k">单笔平均（上轮 18.1s）</div></div>
+  <div class="stat"><div class="v">47.2万</div><div class="k">总 TOKEN</div></div>
+  <div class="stat"><div class="v good">0</div><div class="k">失败 / 无证据结论</div></div>
+  <div class="stat"><div class="v good">0</div><div class="k">事实校验误拦</div></div>
+</div>
+
+<section>
+  <div class="sec-head">
+    <span class="no">壹</span>
+    <h3>评测集表现</h3>
+    <span class="tag">SCORE 100/100 · 10 笔官方公开集 + 6 题回归</span>
+  </div>
+  <p class="lead">逐笔对照官方 <b>公开测试集答案.csv</b> 的风险评级、建议额度、尽调结论与评分要点覆盖。16 题 <b>全部检查项通过</b>；10 笔申请的风险评级与建议额度 <b>各 10/10</b>，尽调结论与评分要点覆盖率 <b>各 10/10</b>。LA003、LA006 的高风险一票否决按业务规则进入 <b>待确认</b>，不是失败。</p>
+
+  <table>
+    <caption>官方公开测评集 · LA001 – LA010 逐题明细 · judge-final-2</caption>
+    <thead>
+      <tr>
+        <th>题号</th><th>标准答案（评级 / 额度）</th><th>终态</th>
+        <th class="num">得分</th><th class="num">检查</th><th>说明</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="mono">LA001</td><td>低风险 · 2500-3000 万</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">7/7</td><td>—</td></tr>
+      <tr><td class="mono">LA002</td><td>中风险 · 1200-1500 万</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">7/7</td><td>—</td></tr>
+      <tr style="background:rgba(47,107,79,.05)">
+        <td class="mono">LA003</td><td>高风险 · 拒贷/极小额度</td><td><span class="badge b-confirm">needs_confirmation</span></td><td class="num hit">1.00</td><td class="num">7/7</td>
+        <td>高风险 + 法人限高/未结逾期 → 待业务确认；评级、0 额度、结论与要点全部命中</td>
+      </tr>
+      <tr><td class="mono">LA004</td><td>中风险 · 1500-2000 万</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">7/7</td><td>摘要与财务判断列一致，69.4% 不再误写成预警</td></tr>
+      <tr><td class="mono">LA005</td><td>低-中风险 · 600-800 万</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">7/7</td><td>覆盖率 0.60 → 1.00；资产负债率 53.8%（修复二次舍入）</td></tr>
+      <tr style="background:rgba(47,107,79,.05)"><td class="mono">LA006</td><td>高风险 · 拒贷/极小额度</td><td><span class="badge b-confirm">needs_confirmation</span></td><td class="num hit">1.00</td><td class="num">7/7</td>
+        <td>覆盖率 0.40 → 1.00；应收账款过高、现金流利润背离、拒贷建议显式成句</td></tr>
+      <tr><td class="mono">LA007</td><td>低风险 · 400-500 万</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">7/7</td><td>—</td></tr>
+      <tr><td class="mono">LA008</td><td>中风险 · 1000-1200 万</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">7/7</td><td>—</td></tr>
+      <tr><td class="mono">LA009</td><td>低风险 · 2000-2500 万</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">7/7</td><td>—</td></tr>
+      <tr><td class="mono">LA010</td><td>中风险 · 1500-2000 万</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">7/7</td>
+        <td>覆盖率 0.50 → 1.00；应收占比 44.5%（修复二次舍入），额度审慎与核查建议齐全</td></tr>
+    </tbody>
+  </table>
+
+  <table style="margin-top:34px">
+    <caption>团队回归集 · dd-001 – dd-006（底座样例，非官方口径）</caption>
+    <thead>
+      <tr><th>题号</th><th>终态</th><th class="num">得分</th><th class="num">检查</th><th>说明</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="mono">dd-001</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">7/7</td><td>完整尽调报告</td></tr>
+      <tr><td class="mono">dd-002</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">4/4</td><td>单指标追问</td></tr>
+      <tr><td class="mono">dd-003</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">3/3</td><td>反欺诈信号</td></tr>
+      <tr><td class="mono">dd-004</td><td><span class="badge b-clarify">needs_clarification</span></td><td class="num hit">1.00</td><td class="num">4/4</td><td>LA999 不存在，诚实澄清不编造</td></tr>
+      <tr><td class="mono">dd-005</td><td><span class="badge b-clarify">needs_clarification</span></td><td class="num hit">1.00</td><td class="num">2/2</td><td>指代不明，先问清对象</td></tr>
+      <tr><td class="mono">dd-006</td><td><span class="badge b-ok">succeeded</span></td><td class="num hit">1.00</td><td class="num">4/4</td><td>额度测算追问；上轮误拦已修复</td></tr>
+    </tbody>
+  </table>
+
+  <div class="case">
+    <h5>专项分析 · 80 分到 100 分，改了什么</h5>
+    <div class="flow">
+      ① 事实校验误拦：<span class="bad">「下降 22.2%」「净资产 × 0.4 得 5,880 万」被判幻觉</span> → <span class="good">按减少语义取负值、测算步骤按全部事实比对</span><br>
+      ② 关键结论只列数字：<span class="bad">覆盖率 60% / 40% / 50%</span> → <span class="good">规则生成标准风险术语，报告逐条照抄</span><br>
+      ③ 二次舍入：<span class="bad">0.5385 → 53.9%；0.4455 → 44.6%</span> → <span class="good">比率存 6 位 + display，53.8% / 44.5%</span><br>
+      ④ 失败只有错误码：<span class="bad">整笔全空</span> → <span class="good">附评级/额度/规则/证据/原因的可解释失败</span>
+    </div>
+    <p>四项都按<b>通用规则</b>改：不写死题目答案、不按题号分支、运行时不读参考答案。评级与额度仍是评分卡和额度模型从事实现算。</p>
+    <div class="verdict-line">✓ 同一输入两轮复跑（judge-final-1 / judge-final-2）逐题终态一致 16/16；第二轮 0 失败、0 无证据结论。</div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="no">贰</span>
+    <h3>Agent 工程架构完善度</h3>
+    <span class="tag">SCORE 96/100 · 四项能力端到端核验</span>
+  </div>
+  <p class="lead">按题目说明 6.1 的四项通用能力逐项核验：记忆、会议与资产管理、工具调用、Skill 管理。资产闭环本轮新增并现场走通，不再只是「有页面」。</p>
+  <div class="dimcard s2">
+    <header><h4>四项能力都有可操作闭环，资产不再静态展示</h4><span class="score">96<span class="of">/100</span></span></header>
+    <ul class="ev">
+      <li class="p"><b>记忆系统</b>：<code>GET/PATCH/DELETE /conversations/{id}/memory</code> 支持实体槽位查看、纠正、清除（乐观锁 + 事件审计）；跨轮次复用，已确认结论只读展示。</li>
+      <li class="p"><b>会议与资产管理</b>（本轮补齐）：完整尽调 run 自动建档，<code>workspace_assets</code> + 只追加状态事件；三端点支持检索、待办计数、确认/驳回/归档/重开；<code>/workspace</code> 页面可操作；追问与失败不建档，正文不复制、只指向 runId。</li>
+      <li class="p"><b>工具调用</b>：<code>@register_tool</code> 注册表 + 场景白名单；参数 Pydantic 校验，失败结构化返回；工具结果落证据并进入后续结论；评测显示每笔 9 条证据、0 无证据结论。</li>
+      <li class="p"><b>Skill 管理</b>：六角色运行时 Skill（业务/财报/舆情/反欺诈/评级/报告）带 name@version 与触发条件，随 run 记录 <code>skillsApplied</code>；改场景只改 YAML/Markdown。</li>
+      <li class="p"><b>编排与可观测</b>：LangGraph 并行子图（三路取证并行、评级后置、报告汇总）；run 事件、工具轨迹、LLM 调用审计、证据表全链路可追溯。</li>
+      <li class="w"><b>扣分说明</b>：未实现会议纪要/人员分派等通用办公能力，本赛题按「任务—待办—产出物」落地；资产归档状态不等同业务签核。</li>
+    </ul>
+  </div>
+  <figure>
+    <img src="dsh-shots/workspace-assets-final.png" alt="任务与资产页面：12 份档案、待复核 10、已确认 1、已归档 1，右侧为档案详情与状态流转">
+    <figcaption>现场截图 · /workspace：12 份档案（待复核 10 / 已确认 1 / 已归档 1），详情含 runId、证据数、报告入口与只追加的状态流转</figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="no">叁</span>
+    <h3>通用评测鲁棒性与可解释性</h3>
+    <span class="tag">SCORE 95/100</span>
+  </div>
+  <p class="lead">以异常输入、失败路径、重复运行和数据口径检验「不崩溃、不编造、可解释」。本轮 16 题 0 失败，护栏不再误伤真实结论。</p>
+  <div class="dimcard s3">
+    <header><h4>护栏不再误伤，失败也能看到中间结果</h4><span class="score">95<span class="of">/100</span></span></header>
+    <ul class="ev">
+      <li class="p"><b>异常输入不崩溃</b>：dd-004（LA999 不存在）、dd-005（指代不明）返回 <code>needs_clarification</code> 并说明缺什么，不编造结论。</li>
+      <li class="p"><b>护栏零误拦</b>：LA003「同比下降 22.2%」、dd-006「净资产 × 0.4 得 5,880 万」均一次通过；同时仍拦截方向写反、数值编造与自算差值（12 个回归用例）。</li>
+      <li class="p"><b>可解释失败</b>：<code>narrative_check_failed</code> 现在附风险评级、建议额度、命中规则、证据条数与失败原因；未通过校验的正文仍撤下，不发布未核实数字。</li>
+      <li class="p"><b>重试与降级</b>：事实校验重写 1→2 次；角色结构失败降级为 <code>degraded</code> 并转人工复核；单角色失败不拖垮整图。</li>
+      <li class="p"><b>一致性</b>：同输入两轮复跑逐题终态与通过项一致 16/16；平均耗时 16.8s（上轮 18.1s）。</li>
+      <li class="p"><b>口径校验</b>：离线复核 10 笔报告共 <b>591 个财务表格单元格，0 处不符</b>；二次舍入、摘要与判断列矛盾、折减归因均已消除。</li>
+      <li class="w"><b>扣分说明</b>：未对官方非公开集、长任务超时和并发压力做完整验收；比率仍不按指标名绑定（同值借位可过）。</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="no">肆</span>
+    <h3>合规性</h3>
+    <span class="tag">SCORE 96/100</span>
+  </div>
+  <p class="lead">对照红线清单逐项核验，代码、评测与新增资产模块均已扫描。</p>
+  <div class="dimcard s4">
+    <header><h4>红线零违规，隔离干净</h4><span class="score">96<span class="of">/100</span></span></header>
+    <ul class="ev">
+      <li class="p"><b>红线扫描</b>：ERROR 0 / WARN 3（均为 seed.py 文档字符串，非违规）；新增代码与测试同时通过泄漏检查。</li>
+      <li class="p"><b>模型约束</b>：运行时唯一 <code>deepseek-v4.1-flash</code>，全部经 <code>llm.py</code>，无框架自带 ChatModel。</li>
+      <li class="p"><b>评测隔离</b>：expected 只给评分器，Agent 运行时读不到；泄漏检查阻止题目 ID 进入 app/（本轮清理了一处注释里的题号）。</li>
+      <li class="p"><b>现场重算</b>：HTTP <code>POST /api/agent/runs</code> 现场重算 LA001，18.0s 得到低风险 / 2500-3000 万元 / 9 条证据，与标准一致，非预录。</li>
+      <li class="p"><b>敏感数据</b>：输入/输出 PII 掩码、工具结果外送前掩码、LLM 调用审计；资产档案只存摘要与哈希，不复制正文。</li>
+      <li class="p"><b>自研边界</b>：无低代码平台；编排仅 LangGraph，工具仅经注册表。</li>
+      <li class="w"><b>扣分说明</b>：未完成对全部日志/导出/截图的人工二次验收。</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="no">伍</span>
+    <h3>与上一轮基线对比</h3>
+    <span class="tag">公开集 10 笔 + 回归 6 题 · 真实模型</span>
+  </div>
+  <table class="cmp" style="margin-top:20px">
+    <thead>
+      <tr><th>指标</th><th>上一轮（eea0d32 · 80 分）</th><th>本轮（9ecfefa）</th><th>变化</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>风险评级命中</td><td class="mono">9/10</td><td class="mono hit">10/10</td><td class="up">↑ 1</td></tr>
+      <tr><td>建议额度命中</td><td class="mono">9/10</td><td class="mono hit">10/10</td><td class="up">↑ 1</td></tr>
+      <tr><td>结论 / 要点覆盖率</td><td class="mono">60% / 40% / 50%</td><td class="mono hit">10/10 笔全过</td><td class="up">↑ 全部过阈</td></tr>
+      <tr><td>终态分布（16 题）</td><td class="mono">2 失败 · 2 待确认</td><td class="mono">0 失败 · 2 待确认 · 2 澄清</td><td class="up">↓ 失败清零</td></tr>
+      <tr><td>事实校验误拦</td><td class="mono">LA003 / dd-006</td><td class="mono hit">0</td><td class="up">↓ 修复</td></tr>
+      <tr><td>准确率 / 平均分</td><td class="mono">68.75% / 0.8973</td><td class="mono hit">100% / 1.0000</td><td class="up">↑ 100%</td></tr>
+      <tr><td>单笔平均耗时</td><td class="mono">18.1 s</td><td class="mono">16.8 s</td><td class="up">↑ 改善 7%</td></tr>
+      <tr><td>会议与资产管理</td><td class="mono">未闭环（扣 12 分）</td><td class="mono hit">建档/检索/状态/归档闭环</td><td class="up">↑ 补齐</td></tr>
+      <tr><td>综合评分（AI 自估）</td><td class="mono">80</td><td class="mono hit">97</td><td class="up">↑ 17</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="no">陆</span>
+    <h3>修复清单（全部关闭）</h3>
+    <span class="tag">P0 → P2 + 维度②</span>
+  </div>
+  <div class="fix">
+    <article class="p0 done">
+      <h6>事实校验感知计算路径 <span class="pri">P0 · 已修复</span></h6>
+      <p>减少类措辞按负值比对；科目与金额之间有运算/测算措辞时按全部事实比对。LA003 与 dd-006 一次通过，同时保留对方向写反、编造数值、自算差值的拦截。</p>
+      <div class="impact">验证：12 个放行/拦截用例；两轮真实模型 0 次误拦</div>
+    </article>
+    <article class="p1 done">
+      <h6>关键风险结论显式成句 <span class="pri">P1 · 已修复</span></h6>
+      <p>按阈值与规则命中生成标准风险术语（资产负债率过高、应收账款过高、其他应收款异常偏高、营收现金流背离、现金流与利润背离、逾期与逾期担保、法人限高、舆情负面、涉诉及被执行、关联担保圈、额度审慎、拒贷建议），报告逐条照抄，不按题号写答案。</p>
+      <div class="impact">影响：LA003 1/6→6/6、LA006 2/5→5/5、LA010 3/6→6/6</div>
+    </article>
+    <article class="p2 done">
+      <h6>失败时保留推理过程 <span class="pri">P2 · 已修复</span></h6>
+      <p><code>narrative_check_failed</code> 附带可核验中间结果与失败原因，不再只有一个错误码；未通过校验的正文仍不发布。</p>
+      <div class="impact">影响：维度③可解释性；不改变业务正确率口径</div>
+    </article>
+    <article class="done">
+      <h6>会议与资产管理闭环 <span class="pri">维度② · 已补齐</span></h6>
+      <p>迁移 12 + 服务 + 三端点 + <code>/workspace</code> 页面；完整报告自动建档，待复核即待办，确认/驳回/归档/重开只追加事件并带版本锁；7 条用例覆盖幂等、检索、流转、冲突。</p>
+      <div class="impact">影响：维度②由 88→96；技术方案第 10 章可按现状写</div>
+    </article>
+    <article class="done">
+      <h6>口径精度与运行稳定性 <span class="pri">补充 · 已修复</span></h6>
+      <p>比率 6 位小数 + display，消除二次舍入；事实校验重写 1→2 次；Windows GBK 控制台不再崩溃；MySQL 增加连接/读写超时，网络中断不无限挂起。</p>
+      <div class="impact">验证：591 个财务表格单元格 0 不符；全量 512 passed</div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <span class="no">柒</span>
+    <h3>复现路径与证据</h3>
+    <span class="tag">命令可复制 · 结果可追溯</span>
+  </div>
+  <table style="margin-top:20px">
+    <thead><tr><th>项</th><th>命令 / 位置</th><th>本轮结果</th></tr></thead>
+    <tbody>
+      <tr><td>公开集评测</td><td class="mono">python -m eval.run --input eval/datasets/public_sample.jsonl --fresh</td><td>16 题 100%；归档 <code>docs/10-strategy/复评证据-20261024/</code>，本机输出 <code>eval/output/judge-final-2/</code></td></tr>
+      <tr><td>全量测试</td><td class="mono">python -m pytest tests -q</td><td>512 passed / 1 skipped</td></tr>
+      <tr><td>前端</td><td class="mono">npm run lint &amp;&amp; npm run typecheck &amp;&amp; npm run build</td><td>0 warning / 通过 / 通过</td></tr>
+      <tr><td>红线扫描</td><td class="mono">python .agents/skills/redline-scan/scripts/scan.py</td><td>ERROR 0 / WARN 3（seed 注释）</td></tr>
+      <tr><td>业务复核</td><td class="mono">python -m eval.dd04_review prepare …</td><td>591 个表格单元格 0 不符</td></tr>
+      <tr><td>现场重算</td><td class="mono">POST /api/agent/runs（LA001）</td><td>低风险 / 2500-3000 万 / 9 证据 / 18.0s</td></tr>
+    </tbody>
+  </table>
+  <p class="lead" style="margin-top:18px">复现边界：结果来自本机真实模型与云 MySQL；公开集答案仅用于离线评分，运行时未读取。非公开集、Windows 干净机、业务人员签字仍未覆盖，不能把本报告当作官方得分或提交资格证明。</p>
+</section>
+
+<footer>
+  <div>
+    评测方法：两轮真实模型 fresh 复跑 + 逐题对照公开答案 + 离线表格口径复核 + HTTP 现场重算 + 工程端点核验 + 红线扫描<br>
+    证据：docs/10-strategy/复评证据-20261024/（judge-final-1/2 结果、汇总、CSV）· eval/output/judge-final-2（本机原始输出）· 测试数据/评测/2026-10-24/dd04-business-acceptance/rerecheck · dsh-shots/workspace-assets-final.png<br>
+    本报告为 AI 评委自估口径，官方分值未公开；结论与依据均可经上述命令与端点现场复现。
+  </div>
+  <div><span class="chop">AI 评委 · 复评已核验</span></div>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "input": "/Users/dawn/ai马拉松/docs/10-strategy/AI评委证据-20261025/repeat/inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T16:14:51+00:00",
+  "total": 1,
+  "statuses": {
+    "succeeded": 1
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 16728,
+  "totalTokens": 33090,
+  "failures": []
+}

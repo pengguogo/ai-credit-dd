@@ -1,0 +1,17 @@
+{
+  "input": "../测试数据/评测/2026-10-24/dd04-synth-200/applications.jsonl",
+  "generatedAt": "2026-10-24T10:22:12+00:00",
+  "total": 5,
+  "statuses": {
+    "succeeded": 4,
+    "needs_confirmation": 1
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 69881,
+  "totalTokens": 253293,
+  "failures": []
+}

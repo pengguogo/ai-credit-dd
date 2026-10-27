@@ -1,0 +1,17 @@
+{
+  "input": "../测试数据/评测/2026-10-24/dd04-public-latest/inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T09:36:25+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 8,
+    "needs_confirmation": 2
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 86569,
+  "totalTokens": 560475,
+  "failures": []
+}

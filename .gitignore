@@ -1,0 +1,47 @@
+# 系统与编辑器
+.DS_Store
+.idea
+.vscode
+个人会话
+# 密钥：比赛期间 ocft-backend/.env 与 master.key 随私有仓库提交，克隆即可用；
+# 赛后删除并轮换全部凭据（2026-10-22 团队决策，见开发日志）。.env 的备份与变体仍不入库
+.env.*
+!.env.example
+
+# 本机 MCP 配置可能含凭据 — 只提交 .agents/mcp/ 下的示例
+.kiro/settings/mcp.json
+.cursor/mcp.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# 本地数据库（重启即重建种子）
+*.db
+*.sqlite
+
+# 评测输出（每次运行生成）
+ocft-backend/eval/output/
+
+# 提交封包产物（由 submission/pack_dd04.py 生成，体积大，不入库）
+release/
+
+# 前端依赖与构建产物；ocft-starter/dist 例外：离线交付由后端直接提供页面，必须入库
+node_modules/
+dist/
+!ocft-starter/dist/
+# 离线包 vendor/（wheel 与内置 Python 压缩包）入库，保证克隆后不联网即可启动；
+# 内置 Python 在评委机上的解压目录不入库
+vendor/python/runtime/
+vendor/python/runtime.partial/
+*.local
+
+# 本机调试与临时产物（不入库）
+logs/
+.dsh-uploads/
+browser-screenshots/
+
+# 开源版：凭据只放本机，绝不入库
+.env
+master.key

@@ -1,0 +1,17 @@
+{
+  "input": "../测试数据/评测/2026-10-25/6e97cb3-官方非公开集/inputs/applications.jsonl",
+  "generatedAt": "2026-10-25T01:09:15+00:00",
+  "total": 20,
+  "statuses": {
+    "succeeded": 15,
+    "needs_confirmation": 5
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 21648,
+  "totalTokens": 655337,
+  "failures": []
+}

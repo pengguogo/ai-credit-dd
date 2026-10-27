@@ -1,0 +1,44 @@
+{
+  "applications": {
+    "total": 10,
+    "statuses": {
+      "succeeded": 8,
+      "needs_confirmation": 2
+    },
+    "errors": {},
+    "withEvidence": 10,
+    "answersWithoutEvidence": 0,
+    "avgSeconds": 73.2,
+    "p95Seconds": 97.588,
+    "totalTokens": 519652
+  },
+  "questions": {
+    "total": 10,
+    "statuses": {
+      "succeeded": 9,
+      "needs_confirmation": 1
+    },
+    "errors": {},
+    "withEvidence": 10,
+    "answersWithoutEvidence": 0,
+    "avgSeconds": 31.61,
+    "p95Seconds": 91.624,
+    "totalTokens": 251833
+  },
+  "applicationFields": {
+    "total": 10,
+    "statuses": {
+      "succeeded": 8,
+      "needs_confirmation": 2
+    },
+    "numericReferenceCount": 8,
+    "referenceNonNumericCount": 2,
+    "eligibleExactCount": 8,
+    "eligibleOverlapCount": 8,
+    "eligibleWithinCount": 8,
+    "candidateRiskExactCount": 10,
+    "failedCount": 0,
+    "exactRateAllRows": 0.8,
+    "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+  }
+}

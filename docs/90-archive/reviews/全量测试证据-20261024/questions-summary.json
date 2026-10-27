@@ -1,0 +1,20 @@
+{
+  "input": "/tmp/ocft-official-public-20261024/inputs/questions.jsonl",
+  "generatedAt": "2026-10-24T08:23:36+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 2,
+    "needs_confirmation": 7,
+    "failed": 1
+  },
+  "errorCodes": {
+    "narrative_check_failed": 1
+  },
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 27161,
+  "totalTokens": 233971,
+  "failures": []
+}

@@ -1,0 +1,11 @@
+﻿enterprise_id,existing_loan_balance,overdue_count,overdue_amount,external_guarantee_amount,public_opinion_score,risk_level_summary,abnormal_operation
+E001,4500,0,0,500,88,低风险,无
+E002,2000,0,0,800,72,中风险,无
+E003,28000,1,320,12000,45,高风险,曾列入经营异常名录(已移出)
+E004,3500,0,0,0,70,中风险,无
+E005,1200,0,0,200,78,低-中风险,无
+E006,5500,1,180,3000,48,高风险,无
+E007,600,0,0,0,82,低风险,无
+E008,1800,0,0,300,68,中风险,无
+E009,3000,0,0,0,90,低风险,无
+E010,4500,0,0,2500,65,中风险,无

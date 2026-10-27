@@ -1,0 +1,292 @@
+{
+  "manifest": {
+    "commit": "f711b78e1e9397a7a0371aa7ff99b61c846c11bd",
+    "isPrivate": true,
+    "realDataUsed": false,
+    "networkRequired": true,
+    "primaryPhoneComplete": false,
+    "primaryEmailComplete": false,
+    "externalOfflineFallbacks": {
+      "DeepSeek API（deepseek-v4.1-flash）": false,
+      "MySQL 8.0（云端）": false,
+      "Redis（云端）": false
+    }
+  },
+  "pdfs": [
+    {
+      "path": "submission/dd04/artifacts/尽调报告样例_E001.pdf",
+      "bytes": 857902,
+      "pages": 6,
+      "pageSizesPt": [
+        [
+          594.96,
+          841.92
+        ]
+      ],
+      "encrypted": false,
+      "mdSourceExists": true,
+      "mdSameDirectorySameName": true,
+      "textCharacters": 3966,
+      "baseVersionsFound": [
+        "00e905f"
+      ]
+    },
+    {
+      "path": "submission/dd04/artifacts/智算先锋队_赛题04_技术方案.pdf",
+      "bytes": 1437225,
+      "pages": 12,
+      "pageSizesPt": [
+        [
+          594.96,
+          841.92
+        ]
+      ],
+      "encrypted": false,
+      "mdSourceExists": true,
+      "mdSameDirectorySameName": false,
+      "textCharacters": 12456,
+      "baseVersionsFound": [
+        "00e905f"
+      ]
+    },
+    {
+      "path": "submission/dd04/artifacts/智算先锋队_赛题04_测试报告.pdf",
+      "bytes": 771768,
+      "pages": 3,
+      "pageSizesPt": [
+        [
+          594.96,
+          841.92
+        ]
+      ],
+      "encrypted": false,
+      "mdSourceExists": true,
+      "mdSameDirectorySameName": false,
+      "textCharacters": 5120,
+      "baseVersionsFound": [
+        "00e905f",
+        "00e905faeaf508021383e3a3fab58480d5aaec90"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "测试数据/评测/2026-10-25/a5-walkthrough/M4/截图01_尽调报告_完整.png",
+      "width": 1280,
+      "height": 12168,
+      "bytes": 1442837,
+      "sizePass": true
+    },
+    {
+      "path": "测试数据/评测/2026-10-25/a5-walkthrough/M4/截图02_财务分析.png",
+      "width": 1280,
+      "height": 3399,
+      "bytes": 347209,
+      "sizePass": true
+    },
+    {
+      "path": "测试数据/评测/2026-10-25/a5-walkthrough/M4/截图03_风险提示与反欺诈.png",
+      "width": 1280,
+      "height": 5830,
+      "bytes": 701242,
+      "sizePass": true
+    },
+    {
+      "path": "测试数据/评测/2026-10-25/a5-walkthrough/M4/截图04_自然语言问询.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 413767,
+      "sizePass": true
+    }
+  ],
+  "packScriptSourceExists": {
+    "docs/60-pitch/演示脚本.md": false,
+    "docs/60-pitch/赛题04演示脚本.md": true,
+    "submission/dd04/artifacts/截图01_尽调报告_完整.png": false,
+    "submission/dd04/artifacts/截图02_财务分析.png": false,
+    "submission/dd04/artifacts/截图03_风险提示与反欺诈.png": false
+  },
+  "csvs": [
+    {
+      "path": "系统输出/公开测评集结果-status.csv",
+      "bom": true,
+      "rows": 10,
+      "headers": [
+        "application_id",
+        "status",
+        "pending_confirmation",
+        "error_code",
+        "run_id"
+      ],
+      "applicationIds": [
+        "LA001",
+        "LA002",
+        "LA003",
+        "LA004",
+        "LA005",
+        "LA006",
+        "LA007",
+        "LA008",
+        "LA009",
+        "LA010"
+      ]
+    },
+    {
+      "path": "系统输出/公开测评集结果.csv",
+      "bom": true,
+      "rows": 10,
+      "headers": [
+        "application_id",
+        "enterprise_id",
+        "risk_level",
+        "suggested_credit_amount",
+        "due_diligence_conclusion",
+        "scoring_points"
+      ],
+      "applicationIds": [
+        "LA001",
+        "LA002",
+        "LA003",
+        "LA004",
+        "LA005",
+        "LA006",
+        "LA007",
+        "LA008",
+        "LA009",
+        "LA010"
+      ]
+    },
+    {
+      "path": "系统输出/智算先锋队_赛题04_公开测评集结果.csv",
+      "bom": true,
+      "rows": 10,
+      "headers": [
+        "application_id",
+        "enterprise_id",
+        "risk_level",
+        "suggested_credit_amount",
+        "due_diligence_conclusion",
+        "scoring_points"
+      ],
+      "applicationIds": [
+        "LA001",
+        "LA002",
+        "LA003",
+        "LA004",
+        "LA005",
+        "LA006",
+        "LA007",
+        "LA008",
+        "LA009",
+        "LA010"
+      ]
+    },
+    {
+      "path": "系统输出/智算先锋队_赛题04_非公开测评集结果.csv",
+      "bom": true,
+      "rows": 5,
+      "headers": [
+        "application_id",
+        "enterprise_id",
+        "risk_level",
+        "suggested_credit_amount",
+        "due_diligence_conclusion",
+        "scoring_points"
+      ],
+      "applicationIds": [
+        "LA101",
+        "LA102",
+        "LA103",
+        "LA104",
+        "LA105"
+      ]
+    },
+    {
+      "path": "系统输出/非公开测评集结果-演练衍生-status.csv",
+      "bom": true,
+      "rows": 5,
+      "headers": [
+        "application_id",
+        "status",
+        "pending_confirmation",
+        "error_code",
+        "run_id"
+      ],
+      "applicationIds": [
+        "LA101",
+        "LA102",
+        "LA103",
+        "LA104",
+        "LA105"
+      ]
+    },
+    {
+      "path": "系统输出/非公开测评集结果-演练衍生.csv",
+      "bom": true,
+      "rows": 5,
+      "headers": [
+        "application_id",
+        "enterprise_id",
+        "risk_level",
+        "suggested_credit_amount",
+        "due_diligence_conclusion",
+        "scoring_points"
+      ],
+      "applicationIds": [
+        "LA101",
+        "LA102",
+        "LA103",
+        "LA104",
+        "LA105"
+      ]
+    }
+  ],
+  "formalPrivateEqualsRehearsal": true,
+  "videoFiles": [
+    {
+      "path": "submission/dd04/artifacts/智算先锋队_赛题04_演示视频.mp4",
+      "bytes": 24759884
+    }
+  ],
+  "lineEndingCounts": {
+    ".py": {
+      "files": 117,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".ts": {
+      "files": 24,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".tsx": {
+      "files": 53,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".json": {
+      "files": 37,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".yaml": {
+      "files": 11,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".md": {
+      "files": 158,
+      "crlfCount": 0,
+      "examples": []
+    },
+    ".ps1": {
+      "files": 3,
+      "crlfCount": 3,
+      "examples": [
+        "start.ps1",
+        "pack-offline.ps1",
+        "submission/record_dd04_demo/tts.ps1"
+      ]
+    }
+  }
+}

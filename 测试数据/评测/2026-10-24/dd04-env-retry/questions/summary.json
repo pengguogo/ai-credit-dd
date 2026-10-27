@@ -1,0 +1,19 @@
+{
+  "input": "../测试数据/评测/2026-10-24/dd04-env-retry/inputs/questions.jsonl",
+  "generatedAt": "2026-10-24T05:00:04+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 9,
+    "failed": 1
+  },
+  "errorCodes": {
+    "round_limit_exceeded": 1
+  },
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 12263,
+  "totalTokens": 112773,
+  "failures": []
+}

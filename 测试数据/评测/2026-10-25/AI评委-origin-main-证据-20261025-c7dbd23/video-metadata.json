@@ -1,0 +1,21 @@
+{
+  "path": "/tmp/ocft-origin-main-judge-20261025-c7dbd23/submission/dd04/artifacts/智算先锋队_赛题04_演示视频.mp4",
+  "bytes": 24759884,
+  "method": "ISO BMFF box metadata only; no full playback claim",
+  "tracks": [
+    {
+      "width": 1600.0,
+      "height": 1000.0,
+      "handler": "vide",
+      "codec": "avc1"
+    },
+    {
+      "width": 0.0,
+      "height": 0.0,
+      "handler": "soun",
+      "codec": "mp4a"
+    }
+  ],
+  "durationSeconds": 525.0,
+  "averageBitrateMbps": 0.3772934704761905
+}

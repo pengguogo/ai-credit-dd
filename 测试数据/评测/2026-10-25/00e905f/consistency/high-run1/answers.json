@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-10-24T12:48:44+00:00",
+  "total": 1,
+  "answers": [
+    {
+      "id": "LA006",
+      "status": "failed",
+      "answer": "报告未通过事实校验：- 32.4% 在本次工具结果中找不到对应数值\n- 32.4% 在本次工具结果中找不到对应数值\n- 9.6% 在本次工具结果中找不到对应数值",
+      "evidence": [
+        {
+          "id": "ev_0d1d49d8e183",
+          "source": {
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "table": "enterprise_basic"
+          }
+        },
+        {
+          "id": "ev_17b37d9234cd",
+          "source": {
+            "calc": "scan_public_opinion",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "role": "opinion",
+            "table": "enterprise_public_opinion"
+          }
+        },
+        {
+          "id": "ev_29aea88e29cf",
+          "source": {
+            "calc": "rate_risk",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "role": "rating",
+            "table": "enterprise_risk"
+          }
+        },
+        {
+          "id": "ev_34ab8c4bdeee",
+          "source": {
+            "calc": "build_dd_report",
+            "keys": {
+              "applicationId": "LA006"
+            },
+            "role": "report",
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_4c38897db57d",
+          "source": {
+            "keys": {
+              "applicationId": "LA006"
+            },
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_4df3a097d932",
+          "source": {
+            "calc": "calc_credit_limit",
+            "keys": {
+              "applicationId": "LA006"
+            },
+            "role": "rating",
+            "table": "loan_application"
+          }
+        },
+        {
+          "id": "ev_5c1db736d804",
+          "source": {
+            "calc": "detect_fraud_signals",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "role": "fraud",
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_980906f17d86",
+          "source": {
+            "calc": "analyze_financials",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "role": "finance",
+            "table": "enterprise_finance"
+          }
+        },
+        {
+          "id": "ev_c22c853df12f",
+          "source": {
+            "calc": "verify_business_info",
+            "keys": {
+              "enterpriseId": "E006"
+            },
+            "role": "business",
+            "table": "enterprise_basic"
+          }
+        }
+      ],
+      "runIds": [
+        "run_51992ff4326a"
+      ]
+    }
+  ]
+}

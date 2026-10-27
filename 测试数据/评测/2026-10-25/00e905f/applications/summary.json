@@ -1,0 +1,20 @@
+{
+  "input": "../测试数据/评测/2026-10-25/00e905f/inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T12:41:40+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 7,
+    "needs_confirmation": 1,
+    "failed": 2
+  },
+  "errorCodes": {
+    "narrative_check_failed": 2
+  },
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 27143,
+  "totalTokens": 369791,
+  "failures": []
+}

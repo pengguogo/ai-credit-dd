@@ -1,0 +1,20 @@
+{
+  "input": "../测试数据/评测/2026-10-24/dd04-token-1m/inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T05:05:30+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 5,
+    "failed": 2,
+    "needs_confirmation": 3
+  },
+  "errorCodes": {
+    "round_limit_exceeded": 2
+  },
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 20342,
+  "totalTokens": 257649,
+  "failures": []
+}

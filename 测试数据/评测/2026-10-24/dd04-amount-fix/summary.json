@@ -1,0 +1,53 @@
+{
+  "scope": "只读金额诊断，不是正式提交结果",
+  "sourceHashes": {
+    "data/enterprise_basic.csv": "c6fc0d118938507638e5b3a5888b0b500baa99740cdeaf093d029f3b3cc05935",
+    "data/enterprise_finance.csv": "69331403f2643aaa95c661a9ed68a03d64ff94d36b17478648d29e6b8427d790",
+    "data/enterprise_guarantee.csv": "0ffe86ab4a2b1710d1aec65fde04a8f6460ca892b7c2b3aa9fb2c53c39f433d6",
+    "data/enterprise_lawsuit.csv": "a5f737d5f126785f23c3bbefeeb658e152e9b32f2671a6ce95d90da90fb1044e",
+    "data/enterprise_public_opinion.csv": "5fa3ee441c8ede953475b92d8071e87f2a198ab9426035c76d3e108f48542bae",
+    "data/enterprise_related.csv": "fdf2c526aee15661e76e7fc0bc9ad6f819a682f0ac9efa75089a763a13bed7ee",
+    "data/enterprise_risk.csv": "9e7942dc688e562e7f354f2c2390f2352e6d3beb025577e1387f844f7bd9d3fb",
+    "data/enterprise_shareholder.csv": "c581842a9a3490ba919ae68619574842c3c96493225bc320d9320225d74a4deb",
+    "data/loan_application.csv": "c3f21b2912c3735f589469a3a7e2c9f937d4a0d4b48746edc78a0dc792dae0a5",
+    "data/schema_relationships.csv": "2c4e507f3d34ebbbe99d846750057fa3718b919a190e38ad94118aa72b9ee34e",
+    "credit_model.yaml": "8ab651bf9cf44539e75571e5d8c619352d4a810e8ba58c66bc3f777e0391be0a",
+    "scorecard.yaml": "b1a3d53f35f8f13b47c061b24c6dd550f718fd085d9643266b352e901843dd29"
+  },
+  "runtimeHashes": {
+    "app/tools/dd_calc.py": "a1795d3dad575713a567434af1204fef79de3eab8c92860fbdd8fd02b81143d5",
+    "app/tools/due_diligence.py": "01ca750c9af0a0e41e9283f1583b0f459cd9b3a2ac39e3bf4f453f917e00173f"
+  },
+  "facts": {
+    "total": 10,
+    "statuses": {
+      "calculated": 10
+    },
+    "numericReferenceCount": 8,
+    "referenceNonNumericCount": 2,
+    "eligibleExactCount": 5,
+    "eligibleOverlapCount": 7,
+    "eligibleWithinCount": 7,
+    "candidateRiskExactCount": 5,
+    "failedCount": 0,
+    "exactRateAllRows": 0.5,
+    "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+  },
+  "agent": {
+    "total": 10,
+    "statuses": {
+      "succeeded": 6,
+      "needs_confirmation": 3,
+      "failed": 1
+    },
+    "numericReferenceCount": 8,
+    "referenceNonNumericCount": 2,
+    "eligibleExactCount": 4,
+    "eligibleOverlapCount": 6,
+    "eligibleWithinCount": 6,
+    "candidateRiskExactCount": 5,
+    "failedCount": 1,
+    "exactRateAllRows": 0.4,
+    "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "input": "../测试数据/评测/2026-10-24/dd04-baseline/inputs/applications.jsonl",
+  "generatedAt": "2026-10-24T05:41:09+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 6,
+    "needs_confirmation": 3,
+    "failed": 1
+  },
+  "errorCodes": {
+    "llm_output_incomplete": 1
+  },
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 15121,
+  "totalTokens": 217512,
+  "failures": []
+}

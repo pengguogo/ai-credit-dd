@@ -1,0 +1,13 @@
+---
+description: 比赛红线与项目规范入口
+alwaysApply: true
+---
+
+项目规范以根目录 `AGENTS.md` 为唯一来源（Cursor 会自动读取），此规则只强调红线，不另写规则：
+
+- 运行时模型只能 `deepseek-v4.1-flash`，只经 `ocft-backend/app/llm.py`
+- 禁止在 Prompt / 工具 / 种子 / 前端写死答案；运行时禁读评测标签与 expected
+- 结论必须有 evidence；失败返回结构化错误，不做模板化假结论
+- 密钥只放本机 `.env`
+
+细则：`docs/30-standards/redlines.md`

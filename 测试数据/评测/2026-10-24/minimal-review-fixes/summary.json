@@ -1,0 +1,25 @@
+{
+  "input": "eval/datasets/public_sample.jsonl",
+  "generatedAt": "2026-10-24T11:19:23+00:00",
+  "total": 1,
+  "statuses": {
+    "succeeded": 1
+  },
+  "errorCodes": {},
+  "scored": 1,
+  "accuracy": 0.0,
+  "meanScore": 0.8571,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 89331,
+  "totalTokens": 55424,
+  "failures": [
+    {
+      "id": "dd-001",
+      "status": "succeeded",
+      "errorCode": null,
+      "failedChecks": [
+        "dueDiligenceConclusion：文本匹配覆盖（不代表业务正确） 4/7=57%（阈值 70%）；命中 ['净利润3120', '资产负债率40', '经营现金流3580', '对外担保500']；未命中 ['2.86亿', '净利率10.9', '现有贷款4500']"
+      ]
+    }
+  ]
+}

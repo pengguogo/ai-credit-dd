@@ -1,0 +1,11 @@
+﻿application_id,status,pending_confirmation,error_code,run_id
+LA001,succeeded,否,,run_f945ebdf7c8a
+LA002,succeeded,否,,run_6fcb9b812148
+LA003,needs_confirmation,是,,run_551a16242249
+LA004,succeeded,否,,run_67d8e50dc69f
+LA005,succeeded,否,,run_884bfa3a8c43
+LA006,needs_confirmation,是,,run_570002868dee
+LA007,succeeded,否,,run_759080763243
+LA008,succeeded,否,,run_afaac4b1f6b8
+LA009,succeeded,否,,run_545fccf9e318
+LA010,succeeded,否,,run_c2079cbd7207

@@ -1,0 +1,78 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/dawn/ai马拉松/ocft-backend/eval/dd04_batch.py", line 96, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/dawn/ai马拉松/ocft-backend/eval/dd04_batch.py", line 75, in main
+    summary["officialValidation"] = validate_results(args.data_dir / SOURCES["applications"], official)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dawn/ai马拉松/ocft-backend/eval/dd04.py", line 68, in validate_results
+    rows = read_table(results, RESULT_COLUMNS)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dawn/ai马拉松/ocft-backend/eval/dd04.py", line 35, in read_table
+    raise DatasetError(f"{path.name}: 数据为空")
+eval.dataset.DatasetError: official-results-succeeded-only.csv: 数据为空
+题目 10 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/dd04-multi-agent/applications
+[1/10] LA001 needs_confirmation 62848ms
+[2/10] LA002 needs_confirmation 54874ms
+[3/10] LA003 needs_confirmation 40443ms
+[4/10] LA004 needs_confirmation 67487ms
+[5/10] LA005 needs_confirmation 43658ms
+[6/10] LA006 needs_confirmation 52684ms
+[7/10] LA007 needs_confirmation 51023ms
+[8/10] LA008 needs_confirmation 63135ms
+[9/10] LA009 needs_confirmation 48043ms
+[10/10] LA010 needs_confirmation 59073ms
+完成 10 道：{'needs_confirmation': 10}
+无证据答案 0 道，平均耗时 54326ms，总 token 359962
+结果表格：../测试数据/评测/2026-10-24/dd04-multi-agent/applications/results.csv、../测试数据/评测/2026-10-24/dd04-multi-agent/applications/results.xlsx
+题目 10 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/dd04-multi-agent/questions
+[1/10] Q001 needs_confirmation 48501ms
+[2/10] Q002 needs_confirmation 30086ms
+[3/10] Q003 needs_confirmation 48223ms
+[4/10] Q004 needs_confirmation 35854ms
+[5/10] Q005 needs_confirmation 19370ms
+[6/10] Q006 needs_confirmation 25225ms
+[7/10] Q007 needs_confirmation 41475ms
+[8/10] Q008 needs_confirmation 20432ms
+[9/10] Q009 needs_confirmation 15779ms
+[10/10] Q010 needs_confirmation 18631ms
+完成 10 道：{'needs_confirmation': 10}
+无证据答案 0 道，平均耗时 30357ms，总 token 211151
+结果表格：../测试数据/评测/2026-10-24/dd04-multi-agent/questions/results.csv、../测试数据/评测/2026-10-24/dd04-multi-agent/questions/results.xlsx
+题目 10 道，已完成 10 道，输出到 ../测试数据/评测/2026-10-24/dd04-multi-agent/applications
+完成 10 道：{'needs_confirmation': 10}
+无证据答案 0 道，平均耗时 54326ms，总 token 359962
+结果表格：../测试数据/评测/2026-10-24/dd04-multi-agent/applications/results.csv、../测试数据/评测/2026-10-24/dd04-multi-agent/applications/results.xlsx
+题目 10 道，已完成 10 道，输出到 ../测试数据/评测/2026-10-24/dd04-multi-agent/questions
+完成 10 道：{'needs_confirmation': 10}
+无证据答案 0 道，平均耗时 30357ms，总 token 211151
+结果表格：../测试数据/评测/2026-10-24/dd04-multi-agent/questions/results.csv、../测试数据/评测/2026-10-24/dd04-multi-agent/questions/results.xlsx
+{
+  "scenarioId": "enterprise_dd",
+  "officialValidation": {
+    "passed": false,
+    "errors": [
+      {
+        "code": "invalid_input",
+        "message": "official-results-succeeded-only.csv: 数据为空"
+      }
+    ]
+  },
+  "applicationComparison": {
+    "total": 10,
+    "statuses": {
+      "needs_confirmation": 10
+    },
+    "numericReferenceCount": 8,
+    "referenceNonNumericCount": 2,
+    "eligibleExactCount": 0,
+    "eligibleOverlapCount": 0,
+    "eligibleWithinCount": 0,
+    "candidateRiskExactCount": 5,
+    "failedCount": 0,
+    "exactRateAllRows": 0.0,
+    "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+  }
+}

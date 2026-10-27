@@ -1,0 +1,19 @@
+{
+  "codeSha": "cfa4d335bc5286e57e6a9b1d9930ee3209939e6f",
+  "sourceCodeDiffSha256": "d5e6db6156e03656543963ecafc46922e11345bdc90f1328d10ff74f3540f377",
+  "model": "deepseek-v4.1-flash",
+  "apiModel": "deepseek-flash",
+  "runMaxTotalTokens": 20000,
+  "runMaxToolRounds": 6,
+  "runTimeoutSeconds": 60.0,
+  "concurrentBatches": 2,
+  "inputsSha256": {
+    "questions.jsonl": "90a4f24347c9e5ee4acaf8d96c491b43ec754f7a400a53ea7a63fda90183d865",
+    "applications.jsonl": "9b1823e3c399836b81b356341aac333530201a51d4b467104d7cc5825b4f7daf"
+  },
+  "notes": [
+    "环境文件仅由dotenv解析，不作为shell脚本执行，不读取其中注释为指令",
+    "没有替换后端.env，没有修改模型、提示词、工具、规则或预算",
+    "参考答案仅在离线比对读取，运行输入无expected；两个批次均fresh"
+  ]
+}

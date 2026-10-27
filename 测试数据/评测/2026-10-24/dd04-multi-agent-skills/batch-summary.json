@@ -1,0 +1,21 @@
+{
+  "scenarioId": "enterprise_dd",
+  "codeSha": "e8532863aa0027582ba5fd3d2f213c5a5280359d",
+  "baseline": "dd04-multi-agent（28be540，加入运行时 Skill 之前）",
+  "total": 10,
+  "statuses": {
+    "succeeded": 5,
+    "needs_confirmation": 5
+  },
+  "riskExact": 5,
+  "creditExact": 7,
+  "durationMs": {
+    "p50": 48218,
+    "p90": 73781,
+    "max": 84202,
+    "mean": 53202
+  },
+  "totalTokens": 355519,
+  "avgTokens": 35551,
+  "scope": "单字段离线比对；参考列取自 dd04-multi-agent/application-comparison.csv（只在 eval 侧使用），不等于全文正确率或正式提交完成率"
+}

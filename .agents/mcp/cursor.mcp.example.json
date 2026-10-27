@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@4.4.4"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@0.0.83"]
+    },
+    "mysql-readonly": {
+      "command": "npx",
+      "args": ["-y", "@benborla29/mcp-server-mysql@2.0.9"],
+      "env": {
+        "MYSQL_HOST": "127.0.0.1",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "<只读账号>",
+        "MYSQL_PASS": "<只读账号密码>",
+        "MYSQL_DB": "ai_marathon",
+        "ALLOW_INSERT_OPERATION": "false",
+        "ALLOW_UPDATE_OPERATION": "false",
+        "ALLOW_DELETE_OPERATION": "false"
+      }
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch==2026.10.19"]
+    },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": { "Authorization": "Bearer <GitHub fine-grained PAT>" }
+    }
+  }
+}

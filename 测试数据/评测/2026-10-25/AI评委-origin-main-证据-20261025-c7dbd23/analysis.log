@@ -1,0 +1,116 @@
+{
+  "baseCommit": "c7dbd231b955cb7a2dfcf317212773b8cd65eae4",
+  "runtimeHashChanges": [],
+  "fields": {
+    "total": 10,
+    "statuses": {
+      "succeeded": 8,
+      "needs_confirmation": 2
+    },
+    "numericReferenceCount": 8,
+    "referenceNonNumericCount": 2,
+    "eligibleExactCount": 8,
+    "eligibleOverlapCount": 8,
+    "eligibleWithinCount": 8,
+    "candidateRiskExactCount": 10,
+    "failedCount": 0,
+    "exactRateAllRows": 0.8,
+    "scope": "单字段离线比对；非数值参考不补阈值，不等于全文正确率或正式提交完成率"
+  },
+  "format": {
+    "passed": true,
+    "expectedCount": 10,
+    "actualCount": 10,
+    "errors": [],
+    "scope": "仅格式与完整性，不代表业务正确或正式答题成功"
+  },
+  "applications": {
+    "count": 10,
+    "statuses": {
+      "succeeded": 8,
+      "needs_confirmation": 2
+    },
+    "meanSeconds": 18.2618,
+    "p50Seconds": 17.2205,
+    "p95NearestRankSeconds": 27.817,
+    "totalTokens": 356602,
+    "evidenceCounts": {
+      "LA001": 9,
+      "LA002": 9,
+      "LA003": 9,
+      "LA004": 9,
+      "LA005": 9,
+      "LA006": 9,
+      "LA007": 9,
+      "LA008": 9,
+      "LA009": 9,
+      "LA010": 9
+    }
+  },
+  "questions": {
+    "count": 10,
+    "statuses": {
+      "succeeded": 9,
+      "needs_confirmation": 1
+    },
+    "meanSeconds": 8.0536,
+    "p50Seconds": 7.436999999999999,
+    "p95NearestRankSeconds": 16.736,
+    "totalTokens": 202525,
+    "evidenceCounts": {
+      "Q001": 9,
+      "Q002": 7,
+      "Q003": 4,
+      "Q004": 8,
+      "Q005": 4,
+      "Q006": 2,
+      "Q007": 8,
+      "Q008": 2,
+      "Q009": 2,
+      "Q010": 2
+    }
+  },
+  "auditedModels": [
+    "deepseek-v4.1-flash"
+  ],
+  "repeatLA001": {
+    "firstRunIds": [
+      "run_f945ebdf7c8a"
+    ],
+    "secondRunIds": [
+      "run_0af828a567a4"
+    ],
+    "statusSame": true,
+    "textIdentical": false,
+    "firstTextSha256": "8c4812cb9f4c6bb1acbe3efca7279c19abcd63daa067f1a4e89a0f3367886ac2",
+    "secondTextSha256": "97ea09df5eac95d12c48fa5b173fb81ece1849e71907dacecda499148ee9eba9",
+    "scope": "单一申请两次；字段与版式另行核验，不能外推十笔重复稳定性",
+    "firstFields": {
+      "riskLevel": "低风险",
+      "suggestedCreditAmount": "2500-3000"
+    },
+    "secondFields": {
+      "riskLevel": "低风险",
+      "suggestedCreditAmount": "2500-3000"
+    },
+    "fieldsSame": true,
+    "fiveSectionsBothPresent": true
+  },
+  "delivery": {
+    "manifestCommit": "f711b78e1e9397a7a0371aa7ff99b61c846c11bd",
+    "primaryPhonePresent": false,
+    "primaryEmailPresent": false,
+    "mp4Files": [
+      "submission/dd04/artifacts/智算先锋队_赛题04_演示视频.mp4"
+    ],
+    "scriptPitchPathExists": false,
+    "actualPitchPathExists": true,
+    "screenshotSourceExists": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "privateEqualsRehearsal": true
+  }
+}

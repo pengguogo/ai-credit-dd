@@ -1,0 +1,1 @@
+{"status":"ok","service":"ocft-backend","checks":{"modelLock":{"ok":true,"model":"deepseek-v4.1-flash","required":"deepseek-v4.1-flash"},"database":{"ok":true},"redis":{"ok":true},"llm":{"ok":true,"status":"unknown","errorCode":null,"checkedAt":null}}}

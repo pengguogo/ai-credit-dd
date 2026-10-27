@@ -1,0 +1,132 @@
+# 赛题 04 manifest 草稿（由 submission/pack_dd04.py 读入并写出正式根目录 manifest.yaml）。
+# 队名、六位成员联系方式与第一联系人已填写；封包时核对最新信息。
+# 代码字段在封包时用 git rev-parse HEAD 覆盖 commit_sha。
+schema_version: "1.0"
+submission:
+  topic_id: "04"
+  topic_name: 企业智能信贷尽调
+  team_name: 智算先锋队
+  submission_name: 04_智算先锋队_Agent大赛提交
+  version: v1.0
+  submit_date: TBD       # 正式投递日 YYYY-MM-DD
+members:
+  - name: 王小文
+    role: Agent 开发（多 Agent 编排、工具、规则与额度模型）
+    phone: "13923740914"
+    email: "wangxiaowen@pingan.com.cn"
+  - name: 胡乾豪
+    role: 数据开发与导入
+    phone: "18826540512"
+    email: "huqianhao961@pingan.com.cn"
+  - name: 程柳
+    role: 前端交互与报告展示
+    phone: "13148930718"
+    email: "chengliu384@pingan.com.cn"
+  - name: 彭国
+    role: 评测与批量答题
+    phone: "15013365620"
+    email: "pengguo343@pingan.com.cn"
+  - name: 陈修活
+    role: 合规与提交包
+    phone: "13048987642"
+    email: "chenxiuhuo889@pingan.com.cn"
+  - name: 黎锦涛
+    role: 文档与路演（第一联系人）
+    phone: "15629955252"
+    email: "lijintao711@pingan.com.cn"
+contact:
+  primary_name: 黎锦涛
+  primary_phone: "15629955252"
+  primary_email: "lijintao711@pingan.com.cn"
+code:
+  repo_url: https://github.com/pengguogo/ocft-ai-marathon
+  commit_sha: TBD
+  branch: main
+  is_private: true
+  archive_in_package: true
+demo_env:
+  type: local
+  os: Windows 11（评测机为 Windows；不提供 Linux / macOS / Docker 方案）
+  runtime: 内置 Python 3.14.9（vendor/python，python.org 官方构建）；评测机无需预装 Python / Node.js
+  startup_command: start.bat（或 powershell -ExecutionPolicy Bypass -File .\start.ps1 -Offline）
+  access_url: http://127.0.0.1:8000
+  gpu_required: false
+  network_required: true
+  notes: >-
+    解压后双击 start.bat：解压内置 Python，从 vendor/wheels/win_amd64-py3.14 离线安装后端依赖（pip --no-index），
+    前端为预构建 ocft-starter/dist，由后端同源提供。包内含 .env / config.yaml（enc: 密文）与 master.key，解压即可用。
+    依赖可离线安装，但运行时须能访问 DeepSeek API 与云端 MySQL / Redis（network_required: true）；
+    评委机出口 IP 须加入云库白名单。场景 ID 为 enterprise_dd。首次启动约 2–4 分钟。
+dependencies:
+  - name: python
+    version: 3.14.9（内置于 vendor/python，离线）
+  - name: fastapi
+    version: 0.157.0
+  - name: uvicorn
+    version: 0.54.0
+  - name: sqlalchemy
+    version: 2.1.5
+  - name: pydantic
+    version: 2.14.1
+  - name: pydantic-settings
+    version: 2.16.1
+  - name: openai
+    version: 3.35.1
+  - name: langgraph
+    version: 1.2.16
+  - name: langchain-core
+    version: 1.6.13
+  - name: pymysql
+    version: 1.2.3
+  - name: redis
+    version: 8.1.0
+  - name: cryptography
+    version: 50.0.2
+  - name: sqlglot
+    version: 30.24.0
+  - name: PyYAML
+    version: 6.0.3
+  - name: socksio
+    version: 1.0.0
+  - name: openpyxl
+    version: 3.1.5
+  - name: react
+    version: 19.3.1
+external_services:
+  - name: DeepSeek API（deepseek-v4.1-flash）
+    purpose: Agent 理解问题、规划工具调用、组织答复；业务结论由规则工具计算
+    credential_required: true
+    credential_source: "ocft-backend/.env 的 LLM_API_KEY（enc: 密文 + 包内 master.key）"
+    offline_fallback: false
+    desensitization: >-
+      企业全称、法人姓名、统一社会信用代码在外送前替换为代号；身份证、银行卡、手机号、邮箱掩码。
+      2026-10-25 抽查 3 个真实 run、22 次调用，敏感原值命中 0（见 docs/10-strategy/脱敏复核证据-20261025/）。
+  - name: MySQL 8.0（云端）
+    purpose: 业务事实与执行记录、证据、审计持久化
+    credential_required: true
+    credential_source: "ocft-backend/config.yaml 的 database 段（enc: 密文）"
+    offline_fallback: false
+    desensitization: 不涉及外送；审计命中片段先做 PII 掩码；评委机出口 IP 须在云库白名单
+  - name: Redis（云端）
+    purpose: 缓存、计数与分布式锁（db/redis/）
+    credential_required: true
+    credential_source: "ocft-backend/config.yaml 的 redis 段（enc: 密文）"
+    offline_fallback: false
+    desensitization: 不涉及模型外送；评委机出口 IP 须在云库白名单
+llm_declaration:
+  - provider: DeepSeek
+    model: deepseek-v4.1-flash
+    usage: >-
+      多 Agent 尽调：主控定位与调度 + 工商 / 财报 / 舆情 / 反欺诈 / 评级 / 报告角色解读与成文；
+      数字由规则工具计算，模型不得改数。场景级累计 token 上限 200000（scenarios/dd04/agents.yaml controller.max_total_tokens）；
+      不限工具轮数与总时长，单次调用超时见 LLM_TIMEOUT_SECONDS；公开集实测约 27 秒/笔申请、14 秒/题问询。
+    data_sent: 系统提示词、代号/掩码后的用户问题与会话摘要、当次工具返回的官方样例业务数据（无真实客户）
+    temperature: 0.2
+third_party_components: []   # pack_dd04.py 用 submission/third_party_components.yaml 替换
+datasets_used:
+  official:
+    - "docs/00-rules/赛题/赛题04_企业智能信贷尽调/data/（10 张业务 CSV + schema_relationships.csv；答案文件仅 eval 离线对照，运行时不读）"
+  self_built:
+    - ocft-backend/app/seed.py 与 db 导入链路中的虚构补充样例（不含评测答案映射）
+  real_data_used: false
+attachments: []   # pack_dd04.py 按队名与实物清单填充

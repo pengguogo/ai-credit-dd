@@ -1,0 +1,176 @@
+{"ts": "2026-10-25T00:09:33.616Z", "level": "INFO", "logger": "ocft.run", "msg": "run_finished", "requestId": "req_d8654e3cb8734fd6", "runId": "run_9264c24c8c01", "scenarioId": "enterprise_dd", "status": "succeeded", "errorCode": null, "durationMs": 24, "rounds": 1, "toolCalls": 0, "totalTokens": 2}
+{"ts": "2026-10-25T00:09:33.619Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d8654e3cb8734fd6", "method": "POST", "path": "/api/agent/runs", "status": 200, "durationMs": 47}
+{"ts": "2026-10-25T00:09:33.624Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_d3d54343d0d246e0", "method": "POST", "path": "/api/agent/runs/run_9264c24c8c01/confirmations", "status": 200, "durationMs": 4}
+{"ts": "2026-10-25T00:09:33.629Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_44b11d9cd48b45d0", "method": "GET", "path": "/api/agent/runs/run_9264c24c8c01", "status": 200, "durationMs": 5}
+{"ts": "2026-10-25T00:09:33.640Z", "level": "INFO", "logger": "ocft.run", "msg": "run_finished", "requestId": "req_78f675dda7794b28", "runId": "run_684d87c59f40", "scenarioId": "enterprise_dd", "status": "blocked", "errorCode": "compliance_output_blocked", "durationMs": 8, "rounds": 1, "toolCalls": 0, "totalTokens": 2}
+{"ts": "2026-10-25T00:09:33.641Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_78f675dda7794b28", "method": "POST", "path": "/api/agent/runs", "status": 200, "durationMs": 11}
+{"ts": "2026-10-25T00:09:33.658Z", "level": "INFO", "logger": "ocft.run", "msg": "run_finished", "requestId": "req_b60abd41b0e342ac", "runId": "run_a019802d5139", "scenarioId": "enterprise_dd", "status": "succeeded", "errorCode": null, "durationMs": 7, "rounds": 1, "toolCalls": 0, "totalTokens": 2}
+{"ts": "2026-10-25T00:09:33.660Z", "level": "INFO", "logger": "ocft.http", "msg": "request", "requestId": "req_b60abd41b0e342ac", "method": "POST", "path": "/api/agent/runs", "status": 200, "durationMs": 10}
+{
+  "no_evidence_business_claim": {
+    "httpStatus": 200,
+    "runId": "run_9264c24c8c01",
+    "status": "succeeded",
+    "answer": "该企业没有对外担保，也没有逾期，可以放款。",
+    "errorCode": null,
+    "evidenceIds": [],
+    "traceCount": 0
+  },
+  "unverified_confirmation": {
+    "httpStatus": 200,
+    "body": {
+      "confirmationId": 1,
+      "runId": "run_9264c24c8c01",
+      "answerVersion": 1,
+      "action": "confirm",
+      "actorId": "unverified_business_officer",
+      "createdAt": "2026-10-25T00:09:33Z"
+    }
+  },
+  "fabricated_law": {
+    "httpStatus": 200,
+    "status": "blocked",
+    "answer": null,
+    "errorCode": "compliance_output_blocked",
+    "evidenceIds": []
+  },
+  "false_negated_trend": {
+    "text": "营业收入并非逐年增长。",
+    "source": [
+      {
+        "annual": [
+          {
+            "year": 2021,
+            "revenue": 100
+          },
+          {
+            "year": 2022,
+            "revenue": 200
+          },
+          {
+            "year": 2023,
+            "revenue": 300
+          }
+        ]
+      }
+    ],
+    "issues": []
+  },
+  "wrong_score_semantics": {
+    "text": "原始舆情评分为100分。",
+    "source": [
+      {
+        "opinionRiskScore": 100,
+        "rawRiskFacts": {
+          "public_opinion_score": 48
+        }
+      }
+    ],
+    "issues": []
+  },
+  "future_event": {
+    "asOf": "2024-03-15",
+    "eventDate": "2030-01-01",
+    "result": {
+      "enterpriseId": "JUDGE_FUTURE",
+      "unit": "万元",
+      "asOf": "2024-03-15",
+      "opinionRiskScore": 34.0,
+      "healthScore": 66.0,
+      "labels": [
+        "行政处罚"
+      ],
+      "events": [
+        {
+          "eventId": "JUDGE_EVENT",
+          "eventDate": "2030-01-01",
+          "eventType": "行政处罚",
+          "eventContent": "未来事件",
+          "eventSource": null,
+          "sentiment": "负面",
+          "impactLevel": "重大",
+          "points": 14.0
+        }
+      ],
+      "lawsuits": [],
+      "lawsuitCount": 0,
+      "lawsuitAmount": 0.0,
+      "openDefendantAmount": 0.0,
+      "configFile": "scenarios/dd04/opinion.yaml"
+    }
+  },
+  "unsupported_law_content_with_matching_title": {
+    "claim": "依据《评委合成测试条例》第九条，所有企业必须无条件获得贷款。",
+    "source": [
+      "事件标题：提及《评委合成测试条例》第九条。此处不提供任何授信条文内容。"
+    ],
+    "isClean": true,
+    "scope": "仅探测条文正文蕴含校验；名称与条号均为人工合成"
+  },
+  "unseen_sensitive_input": {
+    "httpStatus": 200,
+    "modelBoundaryCalls": [
+      {
+        "unknownCompanyUnmasked": true,
+        "unknownPersonUnmasked": true
+      }
+    ],
+    "scope": "公司与人名均为合成；假模型替换网络边界，未向外部服务发送"
+  },
+  "sql_cte_alias_label_leak": {
+    "sql": "WITH t(c0,c1,c2,c3,c4,c5,c6,rating_hint,c8) AS (SELECT * FROM enterprise_risk) SELECT c1 AS enterprise_id, rating_hint FROM t LIMIT 10",
+    "toolSuccess": true,
+    "data": {
+      "rowCount": 10,
+      "truncated": false,
+      "tables": [
+        "enterprise_risk"
+      ],
+      "rows": [
+        {
+          "enterpriseId": "E001",
+          "ratingHint": "低风险"
+        },
+        {
+          "enterpriseId": "E002",
+          "ratingHint": "中风险"
+        },
+        {
+          "enterpriseId": "E003",
+          "ratingHint": "高风险"
+        },
+        {
+          "enterpriseId": "E004",
+          "ratingHint": "中风险"
+        },
+        {
+          "enterpriseId": "E005",
+          "ratingHint": "低-中风险"
+        },
+        {
+          "enterpriseId": "E006",
+          "ratingHint": "高风险"
+        },
+        {
+          "enterpriseId": "E007",
+          "ratingHint": "低风险"
+        },
+        {
+          "enterpriseId": "E008",
+          "ratingHint": "中风险"
+        },
+        {
+          "enterpriseId": "E009",
+          "ratingHint": "低风险"
+        },
+        {
+          "enterpriseId": "E010",
+          "ratingHint": "中风险"
+        }
+      ]
+    },
+    "error": "None",
+    "evidenceRecords": 1,
+    "sqlDeclaredToController": true
+  }
+}

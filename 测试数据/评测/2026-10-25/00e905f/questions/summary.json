@@ -1,0 +1,16 @@
+{
+  "input": "../测试数据/评测/2026-10-25/00e905f/inputs/questions.jsonl",
+  "generatedAt": "2026-10-24T12:44:16+00:00",
+  "total": 10,
+  "statuses": {
+    "succeeded": 10
+  },
+  "errorCodes": {},
+  "scored": 0,
+  "accuracy": null,
+  "meanScore": null,
+  "answersWithoutEvidence": 0,
+  "avgDurationMs": 14117,
+  "totalTokens": 157814,
+  "failures": []
+}

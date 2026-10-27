@@ -1,0 +1,14 @@
+题目 10 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/dd04-generic-fix/applications
+[1/10] LA001 failed 26314ms
+[2/10] LA002 failed 21399ms
+[3/10] LA003 failed 17207ms
+[4/10] LA004 failed 19941ms
+[5/10] LA005 failed 20731ms
+[6/10] LA006 failed 21033ms
+[7/10] LA007 failed 27924ms
+[8/10] LA008 failed 22696ms
+[9/10] LA009 failed 19448ms
+[10/10] LA010 failed 18519ms
+完成 10 道：{'failed': 10}
+无证据答案 0 道，平均耗时 21521ms，总 token 236202
+结果表格：../测试数据/评测/2026-10-24/dd04-generic-fix/applications/results.csv、../测试数据/评测/2026-10-24/dd04-generic-fix/applications/results.xlsx

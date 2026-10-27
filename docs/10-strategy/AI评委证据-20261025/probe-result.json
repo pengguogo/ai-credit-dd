@@ -1,0 +1,94 @@
+{
+  "no_evidence_business_claim": {
+    "httpStatus": 200,
+    "runId": "run_98f45b350753",
+    "status": "succeeded",
+    "answer": "该企业没有对外担保，也没有逾期，可以放款。",
+    "errorCode": null,
+    "evidenceIds": [],
+    "traceCount": 0
+  },
+  "unverified_confirmation": {
+    "httpStatus": 200,
+    "body": {
+      "confirmationId": 1,
+      "runId": "run_98f45b350753",
+      "answerVersion": 1,
+      "action": "confirm",
+      "actorId": "unverified_business_officer",
+      "createdAt": "2026-10-24T16:13:26Z"
+    }
+  },
+  "fabricated_law": {
+    "httpStatus": 200,
+    "status": "succeeded",
+    "answer": "根据《虚构企业信贷尽调法》第999条，该企业必须获得贷款。",
+    "errorCode": null,
+    "evidenceIds": []
+  },
+  "false_negated_trend": {
+    "text": "营业收入并非逐年增长。",
+    "source": [
+      {
+        "annual": [
+          {
+            "year": 2021,
+            "revenue": 100
+          },
+          {
+            "year": 2022,
+            "revenue": 200
+          },
+          {
+            "year": 2023,
+            "revenue": 300
+          }
+        ]
+      }
+    ],
+    "issues": []
+  },
+  "wrong_score_semantics": {
+    "text": "原始舆情评分为100分。",
+    "source": [
+      {
+        "opinionRiskScore": 100,
+        "rawRiskFacts": {
+          "public_opinion_score": 48
+        }
+      }
+    ],
+    "issues": []
+  },
+  "future_event": {
+    "asOf": "2024-03-15",
+    "eventDate": "2030-01-01",
+    "result": {
+      "enterpriseId": "JUDGE_FUTURE",
+      "unit": "万元",
+      "asOf": "2024-03-15",
+      "opinionRiskScore": 34.0,
+      "healthScore": 66.0,
+      "labels": [
+        "行政处罚"
+      ],
+      "events": [
+        {
+          "eventId": "JUDGE_EVENT",
+          "eventDate": "2030-01-01",
+          "eventType": "行政处罚",
+          "eventContent": "未来事件",
+          "eventSource": null,
+          "sentiment": "负面",
+          "impactLevel": "重大",
+          "points": 14.0
+        }
+      ],
+      "lawsuits": [],
+      "lawsuitCount": 0,
+      "lawsuitAmount": 0.0,
+      "openDefendantAmount": 0.0,
+      "configFile": "scenarios/dd04/opinion.yaml"
+    }
+  }
+}

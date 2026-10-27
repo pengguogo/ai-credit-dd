@@ -1,0 +1,232 @@
+{
+  "scheme": "本次自定义条款达成2分制，非官方评分/权重",
+  "zero": "已证实不满足",
+  "one": "部分满足或有实质缺口",
+  "two": "本轮证据支持该条满足（范围见理由）",
+  "pending": "待验证不计分不入分母",
+  "items": [
+    {
+      "group": "①评测集表现",
+      "id": "P01",
+      "clause": "风险评级与标准一致",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "10/10严格一致；只评价评级字段",
+      "evidence": "field-comparison.json"
+    },
+    {
+      "group": "①评测集表现",
+      "id": "P02",
+      "clause": "建议额度与标准一致",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "8笔数值参考8/8区间一致；另2笔0与拒贷方向兼容，不伪称10笔数值精确一致",
+      "evidence": "field-comparison.json"
+    },
+    {
+      "group": "①评测集表现",
+      "id": "P03",
+      "clause": "尽调结论正确且与事实一致",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "申请均形成五部分报告；问询Q005仍混淆原始舆情与计算分，语义探针可漏检，不能认定全文正确",
+      "evidence": "live/questions/results.jsonl；probe-result.json"
+    },
+    {
+      "group": "①评测集表现",
+      "id": "P04",
+      "clause": "评分要点逐项覆盖与业务解释",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "有真实报告与证据；尚无本SHA的52个要点逐条语义审签，六列自评不能替代验收",
+      "evidence": "live/official-results.csv；live/applications/evidence.json"
+    },
+    {
+      "group": "①评测集表现",
+      "id": "P05",
+      "clause": "公开集现场即时处理、可实时重算",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "10申请+10问询fresh，经统一create_run；独立SQLite，94个运行文件前后哈希不变",
+      "evidence": "live/manifest.json；run_current.py"
+    },
+    {
+      "group": "②Agent工程架构",
+      "id": "A01",
+      "clause": "记忆：跨轮确认口径复用、可查改清",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "实体槽位及历史可查改清；已确认结论仅展示，无超历史窗口独立复用与业务口径纠正契约",
+      "evidence": "source-excerpts.md；tests/test_memory.py"
+    },
+    {
+      "group": "②Agent工程架构",
+      "id": "A02",
+      "clause": "会议与资产：任务、待办、产出闭环",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "新增报告建档、检索、证据轨迹和贷款四态；报告归档接口被移除，补件待办仍为正文",
+      "evidence": "source-excerpts.md；tests/test_workspace_assets.py"
+    },
+    {
+      "group": "②Agent工程架构",
+      "id": "A03",
+      "clause": "工具选型、参数、重试降级、影响决策",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "注册表、参数校验、依赖计算、角色解读、错误类型化和真实工具证据齐备；SQL列隔离风险在红线独立否决",
+      "evidence": "pytest.xml；live/applications/results.jsonl"
+    },
+    {
+      "group": "②Agent工程架构",
+      "id": "A04",
+      "clause": "Skill触发、输入输出契约与复用",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "六角色运行时Skill有版本、契约和绑定，真实拼入模型上下文；前端技能中心不是唯一依据",
+      "evidence": "scenarios/dd04/skills；tests/test_dd_skills.py"
+    },
+    {
+      "group": "②Agent工程架构",
+      "id": "A05",
+      "clause": "上下文管理与Agent编排",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "LangGraph主控与六角色，依赖闭包、并行解读、历史压缩和预算控制",
+      "evidence": "app/agent/dd_graph.py；tests/test_dd_multi_agent.py"
+    },
+    {
+      "group": "②Agent工程架构",
+      "id": "A06",
+      "clause": "可观测性、轨迹、证据与审计",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "SSE、工具轨迹、证据行、模型调用用途/时间/hash、运行终态持久化；确认身份可信性另列R04",
+      "evidence": "live/*/evidence.json；tests/test_engine_states.py"
+    },
+    {
+      "group": "③鲁棒性与可解释性",
+      "id": "G01",
+      "clause": "字段缺失、查无结果不崩溃不假答",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "已有缺失、查无结果和澄清回归；未取证且换措辞仍可成功给出业务断言",
+      "evidence": "pytest.xml；probe-result.json:no_evidence_business_claim"
+    },
+    {
+      "group": "③鲁棒性与可解释性",
+      "id": "G02",
+      "clause": "口径冲突、期间与乱序输入",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "财报按申请时点筛选、有单位校验；2030舆情仍进入2024评估，否定趋势/分数口径可漏检",
+      "evidence": "probe-result.json:future_event；false_negated_trend；wrong_score_semantics"
+    },
+    {
+      "group": "③鲁棒性与可解释性",
+      "id": "G03",
+      "clause": "极端值、零值、无穷值处理",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "Decimal、有限值/正数校验、零能力不忽略、异常参数诚实失败，本次相关回归通过",
+      "evidence": "tests/test_dd_credit_amount.py；pytest.xml"
+    },
+    {
+      "group": "③鲁棒性与可解释性",
+      "id": "G04",
+      "clause": "长任务与外部调用超时、可执行下一步",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "单次调用超时、重试/降级已实现；默认整run时限与工具轮数为空，token兜底不等于有限总耗时",
+      "evidence": "app/config.py；app/agent/dd_roles.py；pytest.xml"
+    },
+    {
+      "group": "③鲁棒性与可解释性",
+      "id": "G05",
+      "clause": "自动重试、单点失败不拖垮全链路",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "类型化错误、重试、角色降级与待确认，相关故障回归通过",
+      "evidence": "tests/test_dd_multi_agent.py；tests/test_engine_states.py"
+    },
+    {
+      "group": "③鲁棒性与可解释性",
+      "id": "G06",
+      "clause": "规则指标、科目金额期间记录ID与不确定性",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "真实输出有规则/证据ID、指标/期间与需复核说明；语义校验和历史时点仍有缺口",
+      "evidence": "live/*/results.jsonl；probe-result.json"
+    },
+    {
+      "group": "③鲁棒性与可解释性",
+      "id": "G07",
+      "clause": "同输入多跑结论一致、格式不漂移",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "LA001两次评级/额度一致、五章节均在，但正文不逐字相同；未完成10企业重复样本与严格格式逐项比对",
+      "evidence": "summary.json:repeatLA001"
+    },
+    {
+      "group": "④合规性（强制项）",
+      "id": "C01",
+      "clause": "模型外送前敏感字段脱敏",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "已知样本8次真实调用无已知原值；未知无标签合成公司与人名仍到达模型边界，见红线R03",
+      "evidence": "repeat/outbound-audit.json；probe-result.json:unseen_sensitive_input"
+    },
+    {
+      "group": "④合规性（强制项）",
+      "id": "C02",
+      "clause": "界面、日志、导出同样脱敏",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "已知名称/PII有掩码及相关回归、历史截图；未完成本SHA全部页面与自由文本未知实体的端到端验收",
+      "evidence": "tests/test_compliance.py；artifact-audit.json"
+    },
+    {
+      "group": "④合规性（强制项）",
+      "id": "C03",
+      "clause": "外部调用入参、时间、用途可审计",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "审计持久化用途、时间、masked preview与请求hash；本次真实调用有记录",
+      "evidence": "app/agent/dd_roles.py；pytest.xml；summary.json"
+    },
+    {
+      "group": "④合规性（强制项）",
+      "id": "C04",
+      "clause": "敏感/政治等输入与输出合规",
+      "score": 2,
+      "maxScore": 2,
+      "reason": "双向词库与规则、注入/违规样例和审计回归通过；不据此声称覆盖所有变体",
+      "evidence": "tests/test_compliance.py；pytest.xml"
+    },
+    {
+      "group": "④合规性（强制项）",
+      "id": "C05",
+      "clause": "法规、条号、条文内容不得编造",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "无证据虚构法名已拦截；同名同条号出现即可放行不受支持条文内容，正文真实性未闭环",
+      "evidence": "probe-result.json:fabricated_law；unsupported_law_content_with_matching_title"
+    },
+    {
+      "group": "④合规性（强制项）",
+      "id": "C06",
+      "clause": "仅虚构数据及数据来源声明",
+      "score": 1,
+      "maxScore": 2,
+      "reason": "使用官方模拟数据，manifest real_data_used=false；最终包、全部视频画面及附件未逐件终审",
+      "evidence": "artifact-audit.json；submission/dd04/manifest.generated.yaml"
+    }
+  ],
+  "earned": 35,
+  "max": 48,
+  "deferred": [
+    "官方非公开集实际表现",
+    "主观现场路演与演示体验"
+  ],
+  "redlineGate": "不放行：R01/R02/R03已复现防线缺口"
+}

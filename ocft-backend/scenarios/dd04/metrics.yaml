@@ -1,0 +1,40 @@
+# 财报口径与警戒线。金额单位：万元。改阈值只改本文件，工具会重新读取。
+# 数据集没有流动资产、流动负债和营业成本，流动比率 / 速动比率 / 毛利率不计算。
+unit: 万元
+balance_tolerance: 1
+turnover_denominator: revenue
+turnover_denominator_note: 周转次数=营业收入/期末余额；周转天数=365/次数；存货采用营收替代口径，数据集没有营业成本
+metrics:
+  asset_liability_ratio:
+    name: 资产负债率
+    warn_above: 0.70
+    block_above: 0.85
+  net_margin:
+    name: 净利率
+    warn_below: 0.03
+    block_below: 0
+  roe:
+    name: 净资产收益率
+    warn_below: 0.05
+  roa:
+    name: 总资产收益率
+    warn_below: 0.02
+  ocf_to_profit:
+    name: 经营现金流/净利润
+    warn_below: 0.5
+  receivable_days:
+    name: 应收账款周转天数
+    warn_above: 120
+  inventory_days:
+    name: 存货周转天数
+    warn_above: 180
+  interest_bearing_ratio:
+    name: 有息负债/总资产
+    warn_above: 0.40
+    block_above: 0.60
+  period_expense_ratio:
+    name: 期间费用率
+    warn_above: 0.25
+  rd_ratio:
+    name: 研发费用率
+    warn_below: 0

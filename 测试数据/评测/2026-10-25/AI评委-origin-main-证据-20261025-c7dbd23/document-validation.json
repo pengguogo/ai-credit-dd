@@ -1,0 +1,17 @@
+{
+  "reportLinkErrors": [],
+  "score": {
+    "earned": 35,
+    "max": 48,
+    "items": 24
+  },
+  "realRows": 20,
+  "candidatePoints": 52,
+  "parsedFiles": {
+    "json": 21,
+    "jsonl": 5
+  },
+  "evidenceScriptsSyntax": "passed",
+  "sourceHashChanges": [],
+  "scope": "迁移后文档链接、算术、数据解析及证据脚本语法；未重跑模型"
+}

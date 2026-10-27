@@ -1,0 +1,30 @@
+# 合并进 ~/.codex/config.toml（不要提交填好凭据的版本）
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp@4.4.4"]
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["-y", "@playwright/mcp@0.0.83"]
+
+[mcp_servers.mysql-readonly]
+command = "npx"
+args = ["-y", "@benborla29/mcp-server-mysql@2.0.9"]
+
+[mcp_servers.mysql-readonly.env]
+MYSQL_HOST = "127.0.0.1"
+MYSQL_PORT = "3306"
+MYSQL_USER = "<只读账号>"
+MYSQL_PASS = "<只读账号密码>"
+MYSQL_DB = "ai_marathon"
+ALLOW_INSERT_OPERATION = "false"
+ALLOW_UPDATE_OPERATION = "false"
+ALLOW_DELETE_OPERATION = "false"
+
+[mcp_servers.fetch]
+command = "uvx"
+args = ["mcp-server-fetch==2026.10.19"]
+
+# GitHub 远程 MCP：Codex 对远程 HTTP 服务的配置字段随版本变化，
+# 按 `codex mcp add --help` 的当前说明接入 https://api.githubcopilot.com/mcp/

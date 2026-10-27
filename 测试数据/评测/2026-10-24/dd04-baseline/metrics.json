@@ -1,0 +1,65 @@
+{
+  "applications": {
+    "total": 10,
+    "statuses": {
+      "failed": 3,
+      "needs_confirmation": 3,
+      "succeeded": 4
+    },
+    "p50MsNearestRank": 19801,
+    "p95MsNearestRank": 22086,
+    "maxMs": 22086,
+    "over30s": 0,
+    "totalTokens": 243416,
+    "avgMs": 18960,
+    "answersWithoutEvidence": 0
+  },
+  "questions": {
+    "total": 10,
+    "statuses": {
+      "needs_confirmation": 1,
+      "succeeded": 9
+    },
+    "p50MsNearestRank": 13499,
+    "p95MsNearestRank": 24656,
+    "maxMs": 24656,
+    "over30s": 0,
+    "totalTokens": 126649,
+    "avgMs": 14200,
+    "answersWithoutEvidence": 0
+  },
+  "scenario-samples": {
+    "total": 6,
+    "statuses": {
+      "needs_clarification": 2,
+      "succeeded": 4
+    },
+    "p50MsNearestRank": 6449,
+    "p95MsNearestRank": 19945,
+    "maxMs": 19945,
+    "over30s": 0,
+    "totalTokens": 55826,
+    "avgMs": 9823,
+    "answersWithoutEvidence": 0
+  },
+  "smoke": {
+    "total": 1,
+    "statuses": {
+      "failed": 1
+    },
+    "p50MsNearestRank": 16969,
+    "p95MsNearestRank": 16969,
+    "maxMs": 16969,
+    "over30s": 0,
+    "totalTokens": 20161,
+    "avgMs": 16969,
+    "answersWithoutEvidence": 0
+  },
+  "comparison": {
+    "denominator": 10,
+    "finalRiskExact": 1,
+    "candidateRiskExact": 5,
+    "officialRows": 4,
+    "draftRows": 10
+  }
+}

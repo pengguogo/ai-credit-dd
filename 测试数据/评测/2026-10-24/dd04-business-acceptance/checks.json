@@ -1,0 +1,27 @@
+{
+  "backendTests": {
+    "passed": 506,
+    "failed": 0,
+    "model": "fake",
+    "database": "temporary SQLite"
+  },
+  "frontendLint": {
+    "passed": true
+  },
+  "frontendBuild": {
+    "passed": true,
+    "warning": "既有JS chunk超过500kB"
+  },
+  "redlineScan": {
+    "errors": 0,
+    "warnings": 3,
+    "review": "app/seed.py既有注释，不是新增运行时标签读取"
+  },
+  "services": {
+    "backend": "http://localhost:8000/api/health/ready",
+    "backendStatus": 200,
+    "frontend": "http://localhost:5173",
+    "frontendStatus": 200
+  },
+  "scope": "代码测试与真实模型业务复测分开统计；未做Windows干净机或官方非公开集"
+}

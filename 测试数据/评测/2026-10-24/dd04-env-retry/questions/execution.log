@@ -1,0 +1,15 @@
+环境已加载；模型限制校验通过；凭据不回显
+题目 10 道，已完成 0 道，输出到 ../测试数据/评测/2026-10-24/dd04-env-retry/questions
+[1/10] Q001 succeeded 21039ms
+[2/10] Q002 succeeded 9880ms
+[3/10] Q003 succeeded 10918ms
+[4/10] Q004 succeeded 14946ms
+[5/10] Q005 succeeded 9541ms
+[6/10] Q006 succeeded 12224ms
+[7/10] Q007 failed 12930ms
+[8/10] Q008 succeeded 8633ms
+[9/10] Q009 succeeded 10206ms
+[10/10] Q010 succeeded 12313ms
+完成 10 道：{'succeeded': 9, 'failed': 1}
+无证据答案 0 道，平均耗时 12263ms，总 token 112773
+结果表格：../测试数据/评测/2026-10-24/dd04-env-retry/questions/results.csv、../测试数据/评测/2026-10-24/dd04-env-retry/questions/results.xlsx
